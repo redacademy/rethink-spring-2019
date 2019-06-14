@@ -70,7 +70,7 @@ function red_starter_widgets_init()
 	// ));
 
 	register_sidebar(array(
-		'name'          => esc_html('Footer'),
+		'name'          => esc_html('Subscription'),
 		'id'            => 'footer-sidebar',
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
