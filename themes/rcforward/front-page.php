@@ -1,11 +1,15 @@
 <?php
 /**
- * The template for displaying all single posts.
+ * The template for front page.
+ * 
+ * Template Name: front page
  *
  * @package RC Forward
  */
 
 get_header(); ?>
+<a class="donate-page-button" href="<?php echo home_url(); ?>/donate">Donate</a>
+
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
