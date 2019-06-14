@@ -91,17 +91,14 @@
 
 /* Navigation */
 .main-navigation {
-  ul {
+  .menu, .sub-menu {
     padding: 0;
     margin: 0;
     text-align: center;
-    li {
-      padding: 3%;
-    }
   }
 }
 .menu-item{
-    background: #14225f;
+    
     border-top: 1px solid #fff;
     a {
       color: #fff;
@@ -110,11 +107,13 @@
 
 
 .sub-menu {
-li {
   background: #fff;
+    display: none;
+li {
   border-top: 1px solid #14225f;
   a {
     color: #14225f;
   }
 }
 }
+
