@@ -8,7 +8,7 @@ $custom_plans = CFS()->get( 'front_page_custom_plan', 37 );
 // var_dump($custom_plans);
 
 if(isset($custom_plans)):
-    echo 'the field has a loop';
+    // echo 'the field has a loop';
 
 
 foreach ( $custom_plans as $custom_plan ) :
