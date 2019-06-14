@@ -41,7 +41,7 @@ function rcforward_post_type() {
 		'label'                 => 'Charity',
 		'description'           => 'Charity post type for RC Forward',
 		'labels'                => $charity_labels,
-		'supports'              => array( 'title', 'editor', 'thumbnail', 'revisions', 'custom-fields' ),
+		'supports'              => array( 'title', 'thumbnail', 'revisions', 'custom-fields' ),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,

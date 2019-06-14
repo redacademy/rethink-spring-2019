@@ -20,3 +20,12 @@ function red_starter_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'red_starter_body_classes' );
+
+function rc_body_class_for_pages( $classes ) {
+    if ( is_singular( 'page' ) ) {
+        global $post;
+        $classes[] = 'page-' . $post->post_name;
+    }
+    return $classes;
+}
+add_filter( 'body_class', 'rc_body_class_for_pages' );
