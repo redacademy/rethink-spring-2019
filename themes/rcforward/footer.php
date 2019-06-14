@@ -8,7 +8,14 @@
 ?>
 
 </div><!-- #content -->
-<?php get_sidebar(); ?>
+
+
+<?php if (is_active_sidebar('footer-sidebar')) : ?>
+	<div id="footer-sidebar" class="footer-sidebar widget-area" role="complementary">
+		<?php dynamic_sidebar('footer-sidebar'); ?>
+	</div><!-- #footer-sidebar -->
+<?php endif; ?>
+
 <footer id="colophon" class="site-footer" role="contentinfo">
 	<div class="footer-nav">
 		<?php wp_nav_menu(array('theme_location' => 'footer-menu', 'menu_id' => 'footer-menu')); ?>
@@ -17,11 +24,12 @@
 	<div class="footer-info">
 		<?php $front_page_id = get_option('page-on-front'); ?>
 		<p><?php echo CFS()->get('footer_info', $front_page_id) ?></p>
-		<a href="<?php echo CFS()->get('footer_info_icon', $front_page_id) ?>"><!-- Insert Icon --></a>
+		<a href="<?php echo CFS()->get('footer_info_icon', $front_page_id) ?>">
+			<!-- Insert Icon --></a>
 	</div><!-- .footer-info -->
 	<div class="footer-info-sm">
 		<p>RC Forward is a project of:</p>
-		<img src="<?php echo CFS()->get('parent_charity_logo', $front_page_id);?>">
+		<img src="<?php echo CFS()->get('parent_charity_logo', $front_page_id); ?>">
 		<p><?php echo CFS()->get('parent_charity_description', $front_page_id); ?></p>
 		<a href="<?php echo CFS()->get('parent_charity_email', $front_page_id); ?>"></a>
 		<a href="<?php echo CFS()->get('parent_charity_facebook_link', $front_page_id); ?>"></a>
