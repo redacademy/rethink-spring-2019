@@ -1,8 +1,8 @@
 <?php
 /**
- * The template for displaying all single posts.
+ * The template for displaying all single fund.
  *
- * @package RC Forward
+ * @package RC forward
  */
 
 get_header(); ?>
