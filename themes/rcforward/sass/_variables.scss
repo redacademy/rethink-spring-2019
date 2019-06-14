@@ -2,7 +2,7 @@
 
 $base__space-unit: 1.5rem;
 
-// Colors
+// Colors 
 
 $color__background-body: #fff;
 $color__text-main: #404040;
@@ -20,6 +20,27 @@ $color__link-visited: purple;
 $color__link-hover: midnightblue;
 
 // Typography
+
+// RC Primary Stylings
+$code__blue: #00BEA8;
+$innovative__purple: #42299A;
+$credible__blue: #14225F;
+$grounded__green: #192726;
+
+// RC Secondary Stylings
+$sustainable__green: #8CB33E;
+$forest__green: #578744;
+$cream__background: #F9F5ED;
+$black: #000;
+$white: #fff;
+
+// RC Fonts
+$gotham__font: 'Montserrat', sans-serif;
+
+// RC Mixins
+$tablet-width: 600px;
+$desktop-width: 1000px;
+$max-screen-size: 1240px;
 
 $font__main: sans-serif;
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
