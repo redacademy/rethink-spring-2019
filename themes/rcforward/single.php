@@ -1,8 +1,6 @@
 <?php
 /**
  * The template for displaying all single posts.
- * 
- * Template Name: Single Post
  *
  * @package RC Forward
  */
