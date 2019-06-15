@@ -18,13 +18,12 @@
 <footer id="colophon" class="site-footer" role="contentinfo">
 	<div class="footer-nav">
 		<?php wp_nav_menu(array('theme_location' => 'footer-menu', 'menu_id' => 'footer-menu')); ?>
-		<a href="<?php echo esc_url('https://wordpress.org/'); ?>"><?php printf(esc_html('Proudly powered by %s'), 'WordPress'); ?></a>
 	</div><!-- .footer-nav -->
 	<div class="footer-info">
 		<?php $front_page_id = get_option('page-on-front'); ?>
 		<p><?php echo CFS()->get('footer_info', $front_page_id) ?></p>
-		<a href="<?php echo CFS()->get('footer_info_icon', $front_page_id) ?>">
-			<!-- Insert Icon --></a>
+		<img src="<?php echo CFS()->get('footer_info_icon', $front_page_id) ?>">
+			<!-- Insert Icon -->
 	</div><!-- .footer-info -->
 	<div class="footer-info-sm">
 		<p>RC Forward is a project of:</p>
