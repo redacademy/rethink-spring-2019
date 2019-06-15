@@ -4,7 +4,7 @@
  * @package   Rethink Functionality
  * @author    Vera Sun, Rosh Canlas, Lovely Eden
  * @license   GPL-2.0+
- * @copyright 2015 Your Name or Company
+ * @copyright 2019 RC Forward
  *
  * @wordpress-plugin
  * Plugin Name: Rethink Functionality

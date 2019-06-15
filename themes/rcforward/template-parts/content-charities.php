@@ -1,4 +1,11 @@
+<?php
+/**
+ * Template part for displaying all the charities in the carousole.
+ *
+ * @package RC Forward
+ */
 
+?>
 <div id="charities-caresole" class="charities-caresole">
 <?php $args = array('post_type' => 'charity', 'order' => 'ASC');
 				$charity_posts = get_posts($args); // returns an array of posts
@@ -11,9 +18,9 @@
                             <?php endif; ?>
                             <?php 
                                 
-                                $charity_icon= CFS()->get( 'charity_icon');
-                            if ($charity_icon) : ?>
-                                <div class="charity-icon"><img src="<?php echo $charity_icon; ?>" alt="Charity Icon"/></div>
+                                $charity_logo= CFS()->get( 'charity_logo');
+                            if ($charity_logo) : ?>
+                                <div class="charity-logo"><img src="<?php echo $charity_logo; ?>" alt="Charity logo"/></div>
                             <?php endif; ?>
 
                         </div>

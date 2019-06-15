@@ -2,7 +2,7 @@
 /**
  * The template for front page.
  * 
- * Template Name: front page
+ * Template Name: Front Page
  *
  * @package RC Forward
  */
