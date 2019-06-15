@@ -1,4 +1,11 @@
+<?php
+/**
+ * Template part for displaying all the charities in the carousole.
+ *
+ * @package RC Forward
+ */
 
+?>
 <div id="charities-caresole" class="charities-caresole">
 <?php $args = array('post_type' => 'charity', 'order' => 'ASC');
 				$charity_posts = get_posts($args); // returns an array of posts

@@ -12,15 +12,13 @@
 		<?php if ( has_post_thumbnail() ) : ?>
 			<?php the_post_thumbnail( 'large' ); ?>
 		<?php endif; ?>
-
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-
-		<div class="entry-meta">
-			<?php red_starter_posted_on(); ?> / <?php red_starter_comment_count(); ?> / <?php red_starter_posted_by(); ?>
-		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
+	<div class="entry-title">
+		<p class ="entry-meta"><?php red_starter_posted_on(); ?><p>
+		<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
+	</div><!-- .entry-title -->
 
-	<div class="entry-content">
+	<main class="entry-content">
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(
@@ -28,7 +26,7 @@
 				'after'  => '</div>',
 			) );
 		?>
-	</div><!-- .entry-content -->
+	</main><!-- .entry-content -->
 
 	<footer class="entry-footer">
 		<?php red_starter_entry_footer(); ?>

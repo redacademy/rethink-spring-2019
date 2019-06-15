@@ -5,6 +5,8 @@
  * @package RED_Starter_Theme
  */
 
+//TODO: May not neet this page
+
 get_header(); ?>
 
 	<div id="primary" class="content-area">

@@ -1,3 +1,12 @@
+<?php
+/**
+ * Template part for displaying custom plan and donate to RC Forward.
+ *
+ * @package RC Forward
+ */
+
+?>
+
 <div class="custom-plan">
 <?php
 // TODO check method:
