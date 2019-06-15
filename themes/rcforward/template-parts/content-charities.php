@@ -18,9 +18,9 @@
                             <?php endif; ?>
                             <?php 
                                 
-                                $charity_icon= CFS()->get( 'charity_icon');
-                            if ($charity_icon) : ?>
-                                <div class="charity-icon"><img src="<?php echo $charity_icon; ?>" alt="Charity Icon"/></div>
+                                $charity_logo= CFS()->get( 'charity_logo');
+                            if ($charity_logo) : ?>
+                                <div class="charity-logo"><img src="<?php echo $charity_logo; ?>" alt="Charity logo"/></div>
                             <?php endif; ?>
 
                         </div>
