@@ -242,6 +242,9 @@ th {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.footer-sidebar, .site-footer {
+  background-color: #14225F; }
+
 .hamburger {
   display: inline-block;
   cursor: pointer;

@@ -9,7 +9,6 @@
 
 </div><!-- #content -->
 
-
 <?php if (is_active_sidebar('footer-sidebar')) : ?>
 	<div id="footer-sidebar" class="footer-sidebar widget-area" role="complementary">
 		<?php dynamic_sidebar('footer-sidebar'); ?>
@@ -30,10 +29,14 @@
 	<div class="footer-info-sm">
 		<p>RC Forward is a project of:</p>
 		<img src="<?php echo CFS()->get('parent_charity_logo', $front_page_id); ?>">
+		<!-- <img src="<?php echo CFS()->get('parent_charity_logo', $front_page_id); ?>">	 -->
 		<p><?php echo CFS()->get('parent_charity_description', $front_page_id); ?></p>
-		<a href="<?php echo CFS()->get('parent_charity_email', $front_page_id); ?>"></a>
-		<a href="<?php echo CFS()->get('parent_charity_facebook_link', $front_page_id); ?>"></a>
+		<a href="<?php echo CFS()->get('parent_charity_email', $front_page_id); ?>"><i class="far fa-envelope fa-2x"></i></a>
+		<a href="<?php echo CFS()->get('parent_charity_facebook_link', $front_page_id); ?>"><i class="fab fa-facebook-f fa-2x"></i></a>
 	</div> <!-- .footer-info-sm -->
+	<div class="footer-copyright">
+		<p>Copyright 2019 &copy; Rethink Charity</p>
+	</div>
 </footer><!-- #colophon -->
 </div><!-- #page -->
 
