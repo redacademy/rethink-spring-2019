@@ -4,7 +4,7 @@
  * 
  * Template Name: Blog
  *
- * @package RC_Forward_Theme
+ * @package RC_Forward
  */
 
 get_header(); ?>

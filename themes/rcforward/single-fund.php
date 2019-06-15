@@ -93,7 +93,7 @@ foreach( $related_charities as $post_id ):
     <div class="sigle-related-charity"> 
     <img class="charity-logo" src="<?php echo CFS()->get( 'charity_logo', $the_post->ID ); ?>"/>
     <p class="charity-description"><?php echo CFS()->get( 'charity_description', $the_post->ID ); ?></p>
-    <a href="<?php echo $the_post->guid; ?>">View Charity &#x203A;</a>
+    <a class="read-more-button" href="<?php echo $the_post->guid; ?>">View Charity &#x203A;</a>
 </div>
 
 <?php endforeach; ?>
