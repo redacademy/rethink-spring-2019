@@ -13,7 +13,7 @@
 $pageID = get_option('page_on_front');
 // echo $pageID;
 
-$custom_plans = CFS()->get( 'front_page_custom_plan', 37 );
+$custom_plans = CFS()->get( 'front_page_custom_plan', $pageID );
 // var_dump($custom_plans);
 
 if(isset($custom_plans)):
@@ -41,7 +41,7 @@ else:
     // echo 'no loop found';
 ?>
 
-    <a href="<?php echo home_url(); ?>/contact">Contact Us</a>
+    <a class="contact-us-button" href="<?php echo home_url(); ?>/contact">Contact Us</a>
 <?php
 endif;
 ?>

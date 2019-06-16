@@ -74,6 +74,8 @@ get_header(); ?>
               </div><!-- .fund-allowcation -->
               <div class="entry-content">
                 <?php the_content(); ?>
+            </div>
+            
                 
                 <!-- TO DO -->
                 <button class="chimp-donate-form">Donate</button>
@@ -97,7 +99,7 @@ foreach( $related_charities as $post_id ):
 </div>
 
 <?php endforeach; ?>
-            </div>
+        </div>
 
 
     
