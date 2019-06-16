@@ -12,7 +12,7 @@ get_header(); ?>
 
 <?php while ( have_posts() ) : the_post(); ?>
 	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
 		<p class="page-description"><?php echo CFS()->get('how_it_works_page_description') ?></p>
 		<div class="how-it-works-steps">
 		<?php 

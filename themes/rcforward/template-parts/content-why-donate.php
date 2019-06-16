@@ -15,7 +15,7 @@
 $pageID = get_option('page_on_front');
 
 
-$why_donates = CFS()->get( 'front_page_custom_plan', $pageID );
+$why_donates = CFS()->get( 'front_page_why_donate', $pageID );
 
 
 if(isset($why_donate)):
@@ -27,7 +27,7 @@ foreach ( $why_donates as $why_donate ) :
 ?>
     <div class="single-reason">
         <img src="<?php  echo $why_donate['icon']; ?>">
-        <p><?php echo $why_donate['title'];?></p>
+        <p><?php echo $why_donate['reason_title'];?></p>
     </div>
 
 <?php endforeach; 
