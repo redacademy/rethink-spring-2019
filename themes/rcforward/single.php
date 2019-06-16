@@ -18,7 +18,7 @@ get_header(); ?>
 		<main class="entry-content">
 			<div class="entry-title">
 				<p class="entry-meta"><?php red_starter_posted_on(); ?><p>
-						<?php the_title('<h2 class="entry-title">', '</h2>'); ?>
+				<?php the_title('<h2 class="entry-title">', '</h2>'); ?>
 			</div><!-- .entry-title -->
 
 			<div class="entry-main">

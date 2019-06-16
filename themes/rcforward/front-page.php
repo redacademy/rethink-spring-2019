@@ -11,8 +11,8 @@ get_header(); ?>
 
 <?php while (have_posts()) : the_post(); ?>
 	<header class="entry-header">
-		<?php the_title('<h2 class="entry-title">', '</h2>'); ?>
-		<?php the_content(); ?>
+		<h2 class="entry-title"><?php echo CFS()->get('front_page_title') ?></h2>
+		<p class="entry-title-description"><?php echo CFS()->get('front_page_description') ?></p>
 		<a class="donate-page-button" href="<?php echo home_url(); ?>/donate">Donate</a>
 		<a class="how-it-works-button" href="<?php echo home_url(); ?>/how-it-works">How It Works</a>
 	</header>
