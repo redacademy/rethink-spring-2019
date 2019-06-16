@@ -28,7 +28,7 @@ get_header(); ?>
 			?>
 			<?php foreach ($fund_posts as $post) : setup_postdata($post); ?>
 				<div class="fund-entry">
-					<h4> <?php the_title(); ?></h4>
+					<h4> <?php echo CFS()->get('fund_name_short'); ?></h4>
 					<img src="<?php echo CFS()->get('fund-icon'); ?>" alt="Fund Icon">
 					<p class="fund-description"><?php echo CFS()->get('fund-description'); ?></p>
 					<a class="learn-more-button" href="<?php echo get_the_permalink(); ?>">Learn More</a>
