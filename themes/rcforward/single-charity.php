@@ -17,13 +17,13 @@ get_header(); ?>
             <?php if (has_post_thumbnail()) : ?>
                 <?php the_post_thumbnail('large'); ?>
             <?php endif; ?>
-            </div>
+            </div> 
                 <?php
-                $icon_url = CFS()->get("charity_icon");
-                if ($icon_url) :
+                $logo_url = CFS()->get("charity_logo");
+                if ($logo_url) :
                 ?>
-                <div class="charity-icon-container">
-                    <img class="charity-icon" src="<?php echo $icon_url; ?>" alt="the icon for the company" />
+                <div class="charity-logo-container">
+                    <img class="charity-logo" src="<?php echo $logo_url; ?>" alt="the logo for the company" />
                 </div>
                 <?php endif; ?>
         </header><!-- .charity-header -->
@@ -32,7 +32,7 @@ get_header(); ?>
             <?php the_title('<h2 class="entry-title">', '</h2>'); ?>
 
             <div class="amount-funded">
-            <p>$ <?php echo CFS()->get( 'charity_amount_funded' );?></p>
+            <p>$<span class="counter"> <?php echo CFS()->get( 'charity_amount_funded' );?></span></p>
             <p><?php echo CFS()->get( 'charity_amount_funded_description' );?></p>
 
             <!-- TO DO -->

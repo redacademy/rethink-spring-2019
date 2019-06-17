@@ -42,7 +42,6 @@ get_header(); ?>
 		<p class="browse-charity-subtitle"><?php echo CFS()->get('front_page_browse_charities_subtitle'); ?></p>
 		<p class="browse-charity-description"><?php echo CFS()->get('front_page_browse_charities_description'); ?></p>
 		<?php get_template_part('template-parts/content', 'charities'); ?>
-
 	</div>
 
 	<?php get_template_part('template-parts/content', 'custom-plan'); ?>

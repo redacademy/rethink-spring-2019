@@ -65,6 +65,9 @@
   position: absolute;
   right: 0;
   top: 0;
+  @include tablet{
+    display: none;
+  }
   .hamburger--boring .menu-toggle {
     background: #14225f;
   }
@@ -80,10 +83,15 @@
   .header-container {
     margin: auto;
     position: relative;
+    @include tablet{
+      display: flex;
+      justify-content: space-around;
+    }
     a {
       text-decoration: none;
       h1 {
         color: #fff;
+        text-transform: uppercase;
       }
     }
   }
@@ -91,15 +99,33 @@
 
 /* Navigation */
 .main-navigation {
+  @include tablet{
+ margin-top: auto;
+  margin-bottom: auto;
+
+  }
   .menu, .sub-menu {
     padding: 0;
     margin: 0;
     text-align: center;
+    }
+  }
+.main-navigation 
+.menu {
+  @include tablet{
+  display: flex;
   }
 }
+
+
 .menu-item{
     
     border-top: 1px solid #fff;
+    @include tablet{
+        border-top: none;
+        list-style: none;
+        padding-left: 75px;
+    }
     a {
       color: #fff;
     }
@@ -110,9 +136,10 @@
   background: #fff;
     display: none;
 li {
-  border-top: 1px solid #14225f;
+  border-top: 1px solid $credible__blue;
+  
   a {
-    color: #14225f;
+    color: $credible__blue;
   }
 }
 }

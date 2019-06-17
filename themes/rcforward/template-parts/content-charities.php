@@ -6,12 +6,12 @@
  */
 
 ?>
-<div id="charities-caresole" class="charities-caresole">
+<div id="charities-caresole" class="charities-caresole main-carousel">
 <?php $args = array('post_type' => 'charity', 'order' => 'ASC');
 				$charity_posts = get_posts($args); // returns an array of posts
 				?>
 				<?php foreach ($charity_posts as $post) : setup_postdata($post); ?>
-					<a class="single-charity" href="<?php echo get_the_permalink(); ?>">
+					<a class="single-charity carousel-cell" href="<?php echo get_the_permalink(); ?>">
                         <div class="thumbnail-wrapper">
                             <?php if (has_post_thumbnail()) : ?>
                                 <?php the_post_thumbnail(); ?>
