@@ -313,6 +313,9 @@ th {
   position: absolute;
   right: 0;
   top: 0; }
+  @media (min-width: 600px) {
+    .hamburger {
+      display: none; } }
   .hamburger .hamburger--boring .menu-toggle {
     background: #14225f; }
   .hamburger button {
@@ -326,19 +329,44 @@ th {
   .site-header .header-container {
     margin: auto;
     position: relative; }
+    @media (min-width: 600px) {
+      .site-header .header-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; } }
     .site-header .header-container a {
       text-decoration: none; }
       .site-header .header-container a h1 {
-        color: #fff; }
+        color: #fff;
+        text-transform: uppercase; }
 
 /* Navigation */
+@media (min-width: 600px) {
+  .main-navigation {
+    margin-top: auto;
+    margin-bottom: auto; } }
+
 .main-navigation .menu, .main-navigation .sub-menu {
   padding: 0;
   margin: 0;
   text-align: center; }
 
+@media (min-width: 600px) {
+  .main-navigation
+.menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
+
 .menu-item {
   border-top: 1px solid #fff; }
+  @media (min-width: 600px) {
+    .menu-item {
+      border-top: none;
+      list-style: none;
+      padding-left: 75px; } }
   .menu-item a {
     color: #fff; }
 
@@ -346,6 +374,6 @@ th {
   background: #fff;
   display: none; }
   .sub-menu li {
-    border-top: 1px solid #14225f; }
+    border-top: 1px solid #14225F; }
     .sub-menu li a {
-      color: #14225f; }
+      color: #14225F; }
