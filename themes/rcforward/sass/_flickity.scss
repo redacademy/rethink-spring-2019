@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+.main-carousel {
+    max-width: 1240px;
+    width: 100%;
+    background-color: red;
+  .carousel-cell {
+    width: 25%;
+    height: 200px;
+    &:first-child {
+        width: 10px;
+    }
+    &:before {
+      text-align: center;
+      line-height: 200px;
+      font-size: 80px;
+    }
+    .thumbnail-wrapper {
+    }
+    .post-title {
+    }
+  }
+  .browse_charities_button {
+  }
+}
