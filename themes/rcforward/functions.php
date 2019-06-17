@@ -58,17 +58,6 @@ add_action('after_setup_theme', 'red_starter_content_width', 0);
  */
 function red_starter_widgets_init()
 {
-	// TODO remove this sidebar e.g. from other php files
-	// register_sidebar(array(
-	// 	'name'          => esc_html('Sidebar'),
-	// 	'id'            => 'sidebar-1',
-	// 	'description'   => '',
-	// 	'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-	// 	'after_widget'  => '</aside>',
-	// 	'before_title'  => '<h2 class="widget-title">',
-	// 	'after_title'   => '</h2>',
-	// ));
-
 	register_sidebar(array(
 		'name'          => esc_html('Subscription'),
 		'id'            => 'footer-sidebar',
@@ -106,6 +95,11 @@ function red_starter_scripts()
 
 	wp_enqueue_script('rc-counter', get_template_directory_uri() . '/build/js/counter.min.js', array('jquery', 'counterup'), '', true);
 
+
+	wp_enqueue_script('rc-flickity', 'https://npmcdn.com/flickity@1.2/dist/flickity.pkgd.min.js', array('jquery'), '', true);
+	wp_enqueue_style('rc-flickity', 'https://npmcdn.com/flickity@1.2/dist/flickity.min.css');
+
+	wp_enqueue_script('rc-flickity', get_template_directory_uri() . 'build/js/flickity.min.js', array('jquery'), '', true);
 
 	wp_enqueue_script('rcforward-hamburger', get_template_directory_uri() . '/build/js/hamburger.min.js', array('jquery'), '', true);
 

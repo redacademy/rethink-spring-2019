@@ -40,9 +40,7 @@ get_header(); ?>
 	<div class="entry-main">
 
 		<?php the_content(); ?>
-
-
-
+		
 	</div>
 	<?php get_template_part( 'template-parts/content', 'why-donate' ); ?>
 	<?php get_template_part( 'template-parts/content', 'charities' ); ?>
