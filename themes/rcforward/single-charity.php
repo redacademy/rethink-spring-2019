@@ -101,14 +101,14 @@ get_header(); ?>
 
             </div>
 
-            <h3 class="browse-charities-title">Browse Charities</h3>
-
+            
             
             
         </main><!-- .entry-content -->
         
-        <?php get_template_part( 'template-parts/content', 'custom-plan' ); ?>
+        <h3 class="browse-charities-title">Browse Charities</h3>
         <?php get_template_part( 'template-parts/content', 'charities' ); ?>
+        <?php get_template_part( 'template-parts/content', 'custom-plan' ); ?>
     </article><!-- #post-## -->
     
     <?php endwhile; // End of the loop. ?>
