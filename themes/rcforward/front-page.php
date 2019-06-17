@@ -29,8 +29,8 @@ get_header(); ?>
 			<?php foreach ($fund_posts as $post) : setup_postdata($post); ?>
 				<div class="fund-entry">
 					<h4> <?php echo CFS()->get('fund_name_short'); ?></h4>
-					<img src="<?php echo CFS()->get('fund-icon'); ?>" alt="Fund Icon">
-					<p class="fund-description"><?php echo CFS()->get('fund-description'); ?></p>
+					<img src="<?php echo CFS()->get('fund_icon'); ?>" alt="Fund Icon">
+					<p class="fund-description"><?php echo CFS()->get('fund_description'); ?></p>
 					<a class="learn-more-button" href="<?php echo get_the_permalink(); ?>">Learn More</a>
 				</div>
 			<?php endforeach;
@@ -47,7 +47,6 @@ get_header(); ?>
 
 	<?php get_template_part('template-parts/content', 'custom-plan'); ?>
 
-<?php endwhile; 
-?>
+<?php endwhile; ?>
 
 <?php get_footer(); ?>

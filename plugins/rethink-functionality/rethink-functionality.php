@@ -48,3 +48,6 @@ include_once( RF_DIR . '/lib/functions/post-types.php' );
  * @since 1.0.0
  */
 include_once( RF_DIR . '/lib/functions/taxonomies.php' );
+
+// expose CFS fields 
+include_once( RF_DIR . '/lib/functions/rest-api.php' );
