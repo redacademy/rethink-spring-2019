@@ -100,6 +100,12 @@ add_filter('stylesheet_uri', 'red_starter_minified_css', 10, 2);
 function red_starter_scripts()
 {
 	wp_enqueue_style('red-starter-style', get_stylesheet_uri());
+	
+	wp_enqueue_script('waypoints', 'https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js');
+	wp_enqueue_script('counterup', 'https://cdn.jsdelivr.net/npm/counterup@1.0.2/jquery.counterup.min.js', array('jquery', 'waypoints'), '', true);
+
+	wp_enqueue_script('rc-counter', get_template_directory_uri() . '/build/js/counter.min.js', array('jquery', 'counterup'), '', true);
+
 
 	wp_enqueue_script('rcforward-hamburger', get_template_directory_uri() . '/build/js/hamburger.min.js', array('jquery'), '', true);
 
