@@ -85,11 +85,6 @@
             $(".show-results").html("");
             $(".show-charities").html("");
         });
-
-
-
-
-
     
     });//end of doc ready
 
