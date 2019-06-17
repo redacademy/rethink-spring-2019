@@ -1,6 +1,10 @@
 (function($) {
   $(function() {
 
+    console.log(
+      'carousel'
+    );
+    
     $('.main-carousel').flickity({
       // options
       cellAlign: 'left',
@@ -9,3 +13,4 @@
     
   }); // End of Doc ready
 })(jQuery);
+
