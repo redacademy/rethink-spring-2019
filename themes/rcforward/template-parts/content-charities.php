@@ -31,5 +31,7 @@
                     </a>
                     <?php endforeach;
 			wp_reset_postdata(); ?>
-                    <a class="browse_charities_button" href="<?php echo get_the_permalink(); ?>/donate/#browse-charities-button">Browse All Charities</a>
+                    
 </div> 
+
+<a class="browse_charities_button" href="<?php echo get_the_permalink(); ?>/donate/#browse-charities-button">Browse All Charities</a>

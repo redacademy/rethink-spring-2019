@@ -90,23 +90,31 @@ function red_starter_scripts()
 {
 	wp_enqueue_style('red-starter-style', get_stylesheet_uri());
 	
-	wp_enqueue_script('waypoints', 'https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js');
+	wp_enqueue_script('waypoints', 'https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js', array('jquery'));
 	wp_enqueue_script('counterup', 'https://cdn.jsdelivr.net/npm/counterup@1.0.2/jquery.counterup.min.js', array('jquery', 'waypoints'), '', true);
 
 	wp_enqueue_script('rc-counter', get_template_directory_uri() . '/build/js/counter.min.js', array('jquery', 'counterup'), '', true);
 
 	wp_enqueue_script('rc-flickity', 'https://npmcdn.com/flickity@1.2/dist/flickity.pkgd.min.js', array('jquery'), '', true);
 	wp_enqueue_style('rc-flickity', 'https://npmcdn.com/flickity@1.2/dist/flickity.min.css');
-	wp_enqueue_script('rc-flickity', get_template_directory_uri() . 'build/js/flickity.min.js', array('jquery'), '', true);
+
+	wp_enqueue_script('rc-custom-flickity', get_template_directory_uri() . '/build/js/flickity.min.js', array('jquery', 'rc-flickity'), '', true);
 
 	wp_enqueue_script('rcforward-hamburger', get_template_directory_uri() . '/build/js/hamburger.min.js', array('jquery'), '', true);
-
+	wp_enqueue_script('rcforward-charity-category', get_template_directory_uri() . '/build/js/charity-category.min.js', array('jquery'), '', true);
 	wp_enqueue_script('red-starter-navigation', get_template_directory_uri() . '/build/js/navigation.min.js', array(), '', true);
 	wp_enqueue_script('red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '', true);
 
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
 		wp_enqueue_script('comment-reply');
 	}
+	wp_localize_script("rcforward-charity-category", "api_vars", array(
+		"rest_url" => esc_url_raw(rest_url()),
+		"home_url" => esc_url_raw(home_url()),
+		"post_id" => get_the_ID(),
+		'success' => 'Thank you for subscribe!',
+		'failure' => 'Sorry please submit again'
+	));
 }
 add_action('wp_enqueue_scripts', 'red_starter_scripts');
 
