@@ -9,17 +9,32 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<?php while ( have_posts() ) : the_post(); ?>
+<header class="entry-header">
+	<?php the_title('<h2 class="page-title">', '</h2>'); ?>
+	<?php the_content(); ?>
+</header>
 
-			<?php while ( have_posts() ) : the_post(); ?>
+<div class="entry-content">
+	<?php $members = CFS()->get( 'team_members');
+	foreach ( $members as $member ) :?>
 
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+    <div class="single-member">
+		<div class="member-photo">
+		<img src="<?php echo $member['profile_photo']; ?>">
+		</div>
+		<div class="member-info">
+			<h3><?php echo $member['members_names'];?></h3>
+			<p><?php echo $member['description'];?></p>
+		</div>
+		<div class="contact-button">
+			<a mailto="<?php echo $member['email_address']; ?>">Contact</a>
+		</div>
+    </div>
 
-			<?php endwhile; // End of the loop. ?>
+<?php endforeach; ?>
+</div>
+			
+<?php endwhile; // End of the loop. ?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
