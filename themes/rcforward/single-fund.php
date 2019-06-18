@@ -31,7 +31,7 @@ get_header(); ?>
             <?php the_title('<h2 class="entry-title">', '</h2>'); ?>
 
             <div class="amount-funded">
-            <p>$ <?php echo CFS()->get( 'fund_amount_funded' );?></p>
+            <p>$<span class="counter"> <?php echo CFS()->get( 'fund_amount_funded' );?></span></p>
             <p><?php echo CFS()->get( 'fund_amount_funded_description' );?></p>
 
             <!-- TO DO -->

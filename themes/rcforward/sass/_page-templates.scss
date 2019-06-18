@@ -2,8 +2,102 @@
 # Page Templates
 --------------------------------------------------------------*/
 
+/* Default Page styling (for all pages) */
+body {
+  color: $grounded__green;
+}
+
 /* Front page */
 
-.footer-sidebar, .site-footer {
-    background-color: $credible__blue;
+/* Single Fund Pages */
+* {
+  box-sizing: border-box;
+}
+
+.single-fund {
+  .hfeed {
+    .site-content {
+      max-width: 100%;
+      .type-fund {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        .fund-header {
+          position: relative;
+          .fund-image {
+            img {
+              object-position: center;
+              height: 100vh;
+              width: 100%;
+              object-fit: cover;
+            }
+          }
+          .fund-icon-container {
+            display: flex;
+            justify-content: center;
+            .fund-icon {
+              position: absolute;
+              bottom: -20px;
+              width: 10rem;
+              border-radius: 50%;
+              border: 25px $white solid;
+            }
+          }
+        }
+        .entry-content {
+          .entry-title {
+            font-size: 2rem;
+            color: $credible__blue;
+          }
+          .amount-funded {
+            background-color: rgba(216, 216, 216, 0.18);
+            font-size: 4rem;
+            color: $innovative__purple;
+            margin: none;
+            p,
+            .chimp-donate-form {
+              margin: 0;
+            }
+            & p:last-child {
+              font-size: 2rem;
+            }
+          }
+          .fund-description {
+            margin-top: 3rem;
+            p {
+              width: 50%;
+              font-size: 1.7rem;
+              font-weight: lighter;
+              word-wrap: break-word;
+              margin: 0 auto;
+            }
+          }
+          .main-content {
+              margin-top: 2rem;
+            .fund-allowcation {
+              h3 {
+                  width: 65%;
+                word-wrap: break-word;
+                margin: 0 auto;
+                color: $credible__blue;
+                font-size: 2rem;
+              }
+              .fund-allowcations {
+                    display: flex;
+                    justify-content: center;
+                  .single-allocation {
+                     display: flex;
+                     flex-direction: row;
+                     .allocation-text {
+                      
+                     } 
+                  }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

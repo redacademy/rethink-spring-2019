@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+
+.main-carousel{
+    // margin:2rem;
+    max-width: 980px;
+    margin: 2rem auto;
+}
+
+.flickity-viewport {
+    position: relative;
+//  &::before {
+//     content: '';
+//     left: 0;
+//     position: absolute;
+//      background: rgba(white, 0.6);
+//      background: linear-gradient(to right, rgba(white, 1), rgba(white, 0));
+//      width: 60px;
+//      height: 100%;
+//      z-index: 1;
+//  }
+//  &::after {
+//      content: '';
+//      right: 0;
+//      position: absolute;
+//      background: rgba(white, 0.6);
+//      background: linear-gradient(to left, rgba(white, 1), rgba(white, 0));
+//      width: 60px;
+//      height: 100%;
+//  }
+}
+
+.flickity-prev-next-button {
+    z-index: 99;
+}
+
+
+ol.flickity-page-dots{
+    margin-bottom:-2rem;
+}
+.carousel-cell {
+    width: 23.5%; /* half-width */
+    height: 270px;
+    margin: 0 1%;
+    border-radius: 10px;
+    overflow: hidden;
+    border:1px solid $innovative__purple;
+    img{
+        max-width: 100%;
+        max-height:100%;
+    }
+    .thumbnail-wrapper{
+        height:190px;
+        position: relative;
+    }
+    .charity-logo{
+        position:absolute;
+        width:80px;
+        height:80px;
+        padding:15px;
+        background:white;   
+        bottom:-30px;
+        border-radius: 50%; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 50%;
+        transform: translateX(-50%);
+        img{
+            width:60%;
+            display: block;
+            margin:0; 
+            width:100%;
+
+        }
+    }
+    .post-title{
+        margin-top:1.8rem;
+        font-size: 0.8rem;  
+        text-align: center;
+    }
+
+}
+.browse_charities_button{
+    display: block;
+    margin: 7rem;
+    text-align: center;
+}
