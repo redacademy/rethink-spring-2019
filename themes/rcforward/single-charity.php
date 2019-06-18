@@ -64,7 +64,7 @@ get_header(); ?>
                 foreach ( $main_contents as $main_content ):
                     $index++;
             ?>
-            <div class="single-content">
+            <div class="single-content ">
             <?php
                 if($main_content['image'] && $index === $count):
             ?>      
@@ -73,20 +73,20 @@ get_header(); ?>
                         <?php echo $charity_report_button; ?>
                         <?php echo $charity_website_button; ?>
                     </div>
-	                    <h3 class =".content-w-image" ><?php echo $main_content['title']; ?></h3>
-                        <p class =".content-w-image"><?php echo $main_content['content']; ?></p>
+	                    <h3 class ="content-w-image" ><?php echo $main_content['title']; ?></h3>
+                        <p class ="content-w-image"><?php echo $main_content['content']; ?></p>
                 <?php elseif($main_content['image'] && $index !== $count):?>
                     <div class="content-image">
                         <img  class="main-content-image" src="<?php  echo $main_content['image']; ?>">
                     </div>
-                    <h3 class =".content-w-image" ><?php echo $main_content['title']; ?></h3>
-                    <p class =".content-w-image"><?php echo $main_content['content']; ?></p>
+                    <h3 class ="content-w-image" ><?php echo $main_content['title']; ?></h3>
+                    <p class ="content-w-image"><?php echo $main_content['content']; ?></p>
                 <?php elseif(!$main_content['image'] && $index !== $count):?>
-                    <h3 class =".content-wo-image" ><?php echo $main_content['title']; ?></h3>
-                    <p class =".content-wo-image"><?php echo $main_content['content']; ?></p>  
+                    <h3 class ="content-wo-image" ><?php echo $main_content['title']; ?></h3>
+                    <p class ="content-wo-image"><?php echo $main_content['content']; ?></p>  
                 <?php else: ?>
-                    <h3 class =".content-wo-image" ><?php echo $main_content['title']; ?></h3>
-                    <p class =".content-wo-image"><?php echo $main_content['content']; ?></p>
+                    <h3 class ="content-wo-image" ><?php echo $main_content['title']; ?></h3>
+                    <p class ="content-wo-image"><?php echo $main_content['content']; ?></p>
                     <?php echo $charity_report_button; ?>
                     <?php echo $charity_website_button; ?>    
                 <?php endif; ?>

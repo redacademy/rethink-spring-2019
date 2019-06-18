@@ -3,7 +3,7 @@
     text-align: center;
     .why-donate-content{
         @include display-flex();
-        padding:2rem 6rem;
+        padding:2rem 7rem;
         justify-content: space-between;
         img{
             width:120px;
@@ -28,11 +28,7 @@
             height:130px;
             margin:0 auto;
         }
-        border:1px solid lighten($innovative__purple,50%);
-        box-shadow: 0px 2px 2px $innovative__purple;
-        &:hover{
-            box-shadow: 0px 3px 5px $innovative__purple;
-        }
+        @include box-shadow();
         button, a{
             background:$credible__blue;
             padding:$button__padding;
@@ -48,3 +44,48 @@
 
     }
 }
+
+//front page
+
+.home{
+    text-align:center;
+    .entry-header{
+        
+    }
+
+    .choose-fund{
+        padding:$content__padding;
+        .choose-fund-subtitle{
+            font-weight:600;
+        }
+        .choose-fund-description{
+            margin:0 auto;
+        }
+
+        .fund{
+            @include display-flex();
+            margin:3rem auto;
+            justify-content: space-between;
+            .fund-entry{
+                @include box-shadow();
+                padding:1rem;
+                flex-basis:30%;
+                display:grid;
+                grid-template-columns: 1fr;
+                grid-template-rows:60px auto 130px 55px;
+                img{
+                    width:80px;
+                    height:80px;
+                    margin:0 auto;
+                }
+                a{
+                    @include button();
+                }
+            }
+        }
+
+
+    }
+}
+
+
