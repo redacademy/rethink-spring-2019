@@ -830,10 +830,16 @@ ol.flickity-page-dots {
               box-shadow: none; }
     .custom-plan .single-custom-plan button {
       margin-top: -1rem; }
-<<<<<<< HEAD
 
 .home {
   text-align: center; }
+  .home .entry-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .home .entry-header .header-content {
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%; }
   .home .choose-fund {
     padding: 2rem 6rem; }
     .home .choose-fund .choose-fund-subtitle {
@@ -893,5 +899,3 @@ ol.flickity-page-dots {
           color: white;
           text-align: center;
           margin: 0 auto; }
-=======
->>>>>>> 13446c5441c5a41af894e506924c9b3ec9456ae3

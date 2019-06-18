@@ -50,7 +50,10 @@
 .home{
     text-align:center;
     .entry-header{
-        
+        display:flex;
+        .header-content{
+            flex-basis:50%;
+        }
     }
 
     .choose-fund{
