@@ -240,6 +240,67 @@ a {
       right: 0;
       z-index: 99;
       display: block; } }
+<<<<<<< HEAD
+=======
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden; }
+  .screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+            box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar. */ }
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.5rem; }
+
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.5rem; }
+
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+.clearfix {
+  clear: both;
+  content: "";
+  display: table; }
+>>>>>>> d0445e16ed318c7fa56a62cc4b345c6e24de909d
 
 /*--------------------------------------------------------------
 # Widgets
@@ -612,6 +673,7 @@ ol.flickity-page-dots {
 
 .footer-sidebar, .site-footer {
   background-color: #14225F; }
+<<<<<<< HEAD
 
 .why-donate {
   text-align: center; }
@@ -669,3 +731,5 @@ ol.flickity-page-dots {
               box-shadow: none; }
     .custom-plan .single-custom-plan button {
       margin-top: -1rem; }
+=======
+>>>>>>> d0445e16ed318c7fa56a62cc4b345c6e24de909d
