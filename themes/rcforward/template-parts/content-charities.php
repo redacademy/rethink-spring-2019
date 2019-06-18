@@ -6,8 +6,8 @@
  */
 
 ?>
-<div id="charities-caresole" class="charities-caresole main-carousel" data-flickity='{ "groupCells": true }'>
-<?php $args = array('post_type' => 'charity', 'order' => 'ASC');
+<div id="charities-caresole" class="charities-caresole main-carousel">
+<?php $args = array('post_type' => 'charity','posts_per_page'   => -1, 'order' => 'ASC');
 				$charity_posts = get_posts($args); // returns an array of posts
 				?>
                 <?php foreach ($charity_posts as $post) : setup_postdata($post); ?>
