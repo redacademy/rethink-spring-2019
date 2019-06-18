@@ -26,12 +26,14 @@ foreach ( $custom_plans as $custom_plan ) :
     <div class="single-custom-plan">
         <img src="<?php  echo $custom_plan['icon']; ?>">
         <h3><?php echo $custom_plan['title'];?></h3>
-        <p><?php echo $custom_plan['description'];?><p>
+        <p><?php echo $custom_plan['description'];?></p>
+        <div>
         <?php if($chimp_key): ?>
         <button class="chimp-donate-form">Donate</button>
         <?php else: ?>
         <a href="<?php echo home_url(); ?>/contact">Contact Us</a>
         <?php endif; ?>
+</div>
     </div>
 
 <?php endforeach; 

@@ -240,8 +240,6 @@ a {
       right: 0;
       z-index: 99;
       display: block; } }
-<<<<<<< HEAD
-=======
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -300,7 +298,6 @@ a {
   clear: both;
   content: "";
   display: table; }
->>>>>>> d0445e16ed318c7fa56a62cc4b345c6e24de909d
 
 /*--------------------------------------------------------------
 # Widgets
@@ -319,7 +316,7 @@ body {
   background: #14225F; }
 
 .site {
-  max-width: 1240px;
+  max-width: 1440px;
   background: white; }
 
 .site-content {
@@ -588,15 +585,15 @@ ol.flickity-page-dots {
       background: #42299A; }
 
 .carousel-cell {
+  border-radius: 10px;
+  border: 1px solid #d7d0f2;
   -webkit-box-shadow: 0px 2px 2px #42299A;
           box-shadow: 0px 2px 2px #42299A;
   width: 23.5%;
   /* half-width */
   height: 230px;
-  margin: 0 1%;
-  border-radius: 10px;
-  overflow: hidden;
-  border: 1px solid #d7d0f2; }
+  margin: 0 5px;
+  overflow: hidden; }
   .carousel-cell:hover {
     -webkit-box-shadow: 0px 3px 5px #42299A;
             box-shadow: 0px 3px 5px #42299A; }
@@ -673,7 +670,6 @@ ol.flickity-page-dots {
 
 .footer-sidebar, .site-footer {
   background-color: #14225F; }
-<<<<<<< HEAD
 
 .why-donate {
   text-align: center; }
@@ -691,7 +687,7 @@ ol.flickity-page-dots {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 2rem 6rem;
+    padding: 2rem 7rem;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
@@ -711,6 +707,7 @@ ol.flickity-page-dots {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 150px 50px auto 50px;
+    border-radius: 10px;
     border: 1px solid #d7d0f2;
     -webkit-box-shadow: 0px 2px 2px #42299A;
             box-shadow: 0px 2px 2px #42299A; }
@@ -731,5 +728,65 @@ ol.flickity-page-dots {
               box-shadow: none; }
     .custom-plan .single-custom-plan button {
       margin-top: -1rem; }
-=======
->>>>>>> d0445e16ed318c7fa56a62cc4b345c6e24de909d
+
+.home {
+  text-align: center; }
+  .home .choose-fund {
+    padding: 2rem 6rem; }
+    .home .choose-fund .choose-fund-subtitle {
+      font-weight: 600; }
+    .home .choose-fund .choose-fund-description {
+      margin: 0 auto; }
+    .home .choose-fund .fund {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin: 3rem auto;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .home .choose-fund .fund .fund-entry {
+        border-radius: 10px;
+        border: 1px solid #d7d0f2;
+        -webkit-box-shadow: 0px 2px 2px #42299A;
+                box-shadow: 0px 2px 2px #42299A;
+        padding: 1rem;
+        -ms-flex-preferred-size: 30%;
+            flex-basis: 30%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 60px auto 130px 55px; }
+        .home .choose-fund .fund .fund-entry:hover {
+          -webkit-box-shadow: 0px 3px 5px #42299A;
+                  box-shadow: 0px 3px 5px #42299A; }
+        .home .choose-fund .fund .fund-entry img {
+          width: 80px;
+          height: 80px;
+          margin: 0 auto; }
+        .home .choose-fund .fund .fund-entry a {
+          padding: 1rem 1.5rem;
+          background-color: #42299A;
+          border-radius: 7px;
+          width: 10rem;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          color: white;
+          text-align: center;
+          margin: 0 auto; }
