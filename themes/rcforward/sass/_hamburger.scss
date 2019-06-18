@@ -1,7 +1,6 @@
-// /*!
-//  * Hamburgers
-//  * @description Tasty hamburgers
-//  */
+/*!
+* Hamburger Menu
+*/
 
 .hamburger {
   display: inline-block;
@@ -72,87 +71,95 @@
   }
   button {
     box-shadow: none;
+    background: none;
+    border:none;
   }
 }
 
 /* Header */
 .site-header {
+ 
+  top:0;
   background: #14225f;
   width: 100%;
   justify-content: space-between;
   display: flex;
   flex-wrap: wrap;
   margin: auto;
-  
-.site-logo{
-  width: 50%;
-  @include tablet{
-    width: 40%;
+
+  .site-logo {
+    width: 50%;
+    @include tablet {
+      width: 40%;
+    }
+    h1 {
+      color: $white;
+      padding-left: 55px;
+    }
   }
-  h1{
-    color: $white;
-        padding-left: 55px;
-  }
-}
-.hamburger{
-  width: 50%;
-      padding-right: 55px;
-      display: flex;
+  .hamburger {
+    width: 50%;
+    padding-right: 55px;
+    display: flex;
     justify-content: flex-end;
-    @include tablet{
+    @include tablet {
       display: none;
     }
-}
-.main-navigation{
-  width: 100%;
-  @include tablet{
-    width: 60%;
-    display: inline-flex;
   }
-  .menu {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    @include tablet{
-    display: flex;
-  }
-    .menu-item{
-      border-top: 1px solid #fff;
-      padding-top: 15px;
-        padding-bottom: 15px;
-        @include  tablet{
-          border: none;
+  .main-navigation {
+    width: 100%;
+    @include tablet {
+      width: 60%;
 
+    }
+    .menu {
+      list-style: none;
+
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      @include tablet {
+        display: flex;
+      }
+      .menu-item {
+        border-top: 1px solid #fff;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        @include tablet {
+          border: none;
         }
-      a{
-      font-weight: 300;
-      color: $white;
-      font-size:18px;
+        a {
+          font-weight: 300;
+          color: $white;
+          font-size: 18px;
+        }
       }
     }
   }
-}
-.menu{
-.menu-item-71{
-padding-top: 15px;
-.sub-menu{
- background: $white;
- list-style: none;
-padding: 0;
-@include tablet{}
 
-.menu-item{
-  border-bottom:1px solid $credible__blue;
-      padding: 16px;
+  .menu {
+    .menu-item-71 {
+      padding-top: 15px;
+      .sub-menu {
+        display: none;
+        background: $white;
+        list-style: none;
+        padding: 0;
+        @include tablet {
+          display: none;
+        }
 
-  a{
-    color: $credible__blue;
+        .menu-item {
+          border-bottom: 1px solid $credible__blue;
+          padding: 16px;
+
+          a {
+            color: $credible__blue;
+          }
+        }
+      }
+    }
   }
-}
-}
-}
-}
 }
 // .menu-item-71{
 //   .ul{
@@ -160,21 +167,15 @@ padding: 0;
 //       background: #fff;
 //       border-top:1px solid $credible__blue;
 //       a{
-//         color: credible__blue; 
+//         color: credible__blue;
 //       }
 //     }
 //   }
 // }
 
-
-
 //   @include tablet {
 //     display: flex;
 //     justify-content: space-around;
-
-
-
-
 
 //     a {
 //       text-decoration: none;
@@ -207,7 +208,7 @@ padding: 0;
 // }
 
 // .menu-item {
-//   
+//
 //   @include tablet {
 //     border-top: none;
 //     list-style: none;
@@ -229,3 +230,4 @@ padding: 0;
 //     }
 //   }
 // }
+

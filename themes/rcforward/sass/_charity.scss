@@ -35,12 +35,15 @@
     }
   }
   .entry-content {
-    text-align: center;
     margin-top: 66px;
     h2 {
+        font-style: normal;
+            text-align: center;
       font-size: 2em;
     }
     .amount-funded {
+            background-color: rgba(216,216,216,0.18);
+                 text-align: center;
       p {
         font-size: 42px;
         margin: 0 20px 0 0;
@@ -49,19 +52,12 @@
         font-weight: bold;
         line-height: 60px;
         letter-spacing: normal;
-      }
-      .chimp-donate-form {
-        background: $code__blue;
-        margin-top: 10px;
-        width: 160px;
-        height: 60px;
-        border-radius: 6px;
-        color: $grounded__green;
-        font-weight: bold;
+                font-style: normal;
       }
     }
     .charity-description{
             height: 137px;	
+            font-style: normal;
             width: 728px;
             margin-left: auto;
             margin-right: auto;
@@ -73,25 +69,14 @@
             margin-bottom: 64px;
     }
     .charity-video{
+                 text-align: center;
         iframe{
         height: 483.34px;	
         width: 728px;
         }
     }
-    .main-content{
-        display:flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        width: 1240px;
-        margin: auto;
-        .single-content{
-            display: flex;
-            .content-image{
-                width: 50%;
-            }
-        }
+ 
 
-    }
   }
   .browse-charities-title{
       text-align: center;	
@@ -105,3 +90,12 @@
 }
 
 /* Main Content Section */
+  .single-content{
+         .chimp-donate-form {
+             text-align: center;
+                 display: flex;
+    justify-content: center;
+    margin: auto;
+         }
+        }
+    

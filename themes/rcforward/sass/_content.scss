@@ -47,10 +47,6 @@
 // .bypostauthor {
 // 	display: block;
 // }
-<<<<<<< HEAD
-
-
-=======
 body{
     background: $credible__blue;
 }
@@ -68,4 +64,13 @@ body{
 
     }
 }
->>>>>>> 8b069ea0c6e8c872079f21e0dee54eabd44a68b4
+/* Chimp Donate Button */
+  .chimp-donate-form {
+        background: $code__blue;
+        margin-top: 10px;
+        width: 160px;
+        height: 60px;
+        border-radius: 6px;
+        color: $grounded__green;
+        font-weight: bold;
+      }
