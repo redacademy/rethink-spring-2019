@@ -25,7 +25,7 @@
 }
 
 .hamburger-box {
-  width: 40px;
+  width: 36px;
   height: 24px;
   display: inline-block;
   position: relative;
@@ -62,17 +62,15 @@
 
 /* Hamburger Container*/
 .hamburger {
-  position: absolute;
   right: 0;
   top: 0;
-  @include tablet{
+  @include tablet {
     display: none;
   }
   .hamburger--boring .menu-toggle {
     background: #14225f;
   }
   button {
-    background: none;
     box-shadow: none;
   }
 }
@@ -80,69 +78,154 @@
 /* Header */
 .site-header {
   background: #14225f;
-  // position: fixed;
   width: 100%;
-  .header-container {
-    margin: auto;
-    position: relative;
-    @include tablet{
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  
+.site-logo{
+  width: 50%;
+  @include tablet{
+    width: 40%;
+  }
+  h1{
+    color: $white;
+        padding-left: 55px;
+  }
+}
+.hamburger{
+  width: 50%;
+      padding-right: 55px;
       display: flex;
-      justify-content: space-around;
+    justify-content: flex-end;
+    @include tablet{
+      display: none;
     }
-    a {
-      text-decoration: none;
-      h1 {
-        color: #fff;
-        text-transform: uppercase;
+}
+.main-navigation{
+  width: 100%;
+  @include tablet{
+    width: 60%;
+    display: inline-flex;
+  }
+  .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    @include tablet{
+    display: flex;
+  }
+    .menu-item{
+      border-top: 1px solid #fff;
+      padding-top: 15px;
+        padding-bottom: 15px;
+        @include  tablet{
+          border: none;
+
+        }
+      a{
+      font-weight: 300;
+      color: $white;
+      font-size:18px;
       }
     }
   }
 }
-
-/* Navigation */
-.main-navigation {
-  @include tablet{
- margin-top: auto;
-  margin-bottom: auto;
-
-  }
-  .menu, .sub-menu {
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    }
-  }
-.main-navigation 
-.menu {
-  @include tablet{
-  display: flex;
-  }
-}
-
+.menu{
+.menu-item-71{
+padding-top: 15px;
+.sub-menu{
+ background: $white;
+ list-style: none;
+padding: 0;
+@include tablet{}
 
 .menu-item{
-    
-    border-top: 1px solid #fff;
-    @include tablet{
-        border-top: none;
-        list-style: none;
-        padding-left: 75px;
-    }
-    a {
-      color: #fff;
-    }
-  }
+  border-bottom:1px solid $credible__blue;
+      padding: 16px;
 
-
-.sub-menu {
-  background: #fff;
-    display: none;
-li {
-  border-top: 1px solid $credible__blue;
-  
-  a {
+  a{
     color: $credible__blue;
   }
 }
 }
+}
+}
+}
+// .menu-item-71{
+//   .ul{
+//     .li{
+//       background: #fff;
+//       border-top:1px solid $credible__blue;
+//       a{
+//         color: credible__blue; 
+//       }
+//     }
+//   }
+// }
 
+
+
+//   @include tablet {
+//     display: flex;
+//     justify-content: space-around;
+
+
+
+
+
+//     a {
+//       text-decoration: none;
+//       h1 {
+//         color: #fff;
+//         text-transform: uppercase;
+//       }
+//     }
+//   }
+// }
+
+// /* Navigation */
+// .main-navigation {
+//   @include tablet {
+//     margin-top: auto;
+//     margin-bottom: auto;
+//   }
+//   .menu,
+//   .sub-menu {
+//     padding: 0;
+//     display: none;
+//     margin: 0;
+//     text-align: center;
+//   }
+// }
+// .main-navigation .menu {
+//   @include tablet {
+//     display: flex;
+//   }
+// }
+
+// .menu-item {
+//   
+//   @include tablet {
+//     border-top: none;
+//     list-style: none;
+//     padding-left: 75px;
+//   }
+//   a {
+//     color: #fff;
+//   }
+// }
+
+// .sub-menu {
+//   background: #fff;
+//   display: none;
+//   li {
+//     border-top: 1px solid $credible__blue;
+
+//     a {
+//       color: $credible__blue;
+//     }
+//   }
+// }
