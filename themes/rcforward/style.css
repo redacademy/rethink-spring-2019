@@ -225,6 +225,13 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+a {
+  text-decoration: none;
+  color: #404040;
+  font-weight: 600; }
+  a:active, a:hover {
+    text-decoration: none; }
+
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
@@ -470,40 +477,58 @@ body {
           box-sizing: border-box; }
 
 .main-carousel {
-<<<<<<< HEAD
-  max-width: 980px;
+  max-width: 880px;
   margin: 2rem auto; }
-
-.flickity-viewport {
-  position: relative; }
-
-.flickity-prev-next-button {
-  z-index: 99; }
+  .main-carousel .flickity-viewport {
+    position: relative;
+    height: 270px; }
+  .main-carousel .flickity-prev-next-button {
+    width: 60px;
+    height: 60px; }
+    .main-carousel .flickity-prev-next-button path {
+      fill: #947fdd; }
+      .main-carousel .flickity-prev-next-button path:hover {
+        fill: #42299A; }
+    .main-carousel .flickity-prev-next-button.previous {
+      left: -60px; }
+    .main-carousel .flickity-prev-next-button.next {
+      right: -60px; }
 
 ol.flickity-page-dots {
   margin-bottom: -2rem; }
+  ol.flickity-page-dots .dot {
+    width: 15px;
+    height: 15px;
+    background: #947fdd; }
+    ol.flickity-page-dots .dot.is-selected {
+      background: #42299A; }
 
 .carousel-cell {
+  -webkit-box-shadow: 0px 2px 2px #42299A;
+          box-shadow: 0px 2px 2px #42299A;
   width: 23.5%;
   /* half-width */
-  height: 270px;
+  height: 250px;
   margin: 0 1%;
   border-radius: 10px;
   overflow: hidden;
   border: 1px solid #42299A; }
+  .carousel-cell:hover {
+    -webkit-box-shadow: 1px 3px 2px #42299A;
+            box-shadow: 1px 3px 2px #42299A; }
   .carousel-cell img {
     max-width: 100%;
     max-height: 100%; }
   .carousel-cell .thumbnail-wrapper {
-    height: 190px;
+    height: 200px;
     position: relative; }
   .carousel-cell .charity-logo {
     position: absolute;
     width: 80px;
     height: 80px;
-    padding: 15px;
+    padding: 0 15px;
     background: white;
-    bottom: -30px;
+    bottom: -22px;
     border-radius: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -523,28 +548,17 @@ ol.flickity-page-dots {
       margin: 0;
       width: 100%; }
   .carousel-cell .post-title {
-    margin-top: 1.8rem;
+    margin-top: 1.3rem;
     font-size: 0.8rem;
     text-align: center; }
 
 .browse_charities_button {
-  display: block;
-  margin: 7rem;
+  margin: 7.5rem auto;
   text-align: center; }
-=======
-  max-width: 1240px;
-  width: 100%;
-  background-color: red; }
-  .main-carousel .carousel-cell {
-    width: 25%;
-    height: 200px; }
-    .main-carousel .carousel-cell:first-child {
-      width: 10px; }
-    .main-carousel .carousel-cell:before {
-      text-align: center;
-      line-height: 200px;
-      font-size: 80px; }
+  .browse_charities_button a {
+    background: #00BEA8;
+    padding: 1.1rem 1.5rem;
+    border-radius: 7px; }
 
 .footer-sidebar, .site-footer {
   background-color: #14225F; }
->>>>>>> b015b379e30c1c3deb0ef3c7c258961fcc454846

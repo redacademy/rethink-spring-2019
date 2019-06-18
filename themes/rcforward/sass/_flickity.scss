@@ -4,12 +4,13 @@
 
 .main-carousel{
     // margin:2rem;
-    max-width: 980px;
+    max-width: 880px;
     margin: 2rem auto;
-}
+
 
 .flickity-viewport {
     position: relative;
+    height:270px;
 //  &::before {
 //     content: '';
 //     left: 0;
@@ -31,36 +32,64 @@
 //  }
 }
 
-.flickity-prev-next-button {
-    z-index: 99;
-}
 
+.flickity-prev-next-button {
+    width:60px;
+    height:60px;
+    path{
+        fill:lighten($innovative__purple, 30%);
+        &:hover{
+        fill:$innovative__purple;
+        }
+
+    }
+    &.previous{
+        left:-60px;
+    }
+    &.next{
+        right:-60px;    
+    }
+}
+}
 
 ol.flickity-page-dots{
     margin-bottom:-2rem;
+    .dot{
+        width:15px;
+        height:15px;
+        background:lighten($innovative__purple, 30%);
+        &.is-selected{
+            background:$innovative__purple;
+        }
+    }
 }
 .carousel-cell {
+    box-shadow: 0px 2px 2px $innovative__purple;
     width: 23.5%; /* half-width */
-    height: 270px;
+    height: 250px;
     margin: 0 1%;
     border-radius: 10px;
     overflow: hidden;
     border:1px solid $innovative__purple;
+    &:hover{
+    box-shadow: 1px 3px 2px $innovative__purple;
+    }
     img{
         max-width: 100%;
         max-height:100%;
     }
     .thumbnail-wrapper{
-        height:190px;
+        height:200px;
         position: relative;
     }
     .charity-logo{
         position:absolute;
         width:80px;
         height:80px;
-        padding:15px;
+        padding:0 15px;
+
         background:white;   
-        bottom:-30px;
+        bottom:-22px;
         border-radius: 50%; 
         display: flex;
         align-items: center;
@@ -76,14 +105,19 @@ ol.flickity-page-dots{
         }
     }
     .post-title{
-        margin-top:1.8rem;
+        margin-top:1.3rem;
         font-size: 0.8rem;  
         text-align: center;
     }
 
 }
 .browse_charities_button{
-    display: block;
-    margin: 7rem;
+    margin: 7.5rem auto;
     text-align: center;
+    a{
+        background:$code__blue;
+        padding:1.1rem 1.5rem;
+        border-radius: 7px;
+
+    }
 }

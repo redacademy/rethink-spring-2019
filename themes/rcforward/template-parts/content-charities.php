@@ -25,7 +25,12 @@
                         </div>
 
 						<div class="post-title">
-							<p><?php the_title(); ?></p>
+                            <?php $charity_name=CFS()->get('charity_name');
+                            if($charity_name):?>
+                            <p><?php echo $charity_name?>
+                            <?php else: ?>
+                            <p><?php the_title(); ?></p>
+                            <?php endif ?>
                         </div>
                         
                     </a>
@@ -33,5 +38,6 @@
 			wp_reset_postdata(); ?>
                     
 </div> 
-
-<a class="browse_charities_button" href="<?php echo get_the_permalink(); ?>/donate/#browse-charities-button">Browse All Charities</a>
+<div class="browse_charities_button">
+<a href="<?php echo get_the_permalink(); ?>/donate/#browse-charities-button">Browse All Charities</a>
+</div>
