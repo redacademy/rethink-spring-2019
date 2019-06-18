@@ -225,6 +225,15 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+@media (min-width: 600px) {
+  .main-navigation .menu-item-has-children {
+    position: relative; }
+    .main-navigation .menu-item-has-children:hover > ul {
+      position: absolute;
+      right: 0;
+      z-index: 99;
+      display: block; } }
+
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
@@ -325,7 +334,8 @@ th {
 
 /* Header */
 .site-header {
-  background: #14225f; }
+  background: #14225f;
+  width: 100%; }
   .site-header .header-container {
     margin: auto;
     position: relative; }
@@ -377,3 +387,30 @@ th {
     border-top: 1px solid #14225F; }
     .sub-menu li a {
       color: #14225F; }
+
+/*--------------------------------------------------------------
+# Single Charity Page
+--------------------------------------------------------------*/
+.single-charity .charity-header {
+  text-align: center;
+  position: relative; }
+  .single-charity .charity-header .charity-image {
+    width: 100%; }
+    .single-charity .charity-header .charity-image img {
+      -o-object-fit: cover;
+         object-fit: cover;
+      width: 100%;
+      height: 100vh; }
+  .single-charity .charity-header .charity-logo-container {
+    position: absolute;
+    border-radius: -3px;
+    bottom: 0;
+    text-align: center;
+    bottom: -10px; }
+    .single-charity .charity-header .charity-logo-container .charity-logo {
+      text-align: center;
+      width: 20%;
+      border-radius: 50%; }
+
+.single-charity .entry-content {
+  text-align: center; }
