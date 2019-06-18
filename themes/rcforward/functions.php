@@ -95,7 +95,6 @@ function red_starter_scripts()
 
 	wp_enqueue_script('rc-counter', get_template_directory_uri() . '/build/js/counter.min.js', array('jquery', 'counterup'), '', true);
 
-
 	wp_enqueue_script('rc-flickity', 'https://npmcdn.com/flickity@1.2/dist/flickity.pkgd.min.js', array('jquery'), '', true);
 	wp_enqueue_style('rc-flickity', 'https://npmcdn.com/flickity@1.2/dist/flickity.min.css');
 

@@ -241,9 +241,96 @@ th {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+/* Default Page styling (for all pages) */
+body {
+  color: #192726; }
+
 /* Front page */
-.footer-sidebar, .site-footer {
-  background-color: #14225F; }
+/* Single Fund Pages */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.single-fund .hfeed .site-content {
+  max-width: 100%; }
+  .single-fund .hfeed .site-content .type-fund {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center; }
+    .single-fund .hfeed .site-content .type-fund .fund-header {
+      position: relative; }
+      .single-fund .hfeed .site-content .type-fund .fund-header .fund-image img {
+        -o-object-position: center;
+           object-position: center;
+        height: 100vh;
+        width: 100%;
+        -o-object-fit: cover;
+           object-fit: cover; }
+      .single-fund .hfeed .site-content .type-fund .fund-header .fund-icon-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+        .single-fund .hfeed .site-content .type-fund .fund-header .fund-icon-container .fund-icon {
+          position: absolute;
+          bottom: -20px;
+          width: 10rem;
+          border-radius: 50%;
+          border: 25px #fff solid; }
+    .single-fund .hfeed .site-content .type-fund .entry-content .entry-title {
+      font-size: 2rem;
+      color: #14225F; }
+    .single-fund .hfeed .site-content .type-fund .entry-content .amount-funded {
+      background-color: rgba(216, 216, 216, 0.18);
+      font-size: 4rem;
+      color: #42299A;
+      margin: none; }
+      .single-fund .hfeed .site-content .type-fund .entry-content .amount-funded p,
+      .single-fund .hfeed .site-content .type-fund .entry-content .amount-funded .chimp-donate-form {
+        margin: 0; }
+      .single-fund .hfeed .site-content .type-fund .entry-content .amount-funded p:last-child {
+        font-size: 2rem; }
+    .single-fund .hfeed .site-content .type-fund .entry-content .fund-description {
+      margin-top: 3rem; }
+      .single-fund .hfeed .site-content .type-fund .entry-content .fund-description p {
+        width: 50%;
+        font-size: 1.7rem;
+        font-weight: lighter;
+        word-wrap: break-word;
+        margin: 0 auto; }
+    .single-fund .hfeed .site-content .type-fund .entry-content .main-content {
+      margin-top: 2rem; }
+      .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation h3 {
+        width: 65%;
+        word-wrap: break-word;
+        margin: 0 auto;
+        color: #14225F;
+        font-size: 2rem; }
+      .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation .fund-allowcations .single-allocation {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row; }
+        .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation .fund-allowcations .single-allocation .allocation-text {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          -ms-flex-line-pack: center;
+              align-content: center; }
 
 .hamburger {
   display: inline-block;
@@ -383,6 +470,7 @@ th {
           box-sizing: border-box; }
 
 .main-carousel {
+<<<<<<< HEAD
   max-width: 980px;
   margin: 2rem auto; }
 
@@ -443,3 +531,20 @@ ol.flickity-page-dots {
   display: block;
   margin: 7rem;
   text-align: center; }
+=======
+  max-width: 1240px;
+  width: 100%;
+  background-color: red; }
+  .main-carousel .carousel-cell {
+    width: 25%;
+    height: 200px; }
+    .main-carousel .carousel-cell:first-child {
+      width: 10px; }
+    .main-carousel .carousel-cell:before {
+      text-align: center;
+      line-height: 200px;
+      font-size: 80px; }
+
+.footer-sidebar, .site-footer {
+  background-color: #14225F; }
+>>>>>>> b015b379e30c1c3deb0ef3c7c258961fcc454846

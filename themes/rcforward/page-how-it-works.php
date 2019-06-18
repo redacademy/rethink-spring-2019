@@ -40,15 +40,11 @@ get_header(); ?>
 	<div class="entry-main">
 
 		<?php the_content(); ?>
-		
+
 	</div>
 	<?php get_template_part( 'template-parts/content', 'why-donate' ); ?>
 	<?php get_template_part( 'template-parts/content', 'charities' ); ?>
-	<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
 <?php endwhile; // End of the loop. ?>
-
-
-
 
 <?php get_footer(); ?>
