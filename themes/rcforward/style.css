@@ -225,12 +225,23 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+<<<<<<< HEAD
 a {
   text-decoration: none;
   color: #404040;
   font-weight: 600; }
   a:active, a:hover {
     text-decoration: none; }
+=======
+@media (min-width: 600px) {
+  .main-navigation .menu-item-has-children {
+    position: relative; }
+    .main-navigation .menu-item-has-children:hover > ul {
+      position: absolute;
+      right: 0;
+      z-index: 99;
+      display: block; } }
+>>>>>>> af63d45601cebc9c2946a624a8fc36237cdc029e
 
 /*--------------------------------------------------------------
 # Widgets
@@ -320,24 +331,21 @@ body {
         margin: 0 auto;
         color: #14225F;
         font-size: 2rem; }
-      .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation .fund-allowcations .single-allocation {
+      .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation .fund-allowcations {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row; }
-        .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation .fund-allowcations .single-allocation .allocation-text {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+        .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation .fund-allowcations .single-allocation {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
-          -webkit-box-orient: vertical;
+          -webkit-box-orient: horizontal;
           -webkit-box-direction: normal;
-              -ms-flex-direction: column;
-                  flex-direction: column;
-          -ms-flex-line-pack: center;
-              align-content: center; }
+              -ms-flex-direction: row;
+                  flex-direction: row; }
 
 .hamburger {
   display: inline-block;
@@ -419,7 +427,8 @@ body {
 
 /* Header */
 .site-header {
-  background: #14225f; }
+  background: #14225f;
+  width: 100%; }
   .site-header .header-container {
     margin: auto;
     position: relative; }
@@ -472,12 +481,44 @@ body {
     .sub-menu li a {
       color: #14225F; }
 
+<<<<<<< HEAD
+/*--------------------------------------------------------------
+# Single Charity Page
+--------------------------------------------------------------*/
+.single-charity .charity-header {
+  text-align: center;
+  position: relative; }
+  .single-charity .charity-header .charity-image {
+    width: 100%; }
+    .single-charity .charity-header .charity-image img {
+      -o-object-fit: cover;
+         object-fit: cover;
+      width: 100%;
+      height: 100vh; }
+  .single-charity .charity-header .charity-logo-container {
+    position: absolute;
+    border-radius: -3px;
+    bottom: 0;
+    text-align: center;
+    bottom: -10px; }
+    .single-charity .charity-header .charity-logo-container .charity-logo {
+      text-align: center;
+      width: 20%;
+      border-radius: 50%; }
+
+.single-charity .entry-content {
+  text-align: center; }
+=======
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
 .main-carousel {
+<<<<<<< HEAD
   max-width: 880px;
+=======
+  max-width: 980px;
+>>>>>>> af63d45601cebc9c2946a624a8fc36237cdc029e
   margin: 2rem auto; }
   .main-carousel .flickity-viewport {
     position: relative;
@@ -555,6 +596,7 @@ ol.flickity-page-dots {
 .browse_charities_button {
   margin: 7.5rem auto;
   text-align: center; }
+<<<<<<< HEAD
   .browse_charities_button a {
     background: #00BEA8;
     padding: 1.1rem 1.5rem;
@@ -562,3 +604,9 @@ ol.flickity-page-dots {
 
 .footer-sidebar, .site-footer {
   background-color: #14225F; }
+=======
+
+.footer-sidebar, .site-footer {
+  background-color: #14225F; }
+>>>>>>> 6cd77815ec9df448f97a54c3c80ba99f2d286b6c
+>>>>>>> af63d45601cebc9c2946a624a8fc36237cdc029e
