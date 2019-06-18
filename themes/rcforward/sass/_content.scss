@@ -47,5 +47,25 @@
 // .bypostauthor {
 // 	display: block;
 // }
+<<<<<<< HEAD
 
 
+=======
+body{
+    background: $credible__blue;
+}
+.site{
+    max-width: $max-screen-size;
+    background: white;
+}
+.site-content{
+    padding:1rem;
+    @include tablet{
+        padding:2rem;
+    }
+    @include desktop{
+        padding:5rem;
+
+    }
+}
+>>>>>>> 8b069ea0c6e8c872079f21e0dee54eabd44a68b4

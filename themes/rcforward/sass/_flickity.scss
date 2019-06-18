@@ -66,20 +66,20 @@ ol.flickity-page-dots{
 .carousel-cell {
     box-shadow: 0px 2px 2px $innovative__purple;
     width: 23.5%; /* half-width */
-    height: 250px;
+    height: 230px;
     margin: 0 1%;
     border-radius: 10px;
     overflow: hidden;
-    border:1px solid $innovative__purple;
+    border:1px solid lighten($innovative__purple,50%);
     &:hover{
-    box-shadow: 1px 3px 2px $innovative__purple;
+        box-shadow: 0px 3px 5px $innovative__purple;
     }
     img{
         max-width: 100%;
         max-height:100%;
     }
     .thumbnail-wrapper{
-        height:200px;
+        height:175px;
         position: relative;
     }
     .charity-logo{
@@ -121,3 +121,4 @@ ol.flickity-page-dots{
 
     }
 }
+
