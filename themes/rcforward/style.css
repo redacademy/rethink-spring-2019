@@ -589,6 +589,11 @@ body {
         .site-header .menu .menu-item-71 .sub-menu .menu-item a {
           color: #14225F; }
 
+i {
+  color: #fff;
+  font-size: 2em;
+  position: absolute; }
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
