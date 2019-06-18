@@ -225,14 +225,13 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
-<<<<<<< HEAD
 a {
   text-decoration: none;
   color: #404040;
   font-weight: 600; }
   a:active, a:hover {
     text-decoration: none; }
-=======
+
 @media (min-width: 600px) {
   .main-navigation .menu-item-has-children {
     position: relative; }
@@ -241,7 +240,6 @@ a {
       right: 0;
       z-index: 99;
       display: block; } }
->>>>>>> af63d45601cebc9c2946a624a8fc36237cdc029e
 
 /*--------------------------------------------------------------
 # Widgets
@@ -255,6 +253,22 @@ a {
 /* Search widget. */
 .widget_search .search-submit {
   display: none; }
+
+body {
+  background: #14225F; }
+
+.site {
+  max-width: 1240px;
+  background: white; }
+
+.site-content {
+  padding: 1rem; }
+  @media (min-width: 600px) {
+    .site-content {
+      padding: 2rem; } }
+  @media (min-width: 1000px) {
+    .site-content {
+      padding: 5rem; } }
 
 /*--------------------------------------------------------------
 # Page Templates
@@ -481,44 +495,12 @@ body {
     .sub-menu li a {
       color: #14225F; }
 
-<<<<<<< HEAD
-/*--------------------------------------------------------------
-# Single Charity Page
---------------------------------------------------------------*/
-.single-charity .charity-header {
-  text-align: center;
-  position: relative; }
-  .single-charity .charity-header .charity-image {
-    width: 100%; }
-    .single-charity .charity-header .charity-image img {
-      -o-object-fit: cover;
-         object-fit: cover;
-      width: 100%;
-      height: 100vh; }
-  .single-charity .charity-header .charity-logo-container {
-    position: absolute;
-    border-radius: -3px;
-    bottom: 0;
-    text-align: center;
-    bottom: -10px; }
-    .single-charity .charity-header .charity-logo-container .charity-logo {
-      text-align: center;
-      width: 20%;
-      border-radius: 50%; }
-
-.single-charity .entry-content {
-  text-align: center; }
-=======
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
 .main-carousel {
-<<<<<<< HEAD
   max-width: 880px;
-=======
-  max-width: 980px;
->>>>>>> af63d45601cebc9c2946a624a8fc36237cdc029e
   margin: 2rem auto; }
   .main-carousel .flickity-viewport {
     position: relative;
@@ -549,19 +531,19 @@ ol.flickity-page-dots {
           box-shadow: 0px 2px 2px #42299A;
   width: 23.5%;
   /* half-width */
-  height: 250px;
+  height: 230px;
   margin: 0 1%;
   border-radius: 10px;
   overflow: hidden;
-  border: 1px solid #42299A; }
+  border: 1px solid #d7d0f2; }
   .carousel-cell:hover {
-    -webkit-box-shadow: 1px 3px 2px #42299A;
-            box-shadow: 1px 3px 2px #42299A; }
+    -webkit-box-shadow: 0px 3px 5px #42299A;
+            box-shadow: 0px 3px 5px #42299A; }
   .carousel-cell img {
     max-width: 100%;
     max-height: 100%; }
   .carousel-cell .thumbnail-wrapper {
-    height: 200px;
+    height: 175px;
     position: relative; }
   .carousel-cell .charity-logo {
     position: absolute;
@@ -596,17 +578,94 @@ ol.flickity-page-dots {
 .browse_charities_button {
   margin: 7.5rem auto;
   text-align: center; }
-<<<<<<< HEAD
   .browse_charities_button a {
     background: #00BEA8;
     padding: 1.1rem 1.5rem;
     border-radius: 7px; }
 
-.footer-sidebar, .site-footer {
-  background-color: #14225F; }
-=======
+/*--------------------------------------------------------------
+# Single Charity Page
+--------------------------------------------------------------*/
+.single-charity .charity-header {
+  text-align: center;
+  position: relative; }
+  .single-charity .charity-header .charity-image {
+    width: 100%; }
+    .single-charity .charity-header .charity-image img {
+      -o-object-fit: cover;
+         object-fit: cover;
+      width: 100%;
+      height: 100vh; }
+  .single-charity .charity-header .charity-logo-container {
+    position: absolute;
+    border-radius: -3px;
+    bottom: 0;
+    text-align: center;
+    bottom: -10px; }
+    .single-charity .charity-header .charity-logo-container .charity-logo {
+      text-align: center;
+      width: 20%;
+      border-radius: 50%; }
+
+.single-charity .entry-content {
+  text-align: center; }
 
 .footer-sidebar, .site-footer {
   background-color: #14225F; }
->>>>>>> 6cd77815ec9df448f97a54c3c80ba99f2d286b6c
->>>>>>> af63d45601cebc9c2946a624a8fc36237cdc029e
+
+.why-donate {
+  text-align: center; }
+  .why-donate .why-donate-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2rem 6rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .why-donate .why-donate-content img {
+      width: 120px; }
+
+.custom-plan {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 3rem;
+  padding: 2rem 6rem;
+  text-align: center; }
+  .custom-plan .single-custom-plan {
+    height: 450px;
+    padding: 2rem 3rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 50px auto 50px;
+    border: 1px solid #d7d0f2;
+    -webkit-box-shadow: 0px 2px 2px #42299A;
+            box-shadow: 0px 2px 2px #42299A; }
+    .custom-plan .single-custom-plan img {
+      height: 130px;
+      margin: 0 auto; }
+    .custom-plan .single-custom-plan:hover {
+      -webkit-box-shadow: 0px 3px 5px #42299A;
+              box-shadow: 0px 3px 5px #42299A; }
+    .custom-plan .single-custom-plan button, .custom-plan .single-custom-plan a {
+      background: #14225F;
+      padding: 1rem 1.5rem;
+      color: white;
+      font-weight: 600;
+      width: 9rem;
+      border: none;
+      -webkit-box-shadow: none;
+              box-shadow: none; }
+    .custom-plan .single-custom-plan button {
+      margin-top: -1rem; }

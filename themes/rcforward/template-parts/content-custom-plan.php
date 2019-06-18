@@ -28,7 +28,6 @@ foreach ( $custom_plans as $custom_plan ) :
         <h3><?php echo $custom_plan['title'];?></h3>
         <p><?php echo $custom_plan['description'];?><p>
         <?php if($chimp_key): ?>
-        <!-- TO DO -->
         <button class="chimp-donate-form">Donate</button>
         <?php else: ?>
         <a href="<?php echo home_url(); ?>/contact">Contact Us</a>
