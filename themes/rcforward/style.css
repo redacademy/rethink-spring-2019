@@ -225,14 +225,13 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
-<<<<<<< HEAD
 a {
   text-decoration: none;
   color: #404040;
   font-weight: 600; }
   a:active, a:hover {
     text-decoration: none; }
-=======
+
 @media (min-width: 600px) {
   .main-navigation .menu-item-has-children {
     position: relative; }
@@ -241,7 +240,64 @@ a {
       right: 0;
       z-index: 99;
       display: block; } }
->>>>>>> af63d45601cebc9c2946a624a8fc36237cdc029e
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden; }
+  .screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+            box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar. */ }
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.5rem; }
+
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.5rem; }
+
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+.clearfix {
+  clear: both;
+  content: "";
+  display: table; }
 
 /*--------------------------------------------------------------
 # Widgets
@@ -481,44 +537,12 @@ body {
     .sub-menu li a {
       color: #14225F; }
 
-<<<<<<< HEAD
-/*--------------------------------------------------------------
-# Single Charity Page
---------------------------------------------------------------*/
-.single-charity .charity-header {
-  text-align: center;
-  position: relative; }
-  .single-charity .charity-header .charity-image {
-    width: 100%; }
-    .single-charity .charity-header .charity-image img {
-      -o-object-fit: cover;
-         object-fit: cover;
-      width: 100%;
-      height: 100vh; }
-  .single-charity .charity-header .charity-logo-container {
-    position: absolute;
-    border-radius: -3px;
-    bottom: 0;
-    text-align: center;
-    bottom: -10px; }
-    .single-charity .charity-header .charity-logo-container .charity-logo {
-      text-align: center;
-      width: 20%;
-      border-radius: 50%; }
-
-.single-charity .entry-content {
-  text-align: center; }
-=======
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
 .main-carousel {
-<<<<<<< HEAD
   max-width: 880px;
-=======
-  max-width: 980px;
->>>>>>> af63d45601cebc9c2946a624a8fc36237cdc029e
   margin: 2rem auto; }
   .main-carousel .flickity-viewport {
     position: relative;
@@ -596,17 +620,37 @@ ol.flickity-page-dots {
 .browse_charities_button {
   margin: 7.5rem auto;
   text-align: center; }
-<<<<<<< HEAD
   .browse_charities_button a {
     background: #00BEA8;
     padding: 1.1rem 1.5rem;
     border-radius: 7px; }
 
-.footer-sidebar, .site-footer {
-  background-color: #14225F; }
-=======
+/*--------------------------------------------------------------
+# Single Charity Page
+--------------------------------------------------------------*/
+.single-charity .charity-header {
+  text-align: center;
+  position: relative; }
+  .single-charity .charity-header .charity-image {
+    width: 100%; }
+    .single-charity .charity-header .charity-image img {
+      -o-object-fit: cover;
+         object-fit: cover;
+      width: 100%;
+      height: 100vh; }
+  .single-charity .charity-header .charity-logo-container {
+    position: absolute;
+    border-radius: -3px;
+    bottom: 0;
+    text-align: center;
+    bottom: -10px; }
+    .single-charity .charity-header .charity-logo-container .charity-logo {
+      text-align: center;
+      width: 20%;
+      border-radius: 50%; }
+
+.single-charity .entry-content {
+  text-align: center; }
 
 .footer-sidebar, .site-footer {
   background-color: #14225F; }
->>>>>>> 6cd77815ec9df448f97a54c3c80ba99f2d286b6c
->>>>>>> af63d45601cebc9c2946a624a8fc36237cdc029e
