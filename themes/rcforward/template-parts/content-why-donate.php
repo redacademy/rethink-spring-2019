@@ -12,13 +12,14 @@
     <div class="why-donate-content">
 <?php
 // TODO check method:
-$pageID = get_option('page_on_front');
+$pageID = intval(get_option('page_on_front'));
+// var_dump($pageID);
 
 
 $why_donates = CFS()->get( 'front_page_why_donate', $pageID );
 
 
-if(isset($why_donate)):
+if(isset($why_donates)):
     // echo 'the field has a loop';
 
 

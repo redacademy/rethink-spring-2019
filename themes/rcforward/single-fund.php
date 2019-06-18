@@ -85,24 +85,26 @@ get_header(); ?>
             </div> <!-- .main-content -->
             
 
-            <div class="related-charities">
+            <h3 class="related-charities-title">Related Charities</h3>
+            <div class="related-charities main-carousel">
             <?php
 $related_charities = CFS()->get( 'fund_related_charities' );
 // var_dump($related_charities);
 foreach( $related_charities as $post_id ):
     $the_post = get_post( $post_id );
     ?>
-    <div class="sigle-related-charity"> 
+    <div class="sigle-related-charity carousel-cell"> 
     <img class="charity-logo" src="<?php echo CFS()->get( 'charity_logo', $the_post->ID ); ?>"/>
-    <p class="charity-description"><?php echo CFS()->get( 'charity_description', $the_post->ID ); ?></p>
+    <?php $charity_description = CFS()->get( 'charity_description', $the_post->ID ,array( 'format' => 'raw' )); ?>
+    <!-- <?php var_dump($charity_description); ?> -->
+    <p class="charity-description"><?php  wp_trim_words($charity_description, $num_words =50, $more ="[...]"); ?></p>
     <a class="read-more-button" href="<?php echo $the_post->guid; ?>">View Charity &#x203A;</a>
 </div>
 
 <?php endforeach; ?>
         </div>
 
-
-    
+ <!-- <?php var_dump($charity_description); ?> -->
     
         </main>
         

@@ -47,3 +47,20 @@
 // .bypostauthor {
 // 	display: block;
 // }
+body{
+    background: $credible__blue;
+}
+.site{
+    max-width: $max-screen-size;
+    background: white;
+}
+.site-content{
+    padding:1rem;
+    @include tablet{
+        padding:2rem;
+    }
+    @include desktop{
+        padding:5rem;
+
+    }
+}

@@ -240,6 +240,8 @@ a {
       right: 0;
       z-index: 99;
       display: block; } }
+<<<<<<< HEAD
+=======
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -298,6 +300,7 @@ a {
   clear: both;
   content: "";
   display: table; }
+>>>>>>> d0445e16ed318c7fa56a62cc4b345c6e24de909d
 
 /*--------------------------------------------------------------
 # Widgets
@@ -311,6 +314,22 @@ a {
 /* Search widget. */
 .widget_search .search-submit {
   display: none; }
+
+body {
+  background: #14225F; }
+
+.site {
+  max-width: 1240px;
+  background: white; }
+
+.site-content {
+  padding: 1rem; }
+  @media (min-width: 600px) {
+    .site-content {
+      padding: 2rem; } }
+  @media (min-width: 1000px) {
+    .site-content {
+      padding: 5rem; } }
 
 /*--------------------------------------------------------------
 # Page Templates
@@ -612,19 +631,19 @@ ol.flickity-page-dots {
           box-shadow: 0px 2px 2px #42299A;
   width: 23.5%;
   /* half-width */
-  height: 250px;
+  height: 230px;
   margin: 0 1%;
   border-radius: 10px;
   overflow: hidden;
-  border: 1px solid #42299A; }
+  border: 1px solid #d7d0f2; }
   .carousel-cell:hover {
-    -webkit-box-shadow: 1px 3px 2px #42299A;
-            box-shadow: 1px 3px 2px #42299A; }
+    -webkit-box-shadow: 0px 3px 5px #42299A;
+            box-shadow: 0px 3px 5px #42299A; }
   .carousel-cell img {
     max-width: 100%;
     max-height: 100%; }
   .carousel-cell .thumbnail-wrapper {
-    height: 200px;
+    height: 175px;
     position: relative; }
   .carousel-cell .charity-logo {
     position: absolute;
@@ -693,3 +712,63 @@ ol.flickity-page-dots {
 
 .footer-sidebar, .site-footer {
   background-color: #14225F; }
+<<<<<<< HEAD
+
+.why-donate {
+  text-align: center; }
+  .why-donate .why-donate-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2rem 6rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .why-donate .why-donate-content img {
+      width: 120px; }
+
+.custom-plan {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 3rem;
+  padding: 2rem 6rem;
+  text-align: center; }
+  .custom-plan .single-custom-plan {
+    height: 450px;
+    padding: 2rem 3rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 50px auto 50px;
+    border: 1px solid #d7d0f2;
+    -webkit-box-shadow: 0px 2px 2px #42299A;
+            box-shadow: 0px 2px 2px #42299A; }
+    .custom-plan .single-custom-plan img {
+      height: 130px;
+      margin: 0 auto; }
+    .custom-plan .single-custom-plan:hover {
+      -webkit-box-shadow: 0px 3px 5px #42299A;
+              box-shadow: 0px 3px 5px #42299A; }
+    .custom-plan .single-custom-plan button, .custom-plan .single-custom-plan a {
+      background: #14225F;
+      padding: 1rem 1.5rem;
+      color: white;
+      font-weight: 600;
+      width: 9rem;
+      border: none;
+      -webkit-box-shadow: none;
+              box-shadow: none; }
+    .custom-plan .single-custom-plan button {
+      margin-top: -1rem; }
+=======
+>>>>>>> d0445e16ed318c7fa56a62cc4b345c6e24de909d
