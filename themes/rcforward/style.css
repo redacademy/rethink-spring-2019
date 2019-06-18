@@ -313,24 +313,21 @@ body {
         margin: 0 auto;
         color: #14225F;
         font-size: 2rem; }
-      .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation .fund-allowcations .single-allocation {
+      .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation .fund-allowcations {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row; }
-        .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation .fund-allowcations .single-allocation .allocation-text {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+        .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation .fund-allowcations .single-allocation {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
-          -webkit-box-orient: vertical;
+          -webkit-box-orient: horizontal;
           -webkit-box-direction: normal;
-              -ms-flex-direction: column;
-                  flex-direction: column;
-          -ms-flex-line-pack: center;
-              align-content: center; }
+              -ms-flex-direction: row;
+                  flex-direction: row; }
 
 .hamburger {
   display: inline-block;

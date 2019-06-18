@@ -84,13 +84,13 @@ body {
                 font-size: 2rem;
               }
               .fund-allowcations {
+                    display: flex;
+                    justify-content: center;
                   .single-allocation {
                      display: flex;
                      flex-direction: row;
                      .allocation-text {
-                         display: flex;
-                         flex-direction: column;
-                         align-content: center;
+                      
                      } 
                   }
               }
