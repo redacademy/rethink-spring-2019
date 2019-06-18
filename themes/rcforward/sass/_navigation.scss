@@ -5,9 +5,9 @@
 .main-navigation {
   @include tablet {
     .menu-item-has-children {
-        position: relative;
+      position: relative;
       &:hover {
-        > ul {
+        > .sub-menu {
           position: absolute;
           right: 0;
           z-index: 99;

@@ -1,7 +1,7 @@
 (function($) {
   $(function() {
     $('.counter').counterUp({
-      delay: 10,
+      delay: 20,
       time: 2000
     });
   }); // end doc ready
