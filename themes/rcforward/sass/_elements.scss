@@ -72,15 +72,16 @@
 //   width: 100%;
 // }
 
-a{
+a {
+  text-decoration: none;
+  color: $color__text-main;
+  font-weight: 600;
+  &:active,
+  &:hover {
     text-decoration: none;
-    color:$color__text-main;
-    font-weight:600;
-    &:active, &:hover{
-        text-decoration: none;
-    }
+  }
 }
 
-.chimp-donate-form{
-    background: $code__blue;
+.chimp-donate-form {
+  background: $code__blue;
 }
