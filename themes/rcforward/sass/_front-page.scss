@@ -50,9 +50,21 @@
 .home{
     text-align:center;
     .entry-header{
+        padding:$content__padding;
         display:flex;
         .header-content{
             flex-basis:50%;
+            a{
+                // @include button();
+                // display:inline-block;
+                width:8rem;
+                margin:auto 1rem;
+            }
+            .donate-page-button{
+                color:$code__blue;
+                border:1px solid $code__blue;
+
+            }
         }
     }
 

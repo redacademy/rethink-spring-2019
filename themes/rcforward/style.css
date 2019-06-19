@@ -839,12 +839,19 @@ ol.flickity-page-dots {
 .home {
   text-align: center; }
   .home .entry-header {
+    padding: 2rem 6rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
     .home .entry-header .header-content {
       -ms-flex-preferred-size: 50%;
           flex-basis: 50%; }
+      .home .entry-header .header-content a {
+        width: 8rem;
+        margin: auto 1rem; }
+      .home .entry-header .header-content .donate-page-button {
+        color: #00BEA8;
+        border: 1px solid #00BEA8; }
   .home .choose-fund {
     padding: 2rem 6rem; }
     .home .choose-fund .choose-fund-subtitle {
