@@ -1091,6 +1091,7 @@ ol.flickity-page-dots {
               box-shadow: none; }
     .custom-plan .single-custom-plan button {
       margin-top: -1rem; }
+<<<<<<< HEAD
 
 .home .choose-fund {
   padding: 2rem 6rem; }
@@ -1151,3 +1152,99 @@ ol.flickity-page-dots {
         color: white;
         text-align: center;
         margin: 0 auto; }
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 5fed6c894849d82b4534f6853cc5310ce8a69dca
+>>>>>>> c590575265e0bcd82d5845260c2817245a4e37b3
+
+.home {
+  text-align: center; }
+  .home .entry-header {
+    padding: 2rem 6rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .home .entry-header .header-content {
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%; }
+      .home .entry-header .header-content a {
+        width: 8rem;
+        margin: auto 1rem; }
+      .home .entry-header .header-content .donate-page-button {
+        color: #00BEA8;
+        border: 1px solid #00BEA8; }
+  .home .choose-fund {
+    padding: 2rem 6rem; }
+    .home .choose-fund .choose-fund-subtitle {
+      font-weight: 600; }
+    .home .choose-fund .choose-fund-description {
+      margin: 0 auto; }
+    .home .choose-fund .fund {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin: 3rem auto;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .home .choose-fund .fund .fund-entry {
+        border-radius: 10px;
+        border: 1px solid #d7d0f2;
+        -webkit-box-shadow: 0px 2px 2px #42299A;
+                box-shadow: 0px 2px 2px #42299A;
+        padding: 1rem;
+        -ms-flex-preferred-size: 30%;
+            flex-basis: 30%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 60px auto 130px 55px; }
+        .home .choose-fund .fund .fund-entry:hover {
+          -webkit-box-shadow: 0px 3px 5px #42299A;
+                  box-shadow: 0px 3px 5px #42299A; }
+        .home .choose-fund .fund .fund-entry img {
+          width: 80px;
+          height: 80px;
+          margin: 0 auto; }
+        .home .choose-fund .fund .fund-entry a {
+          padding: 1rem 1.5rem;
+          background-color: #42299A;
+          border-radius: 7px;
+          width: 10rem;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          color: white;
+          text-align: center;
+          margin: 0 auto; }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 13446c5441c5a41af894e506924c9b3ec9456ae3
+>>>>>>> c6f8fa380cde067d6a1d3e15b0cfda032433c8f7
+>>>>>>> 5fed6c894849d82b4534f6853cc5310ce8a69dca
+>>>>>>> c590575265e0bcd82d5845260c2817245a4e37b3
+>>>>>>> 307420d5cbf582d8ec53264cf482a660768a4ccb
