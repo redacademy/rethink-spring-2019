@@ -1,7 +1,7 @@
 /*--------------------------------------------------------------
 # Single Charity Page
 --------------------------------------------------------------*/
-
+/* Desktop */
 .single-charity {
   .charity-header {
     text-align: center;
@@ -37,123 +37,216 @@
   .entry-content {
     margin-top: 66px;
     h2 {
-        font-style: normal;
-            text-align: center;
+      font-style: normal;
+      text-align: center;
       font-size: 2em;
     }
     .amount-funded {
-            background-color: rgba(216,216,216,0.18);
-                 text-align: center;
+      background-color: rgba(216, 216, 216, 0.18);
+      text-align: center;
       p {
         font-size: 42px;
         margin: 0 20px 0 0;
         color: $innovative__purple;
-        font-family: $gotham__font;
+        font-family: $montserrat__font;
         font-weight: bold;
         line-height: 60px;
         letter-spacing: normal;
-                font-style: normal;
+        font-style: normal;
       }
     }
-    .charity-description{
-            height: 137px;	
-            font-style: normal;
-            width: 728px;
-            margin-left: auto;
-            margin-right: auto;
-            font-family: $gotham__font;
-            font-size: 24px;	
-            font-weight: 300;	
-            line-height: 33px;	
-            text-align: center;
-            margin-bottom: 64px;
+    .charity-description {
+      height: 100%;
+      font-style: normal;
+      width: 728px;
+      margin: 64px auto 64px auto;
+
+      font-family: $montserrat__font;
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 33px;
+      text-align: center;
     }
-    .charity-video{
-                 text-align: center;
-        iframe{
-        height: 483.34px;	
+    .charity-video {
+      text-align: center;
+      iframe {
+        height: 483.34px;
         width: 728px;
-        }
+      }
     }
-
   }
-  .browse-charities-title{
-      text-align: center;	
-      color:$credible__blue;
-      font-family: $gotham__font;	
-      font-size: 28px;	
-      font-weight: bold;	
-      line-height: 31px;
+  .browse-charities-title {
+    text-align: center;
+    color: $credible__blue;
+    font-family: $montserrat__font;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 31px;
   }
-
 }
 
 /* Main Content Section */
-
-.last-with-button{
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  flex-wrap: wrap;
-  padding:10px;
-}
-.content-image{
-  display: flex;
-}
-.content-next{
-  display: flex;
-}
-.main-content{
-  background:#F9F5ED;
-  button{
-    text-align: center;
-  }
-}
-
-.content-image{
-  .main-image{
-      flex-basis: auto;
-         flex-grow: 1;
-         order:1;
-    img{
-      width: 401px;
+.single-content {
+  .content-image {
+    display: flex;
+    .main-image {
+      width: 50%;
+      order: 1;
+      flex-grow: 1;
+    }
+    .content-w-image {
+      width: 50%;
+      order: 2;
+      flex-grow: 1;
     }
   }
-  .content-with-image{
-      flex-basis: auto;
-    width: 50%;
-       flex-grow: 1;
-       order: 2;
-  }
-  &:nth-child(even) {
+
+  .last-with-button {
+    display: flex;
     .main-image {
       width: 50%;
       order: 2;
-
+      flex-grow: 1;
     }
-    .content-with-image {
+    .content-w-image-last {
       width: 50%;
       order: 1;
+      flex-grow: 1;
+    }
+  }
+}
+.main-image {
+  image {
+    width: 300px;
+  }
+}
+
+/* common parts */
+
+.chimp-donate-form {
+  display: flex;
+  margin-top: 1em;
+  margin: auto;
+  justify-content: center;
+}
+.report-button {
+  height: 60px;
+  width: 181px;
+  border: 2px solid #48209f;
+  border-radius: 6px;
+  padding: 10px;
+  background: $white;
+}
+
+/* Contact Page */
+.page-template-page-contact {
+  .site-content {
+    @include tablet {
+      padding: 2rem;
+    }
+    @include desktop {
+      padding: 2rem;
+    }
+
+    .post-25 {
+      display: flex;
+      flex-direction: column;
+      padding: 13px;
+      .entry-header {
+        margin-top:10px;
+        display: flex;
+        justify-content: center;
+
+        h2 {
+          color: $credible__blue;
+          margin: 0;
+          @include tablet {
+            margin: auto;
+            font-size: 55px;
+          }
+        }
+      }
+      .entry-content {
+        p {
+          margin: 10px;
+          font-weight: bold;
+          @include tablet {
+            color: $credible__blue;
+            font-size: 20px;
+            text-align: center;
+          }
+        }
+        h4 {
+                   font-weight: normal;
+          height: 62px;
+          border-radius: 5px;
+          margin: 0;
+          padding: 10px;
+          text-align: center;
+          font-size: 14px;
+          @include tablet {
+ 
+            margin-bottom: 4em;
+            margin-top: 0;
+            color: $credible__blue;
+          }
+          @include desktop {
+            font-size: 25px;
+  
+          }
+        }
+        .wp-block-column {
+          margin-bottom: 69px;
+          margin-top: 14px;
+          text-align: justify;
+          p:first-child {
+            font-weight: bold;
+            color: $black;
+            @include tablet {
+              text-align: justify;
+            }
+          }
+          figure {
+            margin: 0;
+          }
+        }
+        .wp-block-column {
+          .wpcf7 {
+            p {
+              text-align: left;
+              label {
+                font-weight: bold;
+                input {
+                  background: rgba(64, 206, 190, 0.1);
+                  border-radius: 5px;
+                  border: rgba(64, 206, 190, 0.1);
+                  height: 40.06px;
+                  width: 100%;
+                  margin-top: 9px;
+                  margin-bottom: 13px;
+                }
+                textarea {
+                  background: rgba(64, 206, 190, 0.1);
+                  border-radius: 5px;
+                  border: rgba(64, 206, 190, 0.1);
+                  width: 100%;
+                  margin-top: 9px;
+                  margin-bottom: 13px;
+                }
+              }
+  
+              input[type='submit'] {
+                background: $credible__blue;
+                color: $white;
+                width: 144px;
+                border-radius: 5px;
+                height: 62px;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
 
-
-
-/* common parts */
-.single-content{
-  width:100%;
-}
-.chimp-donate-form{
-      display: flex;
-    margin: auto;
-    justify-content: center;
-}
- .report-button{
-      height: 60px;	
-      width: 181px;	
-      border: 2px solid #48209F;	
-      border-radius: 6px;	
-      padding: 10px;
-      background: $white;
-    }

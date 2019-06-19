@@ -21,11 +21,12 @@
 			<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html( 'Skip to content' ); ?></a>
 
 			<header id="masthead" class="site-header" role="banner">
+				<div class="header-container">
 					<div class="site-logo">
 						<a href="<?php echo home_url('/'); ?>" rel="home">
 							<h1 class="rcforward-logo">Rc Forward</h1>
 						</a>
-					</div>	
+					</div>	  
 					
 					<div class="hamburger">
 						<button id="toggle-nav" class="hamburger--boring menu-toggle " type="button" aria-controls="primary-menu" aria-expanded="false">
@@ -38,6 +39,7 @@
 					<nav id="site-navigation" class="main-navigation" role="navigation">
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 					</nav>
+				</div>
 			</header><!-- .site-header -->
 
 		<div id="content" class="site-content">

@@ -3,15 +3,95 @@
 // --------------------------------------------------------------*/
 
 .main-navigation {
-  @include tablet {
+  @include desktop{
     .menu-item-has-children {
-      position: relative;
+        position: relative;
+      .sub-menu{    list-style: none;
+              padding: 0;
+              // height:0;
+              // overflow: hidden;
+              display: none;}
       &:hover {
+
         > .sub-menu {
           position: absolute;
           right: 0;
           z-index: 99;
           display: block;
+        }
+      }
+    }
+  }
+}
+
+
+/* Site-Header 8*/
+
+.site-header {
+  background: #14225f;
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    .site-logo {
+      display: flex;
+      justify-content: left;
+      width: 70%;
+      .rcforward-logo {
+        color: $white;
+        padding-left: 25px;
+        font-family: 'Gilroy Bold', sans-serif;
+        text-transform: uppercase;
+      }
+      .hamburger {
+        width: 30%;
+        @include tablet {
+          display: none;
+        }
+      }
+    }
+    .main-navigation {
+      display: none;
+      width: 100%;
+      @include tablet {
+        display: block;
+      }
+      .menu-header-menu-container {
+        .menu {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          @include tablet {
+          }
+
+          .menu-item {
+            border-top: 1px solid $white;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            @include tablet {
+              border: none;
+              display: inline-flex;
+            }
+            a {
+              color: $white;
+              @include tablet {
+                display: block;
+                padding: 14px 16px;
+                text-align: center;
+              }
+            }
+            .sub-menu {
+          
+              li {
+                background: white;
+                border-bottom: 1px solid $credible__blue;
+                a {
+                  color: $credible__blue;
+                }
+              }
+            }
+          }
         }
       }
     }
