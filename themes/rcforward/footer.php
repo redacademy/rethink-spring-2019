@@ -16,6 +16,11 @@
 <?php endif; ?>
 
 <footer id="colophon" class="site-footer" role="contentinfo">
+	<div class="footer-site-logo">
+		<a href="<?php echo home_url('/'); ?>" rel="home">
+			<h2 class="rcforward-logo">Rc Forward</h2>
+		</a>
+	</div>
 	<div class="footer-nav">
 		<?php wp_nav_menu(array('theme_location' => 'footer-menu', 'menu_id' => 'footer-menu')); ?>
 	</div><!-- .footer-nav -->
@@ -23,7 +28,7 @@
 		<?php $front_page_id = get_option('page-on-front'); ?>
 		<p><?php echo CFS()->get('footer_info', $front_page_id) ?></p>
 		<img src="<?php echo CFS()->get('footer_info_icon', $front_page_id) ?>">
-			<!-- Insert Icon -->
+		<!-- Insert Icon -->
 	</div><!-- .footer-info -->
 	<div class="footer-info-sm">
 		<p>RC Forward is a project of:</p>

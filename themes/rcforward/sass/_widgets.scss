@@ -2,16 +2,51 @@
 # Widgets
 --------------------------------------------------------------*/
 
-.widget {
-	margin: 0 0 $base__space-unit;
-
-	/* Make sure select elements fit in widgets. */
-	select {
-		max-width: 100%;
-	}
-}
-
 /* Search widget. */
 .widget_search .search-submit {
-	display: none;
+  display: none;
+}
+
+.footer-sidebar {
+  background: linear-gradient(rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.13)),
+    url('../../assets/images/nw-mobile.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .widget {
+    @include display-flex();
+    flex-direction: column;
+    margin: 0;
+    height: 14rem;
+    /* Make sure select elements fit in widgets. */
+    select {
+      max-width: 100%;
+    }
+    .widget-title {
+      color: $white;
+	  font-weight: 400;
+	  font-size: 1.5rem;
+      letter-spacing: 0.099rem;
+      margin-bottom: 1.5rem;
+    }
+    .mc4wp-form {
+      .mc4wp-form-fields {
+        @include display-flex();
+        p {
+          margin: 0;
+        }
+        input[type='email'] {
+		  padding: 0.7rem 1rem;
+		  border-radius: 6px 0 0 6px;
+		  border: none;
+        }
+        input[type='submit'] {
+		  background-color: $code__blue;
+		  padding: 0.7rem 1rem;
+		  border-radius: 0 6px 6px 0;
+		  border: none;
+        }
+      }
+    }
+  }
 }

@@ -47,22 +47,26 @@
 // .bypostauthor {
 // 	display: block;
 // }
-body{
-    background: $credible__blue;
+
+body {
+  background: $credible__blue;
+  color: $grounded__green;
+  font-family: $montserrat__font;
 }
-.site{
-    max-width: $max-screen-size;
-    background: white;
+.site {
+  max-width: $max-screen-size;
+  margin: 0 auto;
+  background: white;
 }
-.site-content{
-    padding:1rem;
-    @include tablet{
-        padding:2rem;
-    }
-    @include desktop{
-        padding:5rem;
-    }
+.site-content {
+  @include tablet {
+    padding: 2rem;
+  }
+  @include desktop {
+    padding: 5rem;
+  }
 }
+<<<<<<< HEAD
 /* Chimp Donate Button */
   .chimp-donate-form {
         background: $code__blue;
@@ -73,3 +77,20 @@ body{
         color: $grounded__green;
         font-weight: bold;
       }
+=======
+
+/* Chimp Donate Button */
+.chimp-donate-form {
+  background-color: $code__blue;
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 1.6rem 5.3rem;
+  color: $grounded__green;
+  border-radius: 8px;
+  margin-top: 10px;
+  @include tablet {
+  }
+  @include desktop {
+  }
+}
+>>>>>>> c590575265e0bcd82d5845260c2817245a4e37b3

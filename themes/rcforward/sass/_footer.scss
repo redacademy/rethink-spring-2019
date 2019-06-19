@@ -1,3 +1,20 @@
-.footer-sidebar, .site-footer {
-    background-color: $credible__blue;
+.site-footer {
+  .footer-site-logo {
+    a {
+      .rcforward-logo {
+        color: $white;
+        text-transform: uppercase;
+        text-align: center;
+      }
+    }
+  }
+  .footer-nav {
+      display: none;
+  }
+  .footer-info {
+
+  }
+  .footer-info-sm {
+      
+  }
 }

@@ -16,7 +16,7 @@
         @content;
     }
 }
-
+    
 @mixin desktop {
     @media (min-width: $desktop-width) {
         @content;

@@ -68,22 +68,35 @@ get_header(); ?>
             <?php
                 if($main_content['image'] && $index === $count):
             ?>      
+                <div class="content-next">
                     <div class="content-image last-with-button">
-                        <img  class="main-content-image" src="<?php  echo $main_content['image']; ?>">
-                        <?php echo $charity_report_button; ?>
-                        <?php echo $charity_website_button; ?>
+                        <div class="main-image">
+                            <img  class="main-content-image" src="<?php  echo $main_content['image']; ?>">
+                            <?php echo $charity_report_button; ?>
+                            <?php echo $charity_website_button; ?>
+                        </div>
                     </div>
-	                    <h3 class ="content-w-image" ><?php echo $main_content['title']; ?></h3>
-                        <p class ="content-w-image"><?php echo $main_content['content']; ?></p>
+                        <div class="content-w-image-last">
+	                        <h3 class ="content-w-image" ><?php echo $main_content['title']; ?></h3>
+                            <p class ="content-w-image"><?php echo $main_content['content']; ?></p>
+                        </div>
+                </div>
+                  
                 <?php elseif($main_content['image'] && $index !== $count):?>
                     <div class="content-image">
-                        <img  class="main-content-image" src="<?php  echo $main_content['image']; ?>">
+                        <div class="main-image">
+                            <img  class="main-content-image" src="<?php  echo $main_content['image']; ?>">
+                        </div>
+                        <div class ="content-w-image">
+                            <h3 class ="content-w-image" ><?php echo $main_content['title']; ?></h3>
+                            <p class ="content-w-image"><?php echo $main_content['content']; ?></p>
+                        </div>
                     </div>
-                    <h3 class ="content-w-image" ><?php echo $main_content['title']; ?></h3>
-                    <p class ="content-w-image"><?php echo $main_content['content']; ?></p>
                 <?php elseif(!$main_content['image'] && $index !== $count):?>
-                    <h3 class ="content-wo-image" ><?php echo $main_content['title']; ?></h3>
-                    <p class ="content-wo-image"><?php echo $main_content['content']; ?></p>  
+                    <div class="content-wo-image">
+                        <h3 class ="content-wo-image" ><?php echo $main_content['title']; ?></h3>
+                        <p class ="content-wo-image"><?php echo $main_content['content']; ?></p>
+                    </div> 
                 <?php else: ?>
                     <h3 class ="content-wo-image" ><?php echo $main_content['title']; ?></h3>
                     <p class ="content-wo-image"><?php echo $main_content['content']; ?></p>
@@ -97,11 +110,11 @@ get_header(); ?>
                 <a class="contact-us-button" href="<?php echo home_url(); ?>/contact">Contact Us</a>
                 <?php endif;?>
                 <!-- TO DO -->
-                <button class="chimp-donate-form">Donate</button>
+          
 
             </div>
 
-            
+                  <button class="chimp-donate-form">Donate</button>
             
             
         </main><!-- .entry-content -->
