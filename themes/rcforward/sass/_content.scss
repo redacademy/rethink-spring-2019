@@ -66,6 +66,18 @@ body {
     padding: 5rem;
   }
 }
+<<<<<<< HEAD
+/* Chimp Donate Button */
+  .chimp-donate-form {
+        background: $code__blue;
+        margin-top: 10px;
+        width: 160px;
+        height: 60px;
+        border-radius: 6px;
+        color: $grounded__green;
+        font-weight: bold;
+      }
+=======
 
 /* Chimp Donate Button */
 .chimp-donate-form {
@@ -81,3 +93,4 @@ body {
   @include desktop {
   }
 }
+>>>>>>> c590575265e0bcd82d5845260c2817245a4e37b3

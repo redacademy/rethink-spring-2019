@@ -44,6 +44,7 @@ get_header(); ?>
 	</div>
 	<?php get_template_part( 'template-parts/content', 'why-donate' ); ?>
 	<?php get_template_part( 'template-parts/content', 'charities' ); ?>
+	<?php get_template_part('template-parts/content', 'custom-plan'); ?>
 
 <?php endwhile; // End of the loop. ?>
 
