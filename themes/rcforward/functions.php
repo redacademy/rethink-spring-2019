@@ -128,3 +128,8 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
+
+function custom_add_google_fonts() {
+	wp_enqueue_style( 'rc-montserrat', 'https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800&display=swap', false );
+	}
+	add_action( 'wp_enqueue_scripts', 'custom_add_google_fonts' );
