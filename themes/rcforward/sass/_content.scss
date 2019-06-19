@@ -47,20 +47,39 @@
 // .bypostauthor {
 // 	display: block;
 // }
-body{
+
+body {
     background: $credible__blue;
+    color: $grounded__green;
+    font-family: $montserrat__font;
 }
-.site{
+.site {
     max-width: $max-screen-size;
+    margin: 0 auto;
     background: white;
 }
-.site-content{
-    padding:1rem;
+.site-content {
     @include tablet{
-        padding:2rem;
+        padding: 2rem;
     }
     @include desktop{
-        padding:5rem;
+        padding: 5rem;
 
     }
 }
+
+.chimp-donate-form {
+    background-color: $code__blue;
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding: 1.6rem 5.3rem;
+    color: $grounded__green;
+    border-radius: 8px;
+    @include tablet {
+
+    }
+    @include desktop {
+
+    }
+
+  }

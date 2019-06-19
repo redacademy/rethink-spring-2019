@@ -3,21 +3,16 @@
 --------------------------------------------------------------*/
 
 /* Default Page styling (for all pages) */
-body {
-  color: $grounded__green;
+* {
+  box-sizing: border-box;
 }
 
 /* Front page */
 
 /* Single Fund Pages */
-* {
-  box-sizing: border-box;
-}
-
 .single-fund {
   .hfeed {
     .site-content {
-      max-width: 100%;
       .type-fund {
         display: flex;
         flex-direction: column;
@@ -48,70 +43,101 @@ body {
           .entry-title {
             font-size: 2rem;
             color: $credible__blue;
+            width: 50%;
+            display: flex;
+            margin: 2rem auto;
           }
           .amount-funded {
             background-color: rgba(216, 216, 216, 0.18);
             font-size: 4rem;
             color: $innovative__purple;
-            margin: none;
+            margin: 0;
+            padding: 1rem 1.2rem;
+            p .counter {
+              letter-spacing: 0.25rem;
+              &:before {
+                content: ' ';
+              }
+            }
+            p .counter,
+            p {
+              font-weight: 700;
+            }
+            p {
+              &:nth-child(2n) {
+                font-weight: 600;
+                font-size: 2.8rem;
+              }
+            }
             p,
             .chimp-donate-form {
-              margin: 0;
-            }
-            & p:last-child {
-              font-size: 2rem;
+              margin: 0.6rem 0;
             }
           }
           .fund-description {
-            margin-top: 3rem;
+            margin: 3rem 0;
             p {
-              width: 50%;
-              font-size: 1.7rem;
+              width: 80%;
+              line-height: 2.4rem;
+              font-size: 1.6rem;
               font-weight: lighter;
               word-wrap: break-word;
               margin: 0 auto;
             }
           }
           .main-content {
-              margin-top: 2rem;
+            margin-top: 2rem;
+            padding: 3rem 0;
+            background-color: $cream__background;
             .fund-allowcation {
+              display: flex;
+              justify-content: center;
+              flex-direction: column;
+              width: 100%;
+              h3 {
+                width: 70%;
+                word-wrap: break-word;
+                color: $credible__blue;
+                margin: 0 auto;
+                font-size: 2rem;
+                font-weight: 600;
+              }
+              .fund-allowcations {
                 display: flex;
                 justify-content: center;
                 flex-direction: column;
-                width: 100%;
-              h3 {
-                  width: 65%;
-                word-wrap: break-word;
-                margin: 0 auto;
-                color: $credible__blue;
-                font-size: 2rem;
-              }
-              .fund-allowcations {
-                    display: flex;
-                    justify-content: center;
-                    flex-direction: column;
-                    margin: 0 10rem;
-                  .single-allocation {
-                     display: flex;
-                     flex-direction: row;
-                     justify-content: center;
-                     margin: 4rem 0;
-                     .allocation-text {
-                      display: flex;
-                      align-content: center;
-                      flex-direction: column;
-                      margin-left: 3rem;
-                      font-size: 2rem;
+                margin-top: 4rem;
+                .single-allocation {
+                  margin-top: 2rem;
+                  margin-bottom: 3.5rem;
+                  .charity-logo {
+                    max-width: 230px;
+                    max-height: 330px;
+                    width: 45%;
+                  }
+                  .allocation-text {
                       .percentage {
+                          font-size: 5rem;
                           font-weight: bolder;
-                          font-size: 2.5rem;
+                          margin: 2rem 0;
                       }
                       .description {
-                          font-weight: lighter;
-                          word-wrap: wrap;
+                          font-size: 1.6rem;
+                          margin: 0 4rem;
+                          line-height: 2.3rem;
                       }
-                     } 
                   }
+                  
+                }
+              }
+            }
+            .entry-content {
+              width: 80%;
+              margin: 0 auto 4rem;
+              p {
+                font-size: 1.6rem;
+              line-height: 2.4rem;
+              margin-top: 0;
               }
             }
           }
