@@ -75,7 +75,6 @@
         width: 728px;
         }
     }
- 
 
   }
   .browse-charities-title{
@@ -90,12 +89,71 @@
 }
 
 /* Main Content Section */
-  .single-content{
-         .chimp-donate-form {
-             text-align: center;
-                 display: flex;
-    justify-content: center;
+
+.last-with-button{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding:10px;
+}
+.content-image{
+  display: flex;
+}
+.content-next{
+  display: flex;
+}
+.main-content{
+  background:#F9F5ED;
+  button{
+    text-align: center;
+  }
+}
+
+.content-image{
+  .main-image{
+      flex-basis: auto;
+         flex-grow: 1;
+         order:1;
+    img{
+      width: 401px;
+    }
+  }
+  .content-with-image{
+      flex-basis: auto;
+    width: 50%;
+       flex-grow: 1;
+       order: 2;
+  }
+  &:nth-child(even) {
+    .main-image {
+      width: 50%;
+      order: 2;
+
+    }
+    .content-with-image {
+      width: 50%;
+      order: 1;
+    }
+  }
+}
+
+
+
+/* common parts */
+.single-content{
+  width:100%;
+}
+.chimp-donate-form{
+      display: flex;
     margin: auto;
-         }
-        }
-    
+    justify-content: center;
+}
+ .report-button{
+      height: 60px;	
+      width: 181px;	
+      border: 2px solid #48209F;	
+      border-radius: 6px;	
+      padding: 10px;
+      background: $white;
+    }

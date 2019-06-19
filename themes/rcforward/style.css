@@ -573,26 +573,21 @@ body {
           font-weight: 300;
           color: #fff;
           font-size: 18px; }
-  .site-header .menu .menu-item-71 {
+  .site-header .menu-header-menu-container .menu:last-child {
     padding-top: 15px; }
-    .site-header .menu .menu-item-71 .sub-menu {
+    .site-header .menu-header-menu-container .menu:last-child .sub-menu {
       display: none;
-      background: #fff;
+      background: ye;
       list-style: none;
       padding: 0; }
       @media (min-width: 600px) {
-        .site-header .menu .menu-item-71 .sub-menu {
+        .site-header .menu-header-menu-container .menu:last-child .sub-menu {
           display: none; } }
-      .site-header .menu .menu-item-71 .sub-menu .menu-item {
+      .site-header .menu-header-menu-container .menu:last-child .sub-menu .menu-item {
         border-bottom: 1px solid #14225F;
         padding: 16px; }
-        .site-header .menu .menu-item-71 .sub-menu .menu-item a {
+        .site-header .menu-header-menu-container .menu:last-child .sub-menu .menu-item a {
           color: #14225F; }
-
-i {
-  color: #fff;
-  font-size: 2em;
-  position: absolute; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -765,15 +760,89 @@ ol.flickity-page-dots {
   line-height: 31px; }
 
 /* Main Content Section */
-.single-content .chimp-donate-form {
-  text-align: center;
+.last-with-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 10px; }
+
+.content-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.content-next {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.main-content {
+  background: #F9F5ED; }
+  .main-content button {
+    text-align: center; }
+
+.content-image .main-image {
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1; }
+  .content-image .main-image img {
+    width: 401px; }
+
+.content-image .content-with-image {
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  width: 50%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2; }
+
+.content-image:nth-child(even) .main-image {
+  width: 50%;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2; }
+
+.content-image:nth-child(even) .content-with-image {
+  width: 50%;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1; }
+
+/* common parts */
+.single-content {
+  width: 100%; }
+
+.chimp-donate-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center;
-  margin: auto; }
+          justify-content: center; }
+
+.report-button {
+  height: 60px;
+  width: 181px;
+  border: 2px solid #48209F;
+  border-radius: 6px;
+  padding: 10px;
+  background: #fff; }
 
 .footer-sidebar, .site-footer {
   background-color: #14225F; }
@@ -835,7 +904,6 @@ ol.flickity-page-dots {
               box-shadow: none; }
     .custom-plan .single-custom-plan button {
       margin-top: -1rem; }
-<<<<<<< HEAD
 
 .home {
   text-align: center; }
@@ -898,5 +966,3 @@ ol.flickity-page-dots {
           color: white;
           text-align: center;
           margin: 0 auto; }
-=======
->>>>>>> 13446c5441c5a41af894e506924c9b3ec9456ae3

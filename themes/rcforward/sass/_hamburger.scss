@@ -138,11 +138,11 @@
   }
 
   .menu {
-    .menu-item-71 {
+    &:last-child {
       padding-top: 15px;
       .sub-menu {
         display: none;
-        background: $white;
+        background: ye;
         list-style: none;
         padding: 0;
         @include tablet {
@@ -152,7 +152,6 @@
         .menu-item {
           border-bottom: 1px solid $credible__blue;
           padding: 16px;
-
           a {
             color: $credible__blue;
           }
@@ -230,10 +229,3 @@
 //     }
 //   }
 // }
-
-i{
-  color: #fff;
-  font-size: 2em;
-  position: absolute;
-
-}
