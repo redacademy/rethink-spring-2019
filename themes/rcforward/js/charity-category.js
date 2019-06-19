@@ -49,8 +49,9 @@
                     $.each(value.charity_tax, function(index, id){
                         console.log(taxId);
                         if(id == taxId){
-                            console.log(id);
-                            let $thumbnailLink = value._embedded["wp:featuredmedia"][0].source_url;
+                            console.log(value);
+                            // let $thumbnailLink = value.featured_image_url;
+                            let $thumbnailLink = value._embedded["wp:featuredmedia"][0].media_details.sizes.medium.source_url;
                             let $logoLink = value.charity_logo;
                             let $title = value.title.rendered;
                             let $description = value.charity_description.substring(75)+" [...]";

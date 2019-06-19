@@ -89,7 +89,8 @@ add_filter('stylesheet_uri', 'red_starter_minified_css', 10, 2);
 function red_starter_scripts()
 {
 	wp_enqueue_style('red-starter-style', get_stylesheet_uri());
-	
+	wp_enqueue_style('rcfontawesome', 'https://use.fontawesome.com/releases/v5.8.1/css/all.css');
+
 	wp_enqueue_script('waypoints', 'https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js', array('jquery'));
 	wp_enqueue_script('counterup', 'https://cdn.jsdelivr.net/npm/counterup@1.0.2/jquery.counterup.min.js', array('jquery', 'waypoints'), '', true);
 
