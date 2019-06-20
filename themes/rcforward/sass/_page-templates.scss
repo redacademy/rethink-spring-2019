@@ -42,7 +42,8 @@
               display: none;
             }
             .step-text {
-              .work-step-title, .work-step-description {
+              .work-step-title,
+              .work-step-description {
                 margin: 1rem;
               }
             }
@@ -64,41 +65,51 @@
           }
         }
       }
+      .entry-donate-page {
+        @include display-flex();
+        flex-direction: column;
+        .get-started {
+          font-size: 1.4rem;
+          font-weight: bolder;
+        }
+      }
+      .entry-contact-us {
+        font-size: 1.3rem;
+        text-align: center;
+        .mobile-text {
+          font-weight: bolder;
+          margin: 3rem 0;
+        }
+        .desktop-text {
+          display: none;
+          @include tablet {
+          }
+          @include desktop {
+          }
+        }
+        .contact-us-button {
+          border: 2px solid $innovative__purple;
+          font-size: 1.5rem;
+          font-weight: 700;
+          padding: 1.6rem 4rem;
+          margin: 3rem 0;
+          color: $innovative__purple;
+          border-radius: 8px;
+          @include tablet {
+          }
+          @include desktop {
+          }
+        }
+      }
     }
-    .entry-contact-us {
-      font-size: 1.3rem;
-      text-align: center;
-      background-color: $blue__background;
-      .mobile-text {
-        font-weight: bolder;
-        margin: 3rem 0;
-      }
-      .desktop-text {
-        display: none;
-        @include tablet {
-        }
-        @include desktop {
-        }
-      }
-      .contact-us-button {
-        border: 2px solid $innovative__purple;
-        font-size: 1.5rem;
-        font-weight: 700;
-        padding: 1.6rem 4rem;
-        margin: 3rem 0;
-        color: $innovative__purple;
-        border-radius: 8px;
-        @include tablet {
-        }
-        @include desktop {
-        }
-      }
-    }
+
     .entry-main {
       margin: 4rem 2rem 0;
       @include display-flex();
       flex-direction: column;
       & .wp-block-columns:first-child {
+        @include tablet {
+        }
         .wp-block-column {
           & p:first-child {
             width: 60%;
@@ -115,13 +126,14 @@
       & .wp-block-columns:nth-child(2n) {
         order: 2;
       }
-      & .wp-block-columns:nth-child(2n), & .wp-block-columns:last-child {
+      & .wp-block-columns:nth-child(2n),
+      & .wp-block-columns:last-child {
         margin: 0 auto;
         & .wp-block-column:first-child {
           & p:first-child {
             width: 80%;
             strong {
-            font-size: 1.4rem;
+              font-size: 1.4rem;
             }
           }
         }
@@ -140,16 +152,41 @@
       & .wp-block-columns:last-child {
         & .wp-block-column:first-child {
           order: 1;
+          p {
+            @include tablet {
+              margin-left: 1.7rem;
+            }
+          }
         }
         & .wp-block-column:last-child {
           text-align: center;
-          
+          @include tablet {
+            margin-left: 0;
+          }
         }
       }
       & .wp-block-columns:first-child,
       .wp-block-columns:nth-child(2n) {
         & .wp-block-column:last-child {
           display: none;
+          @include tablet {
+            display: unset;
+          }
+        }
+      }
+    }
+    .why-donate {
+      background-color: $cream__background;
+      h3 {
+        font-size: 1.4rem;
+        margin-bottom: 0;
+        padding-top: 3rem;
+      }
+      .why-donate-content {
+        .single-reason {
+          p {
+            font-weight: bolder;
+          }
         }
       }
     }
