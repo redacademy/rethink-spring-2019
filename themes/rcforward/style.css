@@ -916,9 +916,9 @@ ol.flickity-page-dots {
            object-fit: cover;
         width: 100%;
         height: 35vh; }
-        @media (min-width: 650px) {
+        @media (min-width: 1000px) {
           .single-charity .site-content article .charity-header .charity-image img {
-            height: 70vh; } }
+            height: 100vh; } }
     .single-charity .site-content article .charity-header .charity-logo-container {
       display: -webkit-box;
       display: -ms-flexbox;
