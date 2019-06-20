@@ -98,6 +98,10 @@
             p {
               label {
                 font-weight: bold;
+                @include tablet{
+                color: $credible__blue;
+                font-weight:300;
+                }
                 input {
                   background: rgba(64, 206, 190, 0.1);
                   border-radius: 5px;

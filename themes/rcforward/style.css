@@ -1582,6 +1582,10 @@ ol.flickity-page-dots {
           display: block; } }
   .page-template-page-contact .site-content .post-25 .entry-content .wp-block-column .wpcf7 p label {
     font-weight: bold; }
+    @media (min-width: 650px) {
+      .page-template-page-contact .site-content .post-25 .entry-content .wp-block-column .wpcf7 p label {
+        color: #14225F;
+        font-weight: 300; } }
     .page-template-page-contact .site-content .post-25 .entry-content .wp-block-column .wpcf7 p label input {
       background: rgba(64, 206, 190, 0.1);
       border-radius: 5px;
