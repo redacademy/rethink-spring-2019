@@ -2,14 +2,20 @@
 // # Navigation
 // --------------------------------------------------------------*/
 
+
 .main-navigation {
   @include desktop{
     .menu-item-has-children {
         position: relative;
-      .sub-menu{    
+      .sub-menu {    
         list-style: none;
               padding: 0;
-              display: none;}
+              display: none;
+   @include desktop{
+     display: none;
+
+   }
+            }
       &:hover {
         > .sub-menu {
           position: absolute;
@@ -21,7 +27,9 @@
     }
   }
 }
-
+.sub-menu{
+  padding: 0;
+}
 
 /* Site-Header 8*/
 
@@ -32,6 +40,9 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    @include desktop{
+      flex-wrap: nowrap;
+    }
     .site-logo {
       display: flex;
       justify-content: left;
@@ -53,7 +64,7 @@
     .main-navigation {
       display: none;
       width: 100%;
-      @include tablet {
+      @include desktop {
         display: block;
       }
       .menu-header-menu-container {
@@ -61,13 +72,14 @@
           list-style: none;
           margin: 0;
           padding: 0;
-          @include tablet {
+          @include desktop {
           }
 
           .menu-item {
             border-top: 1px solid $white;
+            padding:0;
          text-align: center;
-            @include tablet {
+            @include desktop {
               border: none;
               display: inline-flex;
             }
@@ -75,15 +87,13 @@
               color: $white;
               padding:10px;
                   display: block;
-              @include tablet {
+              @include desktop {
                 display: block;
                 padding: 14px 16px;
                 text-align: center;
               }
             }
             .sub-menu {
-          padding:0;
-          display: none;
               li {
                 background: white;
                 border-bottom: 1px solid $credible__blue;
