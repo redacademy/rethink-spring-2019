@@ -471,7 +471,7 @@ body {
     padding: 5rem; } }
 
 /* Chimp Donate Button */
-.chimp-donate-form {
+.chimp-donate-form, .donate-page-button {
   background-color: #00BEA8;
   font-size: 1.6rem;
   font-weight: 700;
@@ -489,6 +489,24 @@ body {
           box-sizing: border-box; }
 
 /* Front page */
+/* How it works Page */
+.page-template-page-how-it-works .site-content .entry-header {
+  background-color: rgba(216, 216, 216, 0.18); }
+  .page-template-page-how-it-works .site-content .entry-header .entry-title {
+    text-align: center;
+    margin: 0;
+    padding-top: 4rem;
+    font-size: 3rem;
+    color: #14225F; }
+  .page-template-page-how-it-works .site-content .entry-header .page-description {
+    width: 68%;
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 1.3rem auto;
+    line-height: 2.5rem; }
+  .page-template-page-how-it-works .site-content .entry-header .how-it-works-steps .work-step .work-step-icon {
+    display: none; }
+
 /* Single Fund Pages */
 .single-fund .hfeed .site-content .type-fund {
   display: -webkit-box;

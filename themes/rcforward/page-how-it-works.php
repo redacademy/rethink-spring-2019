@@ -19,9 +19,9 @@ get_header(); ?>
 		$work_steps = CFS()->get( 'how_it_works' );
 		foreach ( $work_steps as $work_step ) :
 		?>
-
 		<div class="work-step">
 		<img class="work-step-icon" src="<?php echo $work_step['icon']; ?>" alt="Step Icon"/>	
+		<span class="mobile-step-icon"><?php echo  $work_step['mobile_icon'];?></span>
 		<p class = "work-step-title"><?php echo $work_step['title']; ?></p>
 		<p class = "work-step-description"><?php echo $work_step['description']; ?></p>
 		</div>
