@@ -39,12 +39,13 @@
       .rcforward-logo {
         color: $white;
         padding-left: 25px;
+            flex-wrap: wrap;
         font-family: 'Gilroy Bold', sans-serif;
         text-transform: uppercase;
       }
       .hamburger {
         width: 30%;
-        @include tablet {
+        @include desktop {
           display: none;
         }
       }
@@ -65,7 +66,7 @@
 
           .menu-item {
             border-top: 1px solid $white;
-         
+         text-align: center;
             @include tablet {
               border: none;
               display: inline-flex;

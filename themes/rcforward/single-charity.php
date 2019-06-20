@@ -47,7 +47,7 @@ get_header(); ?>
             <?php $charity_video_url = CFS()->get( 'charity_video' );
             if($charity_video_url):?>
             <div class="charity-video">
-                <p><?php echo $charity_video_url;?></p>
+                <?php echo $charity_video_url;?>
             </div>
             <?php endif; ?>
 
@@ -72,14 +72,17 @@ get_header(); ?>
                             <div class="image">
                                 <img  class="main-content-image" src="<?php  echo $main_content['image']; ?>">
                             </div>
-                            <?php echo $charity_report_button; ?>
-                            <?php echo $charity_website_button; ?>
+                              <div class="link-charity">
+                            <div class="link-1"><?php echo $charity_report_button; ?></div>
+                            <div class="link-2"><?php echo $charity_website_button; ?></div>
+                        </div>
                         </div>
                     
                         <div class="content-w-image">
 	                        <div class="h3-title"><h3><?php echo $main_content['title']; ?></h3></div>
                             <div class="p-description"><p><?php echo $main_content['content']; ?></p>
                         </div>
+                      
                 <?php elseif($main_content['image'] && $index !== $count):?>
                
                         <div class="main-image">
