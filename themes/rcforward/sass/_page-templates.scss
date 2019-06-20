@@ -9,6 +9,36 @@
 
 /* Front page */
 
+/* How it works Page */
+.page-template-page-how-it-works {
+  .site-content {
+    .entry-header {
+      background-color: $blue__background;
+      .entry-title {
+        text-align: center;
+        margin: 0;
+        padding-top: 4rem;
+        font-size: 3rem;
+        color: $credible__blue;
+      }
+      .page-description {
+        width: 68%;
+        font-size: 1.4rem;
+        text-align: center;
+        margin: 1.3rem auto;
+        line-height: 2.5rem;
+      }
+      .how-it-works-steps {
+        .work-step {
+          .work-step-icon {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
 /* Single Fund Pages */
 .single-fund {
   .hfeed {
@@ -116,18 +146,17 @@
                     width: 45%;
                   }
                   .allocation-text {
-                      .percentage {
-                          font-size: 5rem;
-                          font-weight: bolder;
-                          margin: 2rem 0;
-                      }
-                      .description {
-                          font-size: 1.6rem;
-                          margin: 0 4rem;
-                          line-height: 2.3rem;
-                      }
+                    .percentage {
+                      font-size: 5rem;
+                      font-weight: bolder;
+                      margin: 2rem 0;
+                    }
+                    .description {
+                      font-size: 1.6rem;
+                      margin: 0 4rem;
+                      line-height: 2.3rem;
+                    }
                   }
-                  
                 }
               }
             }
@@ -136,8 +165,8 @@
               margin: 0 auto 4rem;
               p {
                 font-size: 1.6rem;
-              line-height: 2.4rem;
-              margin-top: 0;
+                line-height: 2.4rem;
+                margin-top: 0;
               }
             }
           }
