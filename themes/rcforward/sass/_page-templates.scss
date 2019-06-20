@@ -27,6 +27,9 @@
         text-align: center;
         margin: 1.3rem auto;
         line-height: 2.5rem;
+        @include desktop {
+          width: 50%;
+        }
       }
       .how-it-works-steps {
         @include display-flex();
@@ -35,11 +38,26 @@
           width: 90%;
           @include display-flex();
           flex-direction: column;
+          @include desktop {
+            @include display-flex();
+          }
           .work-step {
             @include display-flex();
             flex-direction: row;
+            @include desktop {
+              @include display-flex();
+              flex-direction: column;
+            }
             .work-step-icon {
               display: none;
+              @include desktop {
+                display: unset;
+              }
+            }
+            .mobile-step {
+              @include desktop {
+                display: none;
+              }
             }
             .step-text {
               .work-step-title,
@@ -72,13 +90,25 @@
           font-size: 1.4rem;
           font-weight: bolder;
         }
+        @include desktop {
+          margin: 2rem 0;
+        }
+
       }
       .entry-contact-us {
         font-size: 1.3rem;
         text-align: center;
+        @include desktop {
+          background-color: $cream__background;
+          padding: 3rem 0;
+        }
         .mobile-text {
           font-weight: bolder;
           margin: 3rem 0;
+          @include desktop {
+            margin-top: 0;
+            margin-bottom: 2rem;
+          }
         }
         .desktop-text {
           display: none;
@@ -92,7 +122,7 @@
           font-size: 1.5rem;
           font-weight: 700;
           padding: 1.6rem 4rem;
-          margin: 3rem 0;
+          display: inline-block;
           color: $innovative__purple;
           border-radius: 8px;
           @include tablet {
@@ -102,13 +132,36 @@
         }
       }
     }
-
     .entry-main {
       margin: 4rem 2rem 0;
       @include display-flex();
       flex-direction: column;
+      h3 {
+        display: none;
+        @include desktop {
+          display: unset;
+          font-size: 2rem;
+        }
+      }
+      @include desktop {
+        .wp-block-columns {
+          & .wp-block-column:first-child {
+            & p:first-child {
+              strong {
+                color: $credible__blue;
+                font-size: 1.5rem;
+              }
+            }
+          }
+        }
+      }
       & .wp-block-columns:first-child {
-        @include tablet {
+        @include desktop {
+          & .wp-block-column:last-child {
+            .wp-block-image {
+              text-align: right;
+            }
+          }
         }
         .wp-block-column {
           & p:first-child {
@@ -118,13 +171,15 @@
             strong {
               line-height: 2.7rem;
               font-size: 2rem;
-              color: $credible__blue;
             }
           }
         }
       }
       & .wp-block-columns:nth-child(2n) {
         order: 2;
+        @include desktop {
+          order: unset;
+        }
       }
       & .wp-block-columns:nth-child(2n),
       & .wp-block-columns:last-child {
@@ -132,9 +187,6 @@
         & .wp-block-column:first-child {
           & p:first-child {
             width: 80%;
-            strong {
-              font-size: 1.4rem;
-            }
           }
         }
       }
@@ -152,6 +204,9 @@
       & .wp-block-columns:last-child {
         & .wp-block-column:first-child {
           order: 1;
+          @include desktop {
+            order: unset;
+          }
           p {
             @include tablet {
               margin-left: 1.7rem;
@@ -164,6 +219,13 @@
             margin-left: 0;
           }
         }
+        @include desktop {
+          & .wp-block-column:first-child {
+            p {
+            margin-left: 0;
+            }
+          }
+        }
       }
       & .wp-block-columns:first-child,
       .wp-block-columns:nth-child(2n) {
@@ -171,6 +233,11 @@
           display: none;
           @include tablet {
             display: unset;
+          }
+          @include desktop {
+            .wp-block-image {
+              text-align: right;
+            }
           }
         }
       }
@@ -183,6 +250,12 @@
         padding-top: 3rem;
       }
       .why-donate-content {
+        @include tablet {
+        }
+        @include desktop {
+          width: 70%;
+          margin: 0 auto;
+        }
         .single-reason {
           p {
             font-weight: bolder;
