@@ -6,13 +6,11 @@
   @include desktop{
     .menu-item-has-children {
         position: relative;
-      .sub-menu{    list-style: none;
+      .sub-menu{    
+        list-style: none;
               padding: 0;
-              // height:0;
-              // overflow: hidden;
               display: none;}
       &:hover {
-
         > .sub-menu {
           position: absolute;
           right: 0;
@@ -41,12 +39,13 @@
       .rcforward-logo {
         color: $white;
         padding-left: 25px;
+            flex-wrap: wrap;
         font-family: 'Gilroy Bold', sans-serif;
         text-transform: uppercase;
       }
       .hamburger {
         width: 30%;
-        @include tablet {
+        @include desktop {
           display: none;
         }
       }
@@ -67,14 +66,15 @@
 
           .menu-item {
             border-top: 1px solid $white;
-            padding-top: 20px;
-            padding-bottom: 20px;
+         text-align: center;
             @include tablet {
               border: none;
               display: inline-flex;
             }
             a {
               color: $white;
+              padding:10px;
+                  display: block;
               @include tablet {
                 display: block;
                 padding: 14px 16px;
@@ -82,7 +82,8 @@
               }
             }
             .sub-menu {
-          
+          padding:0;
+          display: none;
               li {
                 background: white;
                 border-bottom: 1px solid $credible__blue;

@@ -1,163 +1,43 @@
 /*--------------------------------------------------------------
 # Single Charity Page
 --------------------------------------------------------------*/
-/* Desktop */
-.single-charity {
-  .charity-header {
-    text-align: center;
-    position: relative;
-    .charity-image {
-      width: 100%;
-      img {
-        object-fit: cover;
-        width: 100%;
-        height: 70vh;
-      }
-    }
-    .charity-logo-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-      background: $white;
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      bottom: -61px;
-      padding-left: 35px;
-      padding-right: 35px;
-      left: 50%;
-      transform: translateX(-50%);
-      .charity-logo {
-        text-align: center;
-        width: 100%;
-      }
-    }
-  }
-  .entry-content {
-    margin-top: 66px;
-    h2 {
-      font-style: normal;
-      text-align: center;
-      font-size: 2em;
-    }
-    .amount-funded {
-      background-color: rgba(216, 216, 216, 0.18);
-      text-align: center;
-      p {
-        font-size: 42px;
-        margin: 0 20px 0 0;
-        color: $innovative__purple;
-        font-family: $montserrat__font;
-        font-weight: bold;
-        line-height: 60px;
-        letter-spacing: normal;
-        font-style: normal;
-      }
-    }
-    .charity-description{
-            height: 137px;	
-            font-style: normal;
-            width: 728px;
-            margin-left: auto;
-            margin-right: auto;
-            font-family: $montserrat__font;
-            font-size: 24px;	
-            font-weight: 300;	
-            line-height: 33px;	
-            text-align: center;
-            margin-bottom: 64px;
-    }
-    .charity-video {
-      text-align: center;
-      iframe {
-        height: 483.34px;
-        width: 728px;
-      }
-    }
-  }
-  .browse-charities-title{
-      text-align: center;	
-      color:$credible__blue;
-      font-family: $montserrat__font;	
-      font-size: 28px;	
-      font-weight: bold;	
-      line-height: 31px;
-  }
-
-}
-
-/* Main Content Section */
-
-.last-with-button{
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  flex-wrap: wrap;
-  padding:10px;
-}
-.content-image{
-  display: flex;
-}
-.content-next{
-  display: flex;
-}
-.main-content{
-  background:#F9F5ED;
-  button{
-    text-align: center;
-    color: $credible__blue;
-    font-family: $montserrat__font;
-    font-size: 28px;
-    font-weight: bold;
-    line-height: 31px;
-  }
-}
 
 /* Main Content Section */
 .single-content {
-  .content-image {
-    display: flex;
-    .main-image {
-      width: 50%;
-      order: 1;
-      flex-grow: 1;
-    }
-    .content-w-image {
-      width: 50%;
-      order: 2;
-      flex-grow: 1;
-    }
-  }
-
-  .last-with-button {
-    display: flex;
-    .main-image {
-      width: 50%;
-      order: 2;
-      flex-grow: 1;
-    }
-    .content-w-image-last {
+  position: relative;
+  .main-image {
+    width: 100%;
+    order: 1;
+    @include desktop {
       width: 50%;
       order: 1;
       flex-grow: 1;
     }
   }
-}
-.main-image {
-  image {
-    width: 300px;
+  .content-w-image {
+    width: 100%;
+    order: 2;
+    @include desktop {
+      padding: 34px;
+      width: 50%;
+      order: 2;
+      flex-grow: 1;
+    }
+  }
+  &:nth-child(even) {
+    @include desktop {
+      .main-image {
+        order: 2;
+      }
+      .content-w-image {
+        order: 1;
+      }
+    }
   }
 }
 
 /* common parts */
 
-.chimp-donate-form {
-  display: flex;
-  margin-top: 1em;
-  margin: auto;
-  justify-content: center;
-}
 .report-button {
   height: 60px;
   width: 181px;
@@ -167,115 +47,205 @@
   background: $white;
 }
 
-/* Contact Page */
-.page-template-page-contact {
+/* charity page */ 
+.single-charity {
   .site-content {
-    @include tablet {
-      padding: 2rem;
-    }
-    @include desktop {
-      padding: 2rem;
-    }
-
-    .post-25 {
-      display: flex;
-      flex-direction: column;
-      padding: 13px;
-      .entry-header {
-        margin-top:10px;
-        display: flex;
-        justify-content: center;
-
-        h2 {
-          color: $credible__blue;
-          margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    article {
+      .charity-header {
+        text-align: center;
+        position: relative;
+        .charity-image {
+          width: 100%;
+          img {
+            object-fit: cover;
+            width: 100%;
+            height: 35vh;
+            @include tablet {
+              height: 70vh;
+            }
+          }
+        }
+        .charity-logo-container {
+          display: flex;
+          align-items: center;
+          position: absolute;
+          background: $white;
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          bottom: -40px;
+          padding-left: 14px;
+          padding-right: 14px;
+          left: 50%;
+          transform: translateX(-50%);
           @include tablet {
-            margin: auto;
-            font-size: 55px;
+            padding-left: 35px;
+            padding-right: 35px;
+            width: 200px;
+            height: 200px;
+            bottom: -61px;
+          }
+          .charity-logo {
+            text-align: center;
+            width: 100%;
           }
         }
       }
       .entry-content {
-        p {
-          margin: 10px;
-          font-weight: bold;
-          @include tablet {
-            color: $credible__blue;
-            font-size: 20px;
-            text-align: center;
-          }
-        }
-        h4 {
-                   font-weight: normal;
-          height: 62px;
-          border-radius: 5px;
-          margin: 0;
-          padding: 10px;
+        margin-top: 45px;
+        display: flex;
+        flex-direction: column;
+        .entry-title {
           text-align: center;
-          font-size: 14px;
+          font-size: 25px;
+          color: $credible__blue;
           @include tablet {
- 
-            margin-bottom: 4em;
-            margin-top: 0;
-            color: $credible__blue;
-          }
-          @include desktop {
-            font-size: 25px;
-  
+            font-size: 35px;
           }
         }
-        .wp-block-column {
-          margin-bottom: 69px;
-          margin-top: 14px;
-          text-align: justify;
-          p:first-child {
+        .amount-funded {
+          background-color: rgba(216, 216, 216, 0.18);
+          text-align: center;
+          p {
+            font-size: 36px;
+            margin: 0 20px 0 0;
+            color: $innovative__purple;
+            font-family: $montserrat__font;
             font-weight: bold;
-            color: $black;
-            @include tablet {
-              text-align: justify;
+            line-height: 60px;
+            letter-spacing: normal;
+            font-style: normal;
+            @include desktop {
+              font-size: 40px;
             }
           }
-          figure {
-            margin: 0;
+        }
+        .charity-description {
+          font-style: normal;
+          margin-left: auto;
+          margin-right: auto;
+          font-family: Montserrat, sans-serif;
+          font-size: 16px;
+          font-weight: 300;
+          line-height: 33px;
+          text-align: center;
+          padding: -6px;
+          @include desktop {
+            width: 800px;
+            font-size: 30px;
           }
         }
-        .wp-block-column {
-          .wpcf7 {
-            p {
+        .charity-video {
+          text-align: center;
+          position: relative;
+          padding-bottom: 56.25%;
+          padding-top: 30px;
+          height: 0;
+          @include desktop {
+            margin: auto;
+            width: 800px;
+          }
+          iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            @include desktop {
+            }
+          }
+        }
+        .main-content {
+          display: flex;
+          flex-direction: column;
+          padding: 42px;
+          align-items: center;
+          .single-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @include desktop {
+              flex-direction: row;
+            }
+            .main-image {
+              img {
+                width: 100%;
+              }
+            }
+            .content-w-image {
+              .p-description {
+                width: 100%;
+                text-align: justify;
+                margin-bottom: 2em;
+                margin-top: 2em;
+              }
+            
+        
+            }
+          }
+          .h3-title {
+            text-align: center;
+            color: #42299a;
+            @include desktop {
               text-align: left;
-              label {
-                font-weight: bold;
-                input {
-                  background: rgba(64, 206, 190, 0.1);
-                  border-radius: 5px;
-                  border: rgba(64, 206, 190, 0.1);
-                  height: 40.06px;
-                  width: 100%;
-                  margin-top: 9px;
-                  margin-bottom: 13px;
-                }
-                textarea {
-                  background: rgba(64, 206, 190, 0.1);
-                  border-radius: 5px;
-                  border: rgba(64, 206, 190, 0.1);
-                  width: 100%;
-                  margin-top: 9px;
-                  margin-bottom: 13px;
-                }
-              }
-  
-              input[type='submit'] {
-                background: $credible__blue;
-                color: $white;
-                width: 144px;
-                border-radius: 5px;
-                height: 62px;
-              }
+              font-size: 35px;
             }
           }
         }
       }
     }
   }
+  .browse-charities-title {
+    text-align: center;
+    color: $credible__blue;
+
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 31px;
+  }
+  .charities-caresole {
+    max-width: 225px;
+    .flickity-viewport {
+    }
+  }
+  .browse_charities_button {
+  }
+  .custom-plan {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 3rem;
+    padding: 2rem 6rem;
+    text-align: center;
+  }
 }
 
+/* individual part */
+
+.single-charity {
+  .chimp-donate-form {
+    margin-top: 3em;
+
+    display: flex;
+
+    margin: auto;
+    justify-content: center;
+    padding: 16px;
+    width: 7em;
+  }
+}
+
+.link-charity {
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include desktop {
+    right: 56px;
+    bottom: 82px;
+  }
+}
