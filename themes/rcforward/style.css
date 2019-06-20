@@ -264,9 +264,10 @@ a {
 @media (min-width: 1000px) {
     .main-navigation .menu-item-has-children:hover > .sub-menu {
       position: absolute;
-      right: left;
-      z-index: 99;
-      display: block; } }
+      right: 40px;
+      z-index: 1;
+      display: block;
+      background: #14225f; } }
 
 .sub-menu {
   padding: 0; }
@@ -320,6 +321,14 @@ a {
         list-style: none;
         margin: 0;
         padding: 0; }
+        @media (min-width: 1000px) {
+          .site-header .header-container .main-navigation .menu-header-menu-container .menu {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: end;
+                -ms-flex-pack: end;
+                    justify-content: flex-end; } }
         .site-header .header-container .main-navigation .menu-header-menu-container .menu .menu-item {
           border-top: 1px solid #fff;
           padding: 0;
@@ -329,21 +338,34 @@ a {
               border: none;
               display: -webkit-inline-box;
               display: -ms-inline-flexbox;
-              display: inline-flex; } }
+              display: inline-flex;
+              padding: 10px; } }
           .site-header .header-container .main-navigation .menu-header-menu-container .menu .menu-item a {
             color: #fff;
-            padding: 10px;
+            padding: 15px;
             display: block; }
             @media (min-width: 1000px) {
               .site-header .header-container .main-navigation .menu-header-menu-container .menu .menu-item a {
                 display: block;
                 padding: 14px 16px;
                 text-align: center; } }
+          @media (min-width: 1000px) {
+            .site-header .header-container .main-navigation .menu-header-menu-container .menu .menu-item .sub-menu {
+              border-bottom: 1px solid #fff;
+              padding: 0; } }
           .site-header .header-container .main-navigation .menu-header-menu-container .menu .menu-item .sub-menu li {
             background: white;
             border-bottom: 1px solid #14225F; }
+            @media (min-width: 1000px) {
+              .site-header .header-container .main-navigation .menu-header-menu-container .menu .menu-item .sub-menu li {
+                background: #14225F;
+                border-bottom: 1px solid #fff;
+                padding: 0; } }
             .site-header .header-container .main-navigation .menu-header-menu-container .menu .menu-item .sub-menu li a {
               color: #14225F; }
+              @media (min-width: 1000px) {
+                .site-header .header-container .main-navigation .menu-header-menu-container .menu .menu-item .sub-menu li a {
+                  color: #fff; } }
 
 /*--------------------------------------------------------------
 # Accessibility

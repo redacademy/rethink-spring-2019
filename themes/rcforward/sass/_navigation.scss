@@ -20,10 +20,12 @@
       &:hover {
         > .sub-menu {
           position: absolute;
-          right: left;
-          z-index: 99;
+          right: 40px;
+          z-index: 1;
           display: block;
+          background: #14225f;
         }
+      
       }
     }
   }
@@ -74,6 +76,8 @@
           margin: 0;
           padding: 0;
           @include desktop {
+                display: flex;
+    justify-content: flex-end;
           }
 
           .menu-item {
@@ -83,10 +87,11 @@
             @include desktop {
               border: none;
               display: inline-flex;
+              padding:10px;
             }
             a {
               color: $white;
-              padding:10px;
+              padding:15px;
                   display: block;
               @include desktop {
                 display: block;
@@ -95,11 +100,26 @@
               }
             }
             .sub-menu {
+              @include desktop{
+              border-bottom: 1px solid $white;
+                       padding: 0;
+        
+              }
               li {
                 background: white;
                 border-bottom: 1px solid $credible__blue;
+                @include desktop{
+                  background: $credible__blue;
+                     border-bottom: 1px solid $white;
+                     padding: 0;
+          
+                }
                 a {
                   color: $credible__blue;
+                  @include desktop{
+                    color: $white;
+                    
+                  }
                 }
               }
             }
