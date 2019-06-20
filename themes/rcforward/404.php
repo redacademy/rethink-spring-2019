@@ -4,18 +4,19 @@
  *
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  *
- * @package RC Forward
+ * @package RED_Starter_Theme
  */
-
 get_header(); ?>
-			<section class="error-404 not-found">
-				<div class="image-404">
-					<img> 
-				</div>
 
-				<div class="page-content">
-					<h1 class="page-title"><?php echo esc_html( 'Hmmmm....' ); ?></h1>
-					<p><?php echo esc_html( 'We cannot seem to find the page your looking for'); ?></p>
-				</div>
-			</section>
+	<?php while (have_posts()): the_post();?>
+	
+	<section id="post-<?php the_ID();?>" <?php post_class();?>>
+		<div class="content-404">
+			<div class="background"></div>
+			<div class="content"><?php the_content();?></div>
+		</div>
+	</section>
+
+	<?php endwhile;?>
+
 <?php get_footer(); ?>

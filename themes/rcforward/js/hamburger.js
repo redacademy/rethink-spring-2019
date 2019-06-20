@@ -8,9 +8,9 @@
         $('#site-navigation').slideToggle();
       });
       // about us dropdown
-      $('#menu-item-71').on('click', function() {
-        $('.sub-menu').slideToggle();
-        $('.menu-item-has-children::after').toggleClass();
+      $('.menu-item-has-children').on('click', function() {
+        $(this).find('.sub-menu').slideToggle();
+        $(this).toggleClass('menu-active');
       });
   
 
