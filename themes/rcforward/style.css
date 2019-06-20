@@ -255,7 +255,8 @@ a {
     .main-navigation .menu-item-has-children .sub-menu {
       list-style: none;
       padding: 0;
-      display: none; } }
+      display: none;
+      top: 50px; } }
     @media (min-width: 1000px) and (min-width: 1000px) {
       .main-navigation .menu-item-has-children .sub-menu {
         display: none; } }
@@ -263,7 +264,7 @@ a {
 @media (min-width: 1000px) {
     .main-navigation .menu-item-has-children:hover > .sub-menu {
       position: absolute;
-      right: 0;
+      right: left;
       z-index: 99;
       display: block; } }
 

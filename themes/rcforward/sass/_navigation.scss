@@ -11,6 +11,7 @@
         list-style: none;
               padding: 0;
               display: none;
+              top:50px;
    @include desktop{
      display: none;
 
@@ -19,7 +20,7 @@
       &:hover {
         > .sub-menu {
           position: absolute;
-          right: 0;
+          right: left;
           z-index: 99;
           display: block;
         }
