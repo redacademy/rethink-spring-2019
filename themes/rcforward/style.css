@@ -504,7 +504,137 @@ body {
     text-align: center;
     margin: 1.3rem auto;
     line-height: 2.5rem; }
-  .page-template-page-how-it-works .site-content .entry-header .how-it-works-steps .work-step .work-step-icon {
+  .page-template-page-how-it-works .site-content .entry-header .how-it-works-steps {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%; }
+    .page-template-page-how-it-works .site-content .entry-header .how-it-works-steps .text-steps {
+      width: 90%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+      .page-template-page-how-it-works .site-content .entry-header .how-it-works-steps .text-steps .work-step {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        flex-direction: row; }
+        .page-template-page-how-it-works .site-content .entry-header .how-it-works-steps .text-steps .work-step .work-step-icon {
+          display: none; }
+        .page-template-page-how-it-works .site-content .entry-header .how-it-works-steps .text-steps .work-step .step-text .work-step-title, .page-template-page-how-it-works .site-content .entry-header .how-it-works-steps .text-steps .work-step .step-text .work-step-description {
+          margin: 1rem; }
+        .page-template-page-how-it-works .site-content .entry-header .how-it-works-steps .text-steps .work-step .work-step-title,
+        .page-template-page-how-it-works .site-content .entry-header .how-it-works-steps .text-steps .work-step .work-step-description {
+          font-size: 1.3rem; }
+        .page-template-page-how-it-works .site-content .entry-header .how-it-works-steps .text-steps .work-step .work-step-title {
+          font-weight: bolder;
+          color: #14225F; }
+      .page-template-page-how-it-works .site-content .entry-header .how-it-works-steps .text-steps .work-step::last-child {
+        position: absolute; }
+        .page-template-page-how-it-works .site-content .entry-header .how-it-works-steps .text-steps .work-step::last-child .mobile-step {
+          position: relative;
+          top: 0; }
+
+.page-template-page-how-it-works .site-content .entry-contact-us {
+  font-size: 1.3rem;
+  text-align: center;
+  background-color: rgba(216, 216, 216, 0.18); }
+  .page-template-page-how-it-works .site-content .entry-contact-us .mobile-text {
+    font-weight: bolder;
+    margin: 3rem 0; }
+  .page-template-page-how-it-works .site-content .entry-contact-us .desktop-text {
+    display: none; }
+  .page-template-page-how-it-works .site-content .entry-contact-us .contact-us-button {
+    border: 2px solid #42299A;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1.6rem 4rem;
+    margin: 3rem 0;
+    color: #42299A;
+    border-radius: 8px; }
+
+.page-template-page-how-it-works .site-content .entry-main {
+  margin: 4rem 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  .page-template-page-how-it-works .site-content .entry-main .wp-block-columns:first-child .wp-block-column p:first-child {
+    width: 60%;
+    text-align: center;
+    margin: 1.5rem auto; }
+    .page-template-page-how-it-works .site-content .entry-main .wp-block-columns:first-child .wp-block-column p:first-child strong {
+      line-height: 2.7rem;
+      font-size: 2rem;
+      color: #14225F; }
+  .page-template-page-how-it-works .site-content .entry-main .wp-block-columns:nth-child(2n) {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2; }
+  .page-template-page-how-it-works .site-content .entry-main .wp-block-columns:nth-child(2n), .page-template-page-how-it-works .site-content .entry-main .wp-block-columns:last-child {
+    margin: 0 auto; }
+    .page-template-page-how-it-works .site-content .entry-main .wp-block-columns:nth-child(2n) .wp-block-column:first-child p:first-child, .page-template-page-how-it-works .site-content .entry-main .wp-block-columns:last-child .wp-block-column:first-child p:first-child {
+      width: 80%; }
+      .page-template-page-how-it-works .site-content .entry-main .wp-block-columns:nth-child(2n) .wp-block-column:first-child p:first-child strong, .page-template-page-how-it-works .site-content .entry-main .wp-block-columns:last-child .wp-block-column:first-child p:first-child strong {
+        font-size: 1.4rem; }
+  .page-template-page-how-it-works .site-content .entry-main .wp-block-columns .wp-block-column {
+    margin-bottom: 0; }
+    .page-template-page-how-it-works .site-content .entry-main .wp-block-columns .wp-block-column p:nth-child(2n),
+    .page-template-page-how-it-works .site-content .entry-main .wp-block-columns .wp-block-column p:last-child {
+      font-size: 1.2rem;
+      width: 90%;
+      line-height: 1.97rem; }
+  .page-template-page-how-it-works .site-content .entry-main .wp-block-columns:last-child .wp-block-column:first-child {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1; }
+  .page-template-page-how-it-works .site-content .entry-main .wp-block-columns:last-child .wp-block-column:last-child {
+    text-align: center; }
+  .page-template-page-how-it-works .site-content .entry-main .wp-block-columns:first-child .wp-block-column:last-child,
+  .page-template-page-how-it-works .site-content .entry-main .wp-block-columns:nth-child(2n) .wp-block-column:last-child {
     display: none; }
 
 /* Single Fund Pages */

@@ -29,10 +29,127 @@
         line-height: 2.5rem;
       }
       .how-it-works-steps {
-        .work-step {
-          .work-step-icon {
-            display: none;
+        @include display-flex();
+        width: 100%;
+        .text-steps {
+          width: 90%;
+          @include display-flex();
+          flex-direction: column;
+          .work-step {
+            @include display-flex();
+            flex-direction: row;
+            .work-step-icon {
+              display: none;
+            }
+            .step-text {
+              .work-step-title, .work-step-description {
+                margin: 1rem;
+              }
+            }
+            .work-step-title,
+            .work-step-description {
+              font-size: 1.3rem;
+            }
+            .work-step-title {
+              font-weight: bolder;
+              color: $credible__blue;
+            }
           }
+          & .work-step::last-child {
+            position: absolute;
+            .mobile-step {
+              position: relative;
+              top: 0;
+            }
+          }
+        }
+      }
+    }
+    .entry-contact-us {
+      font-size: 1.3rem;
+      text-align: center;
+      background-color: $blue__background;
+      .mobile-text {
+        font-weight: bolder;
+        margin: 3rem 0;
+      }
+      .desktop-text {
+        display: none;
+        @include tablet {
+        }
+        @include desktop {
+        }
+      }
+      .contact-us-button {
+        border: 2px solid $innovative__purple;
+        font-size: 1.5rem;
+        font-weight: 700;
+        padding: 1.6rem 4rem;
+        margin: 3rem 0;
+        color: $innovative__purple;
+        border-radius: 8px;
+        @include tablet {
+        }
+        @include desktop {
+        }
+      }
+    }
+    .entry-main {
+      margin: 4rem 2rem 0;
+      @include display-flex();
+      flex-direction: column;
+      & .wp-block-columns:first-child {
+        .wp-block-column {
+          & p:first-child {
+            width: 60%;
+            text-align: center;
+            margin: 1.5rem auto;
+            strong {
+              line-height: 2.7rem;
+              font-size: 2rem;
+              color: $credible__blue;
+            }
+          }
+        }
+      }
+      & .wp-block-columns:nth-child(2n) {
+        order: 2;
+      }
+      & .wp-block-columns:nth-child(2n), & .wp-block-columns:last-child {
+        margin: 0 auto;
+        & .wp-block-column:first-child {
+          & p:first-child {
+            width: 80%;
+            strong {
+            font-size: 1.4rem;
+            }
+          }
+        }
+      }
+      .wp-block-columns {
+        .wp-block-column {
+          margin-bottom: 0;
+          & p:nth-child(2n),
+          p:last-child {
+            font-size: 1.2rem;
+            width: 90%;
+            line-height: 1.97rem;
+          }
+        }
+      }
+      & .wp-block-columns:last-child {
+        & .wp-block-column:first-child {
+          order: 1;
+        }
+        & .wp-block-column:last-child {
+          text-align: center;
+          
+        }
+      }
+      & .wp-block-columns:first-child,
+      .wp-block-columns:nth-child(2n) {
+        & .wp-block-column:last-child {
+          display: none;
         }
       }
     }
