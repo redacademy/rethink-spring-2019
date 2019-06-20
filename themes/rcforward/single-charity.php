@@ -68,32 +68,28 @@ get_header(); ?>
             <?php
                 if($main_content['image'] && $index === $count):
             ?>      
-                
-                    <div class="content-image last-with-button">
                         <div class="main-image">
-                            <img  class="main-content-image" src="<?php  echo $main_content['image']; ?>">
-                            <div class="charity-button">
+                            <div class="image">
+                                <img  class="main-content-image" src="<?php  echo $main_content['image']; ?>">
+                            </div>
                             <?php echo $charity_report_button; ?>
                             <?php echo $charity_website_button; ?>
                         </div>
-                    </div>
                     
-                        <div class="content-w-image-last">
-	                        <div class="h3-title"><h3 class ="content-w-image" ><?php echo $main_content['title']; ?></h3></div>
-                            <div class="p-description"><p class ="content-w-image"><?php echo $main_content['content']; ?></p>
+                        <div class="content-w-image">
+	                        <div class="h3-title"><h3><?php echo $main_content['title']; ?></h3></div>
+                            <div class="p-description"><p><?php echo $main_content['content']; ?></p>
                         </div>
-                    </div>
-                  
                 <?php elseif($main_content['image'] && $index !== $count):?>
-                    <div class="content-image">
+               
                         <div class="main-image">
                             <img  class="main-content-image" src="<?php  echo $main_content['image']; ?>">
                         </div>
                         <div class ="content-w-image">
-                            <div class="h3-title"><h3 class ="content-w-image" ><?php echo $main_content['title']; ?></h3></div>
-                            <div class="p-description"><p class ="content-w-image"><?php echo $main_content['content']; ?></p></div>
+                            <div class="h3-title"><h3><?php echo $main_content['title']; ?></h3></div>
+                            <div class="p-description"><p><?php echo $main_content['content']; ?></p></div>
                         </div>
-                    </div>
+                
                 <?php elseif(!$main_content['image'] && $index !== $count):?>
                     <div class="content-wo-image">
                         <h3 class ="content-wo-image" ><?php echo $main_content['title']; ?></h3>

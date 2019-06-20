@@ -116,7 +116,6 @@
 
 /* Main Content Section */
 .single-content {
-  .content-image {
     display: flex;
     .main-image {
       width: 50%;
@@ -128,22 +127,19 @@
       order: 2;
       flex-grow: 1;
     }
-  }
-
-  .last-with-button {
-    display: flex;
+     &:nth-child(even) {
     .main-image {
       width: 50%;
       order: 2;
-      flex-grow: 1;
     }
-    .content-w-image-last {
+    .content-w-image {
       width: 50%;
       order: 1;
-      flex-grow: 1;
     }
   }
-}
+  }
+
+
 .main-image {
   image {
     width: 300px;
@@ -165,117 +161,5 @@
   border-radius: 6px;
   padding: 10px;
   background: $white;
-}
-
-/* Contact Page */
-.page-template-page-contact {
-  .site-content {
-    @include tablet {
-      padding: 2rem;
-    }
-    @include desktop {
-      padding: 2rem;
-    }
-
-    .post-25 {
-      display: flex;
-      flex-direction: column;
-      padding: 13px;
-      .entry-header {
-        margin-top:10px;
-        display: flex;
-        justify-content: center;
-
-        h2 {
-          color: $credible__blue;
-          margin: 0;
-          @include tablet {
-            margin: auto;
-            font-size: 55px;
-          }
-        }
-      }
-      .entry-content {
-        p {
-          margin: 10px;
-          font-weight: bold;
-          @include tablet {
-            color: $credible__blue;
-            font-size: 20px;
-            text-align: center;
-          }
-        }
-        h4 {
-                   font-weight: normal;
-          height: 62px;
-          border-radius: 5px;
-          margin: 0;
-          padding: 10px;
-          text-align: center;
-          font-size: 14px;
-          @include tablet {
- 
-            margin-bottom: 4em;
-            margin-top: 0;
-            color: $credible__blue;
-          }
-          @include desktop {
-            font-size: 25px;
-  
-          }
-        }
-        .wp-block-column {
-          margin-bottom: 69px;
-          margin-top: 14px;
-          text-align: justify;
-          p:first-child {
-            font-weight: bold;
-            color: $black;
-            @include tablet {
-              text-align: justify;
-            }
-          }
-          figure {
-            margin: 0;
-          }
-        }
-        .wp-block-column {
-          .wpcf7 {
-            p {
-              text-align: left;
-              label {
-                font-weight: bold;
-                input {
-                  background: rgba(64, 206, 190, 0.1);
-                  border-radius: 5px;
-                  border: rgba(64, 206, 190, 0.1);
-                  height: 40.06px;
-                  width: 100%;
-                  margin-top: 9px;
-                  margin-bottom: 13px;
-                }
-                textarea {
-                  background: rgba(64, 206, 190, 0.1);
-                  border-radius: 5px;
-                  border: rgba(64, 206, 190, 0.1);
-                  width: 100%;
-                  margin-top: 9px;
-                  margin-bottom: 13px;
-                }
-              }
-  
-              input[type='submit'] {
-                background: $credible__blue;
-                color: $white;
-                width: 144px;
-                border-radius: 5px;
-                height: 62px;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
 }
 
