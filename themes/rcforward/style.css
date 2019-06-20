@@ -497,10 +497,6 @@ body {
   border-radius: 8px;
   margin-top: 10px; }
 
-/* 404 page */
-.error-404 .site-content {
-  width: 100%; }
-
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
@@ -1604,15 +1600,21 @@ ol.flickity-page-dots {
   .page-template-page-contact .site-content .post-25 .entry-content .wp-block-column .wpcf7 p input[type='submit'] {
     background: #14225F;
     color: #fff;
-    width: 144px;
+    width: 150px;
     border-radius: 5px;
     height: 62px; }
+    @media (min-width: 650px) {
+      .page-template-page-contact .site-content .post-25 .entry-content .wp-block-column .wpcf7 p input[type='submit'] {
+        background: #fff;
+        color: #14225F;
+        border: 2px solid #14225F;
+        color: #14225F; } }
 
 .wpcf7-form p:last-of-type {
   text-align: center; }
   @media (min-width: 650px) {
     .wpcf7-form p:last-of-type {
-      text-align: left; } }
+      text-align: right; } }
 
 /*--------------------------------------------------------------
 # 404 Page
