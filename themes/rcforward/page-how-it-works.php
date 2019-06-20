@@ -31,18 +31,19 @@ get_header(); ?>
 				</div>
 					</div>
 				<?php endforeach; ?>
-				<div class="entry-donate-page">
+			</div>
+		</div> <!-- how-it-works-steps -->
+		<div class="entry-donate-page">
 					<p class="get-started">Get Started!</p>
 					<a class="donate-page-button" href="<?php echo home_url(); ?>/donate">Donate</a>
 				</div>
-			</div>
-		</div> <!-- how-it-works-steps -->
-	</header><!-- .entry-header -->
-	<div class="entry-contact-us">
+		<div class="entry-contact-us">
 		<p class="mobile-text">Have donations questions?</p>
 		<p class="desktop-text">Contact us to discuss any other custom giving need or if you have questions?</p>
 		<a class="contact-us-button" href="<?php echo home_url(); ?>/contact">Contact Us</a>
 	</div>
+	</header><!-- .entry-header -->
+
 	<div class="entry-main">
 		<?php the_content(); ?>
 	</div>
