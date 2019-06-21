@@ -3,15 +3,221 @@
 --------------------------------------------------------------*/
 .page-template-404{
     .site-content{
-        
+        padding:0;
+           
+        .container-404{
+            // background: rgb(138, 138, 192);
+            // display: flex;
+            // justify-content: center;
+            // align-content: center;
+            // align-items: center;
+display: flex;
+
+    flex-direction: row;
+.search-girl{
+    width: 50%;;
+    img{
         width: 100%;
-        height: 100vh;
-        .content-404{
-            display:flex;
-            width:100%;
-            
+        object-fit: cover;
+        object-position: -11px;
+
+    }
+
+}
+            // background: url(../../assets/images/output-onlinepngtools.png);
+//                 background-size: contain;
+//                 background-repeat: no-repeat;
+//                 width: 40%;
+       
+//     height: 100vh;
+
+// }
+.error-text{
+    width: 60%;
+    
+}
+
+
+       
         }
- 
+    }
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /* blog page */
+    .single{
+        line-height: 2rem;
+        .site-content
+        {
+                display: flex;
+                    padding: 0;
+.post-223{
+    display: flex;
+    flex-wrap: wrap;
+    
+//1      
+.entry-header{
+    width: 100%;
+  
+    img{
+width: 100%;
+    object-fit: cover;
+    height: 50vh;
+    @include desktop{
+        height: 100vh;
+    }
+    }
+
+}
+
+
+//2
+.entry-content{
+    padding: 2rem;
+
+
+
+    //1
+    .entry-title{
+        .entry-meta{
+            font-size:1.2rem;
+            color: #A7A3D6;
+            font-weight: bold;
+        }
+        h2{
+            
+                color: $credible__blue;
+        
+        }
+
+    }
+    //1
+    .entry-main{
+
+
+        .post-quote{
+             color: $credible__blue;
+             padding: 2px;
+
+font-size: 1.2rem;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+
+        h3{
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+    }//entry main
+
+    //entry-footer
+    .entry-footer{
+        
+        
+        a{
+            color:  $credible__blue;
+        }
+    }
+
+
+
+
+
+
+
 }
 
 }
+
+
+
+
+
+
+/* pseudo quote */
+
+
+        }
+    }
+
+      .post-quote{
+          &::before{
+               content: '\f10d';
+                   font-family: Font Awesome\ 5 Free;
+                    font-weight: 900;
+                        color: $credible__blue;    
+                        font-size: 20px;
+                        padding: 30px;
+
+  
+          }
+
+
+          &::after{
+        content: '\f10e';
+                font-family: Font Awesome\ 5 Free;
+                font-weight: 900;
+                        color: $credible__blue;    
+                        font-size: 20px;
+                           padding: 30px;
+
+          }
+      }
+
+
+/*Main */
+.blog{
+    .site-content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+
+header{
+    h2{
+        text-align:center;
+        font-size: 32px;
+             color: $credible__blue;    
+
+
+        }
+        p{
+                    text-align:center;
+
+        }
+    }
+
+
+    //post-223
+    .post-223{
+    
+        padding: 2em;;
+        border: 1px solid #d7d0f2;
+        box-shadow: 0 2px 2px #42299a;
+        border: 10px;
+        header{
+            text-align: center;
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+
+
+
+
+    }
