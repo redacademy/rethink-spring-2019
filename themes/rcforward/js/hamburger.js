@@ -4,7 +4,6 @@
     if ($('.hamburger').css('display') !== 'none') {
       // hamburger menu
       $('#toggle-nav').on('click', function() {
-        $()
         $('#site-navigation').slideToggle();
       });
       // about us dropdown

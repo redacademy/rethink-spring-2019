@@ -12,8 +12,13 @@ get_header(); ?>
 	
 	<section id="post-<?php the_ID();?>" <?php post_class();?>>
 		<div class="content-404">
-			<div class="background"></div>
-			<div class="content"><?php the_content();?></div>
+			<div class="background">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/output-onlinepngtools.png" alt="404 image">
+			</div>
+		
+			<div class="content">
+				<?php the_content();?>
+			</div>
 		</div>
 	</section>
 
