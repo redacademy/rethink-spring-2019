@@ -294,7 +294,7 @@
         
         
                 .fund{
-                    
+                    text-align: center;
                     padding-top:3rem;
                     @include display-flex(column);
                     @include tablet-large{
@@ -327,6 +327,11 @@
                             @include desktop{
                                 width:100px;
                                 height:100px;
+                            }
+                        }
+                        p{
+                            @include tablet-large{
+                                margin-bottom:0;
                             }
                         }
 

@@ -2192,6 +2192,7 @@ ol.flickity-page-dots {
       padding: 2rem;
       padding-top: 0; } }
   .home .choose-fund-content .fund {
+    text-align: center;
     padding-top: 3rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2268,6 +2269,9 @@ ol.flickity-page-dots {
           .home .choose-fund-content .fund .fund-entry img {
             width: 100px;
             height: 100px; } }
+      @media (min-width: 800px) {
+        .home .choose-fund-content .fund .fund-entry p {
+          margin-bottom: 0; } }
       @media (min-width: 800px) {
         .home .choose-fund-content .fund .fund-entry {
           padding: 1rem;
