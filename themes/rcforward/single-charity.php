@@ -72,17 +72,21 @@ get_header(); ?>
                             <div class="image">
                                 <img  class="main-content-image" src="<?php  echo $main_content['image']; ?>">
                             </div>
-                              <div class="link-charity">
-                            <div class="link-1"><?php echo $charity_report_button; ?></div>
-                            <div class="link-2"><?php echo $charity_website_button; ?></div>
-                        </div>
+                            <div class="link-charity hide-mobile">
+                                <?php echo $charity_report_button; ?>
+                                <?php echo $charity_website_button; ?>
+                            </div>
                         </div>
                     
                         <div class="content-w-image">
 	                        <div class="h3-title"><h3><?php echo $main_content['title']; ?></h3></div>
                             <div class="p-description"><p><?php echo $main_content['content']; ?></p>
+                             <div class="link-charity hide-desktop">
+                                <?php echo $charity_report_button; ?>
+                                <?php echo $charity_website_button; ?>
+                            </div>
                         </div>
-                      
+
                 <?php elseif($main_content['image'] && $index !== $count):?>
                
                         <div class="main-image">
@@ -94,15 +98,21 @@ get_header(); ?>
                         </div>
                 
                 <?php elseif(!$main_content['image'] && $index !== $count):?>
+                <div class="no-image">
                     <div class="content-wo-image">
                         <h3 class ="content-wo-image" ><?php echo $main_content['title']; ?></h3>
                         <p class ="content-wo-image"><?php echo $main_content['content']; ?></p>
                     </div> 
+                </div>
                 <?php else: ?>
+                <div class="no-image">
                     <h3 class ="content-wo-image" ><?php echo $main_content['title']; ?></h3>
                     <p class ="content-wo-image"><?php echo $main_content['content']; ?></p>
+                    <div class="button-no-image">
                     <?php echo $charity_report_button; ?>
-                    <?php echo $charity_website_button; ?>    
+                    <?php echo $charity_website_button; ?>  
+                </div>
+                     </div>  
                 <?php endif; ?>
             </div>
                 <?php endforeach; 
