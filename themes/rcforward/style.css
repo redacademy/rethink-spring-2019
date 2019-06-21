@@ -2186,14 +2186,27 @@ ol.flickity-page-dots {
 .home .choose-fund-content {
   background-color: #F8F8FC;
   padding: 1rem;
-  padding-top: 0; }
+  padding-top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
   @media (min-width: 600px) {
     .home .choose-fund-content {
-      padding: 2rem;
-      padding-top: 0; } }
+      padding: 2rem; } }
   .home .choose-fund-content .fund {
     text-align: center;
-    padding-top: 3rem;
+    padding: 1rem;
+    max-width: 350px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2207,8 +2220,14 @@ ol.flickity-page-dots {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+    @media (min-width: 600px) {
+      .home .choose-fund-content .fund {
+        max-width: 500px; } }
     @media (min-width: 800px) {
       .home .choose-fund-content .fund {
+        padding: 0;
+        padding-top: 1rem;
+        max-width: 950px;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
