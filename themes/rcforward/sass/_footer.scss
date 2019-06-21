@@ -29,7 +29,7 @@
     }
     .footer-nav {
       display: none;
-      .menu {
+      .menu-footer-menu-container {
         ul {
           list-style: none;
           @include desktop {
@@ -51,6 +51,7 @@
     }
     .footer-info {
       text-align: center;
+      order: 2;
       @include desktop {
         order: unset;
         text-align: left;
@@ -75,7 +76,7 @@
       }
     }
     .footer-info-sm {
-      // order: 2;
+      order: 1;
       @include desktop {
         @include display-flex();
         flex-direction: column;
