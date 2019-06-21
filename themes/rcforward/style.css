@@ -1673,10 +1673,12 @@ ol.flickity-page-dots {
   .site-footer .top-footer .footer-nav {
     display: none; }
     .site-footer .top-footer .footer-nav .menu-footer-menu-container ul {
-      list-style: none; }
+      list-style: none;
+      padding-left: 3.5rem; }
       @media (min-width: 1000px) {
         .site-footer .top-footer .footer-nav .menu-footer-menu-container ul li {
-          margin: 2rem 0; }
+          margin: 2rem 0;
+          width: 9rem; }
           .site-footer .top-footer .footer-nav .menu-footer-menu-container ul li a {
             color: #00BEA8; } }
     @media (min-width: 1000px) {
@@ -1693,7 +1695,7 @@ ol.flickity-page-dots {
             -ms-flex-order: unset;
                 order: unset;
         text-align: left;
-        padding-left: 12rem;
+        padding-left: 8rem;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -1717,7 +1719,7 @@ ol.flickity-page-dots {
       @media (min-width: 1000px) {
         .site-footer .top-footer .footer-info p {
           display: unset;
-          width: 70%;
+          width: 80%;
           line-height: 2rem; } }
   .site-footer .top-footer .footer-info-sm {
     -webkit-box-ordinal-group: 2;
@@ -1785,7 +1787,8 @@ ol.flickity-page-dots {
                   order: unset;
           -webkit-box-align: start;
               -ms-flex-align: start;
-                  align-items: flex-start; } }
+                  align-items: flex-start;
+          margin-top: 3rem; } }
       .site-footer .top-footer .footer-info-sm .text-description p:first-child {
         margin: 1.4rem 0; }
       .site-footer .top-footer .footer-info-sm .text-description p:last-child {
@@ -1809,10 +1812,6 @@ ol.flickity-page-dots {
       height: 3rem;
       width: 3rem;
       margin: 0 1rem; }
-      @media (min-width: 1000px) {
-        .site-footer .top-footer .footer-info-sm .font-link .mail {
-          height: 4rem;
-          width: 4rem; } }
     .site-footer .top-footer .footer-info-sm .font-link .facebook {
       background-image: url("../../assets/images/mail.png");
       background-position: center;
@@ -1822,17 +1821,18 @@ ol.flickity-page-dots {
       height: 3rem;
       width: 3rem;
       margin: 0 1rem; }
+  .site-footer .bottom-footer {
+    width: 1200px; }
+    .site-footer .bottom-footer .footer-copyright {
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1; }
+      .site-footer .bottom-footer .footer-copyright .footer-maple-leaf {
+        width: 5rem;
+        margin: 0 auto; }
       @media (min-width: 1000px) {
-        .site-footer .top-footer .footer-info-sm .font-link .facebook {
-          height: 4rem;
-          width: 4rem; } }
-  .site-footer .bottom-footer .footer-copyright {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1; }
-    .site-footer .bottom-footer .footer-copyright .footer-maple-leaf {
-      width: 5rem;
-      margin: 0 auto; }
+        .site-footer .bottom-footer .footer-copyright {
+          padding-left: 3.5rem; } }
 
 .why-donate {
   display: -webkit-box;
