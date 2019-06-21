@@ -1,45 +1,118 @@
 //common parts
 .why-donate{
-    text-align: center;
+    @include display-flex(column);
+    span{
+        display:none;
+    }
+    p{
+        @include font-size(0.9);
+        @include tablet{
+            @include font-size(1.125);
+            font-weight:600;
+        }
+        font-weight:700;
+    }
     .why-donate-content{
-        @include display-flex();
-        padding:2rem 7rem;
-        justify-content: space-between;
-        img{
-            width:120px;
+        padding:1rem;
+        @include tablet{
+            padding:$content__padding;  
+        }
+        width: 100%;
+        max-width: 400px;
+        @include tablet{
+            max-width: 800px;
+        }
+        @include display-flex(row, space-between);
+        .single-reason{
+            @include display-flex(column);
+            img{
+                width:70px;
+                @include tablet{
+                    width:130px;
+                }
+            }
         }
     }
 }
 
 .custom-plan{
+    max-width:$max-content-size-mobile;
+    @include tablet{
+        max-width: 500px;
+    }
+    @include tablet-large{
+        max-width:$max-content-size;
+    }
+    @include desktop{
+        max-width:$max-content-size;
+    }
+    margin:0 auto;
     display:grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-gap:3rem;
-    padding:2rem 6rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    padding:1rem;
+    @include tablet-large{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    grid-gap:2rem;
+    @include tablet{
+        grid-gap:3rem;
+
+    }
     text-align: center;
     .single-custom-plan{
-        height:450px;
-        padding:2rem 3rem;
-        display:grid;
+        padding:2rem 0;
         grid-template-columns: 1fr;
-        grid-template-rows: 150px 50px auto 50px;
+        grid-template-rows: 150px 70px 70px;
+        @include tablet{
+            height:490px;
+            padding:2rem 3rem;
+            grid-template-rows: 150px 50px auto 50px;
+        }
+
+        
+        display:grid;
+
+        p{
+            display:none;
+            @include tablet{
+                display:block;
+            }
+        }    
+        h3{
+            @include font-size(1.125);
+            @include tablet{
+                @include font-size(1.3);
+            }
+        }
         img{
-            height:130px;
+            height:150px;
             margin:0 auto;
+            @include tablet-large{
+                height:130px;
+            }
+            @include desktop{
+                height:150px;
+            }
         }
         @include box-shadow();
         button, a{
             background:$credible__blue;
+            &:hover{
+                box-shadow: 0px 2px 2px darken($credible__blue, 20%);
+                text-shadow:1px 0.5px 1px white;
+            }
             padding:$button__padding;
             color:white;
             font-weight:600;
-            width:9rem;
+            width:12rem;
             border:none;
             box-shadow: none;
-        }
-        button{
-            margin-top:-1rem;
+            display:block;
+            margin:0 auto;
+            @include font-size(1.3);
+            border-radius: 7px;
         }
 
     }
@@ -49,57 +122,376 @@
 
 .home{
     .entry-header{
-        padding:$content__padding;
+        
+        overflow: hidden;
+        @include display-flex;
+        align-items:flex-start;
+        width:100%;
+        background-image:url("../../assets/images/front-page-banner-background.png");
+        height:760px;
+        background-repeat: no-repeat;
+        background-size: 500px;
+        background-position: bottom;
+        @include tablet{
+            background-size:80%;
+            background-position: right;
+            background-position-x:200%;
+            height:520px;
+        }
+        @include tablet-large{
+            height:660px;
+            padding-bottom: 3rem;
+        }
+    
+    .header-container{
         display:flex;
-        .header-content{
+        max-width:$max-content-size-mobile;
+        @include tablet{
+            max-width: $max-content-size;
+            padding-top:3rem;
+        }
+        @include desktop{
+            padding-top:5rem;
+        }
+    }
+    }
+    .header-content{
+        
+        flex-basis:100%;
+        @include tablet{
+            flex-basis: 60%;
+        }
+        @include tablet-large{
+            flex-basis:55%;
+        }
+        @include desktop{
             flex-basis:50%;
-            a{
-                // @include button();
-                // display:inline-block;
-                width:8rem;
-                margin:auto 1rem;
-            }
-            .donate-page-button{
-                color:$code__blue;
-                border:1px solid $code__blue;
+        }
+        padding:1rem;
+        @include tablet{
+            padding:$content__padding;
+        }
 
+        p{
+            @include font-size(1.125);
+            span{
+                color:$innovative__purple;
+                font-weight:600;
+            }
+            @include desktop{
+                margin:2.5rem 0;
+            }
+        }
+        .front-page-header-buttons{
+            display:flex;
+            margin:2rem 0;
+        a{
+            width:130px;
+            height:50px;
+            @include tablet{
+                width:135px;
+            }
+            @include desktop{
+                width:180px;
+                height:60px;
+                @include font-size(1.125);
+            }
+            @include display-flex();
+            border-radius: 7px;
+            @include font-size(0.9);
+        }
+        .how-it-works-button{
+            color:$innovative__purple;
+            border: 2px solid $innovative__purple;
+            &:hover{
+                box-shadow: 0px 2px 2px $innovative__purple;
+            }
+            margin-right:.5rem;
+            @include desktop{
+                margin-right:1rem;
+            }
+        }
+        .donate-page-button{
+            background-color:$code__blue;
+            margin-left:.5rem;
+            @include desktop{
+                margin-left:1rem;
+            }
+            &:hover{
+                box-shadow: 0px 2px 2px darken($code__blue,30%);
             }
         }
     }
+    }
 
+    //
+    .flowing-background-top{
+        background-image:url("../../assets/images/flowing-top.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position:center bottom;
+        overflow: visible;
+    }
     .choose-fund{
-        padding:$content__padding;
-        .choose-fund-subtitle{
-            font-weight:600;
-        }
-        .choose-fund-description{
-            margin:0 auto;
-        }
-
-        .fund{
-            @include display-flex();
-            margin:3rem auto;
-            justify-content: space-between;
-            .fund-entry{
-                @include box-shadow();
-                padding:1rem;
-                flex-basis:30%;
-                display:grid;
-                grid-template-columns: 1fr;
-                grid-template-rows:60px auto 130px 55px;
-                img{
-                    width:80px;
-                    height:80px;
-                    margin:0 auto;
-                }
-                a{
-                    @include button();
-                }
+        h3{
+            margin:0;
+            @include tablet{
+                margin-top: 2rem;
             }
         }
+        padding: 1rem;
+        @include tablet{
+            padding:$content__padding;
+            padding-bottom:0;
+
+        }
+        @include display-flex();
+        .choose-fund-container{
+            @include display-flex(column);
+            max-width:$max-content-size-mobile;
+            @include tablet{
+            max-width: $max-content-size;
+            }
+            text-align: center; 
+        }
+        .choose-fund-title-full{
+            display:none;
+            @include tablet{
+                display:block;
+            }
+        }
+        .choose-fund-title-mobile{
+            @include tablet{
+                display:none;
+            }
+        }
+                .choose-fund-subtitle{
+                    display:none;
+                    @include tablet{
+                        display:block;
+                        font-weight:600;
+                    }
+                }
+                .choose-fund-description{
+                    display:none;
+                    margin:0 auto;
+                    @include tablet{
+                        display:block;
+                    }
+                }
+    }
+
+    .choose-fund-content{
+        background-color:#F8F8FC;
+        padding: 1rem;
+        padding-top:0;
+
+       
+        @include tablet{
+            padding:$content__padding;
+            padding-top:0;
+        }
+        
+        
+                .fund{
+                    
+                    padding-top:3rem;
+                    @include display-flex(column);
+                    @include tablet-large{
+                        @include display-flex();
+                        justify-content: space-between;
+                    }
+                    h4{
+                        color:$innovative__purple;
+                        @include display-flex();
+                        @include font-size(1.125);
+                        @include tablet{
+                            @include font-size(1.3);
+                        }
+                        font-weight:700;
+                    }
+
+                    .fund-entry{
+                        background:#fff;
+                        @include box-shadow();
+                        padding:1.5rem;
+                        max-width:500px;
+                        margin-bottom:2rem; 
+
+                        display:grid;
+                        img{
+                            width:80px;
+                            height:80px;
+                            margin:auto;
+                            margin-top:0.5rem;
+                            @include desktop{
+                                width:100px;
+                                height:100px;
+                            }
+                        }
+
+                        @include tablet-large{
+                            padding:1rem;
+                            flex-basis:30%;
+                            height:455px;
+                            grid-template-columns: 1fr;
+                            grid-template-rows:80px 100px auto 60px; 
+                        }
+                        @include desktop{
+                            padding:1.5rem;
+                            grid-template-rows:60px 100px auto 60px
+                        }
+                        a{
+                            border:2px solid $innovative__purple;
+                            width:80%;
+                            padding:1.2rem 1.5rem;
+                            @include display-flex();
+                            margin:0 auto;
+                            border-radius: 7px;
+                            color:$innovative__purple;
+                            @include font-size(1.125);
+                            font-weight:700;
+                            @include tablet{
+                                @include button();
+                            }
+                        }
+                    }
+                }
+            }
 
 
+    .browse-charity{
+        text-align: center;
+        background-image:url("../../assets/images/flowing-bottom.png");
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position:center top;
+        padding: $content__padding;
+        @include display-flex();
+        p{
+            display:none;
+            @include tablet{
+                display:block;
+            }
+        }
+        .browse-charity-title-mobile{
+            display:block;
+            @include tablet{
+                display:none;
+            }
+        }
+        .browse-charity-title{
+            display:none;
+            @include tablet{
+                display:block;
+            }
+        }
+        
+        .browse-charity-container{
+            width:100%; 
+            max-width:$max-content-size;
+
+
+        }
+            // .charities-caresole{
+            //     padding:0 1.5rem;
+            // }
     }
 }
+
+// .home{
+//     text-align:center;
+//     .entry-header{
+//         text-align:left;
+//         // padding:$content__padding;
+//         display:flex;
+//         .header-content{
+//             flex-basis:100%;
+//             max-width:500px;
+//             margin:0 auto;
+//             h2{
+//                 @include font-size(2);
+//             }
+//             @include tablet{
+//                 flex-basis:50%;
+//                 h2{
+//                     @include font-size(2.5);
+//                 }
+//             }
+//             .entry-title-description{
+//                 font-size:1.125rem;
+//                 span{
+//                     color:$innovative__purple;
+//                     font-weight:600;
+//                 }
+//             }
+//             .front-page-header-buttons{
+//                 @include display-flex;
+//                 justify-content: flex-start;
+//                 margin:2rem auto;
+//             }
+//             a{
+//                 @include display-flex;
+//                 @include font-size(1);
+//                 @include tablet{
+//                     margin:auto 1rem;
+//                     @include font-size(1.125);
+//                     height: 60px;	
+//                     width: 160px;
+//                 }
+//                 font-weight:600;
+//                 border-radius: 7px;
+//                 height: 50px;	
+//                 width: 130px;
+//             }
+//             .donate-page-button{
+//                 background:$code__blue;
+//                 margin:0;
+//                 margin-left:0.5rem;
+//             }
+//             .how-it-works-button{
+//                 margin:0;
+//                 margin-right:0.5rem;
+//                 color:$innovative__purple;
+//                 border: 1px solid $innovative__purple;
+
+//             }
+//         }
+//     }
+
+//     .choose-fund{
+//         padding:$content__padding;
+//         .choose-fund-subtitle{
+//             font-weight:600;
+//         }
+//         .choose-fund-description{
+//             margin:0 auto;
+//         }
+
+//         .fund{
+//             @include display-flex();
+//             margin:3rem auto;
+//             justify-content: space-between;
+//             .fund-entry{
+//                 @include box-shadow();
+//                 padding:1rem;
+//                 flex-basis:30%;
+//                 display:grid;
+//                 grid-template-columns: 1fr;
+//                 grid-template-rows:60px auto 130px 55px;
+//                 img{
+//                     width:80px;
+//                     height:80px;
+//                     margin:0 auto;
+//                 }
+//                 a{
+//                     @include button();
+//                 }
+//             }
+//         }
+
+
+//     }
+// }
 
 

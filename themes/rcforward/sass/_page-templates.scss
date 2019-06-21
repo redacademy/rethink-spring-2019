@@ -44,6 +44,7 @@
           .work-step {
             @include display-flex();
             flex-direction: row;
+
             @include desktop {
               @include display-flex();
               flex-direction: column;
@@ -59,6 +60,7 @@
                 display: none;
               }
             }
+
             .step-text {
               .work-step-title,
               .work-step-description {
@@ -74,11 +76,9 @@
               color: $credible__blue;
             }
           }
-          & .work-step::last-child {
-            position: absolute;
+          & .work-step:last-child {
             .mobile-step {
-              position: relative;
-              top: 0;
+              padding-bottom: 4rem;
             }
           }
         }
@@ -93,11 +93,11 @@
         @include desktop {
           margin: 2rem 0;
         }
-
       }
       .entry-contact-us {
         font-size: 1.3rem;
         text-align: center;
+        padding-bottom: 3rem;
         @include desktop {
           background-color: $cream__background;
           padding: 3rem 0;
@@ -136,11 +136,27 @@
       margin: 4rem 2rem 0;
       @include display-flex();
       flex-direction: column;
+      p strong {
+        font-size: 2.6rem;
+        color: $credible__blue;
+      }
       h3 {
         display: none;
         @include desktop {
           display: unset;
           font-size: 2rem;
+        }
+      }
+      // TO DO First
+      @include tablet {
+        & .wp-block-columns:first-child {
+          position: relative;
+          & .wp-block-column:first-child {
+            position: absolute;
+          }
+          & .wp-block-column:last-child {
+            position: absolute;
+          }
         }
       }
       @include desktop {
@@ -163,34 +179,26 @@
             }
           }
         }
-        .wp-block-column {
-          & p:first-child {
-            width: 60%;
-            text-align: center;
-            margin: 1.5rem auto;
-            strong {
-              line-height: 2.7rem;
-              font-size: 2rem;
-            }
-          }
-        }
       }
       & .wp-block-columns:nth-child(2n) {
-        order: 2;
         @include desktop {
           order: unset;
         }
       }
-      & .wp-block-columns:nth-child(2n),
+      & .wp-block-columns:nth-child(3n),
       & .wp-block-columns:last-child {
         margin: 0 auto;
         & .wp-block-column:first-child {
           & p:first-child {
             width: 80%;
+            strong {
+              font-size: 1.5rem;
+              color: $grounded__green;
+            }
           }
         }
       }
-      .wp-block-columns {
+      & .wp-block-columns {
         .wp-block-column {
           margin-bottom: 0;
           & p:nth-child(2n),
@@ -222,7 +230,7 @@
         @include desktop {
           & .wp-block-column:first-child {
             p {
-            margin-left: 0;
+              margin-left: 0;
             }
           }
         }
@@ -247,11 +255,11 @@
       h3 {
         font-size: 1.4rem;
         margin-bottom: 0;
-        padding-top: 3rem;
+        padding: 3rem 0;
       }
       .why-donate-content {
-        @include tablet {
-        }
+        padding: 0 0.6rem;
+
         @include desktop {
           width: 70%;
           margin: 0 auto;
@@ -396,6 +404,50 @@
                 margin-top: 0;
               }
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* The Team page */
+.page-template-page-team {
+  .site-content {
+    .entry-header {
+      text-align: center;
+      color: $credible__blue;
+      padding: 2rem 0;
+      font-size: 1.8rem;
+      border-bottom: 2px solid $credible__blue;
+      .page-title {
+      }
+      p {
+      }
+    }
+    .entry-content {
+      .single-member {
+        font-size: 1.2rem;
+        border-bottom: 2px solid $credible__blue;
+        .member-photo {
+          margin: 2rem 0;
+        }
+        .member-info {
+          color: $grounded__green;
+        }
+        .contact-button {
+          text-align: center;
+          margin-bottom: 2.5rem;
+          a {
+            border: 2px solid #42299a;
+            font-size: 1.5rem;
+            font-weight: bolder;
+            padding: 1.6rem 4rem;
+            display: inline-block;
+            color: $white;
+
+            border-radius: 8px;
+            background-color: $credible__blue;
           }
         }
       }

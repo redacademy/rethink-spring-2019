@@ -16,6 +16,7 @@
 <?php endif; ?>
 
 <footer id="colophon" class="site-footer" role="contentinfo">
+	<section class="top-footer">
 	<div class="footer-site-logo">
 		<a href="<?php echo home_url('/'); ?>" rel="home">
 			<h2 class="rcforward-logo">Rc Forward</h2>
@@ -43,9 +44,12 @@
 			<!-- <i class="fab fa-facebook-f fa-2x"></i> -->
 		</div>
 	</div> <!-- .footer-info-sm -->
+</section>
+<section class="bottom-footer">
 	<div class="footer-copyright">
 		<p>Copyright 2019 &copy; Rethink Charity</p>
 	</div>
+</section>
 </footer><!-- #colophon -->
 </div><!-- #page -->
 

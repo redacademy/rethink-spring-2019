@@ -5,78 +5,147 @@
   color: $white;
   font-size: 1.12rem;
   padding: 1.4rem 0;
-  .footer-site-logo {
-    order: 1;
-    a {
-      .rcforward-logo {
-        color: $white;
-        text-transform: uppercase;
-        text-align: center;
-        margin: 2.3rem 0;
-      }
-    }
-  }
-  .footer-nav {
-    display: none;
-  }
-  .footer-info {
-    order: 3;
-    text-align: center;
-    .footer-maple-leaf {
-      width: 70%;
-    }
-    p {
-      display: none;
-    }
-  }
-  .footer-info-sm {
+  @include desktop {
     @include display-flex();
     flex-direction: column;
-    order: 2;
-    .text-description {
-      width: 88%;
-      order: 2;
+  }
+  .top-footer {
+    @include desktop {
       @include display-flex();
-      flex-direction: column;
-      & p:first-child {
-        margin: 1.4rem 0;
+    }
+    .footer-site-logo {
+      order: 4;
+      @include desktop {
+        display: none;
       }
-      & p:last-child {
-        line-height: 2rem;
-        margin-bottom: 1rem;
-        text-align: center;
-      }
-      .footer-info-logo {
-        width: 50%;
-        max-height: 8rem;
-        object-fit: fill;
+      a {
+        .rcforward-logo {
+          color: $white;
+          text-transform: uppercase;
+          text-align: center;
+          margin: 2.3rem 0;
+        }
       }
     }
-    .font-link {
-      order: 1;
-      .mail {
-        background-image: url('../../assets/images/facebook.png');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: inline-block;
-        height: 3rem;
-        width: 3rem;
-        margin: 0 1rem;
+    .footer-nav {
+      display: none;
+      .menu {
+        ul {
+          list-style: none;
+          @include desktop {
+            & li:nth-child(5n) {
+              display: none;
+            }
+            li {
+              margin: 2rem 0;
+              a {
+                color: $code__blue;
+              }
+            }
+          }
+        }
       }
-      .facebook {
-        background-image: url('../../assets/images/mail.png');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: inline-block;
-        height: 3rem;
-        width: 3rem;
-        margin: 0 1rem;
+      @include desktop {
+        display: unset;
+      }
+    }
+    .footer-info {
+      text-align: center;
+      @include desktop {
+        order: unset;
+        text-align: left;
+        padding-left: 12rem;
+        @include display-flex();
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .footer-maple-leaf {
+        width: 7rem;
+        @include desktop {
+
+        }
+      }
+      p {
+        display: none;
+        @include desktop {
+          display: unset;
+          width: 70%;
+          line-height: 2rem;
+        }
+      }
+    }
+    .footer-info-sm {
+      // order: 2;
+      @include desktop {
+        @include display-flex();
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      @include display-flex();
+      flex-direction: column;
+      .text-description {
+        width: 88%;
+        order: 2;
+        @include display-flex();
+        flex-direction: column;
+        @include desktop {
+          order: unset;
+          align-items: flex-start;       
+        }
+        & p:first-child {
+          margin: 1.4rem 0;
+        }
+        & p:last-child {
+          line-height: 2rem;
+          margin-bottom: 1rem;
+          text-align: center;
+          @include desktop {
+            text-align: left;
+          }
+        }
+        .footer-info-logo {
+          width: 50%;
+          max-height: 8rem;
+          object-fit: fill;
+        }
+      }
+      .font-link {
+        .mail {
+          background-image: url('../../assets/images/facebook.png');
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          display: inline-block;
+          height: 3rem;
+          width: 3rem;
+          margin: 0 1rem;
+          @include desktop {
+            height: 4rem;
+            width: 4rem;
+          }
+        }
+        .facebook {
+          background-image: url('../../assets/images/mail.png');
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          display: inline-block;
+          height: 3rem;
+          width: 3rem;
+          margin: 0 1rem;
+          @include desktop {
+            height: 4rem;
+            width: 4rem;
+          }
+        }
       }
     }
   }
-  .footer-copyright {
-    order: 4;
+  .bottom-footer {
+    .footer-copyright {
+      order: 1;
+      @include desktop {
+      }
+    }
   }
 }

@@ -52,20 +52,22 @@ body {
   background: $credible__blue;
   color: $grounded__green;
   font-family: $montserrat__font;
+  @include font-size(0.9);
+  @include tablet{
+    @include font-size(1);
+  };
 }
 .site {
   max-width: $max-screen-size;
   margin: 0 auto;
   background: white;
 }
-.site-content {
-  @include tablet {
-    padding: 2rem;
-  }
-  @include desktop {
-    padding: 5rem;
-  }
-}
+// .site-content {
+//     padding: 1.5rem;
+//   @include desktop {
+//     padding: 3rem;
+//   }
+// }
 
 /* Chimp Donate Button */
 .chimp-donate-form, .donate-page-button {
