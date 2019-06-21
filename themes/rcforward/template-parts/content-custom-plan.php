@@ -33,7 +33,7 @@ foreach ( $custom_plans as $custom_plan ) :
         <?php else: ?>
         <a href="<?php echo home_url(); ?>/contact">Contact Us</a>
         <?php endif; ?>
-</div>
+    </div>
     </div>
 
 <?php endforeach; 

@@ -36,16 +36,13 @@ $white: #fff;
 // RC Fonts
 $montserrat__font: 'Montserrat', sans-serif;
 
-<<<<<<< HEAD
-// Screen Size
-$tablet-width: 600px;
-=======
 // RC Mixins
-$tablet-width: 650px;
->>>>>>> c590575265e0bcd82d5845260c2817245a4e37b3
+$tablet-width: 600px;
+$tablet-breakpoint: 800px;
 $desktop-width: 1000px;
 $max-screen-size: 1440px;
-$max-content-size: 900px;
+$max-content-size: 950px;
+$max-content-size-mobile:350px;
 
 // Typography
 
@@ -57,5 +54,5 @@ $font__line-height-pre: 1.6;
 
 //padding
 
-$button__padding: 1rem 1.5rem;
-$content__padding: 2rem 6rem;
+$button__padding: 0.7rem 1.5rem;
+$content__padding: 2rem;

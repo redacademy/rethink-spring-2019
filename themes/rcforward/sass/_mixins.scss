@@ -16,6 +16,11 @@
         @content;
     }
 }
+@mixin tablet-large{
+    @media (min-width: $tablet-breakpoint){
+        @content;
+    }
+}
     
 @mixin desktop {
     @media (min-width: $desktop-width) {

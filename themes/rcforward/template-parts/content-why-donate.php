@@ -8,7 +8,7 @@
 ?>
 
 <div class="why-donate">
-    <h3>Why Donate to RC Forward?</h3>
+    <h3>Why <span>Donate to</span> RC Forward?</h3>
     <div class="why-donate-content">
 <?php
 // TODO check method:

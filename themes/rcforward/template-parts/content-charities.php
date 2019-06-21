@@ -27,9 +27,9 @@
 						<div class="post-title">
                             <?php $charity_name=CFS()->get('charity_name');
                             if($charity_name):?>
-                            <p><?php echo $charity_name?>
+                            <p class="post-name"><?php echo $charity_name?>
                             <?php else: ?>
-                            <p><?php the_title(); ?></p>
+                            <p class="post-name"><?php the_title(); ?></p>
                             <?php endif ?>
                         </div>
                         
