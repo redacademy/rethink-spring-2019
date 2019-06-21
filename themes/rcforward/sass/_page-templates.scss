@@ -252,24 +252,12 @@
     }
     .why-donate {
       background-color: $cream__background;
-      h3 {
-        font-size: 1.4rem;
-        margin-bottom: 0;
-        padding: 3rem 0;
+      span {
+        display: inline-block;
       }
-      .why-donate-content {
-        padding: 0 0.6rem;
-
-        @include desktop {
-          width: 70%;
-          margin: 0 auto;
-        }
-        .single-reason {
-          p {
-            font-weight: bolder;
-          }
-        }
-      }
+    }
+    .carousel-title {
+      text-align: center;
     }
   }
 }
@@ -420,8 +408,9 @@
       padding: 2rem 0;
       font-size: 1.8rem;
       border-bottom: 2px solid $credible__blue;
-    
-  
+      @include desktop {
+        border-bottom: none;
+      }
     }
     .entry-content {
       .single-member {
@@ -429,13 +418,28 @@
         border-bottom: 2px solid $credible__blue;
         .member-photo {
           margin: 2rem 0;
+          text-align: center;
+          img {
+            border-radius: 50%;
+            width: 75%;
+          }
         }
         .member-info {
           color: $grounded__green;
+          margin: 0 2rem;
+          h3 {
+            text-align: center;
+            font-size: 1.8rem;
+          }
+          p {
+            line-height: 2.3rem;
+            font-size: 1.3rem;
+          }
         }
         .contact-button {
           text-align: center;
-          margin-bottom: 2.5rem;
+          padding-bottom: 2.5rem;
+          padding-top: 4rem;
           a {
             border: 2px solid #42299a;
             font-size: 1.5rem;
@@ -448,6 +452,73 @@
             background-color: $credible__blue;
           }
         }
+      }
+      @include tablet {
+        & .single-member:last-child {
+          border-bottom: none;
+        }
+      }
+      @include desktop {
+        @include display-flex();
+        flex-direction: column;
+        .single-member {
+          @include display-flex();
+          width: 80%;
+          margin-right: 0;
+          margin: 2rem 0;
+          border-bottom: none;
+          box-shadow: -.4px .2px 5px .02px $innovative__purple;
+          border-radius: 8px;
+          padding: .4rem 2rem 1.6rem;
+          width: 70%;
+          .member-photo {
+            img {
+              width: 15rem;
+            }
+          }
+          .member-info {
+            h3 {
+              font-size: 2rem;
+              color: $credible__blue;
+              text-align: left;
+            }
+            p {
+              font-size: 1rem;
+              line-height: 1.7rem;
+            }
+          }
+          .contact-button {
+            padding: 0 3rem 0;
+            text-align: right;
+          }
+        }
+      }
+    }
+    .custom-plan {
+      @include tablet {
+        display: none;
+      }
+      & .single-custom-plan:first-child {
+        border: none;
+        box-shadow: none;
+        h3 {
+          font-size: 1.4rem;
+        }
+        p {
+          display: unset;
+          margin: 1.5rem 0;
+          font-size: 1.1rem;
+          line-height: 1.5rem;
+        }
+        div {
+          margin-top: 3.7rem;
+          a {
+            margin-top: 2.3rem;
+          }
+        }
+      }
+      & .single-custom-plan:last-child {
+        display: none;
       }
     }
   }

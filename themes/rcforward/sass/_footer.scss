@@ -101,7 +101,6 @@
         }
         .footer-info-logo {
           width: 50%;
-          max-height: 8rem;
           object-fit: fill;
         }
       }
@@ -144,7 +143,12 @@
       @include desktop {
         padding-left: 3.5rem;
       }
-      
+      p {
+        text-align: center;
+        @include desktop {
+          text-align: left;
+        }
+      }
     }
   }
 }

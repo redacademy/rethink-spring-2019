@@ -484,7 +484,15 @@ p {
   background: linear-gradient(rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.13)), url("../../assets/images/nw-mobile.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  margin-top: 3rem; }
+  @media (min-width: 1000px) {
+    .footer-sidebar {
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.13)), to(rgba(0, 0, 0, 0.13))), url("../../assets/images/Newsletterbackground.png");
+      background: linear-gradient(rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.13)), url("../../assets/images/Newsletterbackground.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; } }
   .footer-sidebar .widget {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -849,18 +857,11 @@ body .hide-desktop {
 
 .page-template-page-how-it-works .site-content .why-donate {
   background-color: #F9F5ED; }
-  .page-template-page-how-it-works .site-content .why-donate h3 {
-    font-size: 1.4rem;
-    margin-bottom: 0;
-    padding: 3rem 0; }
-  .page-template-page-how-it-works .site-content .why-donate .why-donate-content {
-    padding: 0 0.6rem; }
-    @media (min-width: 1000px) {
-      .page-template-page-how-it-works .site-content .why-donate .why-donate-content {
-        width: 70%;
-        margin: 0 auto; } }
-    .page-template-page-how-it-works .site-content .why-donate .why-donate-content .single-reason p {
-      font-weight: bolder; }
+  .page-template-page-how-it-works .site-content .why-donate span {
+    display: inline-block; }
+
+.page-template-page-how-it-works .site-content .carousel-title {
+  text-align: center; }
 
 /* Single Fund Pages */
 .single-fund .hfeed .site-content .type-fund {
@@ -995,17 +996,32 @@ body .hide-desktop {
   padding: 2rem 0;
   font-size: 1.8rem;
   border-bottom: 2px solid #14225F; }
+  @media (min-width: 1000px) {
+    .page-template-page-team .site-content .entry-header {
+      border-bottom: none; } }
 
 .page-template-page-team .site-content .entry-content .single-member {
   font-size: 1.2rem;
   border-bottom: 2px solid #14225F; }
   .page-template-page-team .site-content .entry-content .single-member .member-photo {
-    margin: 2rem 0; }
+    margin: 2rem 0;
+    text-align: center; }
+    .page-template-page-team .site-content .entry-content .single-member .member-photo img {
+      border-radius: 50%;
+      width: 75%; }
   .page-template-page-team .site-content .entry-content .single-member .member-info {
-    color: #192726; }
+    color: #192726;
+    margin: 0 2rem; }
+    .page-template-page-team .site-content .entry-content .single-member .member-info h3 {
+      text-align: center;
+      font-size: 1.8rem; }
+    .page-template-page-team .site-content .entry-content .single-member .member-info p {
+      line-height: 2.3rem;
+      font-size: 1.3rem; }
   .page-template-page-team .site-content .entry-content .single-member .contact-button {
     text-align: center;
-    margin-bottom: 2.5rem; }
+    padding-bottom: 2.5rem;
+    padding-top: 4rem; }
     .page-template-page-team .site-content .entry-content .single-member .contact-button a {
       border: 2px solid #42299a;
       font-size: 1.5rem;
@@ -1015,6 +1031,86 @@ body .hide-desktop {
       color: #fff;
       border-radius: 8px;
       background-color: #14225F; }
+
+@media (min-width: 600px) {
+  .page-template-page-team .site-content .entry-content .single-member:last-child {
+    border-bottom: none; } }
+
+@media (min-width: 1000px) {
+  .page-template-page-team .site-content .entry-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+    .page-template-page-team .site-content .entry-content .single-member {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      width: 80%;
+      margin-right: 0;
+      margin: 2rem 0;
+      border-bottom: none;
+      -webkit-box-shadow: -0.4px 0.2px 5px 0.02px #42299A;
+              box-shadow: -0.4px 0.2px 5px 0.02px #42299A;
+      border-radius: 8px;
+      padding: .4rem 2rem 1.6rem;
+      width: 70%; }
+      .page-template-page-team .site-content .entry-content .single-member .member-photo img {
+        width: 15rem; }
+      .page-template-page-team .site-content .entry-content .single-member .member-info h3 {
+        font-size: 2rem;
+        color: #14225F;
+        text-align: left; }
+      .page-template-page-team .site-content .entry-content .single-member .member-info p {
+        font-size: 1rem;
+        line-height: 1.7rem; }
+      .page-template-page-team .site-content .entry-content .single-member .contact-button {
+        padding: 0 3rem 0;
+        text-align: right; } }
+
+@media (min-width: 600px) {
+  .page-template-page-team .site-content .custom-plan {
+    display: none; } }
+
+.page-template-page-team .site-content .custom-plan .single-custom-plan:first-child {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
+  .page-template-page-team .site-content .custom-plan .single-custom-plan:first-child h3 {
+    font-size: 1.4rem; }
+  .page-template-page-team .site-content .custom-plan .single-custom-plan:first-child p {
+    display: unset;
+    margin: 1.5rem 0;
+    font-size: 1.1rem;
+    line-height: 1.5rem; }
+  .page-template-page-team .site-content .custom-plan .single-custom-plan:first-child div {
+    margin-top: 3.7rem; }
+    .page-template-page-team .site-content .custom-plan .single-custom-plan:first-child div a {
+      margin-top: 2.3rem; }
+
+.page-template-page-team .site-content .custom-plan .single-custom-plan:last-child {
+  display: none; }
 
 /*!
  * Hamburgers
@@ -1800,7 +1896,6 @@ ol.flickity-page-dots {
             text-align: left; } }
       .site-footer .top-footer .footer-info-sm .text-description .footer-info-logo {
         width: 50%;
-        max-height: 8rem;
         -o-object-fit: fill;
            object-fit: fill; }
     .site-footer .top-footer .footer-info-sm .font-link .mail {
@@ -1833,6 +1928,11 @@ ol.flickity-page-dots {
       @media (min-width: 1000px) {
         .site-footer .bottom-footer .footer-copyright {
           padding-left: 3.5rem; } }
+      .site-footer .bottom-footer .footer-copyright p {
+        text-align: center; }
+        @media (min-width: 1000px) {
+          .site-footer .bottom-footer .footer-copyright p {
+            text-align: left; } }
 
 .why-donate {
   display: -webkit-box;
