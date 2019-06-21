@@ -62,23 +62,12 @@ body {
   margin: 0 auto;
   background: white;
 }
-<<<<<<< HEAD
 // .site-content {
 //     padding: 1.5rem;
 //   @include desktop {
 //     padding: 3rem;
 //   }
 // }
-=======
-.site-content {
-  @include tablet {
-    padding: 2rem;
-  }
-  @include desktop {
-    padding: 5rem;
-  }
-}
->>>>>>> f44818300e6d9d747ab2259b34815f4bf98469b4
 
 /* Chimp Donate Button */
 .chimp-donate-form, .donate-page-button {

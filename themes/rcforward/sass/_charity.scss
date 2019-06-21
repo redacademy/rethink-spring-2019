@@ -90,26 +90,9 @@
           }
           .charity-logo {
             text-align: center;
-<<<<<<< HEAD
-      font-size: 2em;
-    }
-    .amount-funded {
-            background-color: rgba(216,216,216,0.18);
-                 text-align: center;
-      p {
-        font-size: 42px;
-        margin: 0 20px 0 0;
-        color: $innovative__purple;
-        // font-family: $gotham__font;
-        font-weight: bold;
-        line-height: 60px;
-        letter-spacing: normal;
-                font-style: normal;
-=======
             width: 100%;
           }
         }
->>>>>>> f44818300e6d9d747ab2259b34815f4bf98469b4
       }
       .entry-content {
         margin-top: 45px;
@@ -135,15 +118,6 @@
             line-height: 60px;
             letter-spacing: normal;
             font-style: normal;
-<<<<<<< HEAD
-            width: 728px;
-            margin-left: auto;
-            margin-right: auto;
-            // font-family: $gotham__font;
-            font-size: 24px;	
-            font-weight: 300;	
-            line-height: 33px;	
-=======
             @include desktop {
               font-size: 40px;
             }
@@ -213,7 +187,6 @@
             }
           }
           .h3-title {
->>>>>>> f44818300e6d9d747ab2259b34815f4bf98469b4
             text-align: center;
             color: #42299a;
             @include desktop {
@@ -225,39 +198,7 @@
       }
     }
   }
-<<<<<<< HEAD
-  .browse-charities-title{
-      text-align: center;	
-      color:$credible__blue;
-      // font-family: $gotham__font;	
-      font-size: 28px;	
-      font-weight: bold;	
-      line-height: 31px;
-  }
-
-}
-
-/* Main Content Section */
-
-.last-with-button{
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  flex-wrap: wrap;
-  padding:10px;
-}
-.content-image{
-  display: flex;
-}
-.content-next{
-  display: flex;
-}
-.main-content{
-  background:#F9F5ED;
-  button{
-=======
   .browse-charities-title {
->>>>>>> f44818300e6d9d747ab2259b34815f4bf98469b4
     text-align: center;
     color: $credible__blue;
 
