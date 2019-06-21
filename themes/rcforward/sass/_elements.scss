@@ -82,6 +82,27 @@ a {
   }
 }
 
+h2{
+    font-size: 2.0rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    @include tablet{
+        font-size: 2.5rem;
+    }
+    font-weight: 700;
+    
+}
+h3{
+    font-size: 1.6rem;
+    @include tablet{
+        font-size: 2rem;
+    }
+    font-weight: 700;
+}
+p{
+    margin:1.5rem 0;
+    line-height:1.4rem;
+}
 .chimp-donate-form {
   background: $code__blue;
 }
