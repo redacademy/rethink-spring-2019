@@ -2,16 +2,253 @@
 # 404 Page
 --------------------------------------------------------------*/
 .page-template-404{
-    .site-content{
-        
-        width: 100%;
-        height: 100vh;
-        .content-404{
-            display:flex;
-            width:100%;
-            
-        }
+    // .site-content{
+    .container-404{
+    display: flex;
+//     flex-direction: column;
+//     .error-container{
+//                 max-width: 950px;
+//                        background: url(../../assets/images/output-onlinepngtools.png);
+
+//                 background-repeat: no-repeat;
+// display: flex;
+// justify-content: flex-end;
+//     background-position: bottom;
+//     background-position-y: 91%;
+//     height: 665px;
+//     background-size: contain;
+//     background-repeat: no-repeat;
+//     width: 50%;
  
+.error-text{
+order:2;
+width: 60%;
+}
+.search-girl{
+    order:1;
+    width:40%;
+    img{
+        max-width: 100%;
+    }
+
+}
+
+    }//end of .container-404
+
+    }
+
+
+
+
+
+
+    /* blog page */
+    .single{
+        line-height: 2rem;
+        .site-content
+        {
+                display: flex;
+                    padding: 0;
+.post-223{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+//1      
+.entry-header{
+    width: 100%;
+  
+    img{
+width: 100%;
+    object-fit: cover;
+    height: 50vh;
+    @include desktop{
+        height: 100vh;
+    }
+    }
+.post-navigation{
+    width: 100%;
+}
+}
+
+
+//2
+.entry-content{
+    
+
+padding:2em;
+@include desktop{
+    display: flex;
+    flex-direction: column;
+  
+    padding-left:8em;
+}
+
+    //1
+    .entry-title{
+            line-height: 1.2em;
+        .entry-meta{
+            font-size:1.2rem;
+            color: #A7A3D6;
+            font-weight: bold;
+        }
+        h2{
+            
+                color: $credible__blue;
+        
+        }
+
+    }
+    //1
+    .entry-main{
+@include desktop{
+    padding:2rem;
+      width:60%;
+}
+
+        .post-quote{
+             color: $credible__blue;
+             padding: 2px;
+ line-height: 2em;
+font-size: 1.2rem;
+            font-weight: bold;
+            font-style: italic;
+
+               @include tablet{
+              font-size:2rem;
+
+              @include desktop{
+                  line-height: 2em;
+font-size: 2rem;
+              }
+          }
+        }
+
+
+        h3{
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+    }//entry main
+
+    //entry-footer
+    .entry-footer{
+        
+        
+        a{
+            color:  $credible__blue;
+        }
+    }
+
+
+p{
+    line-height: 1.8rem;
+}
+
+
+
+
 }
 
 }
+
+
+
+
+
+
+/* pseudo quote */
+
+
+        }
+    }
+
+      .post-quote{
+       
+          &::before{
+               content: '\f10d';
+                   font-family: Font Awesome\ 5 Free;
+                    font-weight: 900;
+                        color: $credible__blue;    
+                        font-size: 20px;
+                        padding: 30px;
+
+  
+          }
+
+
+          &::after{
+        content: '\f10e';
+                font-family: Font Awesome\ 5 Free;
+                font-weight: 900;
+                        color: $credible__blue;    
+                        font-size: 20px;
+                           padding: 30px;
+
+          }
+      }
+
+
+/*Main */
+.blog{
+    .site-content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+
+header{
+    h2{
+        text-align:center;
+        font-size: 32px;
+             color: $credible__blue;    
+
+
+        }
+        p{
+                    text-align:center;
+
+        }
+    }
+
+
+    //post-223
+    .post-223{
+        padding: 4em;
+     .post-blog{
+
+        padding: 2em;
+        border: 1px solid #d7d0f2;
+        box-shadow: 0 2px 2px #42299a;
+        border: 10px;
+        header{
+            text-align: center;
+            img{
+                width: 100%;
+                object-fit: cover;
+                    height: 100%;
+            }
+        }
+    }
+
+}
+.posted-on{
+    font-size: 1.2rem;
+    color: #a7a3d6;
+    font-weight: 700;
+
+}
+h3, .read-more-button{
+color: $credible__blue;
+}
+
+.read-more-button{
+    font-size: 1.5rem;
+}
+.read-more-{
+    text-align: right;
+}
+
+    }
+    }

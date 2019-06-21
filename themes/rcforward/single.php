@@ -100,6 +100,7 @@ get_header(); ?>
 								<a class="read-more-button" href="<?php echo $next_post->guid ?>">Read More <span class="read-more-arrow"> &#x203A; </span></a>
 
 							<?php endif; ?>
+							
 
 						</div>
 

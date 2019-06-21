@@ -62,12 +62,6 @@ body {
   margin: 0 auto;
   background: white;
 }
-// .site-content {
-//     padding: 1.5rem;
-//   @include desktop {
-//     padding: 3rem;
-//   }
-// }
 
 /* Chimp Donate Button */
 .chimp-donate-form, .donate-page-button {
@@ -80,5 +74,22 @@ body {
   @include tablet {
   }
   @include desktop {
+  }
+}
+
+/* Transition for single content charity button */
+body {
+  .hide-mobile {
+    display: none;
+    @include desktop {
+      display: flex;
+    }
+  }
+
+  .hide-desktop {
+    display: flex;
+    @include desktop {
+      display: none;
+    }
   }
 }

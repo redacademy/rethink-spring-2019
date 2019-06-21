@@ -20,6 +20,7 @@ get_header(); ?>
 	<?php while (have_posts()) : the_post(); ?>
 
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		<section class="post-blog">
 			<header class="entry-header">
 				<?php if (has_post_thumbnail()) : ?>
 					<?php the_post_thumbnail('large'); ?>
@@ -49,5 +50,5 @@ get_header(); ?>
 	<?php get_template_part('template-parts/content', 'none'); ?>
 
 <?php endif; ?>
-
+</section>
 <?php get_footer(); ?>

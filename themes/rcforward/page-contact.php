@@ -15,8 +15,8 @@ get_header(); ?>
 	<header class="entry-header">
 		<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
 	</header><!-- .entry-header -->
-	
-	<h4> We'd love to hear from you.</h4>
+
+	<h4>We'd love to hear from you.</h4>
 	
 	<div class="contact-text">
 		<p><strong>Questions, comments, feedback?</p></strong>

@@ -14,6 +14,9 @@
       display: flex;
       flex-direction: column;
       padding: 24px;
+      @include tablet {
+        padding: 0;
+      }
       .entry-header {
         margin-top: 10px;
         display: flex;
@@ -70,9 +73,11 @@
           }
         }
         .wp-block-column {
-          margin-bottom: 69px;
-          margin-top: 14px;
+          margin: 0;
           font-style: normal;
+          @include tablet {
+            padding-left: 2rem;
+          }
           p:first-child {
             font-weight: normal;
             color: $black;
@@ -98,9 +103,9 @@
             p {
               label {
                 font-weight: bold;
-                @include tablet{
-                color: $credible__blue;
-                font-weight:300;
+                @include tablet {
+                  color: $credible__blue;
+                  font-weight: 300;
                 }
                 input {
                   background: rgba(64, 206, 190, 0.1);
@@ -126,12 +131,11 @@
                 width: 150px;
                 border-radius: 5px;
                 height: 62px;
-                @include tablet{
-                         background: $white;
-                         color: $credible__blue;
-                    border: 2px solid $credible__blue;
-                         color: $credible__blue;
-                        
+                @include tablet {
+                  background: $white;
+                  color: $credible__blue;
+                  border: 2px solid $credible__blue;
+                  color: $credible__blue;
                 }
               }
             }
@@ -147,5 +151,11 @@
     @include tablet {
       text-align: right;
     }
+  }
+}
+.wp-block-columns {
+  flex-direction: column;
+  @include tablet {
+    flex-direction: row;
   }
 }
