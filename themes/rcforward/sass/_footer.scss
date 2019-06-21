@@ -14,7 +14,7 @@
       @include display-flex();
     }
     .footer-site-logo {
-      order: 1;
+      order: 4;
       @include desktop {
         display: none;
       }
@@ -50,7 +50,6 @@
       }
     }
     .footer-info {
-      order: 3;
       text-align: center;
       @include desktop {
         order: unset;
@@ -76,6 +75,7 @@
       }
     }
     .footer-info-sm {
+      // order: 2;
       @include desktop {
         @include display-flex();
         flex-direction: column;
@@ -83,11 +83,9 @@
       }
       @include display-flex();
       flex-direction: column;
-      order: 2;
       .text-description {
         width: 88%;
         order: 2;
-
         @include display-flex();
         flex-direction: column;
         @include desktop {
@@ -101,6 +99,9 @@
           line-height: 2rem;
           margin-bottom: 1rem;
           text-align: center;
+          @include desktop {
+            text-align: left;
+          }
         }
         .footer-info-logo {
           width: 50%;
@@ -109,7 +110,6 @@
         }
       }
       .font-link {
-        order: 1;
         .mail {
           background-image: url('../../assets/images/facebook.png');
           background-position: center;
@@ -143,7 +143,7 @@
   }
   .bottom-footer {
     .footer-copyright {
-      order: 4;
+      order: 1;
       @include desktop {
       }
     }
