@@ -1644,6 +1644,7 @@ ol.flickity-page-dots {
           flex-direction: column; } }
   @media (min-width: 1000px) {
     .site-footer .top-footer {
+      width: 1200px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -1674,8 +1675,6 @@ ol.flickity-page-dots {
     .site-footer .top-footer .footer-nav .menu-footer-menu-container ul {
       list-style: none; }
       @media (min-width: 1000px) {
-        .site-footer .top-footer .footer-nav .menu-footer-menu-container ul li:nth-child(5n) {
-          display: none; }
         .site-footer .top-footer .footer-nav .menu-footer-menu-container ul li {
           margin: 2rem 0; }
           .site-footer .top-footer .footer-nav .menu-footer-menu-container ul li a {
@@ -1713,8 +1712,6 @@ ol.flickity-page-dots {
         -webkit-box-align: start;
             -ms-flex-align: start;
                 align-items: flex-start; } }
-    .site-footer .top-footer .footer-info .footer-maple-leaf {
-      width: 7rem; }
     .site-footer .top-footer .footer-info p {
       display: none; }
       @media (min-width: 1000px) {
@@ -1833,6 +1830,9 @@ ol.flickity-page-dots {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1; }
+    .site-footer .bottom-footer .footer-copyright .footer-maple-leaf {
+      width: 5rem;
+      margin: 0 auto; }
 
 .why-donate {
   display: -webkit-box;
