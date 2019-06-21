@@ -24,27 +24,28 @@
     }
     .widget-title {
       color: $white;
-	  font-weight: 400;
-	  font-size: 1.5rem;
+      font-weight: 400;
+      font-size: 1.5rem;
       letter-spacing: 0.099rem;
       margin-bottom: 1.5rem;
     }
     .mc4wp-form {
       .mc4wp-form-fields {
         @include display-flex();
+
         p {
           margin: 0;
         }
         input[type='email'] {
-		  padding: 0.7rem 1rem;
-		  border-radius: 6px 0 0 6px;
-		  border: none;
+          padding: 0.7rem 1rem;
+          border-radius: 6px 0 0 6px;
+          border: none;
         }
         input[type='submit'] {
-		  background-color: $code__blue;
-		  padding: 0.7rem 1rem;
-		  border-radius: 0 6px 6px 0;
-		  border: none;
+          background-color: $code__blue;
+          padding: 0.7rem 1rem;
+          border-radius: 0 6px 6px 0;
+          border: none;
         }
       }
     }

@@ -1,35 +1,28 @@
 /*!
-* Hamburger Menu
-*/
+ * Hamburgers
+ * @description Tasty CSS-animated hamburgers
+ * @author Jonathan Suh @jonsuh
+ * @site https://jonsuh.com/hamburgers
+ * @link https://github.com/jonsuh/hamburgers
+ */
 
-.hamburger {
-  display: inline-block;
-  cursor: pointer;
-  transition-property: opacity, filter;
-  transition-duration: 0.15s;
-  transition-timing-function: linear;
-  font: inherit;
-  color: inherit;
-  text-transform: none;
-  background-color: transparent;
-  border: 0;
-  margin: 0;
-  overflow: visible;
+.hamburger:hover {
+  opacity: 0.7;
 }
-
-.hamburger-inner,
-.hamburger-inner::before,
-.hamburger-inner::after {
-  background-color: #fff;
+.hamburger.is-active:hover {
+  opacity: 0.7;
 }
-
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+  background-color: #000;
+}
 .hamburger-box {
-  width: 36px;
+  width: 34px;
   height: 24px;
   display: inline-block;
   position: relative;
 }
-
 .hamburger-inner {
   display: block;
   top: 50%;
@@ -40,7 +33,7 @@
 .hamburger-inner::after {
   width: 40px;
   height: 4px;
-  background-color: #fff;
+  background-color: $white;
   border-radius: 4px;
   position: absolute;
   transition-property: transform;
@@ -59,173 +52,55 @@
   bottom: -10px;
 }
 
-/* Hamburger Container*/
-.hamburger {
-  right: 0;
+/*
+   * Boring
+   */
+.hamburger--boring .hamburger-inner,
+.hamburger--boring .hamburger-inner::before,
+.hamburger--boring .hamburger-inner::after {
+  transition-property: none;
+}
+
+.hamburger--boring.is-active .hamburger-inner {
+  transform: rotate(45deg);
+}
+.hamburger--boring.is-active .hamburger-inner::before {
   top: 0;
-  @include tablet {
+  opacity: 0;
+}
+.hamburger--boring.is-active .hamburger-inner::after {
+  bottom: 0;
+  transform: rotate(-90deg);
+}
+
+.hamburger--boring {
+  background: $credible__blue;
+  border: none;
+  padding-right: 25px;
+  @include desktop {
     display: none;
   }
-  .hamburger--boring .menu-toggle {
-    background: #14225f;
-  }
-  button {
-    box-shadow: none;
-    background: none;
-    border:none;
-  }
 }
-
-/* Header */
-.site-header {
- 
-  top:0;
-  background: #14225f;
-  width: 100%;
-  justify-content: space-between;
-  display: flex;
-  flex-wrap: wrap;
-  margin: auto;
-
-  .site-logo {
-    width: 50%;
-    @include tablet {
-      width: 40%;
-    }
-    h1 {
-      color: $white;
-      padding-left: 55px;
-    }
-  }
-  .hamburger {
-    width: 50%;
-    padding-right: 55px;
-    display: flex;
-    justify-content: flex-end;
-    @include tablet {
+.menu-item-has-children {
+  &::after {
+    transition: 0.5s;
+    content: '\f078';
+    font-family: Font Awesome\ 5 Free;
+    font-weight: 900;
+    right: 2em;
+    color: white;
+    top: 30%;
+    font-size: 24px;
+    position: absolute;
+    @include desktop {
       display: none;
     }
-  }
-  .main-navigation {
-    width: 100%;
-    @include tablet {
-      width: 60%;
+  } // &::after
+} // .menu-item-has-children
 
-    }
-    .menu {
-      list-style: none;
-
-      margin: 0;
-      padding: 0;
-      text-align: center;
-      @include tablet {
-        display: flex;
-      }
-      .menu-item {
-        border-top: 1px solid #fff;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        @include tablet {
-          border: none;
-        }
-        a {
-          font-weight: 300;
-          color: $white;
-          font-size: 18px;
-        }
-      }
-    }
-  }
-
-  .menu {
-    &:last-child {
-      padding-top: 15px;
-      .sub-menu {
-        display: none;
-        background: ye;
-        list-style: none;
-        padding: 0;
-        @include tablet {
-          display: none;
-        }
-
-        .menu-item {
-          border-bottom: 1px solid $credible__blue;
-          padding: 16px;
-          a {
-            color: $credible__blue;
-          }
-        }
-      }
-    }
+.menu-active {
+  &::after {
+    transform: rotate(180deg);
+    top: 0;
   }
 }
-// .menu-item-71{
-//   .ul{
-//     .li{
-//       background: #fff;
-//       border-top:1px solid $credible__blue;
-//       a{
-//         color: credible__blue;
-//       }
-//     }
-//   }
-// }
-
-//   @include tablet {
-//     display: flex;
-//     justify-content: space-around;
-
-//     a {
-//       text-decoration: none;
-//       h1 {
-//         color: #fff;
-//         text-transform: uppercase;
-//       }
-//     }
-//   }
-// }
-
-// /* Navigation */
-// .main-navigation {
-//   @include tablet {
-//     margin-top: auto;
-//     margin-bottom: auto;
-//   }
-//   .menu,
-//   .sub-menu {
-//     padding: 0;
-//     display: none;
-//     margin: 0;
-//     text-align: center;
-//   }
-// }
-// .main-navigation .menu {
-//   @include tablet {
-//     display: flex;
-//   }
-// }
-
-// .menu-item {
-//
-//   @include tablet {
-//     border-top: none;
-//     list-style: none;
-//     padding-left: 75px;
-//   }
-//   a {
-//     color: #fff;
-//   }
-// }
-
-// .sub-menu {
-//   background: #fff;
-//   display: none;
-//   li {
-//     border-top: 1px solid $credible__blue;
-
-//     a {
-//       color: $credible__blue;
-//     }
-//   }
-// }

@@ -2,16 +2,136 @@
 // # Navigation
 // --------------------------------------------------------------*/
 
+
 .main-navigation {
-  @include tablet {
+  .menu-item-has-children {
+        position: relative;
+        > ul {
+          display: none;
+        }
+  }
+  @include desktop{
     .menu-item-has-children {
-      position: relative;
+        position: relative;
+      .sub-menu {    
+        list-style: none;
+              padding: 0;
+              display: none;
+              top:50px;
+   @include desktop{
+     display: none;
+
+   }
+            }
       &:hover {
         > .sub-menu {
           position: absolute;
-          right: 0;
-          z-index: 99;
+          right: 40px;
+          z-index: 1;
           display: block;
+          background: #14225f;
+        }
+      
+      }
+    }
+  }
+}
+.sub-menu{
+  padding: 0;
+}
+
+/* Site-Header 8*/
+
+.site-header {
+  background: #14225f;
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    @include desktop{
+      flex-wrap: nowrap;
+    }
+    .site-logo {
+      display: flex;
+      justify-content: left;
+      width: 70%;
+      .rcforward-logo {
+        color: $white;
+        padding-left: 25px;
+            flex-wrap: wrap;
+        font-family: 'Gilroy Bold', sans-serif;
+        text-transform: uppercase;
+      }
+      .hamburger {
+        width: 30%;
+        @include desktop {
+          display: none;
+        }
+      }
+    }
+    .main-navigation {
+      display: none;
+      width: 100%;
+      @include desktop {
+        display: block;
+      }
+      .menu-header-menu-container {
+        .menu {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          @include desktop {
+                display: flex;
+    justify-content: flex-end;
+          }
+
+          .menu-item {
+            border-top: 1px solid $white;
+            padding:0;
+         text-align: center;
+            @include desktop {
+              border: none;
+              display: inline-flex;
+              padding:10px;
+            }
+            a {
+              color: $white;
+              padding:15px;
+                  display: block;
+              @include desktop {
+                display: block;
+                padding: 14px 16px;
+                text-align: center;
+              }
+            }
+            .sub-menu {
+              @include desktop{
+              border-bottom: 1px solid $white;
+                       padding: 0;
+        
+              }
+              li {
+                background: white;
+                border-bottom: 1px solid $credible__blue;
+                @include desktop{
+                  background: $credible__blue;
+                     border-bottom: 1px solid $white;
+                     padding: 0;
+          
+                }
+                a {
+                  color: $credible__blue;
+
+                  @include desktop{
+                    color: $white;
+                    padding:32px;
+                    
+                  }
+                }// a
+              }// li
+            }// .sub-menu
+          }// .menu-item
         }
       }
     }

@@ -4,12 +4,15 @@
     if ($('.hamburger').css('display') !== 'none') {
       // hamburger menu
       $('#toggle-nav').on('click', function() {
-        $('#primary-menu').slideToggle();
+        $('#site-navigation').slideToggle();
       });
       // about us dropdown
-      $('#menu-item-71').on('click', function() {
-        $('.sub-menu').slideToggle();
+      $('.menu-item-has-children').on('click', function() {
+        $(this).find('.sub-menu').slideToggle();
+        $(this).toggleClass('menu-active');
       });
+  
+
     } // end if
   }); // end doc ready
 })(jQuery);

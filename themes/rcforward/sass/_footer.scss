@@ -1,20 +1,151 @@
 .site-footer {
-  .footer-site-logo {
-    a {
-      .rcforward-logo {
-        color: $white;
-        text-transform: uppercase;
-        text-align: center;
+  background-color: $credible__blue;
+  @include display-flex();
+  flex-direction: column;
+  color: $white;
+  font-size: 1.12rem;
+  padding: 1.4rem 0;
+  @include desktop {
+    @include display-flex();
+    flex-direction: column;
+  }
+  .top-footer {
+    @include desktop {
+      @include display-flex();
+    }
+    .footer-site-logo {
+      order: 1;
+      @include desktop {
+        display: none;
+      }
+      a {
+        .rcforward-logo {
+          color: $white;
+          text-transform: uppercase;
+          text-align: center;
+          margin: 2.3rem 0;
+        }
+      }
+    }
+    .footer-nav {
+      display: none;
+      .menu {
+        ul {
+          list-style: none;
+          @include desktop {
+            & li:nth-child(5n) {
+              display: none;
+            }
+            li {
+              margin: 2rem 0;
+              a {
+                color: $code__blue;
+              }
+            }
+          }
+        }
+      }
+      @include desktop {
+        display: unset;
+      }
+    }
+    .footer-info {
+      order: 3;
+      text-align: center;
+      @include desktop {
+        order: unset;
+        text-align: left;
+        padding-left: 12rem;
+        @include display-flex();
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .footer-maple-leaf {
+        width: 7rem;
+        @include desktop {
+
+        }
+      }
+      p {
+        display: none;
+        @include desktop {
+          display: unset;
+          width: 70%;
+          line-height: 2rem;
+        }
+      }
+    }
+    .footer-info-sm {
+      @include desktop {
+        @include display-flex();
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      @include display-flex();
+      flex-direction: column;
+      order: 2;
+      .text-description {
+        width: 88%;
+        order: 2;
+
+        @include display-flex();
+        flex-direction: column;
+        @include desktop {
+          order: unset;
+          align-items: flex-start;       
+        }
+        & p:first-child {
+          margin: 1.4rem 0;
+        }
+        & p:last-child {
+          line-height: 2rem;
+          margin-bottom: 1rem;
+          text-align: center;
+        }
+        .footer-info-logo {
+          width: 50%;
+          max-height: 8rem;
+          object-fit: fill;
+        }
+      }
+      .font-link {
+        order: 1;
+        .mail {
+          background-image: url('../../assets/images/facebook.png');
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          display: inline-block;
+          height: 3rem;
+          width: 3rem;
+          margin: 0 1rem;
+          @include desktop {
+            height: 4rem;
+            width: 4rem;
+          }
+        }
+        .facebook {
+          background-image: url('../../assets/images/mail.png');
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          display: inline-block;
+          height: 3rem;
+          width: 3rem;
+          margin: 0 1rem;
+          @include desktop {
+            height: 4rem;
+            width: 4rem;
+          }
+        }
       }
     }
   }
-  .footer-nav {
-      display: none;
-  }
-  .footer-info {
-
-  }
-  .footer-info-sm {
-      
+  .bottom-footer {
+    .footer-copyright {
+      order: 4;
+      @include desktop {
+      }
+    }
   }
 }
