@@ -9,7 +9,6 @@
 
 get_header(); ?>
 
-
 <?php while (have_posts()) : the_post(); ?>
 
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -25,9 +24,10 @@ get_header(); ?>
 				<div class="faqs">
 					<div class="question">
 						<p><?php echo $faq['question']; ?></p>
+						<a class="plus"></a>
 					</div>
 					<div class="answer">
-						<p><?php echo $faq['description']; ?></p>
+						<p><?php echo $faq['answer']; ?></p>
 					</div>
 				</div>
 			<?php endforeach; ?>

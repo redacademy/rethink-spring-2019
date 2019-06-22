@@ -467,9 +467,9 @@
           margin-right: 0;
           margin: 2rem 0;
           border-bottom: none;
-          box-shadow: -.4px .2px 5px .02px $innovative__purple;
+          box-shadow: -0.4px 0.2px 5px 0.02px $innovative__purple;
           border-radius: 8px;
-          padding: .4rem 2rem 1.6rem;
+          padding: 0.4rem 2rem 1.6rem;
           width: 70%;
           .member-photo {
             img {
@@ -518,6 +518,34 @@
         }
       }
       & .single-custom-plan:last-child {
+        display: none;
+      }
+    }
+  }
+}
+
+/* FAQ Page */
+.page-template-page-faq {
+  .entry-header {
+  }
+  .entry-content {
+    .faqs {
+      .question {
+        height: 3rem;
+        border-bottom: 1px solid $credible__blue;
+        @include display-flex();
+        justify-content: space-between;
+        p {
+        }
+        .plus {
+          display: flex;
+         
+        }
+        & :after {
+          content: '\002B';
+          }
+      }
+      .answer {
         display: none;
       }
     }
