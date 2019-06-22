@@ -48,6 +48,7 @@ get_header(); ?>
 		<?php the_content(); ?>
 	</div>
 	<?php get_template_part('template-parts/content', 'why-donate'); ?>
+	<h3 class="carousel-title">Browse Charities </h3>
 	<?php get_template_part('template-parts/content', 'charities'); ?>
 	<?php get_template_part('template-parts/content', 'custom-plan'); ?>
 <?php endwhile;
