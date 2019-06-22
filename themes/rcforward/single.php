@@ -40,40 +40,41 @@ get_header(); ?>
 		<div class="post-navigation">
 			<h3>More Articles</h3>
 			<div class="more-post">
-				<div class="previous-post">
-					<?php
+				<?php
 					$prev_post = get_previous_post();
 					if (!empty($prev_post)) :
 						$prev__id = $prev_post->ID; ?>
+						<div class="previous-post">
 						<?php echo $prev_post->post_title ?>
-						<div class="next-post-image">
+						<div class="prev-post-image">
 							<?php if (has_post_thumbnail($prev__id)) : ?>
 								<?php the_post_thumbnail($prev__id, 'large'); ?>
 							<?php endif; ?>
-						</div><!-- .next-post-image -->
-						<div class="next-post-content">
-							<div class="next-post-title">
-								<p class="next-post-meta"><?php echo $prev_post->post_date; ?><p>
+						</div><!-- .prev-post-image -->
+						<div class="prev-post-content">
+							<div class="prev-post-title">
+								<p class="prev-post-meta"><?php echo $prev_post->post_date; ?><p>
 										<h3 class="entry-title"><?php echo $prev_post->post_title; ?></h3>
 							</div><!-- .entry-title -->
 
-							<div class="next-post-main">
-								<p class="next-post-intro"><?php echo CFS()->get('post-introduction', $prev__id); ?></p>
-								<p class="next-post-quote"><?php echo CFS()->get('post-announcement', $prev__id); ?></p>
+							<div class="prev-post-main">
+								<p class="prev-post-intro"><?php echo CFS()->get('post-introduction', $prev__id); ?></p>
+								<p class="prev-post-quote"><?php echo CFS()->get('post-announcement', $prev__id); ?></p>
 								<?php echo $prev_post->post_excerpt; ?>
 							</div><!-- .entry-main -->
 
-
+							</div>
 							<a class="read-more-button" href="<?php echo $prev_post->guid ?>">Read More <span class="read-more-arrow"> &#x203A; </span></a>
+						</div>
 						<?php endif ?>
-					</div>
-					<div class="next-post">
+					
 						<?php
 						$next_post = get_next_post();
 						if (!empty($next_post)) :
 							$next_post_id = $next_post->ID;
 							$post_introduction = CFS()->get('post-introduction', $next_post_id);
 							$post_annoucement = CFS()->get('post-announcement', $next_post_id); ?>
+								<div class="next-post">
 							<?php echo $next_post->post_title ?>
 							<div class="next-post-image">
 								<?php if (has_post_thumbnail($next_post_id)) : ?>
@@ -95,17 +96,18 @@ get_header(); ?>
 
 								<?php echo $next_post->post_excerpt; ?>
 								</div><!-- .entry-main -->
-
+						</div>
 
 								<a class="read-more-button" href="<?php echo $next_post->guid ?>">Read More <span class="read-more-arrow"> &#x203A; </span></a>
 
+							</div>
 							<?php endif; ?>
 							
 
-						</div>
 
 					</div>
 				</div>
+		
 	</article><!-- #post-## -->
 
 
