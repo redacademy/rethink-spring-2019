@@ -11,10 +11,12 @@ get_header(); ?>
 
 <?php if (have_posts()) : ?>
 
-	<header>
+	<header class="blog-header">
 		<h2 class="page-title">Impactfully Giving</h2>
 		<p class="page-subtitle">Stories, Impact Updates and News</p>
+		<img class="impactfully" src="<?php echo get_template_directory_uri(); ?>/assets/images/Impactfullygiving.png" alt="impactfully image">
 	</header>
+
 
 	<?php /* Start the Loop */ ?>
 	<?php while (have_posts()) : the_post(); ?>
@@ -32,9 +34,6 @@ get_header(); ?>
 				<?php the_title('<h3 class="entry-title"> ', '</h3>'); ?>
 			</div><!-- .entry-title -->
 
-			<div class="entry-content">
-				<?php the_excerpt(); ?>
-			</div><!-- .entry-content -->
 
 			<div class="read-more">
 				<a class="read-more-button" href="<?php echo get_the_permalink(); ?>">Read More &#x203A;</a>
@@ -43,6 +42,7 @@ get_header(); ?>
 
 		
 		<?php endwhile; ?>
+		
 		<?php echo do_shortcode('[ajax_load_more post_type="post" posts_per_page="3" order="ASC" pause="true" scroll="false" transition_container="false" images_loaded="true" button_label="Load More" button_loading_label="Loading ..."]'); ?>
 
 <?php else : ?>
