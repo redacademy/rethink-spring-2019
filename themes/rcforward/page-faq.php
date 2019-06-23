@@ -13,8 +13,10 @@ get_header(); ?>
 
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<header class="entry-header">
+
 			<?php the_title('<h2 class="entry-title">', '</h2>'); ?>
 			<?php the_content(); ?>
+
 		</header><!-- .entry-header -->
 
 		<div class="entry-content">
@@ -24,7 +26,7 @@ get_header(); ?>
 				<div class="faqs">
 					<div class="question">
 						<p><?php echo $faq['question']; ?></p>
-						<a class="plus"></a>
+						<a id="plus-symbol" class="plus-symbol" href="#"><i class="fas fa-plus"></i></a>
 					</div>
 					<div class="answer">
 						<p><?php echo $faq['answer']; ?></p>
@@ -33,7 +35,7 @@ get_header(); ?>
 			<?php endforeach; ?>
 		</div><!-- .entry-content -->
 	</article><!-- #post-## -->
-<?php endwhile; 
+<?php endwhile;
 ?>
 
 <?php get_footer(); ?>

@@ -484,8 +484,7 @@ p {
   background: linear-gradient(rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.13)), url("../../assets/images/nw-mobile.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: 3rem; }
+  background-size: cover; }
   @media (min-width: 1000px) {
     .footer-sidebar {
       background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.13)), to(rgba(0, 0, 0, 0.13))), url("../../assets/images/Newsletterbackground.png");
@@ -896,32 +895,27 @@ body .hide-desktop {
         border-radius: 50%;
         border: 25px #fff solid; }
   .single-fund .hfeed .site-content .type-fund .entry-content .entry-title {
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: #14225F;
-    width: 50%;
+    width: 90%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin: 2rem auto; }
   .single-fund .hfeed .site-content .type-fund .entry-content .amount-funded {
     background-color: rgba(216, 216, 216, 0.18);
-    font-size: 4rem;
+    font-size: 2.2rem;
     color: #42299A;
     margin: 0;
-    padding: 1rem 1.2rem; }
-    .single-fund .hfeed .site-content .type-fund .entry-content .amount-funded p .counter {
-      letter-spacing: 0.25rem; }
-      .single-fund .hfeed .site-content .type-fund .entry-content .amount-funded p .counter:before {
-        content: ' '; }
-    .single-fund .hfeed .site-content .type-fund .entry-content .amount-funded p .counter,
-    .single-fund .hfeed .site-content .type-fund .entry-content .amount-funded p {
-      font-weight: 700; }
+    padding: .6rem .8rem;
+    font-weight: 700; }
+    .single-fund .hfeed .site-content .type-fund .entry-content .amount-funded p .counter:before {
+      content: ' '; }
     .single-fund .hfeed .site-content .type-fund .entry-content .amount-funded p:nth-child(2n) {
-      font-weight: 600;
-      font-size: 2.8rem; }
+      font-size: 1.6rem; }
     .single-fund .hfeed .site-content .type-fund .entry-content .amount-funded p,
     .single-fund .hfeed .site-content .type-fund .entry-content .amount-funded .chimp-donate-form {
-      margin: 0.6rem 0; }
+      margin: 0.6rem auto; }
   .single-fund .hfeed .site-content .type-fund .entry-content .fund-description {
     margin: 3rem 0; }
     .single-fund .hfeed .site-content .type-fund .entry-content .fund-description p {
@@ -931,8 +925,11 @@ body .hide-desktop {
       font-weight: lighter;
       word-wrap: break-word;
       margin: 0 auto; }
+  .single-fund .hfeed .site-content .type-fund .entry-content .fund-video p {
+    margin: 0; }
+    .single-fund .hfeed .site-content .type-fund .entry-content .fund-video p iframe {
+      width: 100%; }
   .single-fund .hfeed .site-content .type-fund .entry-content .main-content {
-    margin-top: 2rem;
     padding: 3rem 0;
     background-color: #F9F5ED; }
     .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation {
@@ -948,11 +945,12 @@ body .hide-desktop {
               flex-direction: column;
       width: 100%; }
       .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation h3 {
-        width: 70%;
+        width: 88%;
         word-wrap: break-word;
         color: #14225F;
         margin: 0 auto;
-        font-size: 2rem;
+        font-size: 1.8rem;
+        line-height: 2.4rem;
         font-weight: 600; }
       .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation .fund-allowcations {
         display: -webkit-box;
@@ -970,22 +968,20 @@ body .hide-desktop {
           margin-top: 2rem;
           margin-bottom: 3.5rem; }
           .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation .fund-allowcations .single-allocation .charity-logo {
-            max-width: 230px;
-            max-height: 330px;
-            width: 45%; }
+            width: 100%; }
           .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation .fund-allowcations .single-allocation .allocation-text .percentage {
             font-size: 5rem;
             font-weight: bolder;
-            margin: 2rem 0; }
+            margin: 3.3rem auto; }
           .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation .fund-allowcations .single-allocation .allocation-text .description {
             font-size: 1.6rem;
-            margin: 0 4rem;
+            margin: 0 2rem;
             line-height: 2.3rem; }
     .single-fund .hfeed .site-content .type-fund .entry-content .main-content .entry-content {
       width: 80%;
-      margin: 0 auto 4rem; }
+      margin: 0 auto 2.3rem; }
       .single-fund .hfeed .site-content .type-fund .entry-content .main-content .entry-content p {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
         line-height: 2.4rem;
         margin-top: 0; }
 
@@ -1113,6 +1109,12 @@ body .hide-desktop {
   display: none; }
 
 /* FAQ Page */
+.page-template-page-faq .entry-header .entry-title {
+  display: none; }
+
+.page-template-page-faq .entry-header p {
+  display: none; }
+
 .page-template-page-faq .entry-content .faqs .question {
   height: 3rem;
   border-bottom: 1px solid #14225F;
@@ -1132,15 +1134,39 @@ body .hide-desktop {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-  .page-template-page-faq .entry-content .faqs .question .plus {
+  .page-template-page-faq .entry-content .faqs .question p {
+    font-size: 1rem;
+    font-weight: bolder; }
+  .page-template-page-faq .entry-content .faqs .question .plus-symbol {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
-  .page-template-page-faq .entry-content .faqs .question :after {
-    content: '\002B'; }
+    display: flex;
+    cursor: pointer; }
 
 .page-template-page-faq .entry-content .faqs .answer {
   display: none; }
+
+@media (min-width: 1000px) {
+  .page-template-page-faq .entry-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+    .page-template-page-faq .entry-header .entry-title, .page-template-page-faq .entry-header p {
+      display: unset; }
+    .page-template-page-faq .entry-header h2:last-child {
+      display: none; } }
 
 /*!
  * Hamburgers

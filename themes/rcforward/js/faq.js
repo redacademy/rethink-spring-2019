@@ -1,11 +1,13 @@
 $(function() {
   $(document).ready(function() {
-    $('').on('click', '', function() {
-      $('').hide(200);
-      $(this)
-        .parent()
-        .children('')
-        .toggle();
-    }); // end of 1
+
+    $('.faqs').on('click', '#plus-symbol', function() {
+        const answer = $('.answer');
+      answer.hide(200);
+      $(this).parent().siblings(answer).toggle();
+      console.log(answer);
+
+    });  
+
   });
-}); //end of jQuery
+}); 

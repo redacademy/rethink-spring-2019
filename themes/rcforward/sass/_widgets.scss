@@ -13,7 +13,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 3rem;
   @include desktop {
     background: linear-gradient(rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.13)),
     url('../../assets/images/Newsletterbackground.png');
