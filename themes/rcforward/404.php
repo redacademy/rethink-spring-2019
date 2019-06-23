@@ -9,6 +9,7 @@
  * @package RC Forward
  */
 get_header();?>
+<<<<<<< HEAD
 
 
 	    <section class="container-404">
@@ -25,4 +26,16 @@ get_header();?>
 	    </section>
 
 
+=======
+    <?php while (have_posts()): the_post();?>
+			    <section class="container-404" id="post-<?php the_ID();?>" <?php post_class();?>>
+						<div class="search-girl">
+							<!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/images/output-onlinepngtools.png" alt="404 image"> -->
+						</div>
+			            <div class="error-text">
+		    				<?php the_content();?>
+						</div>
+			    </section>
+			    <?php endwhile;?>
+>>>>>>> b26b2eaa302270cba968e6c4f85c4c8a43b34d5e
 <?php get_footer();?>
