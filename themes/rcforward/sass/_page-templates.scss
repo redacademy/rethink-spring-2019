@@ -140,12 +140,9 @@
         strong {
           font-size: 2.6rem;
           color: $credible__blue;
-         line-height: 3rem;
-          
+          line-height: 3rem;
         }
-    
       }
-     
 
       h3 {
         display: none;
@@ -154,7 +151,7 @@
           font-size: 2rem;
         }
       }
-      
+
       @include tablet {
         & .wp-block-columns:first-child {
           position: relative;
@@ -179,7 +176,6 @@
         }
       }
       & .wp-block-columns:first-child {
-       
         @include desktop {
           & .wp-block-column:last-child {
             .wp-block-image {
@@ -193,7 +189,6 @@
           order: unset;
         }
       }
-    
 
       & .wp-block-columns:nth-child(3n),
       & .wp-block-columns:last-child {
@@ -301,36 +296,47 @@
               border: 25px $white solid;
             }
           }
+          @include desktop {
+            .fund-image {
+              img {
+                object-position: 50% 18%;
+              }
+            }
+          }
         }
+
         .entry-content {
+          width: 85%;
+          margin: 0 auto 2.3rem;
+          p {
+            font-size: 1.4rem;
+            line-height: 2.4rem;
+            margin-top: 0;
+          }
           .entry-title {
-            font-size: 1.6rem;
+            font-size: 1.4rem;
             color: $credible__blue;
             width: 90%;
-            display: flex;
             margin: 2rem auto;
+            text-align: center;
+            text-transform: capitalize;
           }
           .amount-funded {
             background-color: rgba(216, 216, 216, 0.18);
             font-size: 2.2rem;
             color: $innovative__purple;
             margin: 0;
-            padding: .6rem .8rem;
+            padding: 0.6rem 0.8rem;
             font-weight: 700;
-
-            p .counter {
-              &:before {
-                content: ' ';
-              }
-            }
             p {
               &:nth-child(2n) {
                 font-size: 1.6rem;
               }
             }
-    
+
             .chimp-donate-form {
-              margin: 0.6rem auto;
+              margin: 0.3rem auto 0.6rem;
+              font-size: 1.3rem;
             }
           }
           .fund-description {
@@ -338,7 +344,7 @@
             p {
               width: 80%;
               line-height: 2.4rem;
-              font-size: 1.6rem;
+              font-size: 1.2rem;
               font-weight: lighter;
               word-wrap: break-word;
               margin: 0 auto;
@@ -351,7 +357,6 @@
                 width: 100%;
               }
             }
-           
           }
           .main-content {
             padding: 3rem 0;
@@ -366,7 +371,7 @@
                 word-wrap: break-word;
                 color: $credible__blue;
                 margin: 0 auto;
-                font-size: 1.8rem;
+                font-size: 1.3rem;
                 line-height: 2.4rem;
                 font-weight: 600;
               }
@@ -379,18 +384,18 @@
                   margin-top: 2rem;
                   margin-bottom: 3.5rem;
                   .charity-logo {
-                    width: 80%;
+                    width: 15rem;
                     max-height: 25rem;
                   }
-        
+
                   .allocation-text {
                     .percentage {
-                      font-size: 5rem;
+                      font-size: 4rem;
                       font-weight: bolder;
-                      margin: 3.3rem auto;
+                      margin: 3.3rem .5rem;
                     }
                     .description {
-                      font-size: 1.6rem;
+                      font-size: 1.4rem;
                       margin: 0 2rem;
                       line-height: 2.3rem;
                     }
@@ -398,21 +403,80 @@
                 }
               }
             }
-            .entry-content {
-              width: 85%;
-              margin: 0 auto 2.3rem;
+          }
+          @include desktop {
+            .entry-title {
+              font-size: 2.2rem;
+            }
+            .amount-funded {
+              & p:first-child {
+                font-size: 3.5rem;
+                margin-top: 1.2rem;
+              }
+              & p:nth-child(2n) {
+                font-size: 2.2rem;
+              }
+            }
+            .fund-description {
               p {
-                font-size: 1.6rem;
-                line-height: 2.4rem;
-                margin-top: 0;
+                font-size: 1.4rem;
+              }
+            }
+            .main-content {
+              .fund-allowcation {
+                h3 {
+                  font-size: 1.6rem;
+                  width: 80%;
+                }
+                .fund-allowcations {
+                  .single-allocation {
+                    @include display-flex();
+                    margin-right: auto;
+                    margin-left: auto;
+                    padding: 0 10rem;
+                    .charity-logo {
+                      margin-right: 3rem;
+                    }
+                    .allocation-text {
+                      text-align: left;
+                      margin-left: 3rem;
+                      .percentage {
+                        font-size: 5rem;
+                        margin-right: 0;
+                        margin-left: 0;
+
+                      }
+                      .description {
+                        margin: 0;
+                        width: 24rem;
+                      }
+                    }
+                  }
+                }
               }
             }
           }
         }
       }
+      @include desktop {
+        .post-104 {
+          .fund-header {
+            .fund-image {
+              img {
+                object-position: 50% 48%;
+  
+    
+              }
+            }
+          }
+         
+        }
+      }
+     
     }
   }
 }
+
 
 /* The Team page */
 .page-template-page-team {
@@ -420,8 +484,8 @@
     .entry-header {
       text-align: center;
       color: $credible__blue;
+      font-size: 1.2rem;
       padding: 2rem 0;
-      font-size: 1.8rem;
       border-bottom: 2px solid $credible__blue;
       @include desktop {
         border-bottom: none;
@@ -429,14 +493,13 @@
     }
     .entry-content {
       .single-member {
-        font-size: 1.2rem;
         border-bottom: 2px solid $credible__blue;
         .member-photo {
           margin: 2rem 0;
           text-align: center;
           img {
             border-radius: 50%;
-            width: 75%;
+            width: 18rem;
           }
         }
         .member-info {
@@ -444,11 +507,10 @@
           margin: 0 2rem;
           h3 {
             text-align: center;
-            font-size: 1.8rem;
           }
           p {
             line-height: 2.3rem;
-            font-size: 1.3rem;
+            font-size: 1.1rem;
           }
         }
         .contact-button {
@@ -457,18 +519,24 @@
           padding-top: 4rem;
           a {
             border: 2px solid #42299a;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             font-weight: bolder;
-            padding: 1.6rem 4rem;
+            padding: 1rem 1.7rem;
             display: inline-block;
             color: $white;
-
             border-radius: 8px;
             background-color: $credible__blue;
           }
         }
       }
       @include tablet {
+        .single-member {
+          .member-photo {
+            img {
+              width: 40%;
+            }
+          }
+        }
         & .single-member:last-child {
           border-bottom: none;
         }
@@ -498,7 +566,7 @@
               text-align: left;
             }
             p {
-              font-size: 1rem;
+              font-size: 1.18rem;
               line-height: 1.7rem;
             }
           }
@@ -522,7 +590,7 @@
         p {
           display: unset;
           margin: 1.5rem 0;
-          font-size: 1.1rem;
+          font-size: 1rem;
           line-height: 1.5rem;
         }
         div {
@@ -553,6 +621,7 @@
     .faqs {
       .question {
         height: 3rem;
+        padding: 2rem 1.4rem;
         border-bottom: 1px solid $credible__blue;
         @include display-flex();
         justify-content: space-between;
@@ -564,15 +633,11 @@
           display: flex;
           cursor: pointer;
           .fa-plus {
-
           }
         }
       }
       .answer {
-        
-          display: none;
-
-        
+        display: none;
       }
     }
   }
@@ -580,7 +645,8 @@
     .entry-header {
       @include display-flex();
       flex-direction: column;
-      .entry-title, p {
+      .entry-title,
+      p {
         display: unset;
       }
       & h2:last-child {

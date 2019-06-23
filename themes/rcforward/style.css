@@ -902,64 +902,53 @@ body .hide-desktop {
         width: 10rem;
         border-radius: 50%;
         border: 25px #fff solid; }
-  .single-fund .hfeed .site-content .type-fund .entry-content .entry-title {
-    font-size: 1.6rem;
-    color: #14225F;
-    width: 90%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 2rem auto; }
-  .single-fund .hfeed .site-content .type-fund .entry-content .amount-funded {
-    background-color: rgba(216, 216, 216, 0.18);
-    font-size: 2.2rem;
-    color: #42299A;
-    margin: 0;
-    padding: .6rem .8rem;
-    font-weight: 700; }
-    .single-fund .hfeed .site-content .type-fund .entry-content .amount-funded p .counter:before {
-      content: ' '; }
-    .single-fund .hfeed .site-content .type-fund .entry-content .amount-funded p:nth-child(2n) {
-      font-size: 1.6rem; }
-    .single-fund .hfeed .site-content .type-fund .entry-content .amount-funded .chimp-donate-form {
-      margin: 0.6rem auto; }
-  .single-fund .hfeed .site-content .type-fund .entry-content .fund-description {
-    margin: 3rem 0; }
-    .single-fund .hfeed .site-content .type-fund .entry-content .fund-description p {
-      width: 80%;
+    @media (min-width: 1000px) {
+      .single-fund .hfeed .site-content .type-fund .fund-header .fund-image img {
+        -o-object-position: 50% 18%;
+           object-position: 50% 18%; } }
+  .single-fund .hfeed .site-content .type-fund .entry-content {
+    width: 85%;
+    margin: 0 auto 2.3rem; }
+    .single-fund .hfeed .site-content .type-fund .entry-content p {
+      font-size: 1.4rem;
       line-height: 2.4rem;
-      font-size: 1.6rem;
-      font-weight: lighter;
-      word-wrap: break-word;
-      margin: 0 auto; }
-  .single-fund .hfeed .site-content .type-fund .entry-content .fund-video p {
-    margin: 0; }
-    .single-fund .hfeed .site-content .type-fund .entry-content .fund-video p iframe {
-      width: 100%; }
-  .single-fund .hfeed .site-content .type-fund .entry-content .main-content {
-    padding: 3rem 0;
-    background-color: #F9F5ED; }
-    .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      width: 100%; }
-      .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation h3 {
-        width: 88%;
-        word-wrap: break-word;
-        color: #14225F;
-        margin: 0 auto;
-        font-size: 1.8rem;
+      margin-top: 0; }
+    .single-fund .hfeed .site-content .type-fund .entry-content .entry-title {
+      font-size: 1.4rem;
+      color: #14225F;
+      width: 90%;
+      margin: 2rem auto;
+      text-align: center;
+      text-transform: capitalize; }
+    .single-fund .hfeed .site-content .type-fund .entry-content .amount-funded {
+      background-color: rgba(216, 216, 216, 0.18);
+      font-size: 2.2rem;
+      color: #42299A;
+      margin: 0;
+      padding: 0.6rem 0.8rem;
+      font-weight: 700; }
+      .single-fund .hfeed .site-content .type-fund .entry-content .amount-funded p:nth-child(2n) {
+        font-size: 1.6rem; }
+      .single-fund .hfeed .site-content .type-fund .entry-content .amount-funded .chimp-donate-form {
+        margin: 0.3rem auto 0.6rem;
+        font-size: 1.3rem; }
+    .single-fund .hfeed .site-content .type-fund .entry-content .fund-description {
+      margin: 3rem 0; }
+      .single-fund .hfeed .site-content .type-fund .entry-content .fund-description p {
+        width: 80%;
         line-height: 2.4rem;
-        font-weight: 600; }
-      .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation .fund-allowcations {
+        font-size: 1.2rem;
+        font-weight: lighter;
+        word-wrap: break-word;
+        margin: 0 auto; }
+    .single-fund .hfeed .site-content .type-fund .entry-content .fund-video p {
+      margin: 0; }
+      .single-fund .hfeed .site-content .type-fund .entry-content .fund-video p iframe {
+        width: 100%; }
+    .single-fund .hfeed .site-content .type-fund .entry-content .main-content {
+      padding: 3rem 0;
+      background-color: #F9F5ED; }
+      .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -970,73 +959,133 @@ body .hide-desktop {
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
-        margin-top: 4rem; }
-        .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation .fund-allowcations .single-allocation {
-          margin-top: 2rem;
-          margin-bottom: 3.5rem; }
-          .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation .fund-allowcations .single-allocation .charity-logo {
-            width: 80%;
-            max-height: 25rem; }
+        width: 100%; }
+        .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation h3 {
+          width: 88%;
+          word-wrap: break-word;
+          color: #14225F;
+          margin: 0 auto;
+          font-size: 1.3rem;
+          line-height: 2.4rem;
+          font-weight: 600; }
+        .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation .fund-allowcations {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          margin-top: 4rem; }
+          .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation .fund-allowcations .single-allocation {
+            margin-top: 2rem;
+            margin-bottom: 3.5rem; }
+            .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation .fund-allowcations .single-allocation .charity-logo {
+              width: 15rem;
+              max-height: 25rem; }
+            .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation .fund-allowcations .single-allocation .allocation-text .percentage {
+              font-size: 4rem;
+              font-weight: bolder;
+              margin: 3.3rem .5rem; }
+            .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation .fund-allowcations .single-allocation .allocation-text .description {
+              font-size: 1.4rem;
+              margin: 0 2rem;
+              line-height: 2.3rem; }
+    @media (min-width: 1000px) {
+      .single-fund .hfeed .site-content .type-fund .entry-content .entry-title {
+        font-size: 2.2rem; }
+      .single-fund .hfeed .site-content .type-fund .entry-content .amount-funded p:first-child {
+        font-size: 3.5rem;
+        margin-top: 1.2rem; }
+      .single-fund .hfeed .site-content .type-fund .entry-content .amount-funded p:nth-child(2n) {
+        font-size: 2.2rem; }
+      .single-fund .hfeed .site-content .type-fund .entry-content .fund-description p {
+        font-size: 1.4rem; }
+      .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation h3 {
+        font-size: 1.6rem;
+        width: 80%; }
+      .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation .fund-allowcations .single-allocation {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0 10rem; }
+        .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation .fund-allowcations .single-allocation .charity-logo {
+          margin-right: 3rem; }
+        .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation .fund-allowcations .single-allocation .allocation-text {
+          text-align: left;
+          margin-left: 3rem; }
           .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation .fund-allowcations .single-allocation .allocation-text .percentage {
             font-size: 5rem;
-            font-weight: bolder;
-            margin: 3.3rem auto; }
+            margin-right: 0;
+            margin-left: 0; }
           .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation .fund-allowcations .single-allocation .allocation-text .description {
-            font-size: 1.6rem;
-            margin: 0 2rem;
-            line-height: 2.3rem; }
-    .single-fund .hfeed .site-content .type-fund .entry-content .main-content .entry-content {
-      width: 85%;
-      margin: 0 auto 2.3rem; }
-      .single-fund .hfeed .site-content .type-fund .entry-content .main-content .entry-content p {
-        font-size: 1.6rem;
-        line-height: 2.4rem;
-        margin-top: 0; }
+            margin: 0;
+            width: 24rem; } }
+
+@media (min-width: 1000px) {
+  .single-fund .hfeed .site-content .post-104 .fund-header .fund-image img {
+    -o-object-position: 50% 48%;
+       object-position: 50% 48%; } }
 
 /* The Team page */
 .page-template-page-team .site-content .entry-header {
   text-align: center;
   color: #14225F;
+  font-size: 1.2rem;
   padding: 2rem 0;
-  font-size: 1.8rem;
   border-bottom: 2px solid #14225F; }
   @media (min-width: 1000px) {
     .page-template-page-team .site-content .entry-header {
       border-bottom: none; } }
 
 .page-template-page-team .site-content .entry-content .single-member {
-  font-size: 1.2rem;
   border-bottom: 2px solid #14225F; }
   .page-template-page-team .site-content .entry-content .single-member .member-photo {
     margin: 2rem 0;
     text-align: center; }
     .page-template-page-team .site-content .entry-content .single-member .member-photo img {
       border-radius: 50%;
-      width: 75%; }
+      width: 18rem; }
   .page-template-page-team .site-content .entry-content .single-member .member-info {
     color: #192726;
     margin: 0 2rem; }
     .page-template-page-team .site-content .entry-content .single-member .member-info h3 {
-      text-align: center;
-      font-size: 1.8rem; }
+      text-align: center; }
     .page-template-page-team .site-content .entry-content .single-member .member-info p {
       line-height: 2.3rem;
-      font-size: 1.3rem; }
+      font-size: 1.1rem; }
   .page-template-page-team .site-content .entry-content .single-member .contact-button {
     text-align: center;
     padding-bottom: 2.5rem;
     padding-top: 4rem; }
     .page-template-page-team .site-content .entry-content .single-member .contact-button a {
       border: 2px solid #42299a;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       font-weight: bolder;
-      padding: 1.6rem 4rem;
+      padding: 1rem 1.7rem;
       display: inline-block;
       color: #fff;
       border-radius: 8px;
       background-color: #14225F; }
 
 @media (min-width: 600px) {
+  .page-template-page-team .site-content .entry-content .single-member .member-photo img {
+    width: 40%; }
   .page-template-page-team .site-content .entry-content .single-member:last-child {
     border-bottom: none; } }
 
@@ -1087,7 +1136,7 @@ body .hide-desktop {
         color: #14225F;
         text-align: left; }
       .page-template-page-team .site-content .entry-content .single-member .member-info p {
-        font-size: 1rem;
+        font-size: 1.18rem;
         line-height: 1.7rem; }
       .page-template-page-team .site-content .entry-content .single-member .contact-button {
         padding: 0 3rem 0;
@@ -1106,7 +1155,7 @@ body .hide-desktop {
   .page-template-page-team .site-content .custom-plan .single-custom-plan:first-child p {
     display: unset;
     margin: 1.5rem 0;
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.5rem; }
   .page-template-page-team .site-content .custom-plan .single-custom-plan:first-child div {
     margin-top: 3.7rem; }
@@ -1125,6 +1174,7 @@ body .hide-desktop {
 
 .page-template-page-faq .entry-content .faqs .question {
   height: 3rem;
+  padding: 2rem 1.4rem;
   border-bottom: 1px solid #14225F;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1171,7 +1221,8 @@ body .hide-desktop {
             align-items: center;
     -ms-flex-direction: column;
         flex-direction: column; }
-    .page-template-page-faq .entry-header .entry-title, .page-template-page-faq .entry-header p {
+    .page-template-page-faq .entry-header .entry-title,
+    .page-template-page-faq .entry-header p {
       display: unset; }
     .page-template-page-faq .entry-header h2:last-child {
       display: none; } }
@@ -1963,10 +2014,15 @@ ol.flickity-page-dots {
         @media (min-width: 1000px) {
           .site-footer .top-footer .footer-info-sm .text-description p:last-child {
             text-align: left; } }
-      .site-footer .top-footer .footer-info-sm .text-description .footer-info-logo {
-        width: 50%;
-        -o-object-fit: fill;
-           object-fit: fill; }
+      .site-footer .top-footer .footer-info-sm .text-description a {
+        text-align: center; }
+        .site-footer .top-footer .footer-info-sm .text-description a .footer-info-logo {
+          width: 14rem;
+          -o-object-fit: fill;
+             object-fit: fill; }
+        @media (min-width: 1000px) {
+          .site-footer .top-footer .footer-info-sm .text-description a {
+            text-align: left; } }
     .site-footer .top-footer .footer-info-sm .font-link .mail {
       background-image: url("../../assets/images/facebook.png");
       background-position: center;

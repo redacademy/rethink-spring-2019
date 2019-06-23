@@ -99,10 +99,22 @@
             text-align: left;
           }
         }
-        .footer-info-logo {
-          width: 50%;
-          object-fit: fill;
+        a {
+          text-align: center;
+          .footer-info-logo {
+            width: 14rem;
+            object-fit: fill;
+            @include tablet {
+            }
+           
+          }
+          @include desktop {
+            text-align: left;
+            .footer-info-logo {
+            }
+          }
         }
+       
       }
       .font-link {
         .mail {

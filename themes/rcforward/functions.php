@@ -101,6 +101,9 @@ function red_starter_scripts()
 
 	wp_enqueue_script('rc-custom-flickity', get_template_directory_uri() . '/build/js/flickity.min.js', array('jquery', 'rc-flickity'), '', true);
 
+	wp_enqueue_script('rc-faq', get_template_directory_uri() . '/build/js/faq.min.js', array('jquery', 'rc-flickity'), '', true);
+
+
 	wp_enqueue_script('rcforward-hamburger', get_template_directory_uri() . '/build/js/hamburger.min.js', array('jquery'), '', true);
 	wp_enqueue_script('rcforward-charity-category', get_template_directory_uri() . '/build/js/charity-category.min.js', array('jquery'), '', true);
 	wp_enqueue_script('red-starter-navigation', get_template_directory_uri() . '/build/js/navigation.min.js', array(), '', true);
