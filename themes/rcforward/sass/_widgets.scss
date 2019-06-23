@@ -13,6 +13,13 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  @include desktop {
+    background: linear-gradient(rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.13)),
+    url('../../assets/images/Newsletterbackground.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
   .widget {
     @include display-flex();
     flex-direction: column;

@@ -252,24 +252,12 @@
     }
     .why-donate {
       background-color: $cream__background;
-      h3 {
-        font-size: 1.4rem;
-        margin-bottom: 0;
-        padding: 3rem 0;
+      span {
+        display: inline-block;
       }
-      .why-donate-content {
-        padding: 0 0.6rem;
-
-        @include desktop {
-          width: 70%;
-          margin: 0 auto;
-        }
-        .single-reason {
-          p {
-            font-weight: bolder;
-          }
-        }
-      }
+    }
+    .carousel-title {
+      text-align: center;
     }
   }
 }
@@ -306,37 +294,36 @@
         }
         .entry-content {
           .entry-title {
-            font-size: 2rem;
+            font-size: 1.6rem;
             color: $credible__blue;
-            width: 50%;
+            width: 90%;
             display: flex;
             margin: 2rem auto;
           }
           .amount-funded {
             background-color: rgba(216, 216, 216, 0.18);
-            font-size: 4rem;
+            font-size: 2.2rem;
             color: $innovative__purple;
             margin: 0;
-            padding: 1rem 1.2rem;
+            padding: .6rem .8rem;
+            font-weight: 700;
+
             p .counter {
-              letter-spacing: 0.25rem;
               &:before {
                 content: ' ';
               }
             }
             p .counter,
             p {
-              font-weight: 700;
             }
             p {
               &:nth-child(2n) {
-                font-weight: 600;
-                font-size: 2.8rem;
+                font-size: 1.6rem;
               }
             }
             p,
             .chimp-donate-form {
-              margin: 0.6rem 0;
+              margin: 0.6rem auto;
             }
           }
           .fund-description {
@@ -350,8 +337,16 @@
               margin: 0 auto;
             }
           }
+          .fund-video {
+            p {
+              margin: 0;
+              iframe {
+                width: 100%;
+              }
+            }
+           
+          }
           .main-content {
-            margin-top: 2rem;
             padding: 3rem 0;
             background-color: $cream__background;
             .fund-allowcation {
@@ -360,11 +355,12 @@
               flex-direction: column;
               width: 100%;
               h3 {
-                width: 70%;
+                width: 88%;
                 word-wrap: break-word;
                 color: $credible__blue;
                 margin: 0 auto;
-                font-size: 2rem;
+                font-size: 1.8rem;
+                line-height: 2.4rem;
                 font-weight: 600;
               }
               .fund-allowcations {
@@ -376,19 +372,18 @@
                   margin-top: 2rem;
                   margin-bottom: 3.5rem;
                   .charity-logo {
-                    max-width: 230px;
-                    max-height: 330px;
-                    width: 45%;
+                    width: 100%;
                   }
+        
                   .allocation-text {
                     .percentage {
                       font-size: 5rem;
                       font-weight: bolder;
-                      margin: 2rem 0;
+                      margin: 3.3rem auto;
                     }
                     .description {
                       font-size: 1.6rem;
-                      margin: 0 4rem;
+                      margin: 0 2rem;
                       line-height: 2.3rem;
                     }
                   }
@@ -397,9 +392,9 @@
             }
             .entry-content {
               width: 80%;
-              margin: 0 auto 4rem;
+              margin: 0 auto 2.3rem;
               p {
-                font-size: 1.6rem;
+                font-size: 1.5rem;
                 line-height: 2.4rem;
                 margin-top: 0;
               }
@@ -420,9 +415,8 @@
       padding: 2rem 0;
       font-size: 1.8rem;
       border-bottom: 2px solid $credible__blue;
-      .page-title {
-      }
-      p {
+      @include desktop {
+        border-bottom: none;
       }
     }
     .entry-content {
@@ -431,13 +425,28 @@
         border-bottom: 2px solid $credible__blue;
         .member-photo {
           margin: 2rem 0;
+          text-align: center;
+          img {
+            border-radius: 50%;
+            width: 75%;
+          }
         }
         .member-info {
           color: $grounded__green;
+          margin: 0 2rem;
+          h3 {
+            text-align: center;
+            font-size: 1.8rem;
+          }
+          p {
+            line-height: 2.3rem;
+            font-size: 1.3rem;
+          }
         }
         .contact-button {
           text-align: center;
-          margin-bottom: 2.5rem;
+          padding-bottom: 2.5rem;
+          padding-top: 4rem;
           a {
             border: 2px solid #42299a;
             font-size: 1.5rem;
@@ -450,6 +459,124 @@
             background-color: $credible__blue;
           }
         }
+      }
+      @include tablet {
+        & .single-member:last-child {
+          border-bottom: none;
+        }
+      }
+      @include desktop {
+        @include display-flex();
+        flex-direction: column;
+        .single-member {
+          @include display-flex();
+          width: 80%;
+          margin-right: 0;
+          margin: 2rem 0;
+          border-bottom: none;
+          box-shadow: -0.4px 0.2px 5px 0.02px $innovative__purple;
+          border-radius: 8px;
+          padding: 0.4rem 2rem 1.6rem;
+          width: 70%;
+          .member-photo {
+            img {
+              width: 15rem;
+            }
+          }
+          .member-info {
+            h3 {
+              font-size: 2rem;
+              color: $credible__blue;
+              text-align: left;
+            }
+            p {
+              font-size: 1rem;
+              line-height: 1.7rem;
+            }
+          }
+          .contact-button {
+            padding: 0 3rem 0;
+            text-align: right;
+          }
+        }
+      }
+    }
+    .custom-plan {
+      @include tablet {
+        display: none;
+      }
+      & .single-custom-plan:first-child {
+        border: none;
+        box-shadow: none;
+        h3 {
+          font-size: 1.4rem;
+        }
+        p {
+          display: unset;
+          margin: 1.5rem 0;
+          font-size: 1.1rem;
+          line-height: 1.5rem;
+        }
+        div {
+          margin-top: 3.7rem;
+          a {
+            margin-top: 2.3rem;
+          }
+        }
+      }
+      & .single-custom-plan:last-child {
+        display: none;
+      }
+    }
+  }
+}
+
+/* FAQ Page */
+.page-template-page-faq {
+  .entry-header {
+    .entry-title {
+      display: none;
+    }
+    p {
+      display: none;
+    }
+  }
+  .entry-content {
+    .faqs {
+      .question {
+        height: 3rem;
+        border-bottom: 1px solid $credible__blue;
+        @include display-flex();
+        justify-content: space-between;
+        p {
+          font-size: 1rem;
+          font-weight: bolder;
+        }
+        .plus-symbol {
+          display: flex;
+          cursor: pointer;
+          .fa-plus {
+
+          }
+        }
+      }
+      .answer {
+        
+          display: none;
+
+        
+      }
+    }
+  }
+  @include desktop {
+    .entry-header {
+      @include display-flex();
+      flex-direction: column;
+      .entry-title, p {
+        display: unset;
+      }
+      & h2:last-child {
+        display: none;
       }
     }
   }
