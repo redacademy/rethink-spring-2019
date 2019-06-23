@@ -3250,8 +3250,8 @@ ol.flickity-page-dots {
                     order: 1; } }
         @media (min-width: 1000px) {
           .page-donate .choose-fund .fund .fund-entry img {
-            width: 140px;
-            height: 140px; } }
+            width: 160px;
+            height: 160px; } }
       .page-donate .choose-fund .fund .fund-entry h4 {
         -webkit-box-ordinal-group: 2;
             -ms-flex-order: 1;
@@ -3285,8 +3285,11 @@ ol.flickity-page-dots {
             font-size: 1.3rem; } }
         @media (min-width: 800px) {
           .page-donate .choose-fund .fund .fund-entry h4 {
-            height: 60px;
+            height: 40px;
             margin: 0; } }
+        @media (min-width: 1000px) {
+          .page-donate .choose-fund .fund .fund-entry h4 {
+            height: 30px; } }
       .page-donate .choose-fund .fund .fund-entry a {
         -webkit-box-ordinal-group: 4;
             -ms-flex-order: 3;
@@ -3339,7 +3342,8 @@ ol.flickity-page-dots {
             width: 70%; } }
         @media (min-width: 800px) {
           .page-donate .choose-fund .fund .fund-entry a {
-            width: 85%; } }
+            width: 85%;
+            height: 3.5rem; } }
       .page-donate .choose-fund .fund .fund-entry .fund-description {
         -webkit-box-ordinal-group: 4;
             -ms-flex-order: 3;
@@ -3350,7 +3354,10 @@ ol.flickity-page-dots {
             margin: 1.5rem auto;
             font-size: 16px;
             font-size: 1rem;
-            height: 145px; } }
+            height: 150px; } }
+        @media (min-width: 1000px) {
+          .page-donate .choose-fund .fund .fund-entry .fund-description {
+            padding: 0 1rem; } }
 
 .page-donate .choose-charity-category {
   margin: 0 auto;
@@ -3658,6 +3665,11 @@ ol.flickity-page-dots {
           .page-donate .show-charities .single-charity .thumbnail-wrapper .logo-container {
             width: 100px;
             height: 100px; } }
+        @media (min-width: 1000px) {
+          .page-donate .show-charities .single-charity .thumbnail-wrapper .logo-container {
+            height: 130px;
+            width: 130px;
+            bottom: -30px; } }
         .page-donate .show-charities .single-charity .thumbnail-wrapper .logo-container .logo {
           max-width: 60px;
           max-height: 60px; }
@@ -3665,6 +3677,10 @@ ol.flickity-page-dots {
             .page-donate .show-charities .single-charity .thumbnail-wrapper .logo-container .logo {
               max-width: 80px;
               max-height: 80px; } }
+          @media (min-width: 1000px) {
+            .page-donate .show-charities .single-charity .thumbnail-wrapper .logo-container .logo {
+              max-width: 105px;
+              max-height: 105px; } }
     .page-donate .show-charities .single-charity .content {
       padding: 1rem; }
       @media (min-width: 600px) {
@@ -3684,7 +3700,10 @@ ol.flickity-page-dots {
           .page-donate .show-charities .single-charity .content .title {
             font-size: 19.2px;
             font-size: 1.2rem;
-            height: 60px; } }
+            height: 40px; } }
+        @media (min-width: 1000px) {
+          .page-donate .show-charities .single-charity .content .title {
+            height: 25px; } }
       @media (min-width: 600px) {
         .page-donate .show-charities .single-charity .content .desktop-version {
           display: none; } }
