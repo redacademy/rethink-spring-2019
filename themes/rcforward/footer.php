@@ -28,13 +28,13 @@
 		<div class="footer-info">
 			<?php $front_page_id = get_option('page_on_front'); ?>
 			<p><?php echo CFS()->get('footer_info', $front_page_id) ?></p>
-			<img class="footer-maple-leaf hide-mobile" src="<?php echo CFS()->get('footer_info_icon', $front_page_id) ?>">
+			<img class="footer-maple-leaf hide-mobile" src="<?php echo CFS()->get('footer_info_icon', $front_page_id) ?>" alt="footer maple leaf">
 			<!-- Insert Icon -->
 		</div><!-- .footer-info -->
 		<div class="footer-info-sm">
 			<div class="text-description">
 				<p>RC Forward is a project of:</p>
-				<img class="footer-info-logo" src="<?php echo CFS()->get('parent_charity_logo', $front_page_id); ?>">
+				<img class="footer-info-logo" src="<?php echo CFS()->get('parent_charity_logo', $front_page_id); ?>" alt="footer info logo">
 				<p><?php echo CFS()->get('parent_charity_description', $front_page_id); ?></p>
 			</div>
 			<div class="font-link">
@@ -48,10 +48,7 @@
 	</section>
 	<section class="bottom-footer">
 		<div class="footer-copyright">
-
-
-			<img class="footer-maple-leaf hide-desktop" src="<?php echo CFS()->get('footer_info_icon', $front_page_id) ?>">
-
+			<img class="footer-maple-leaf hide-desktop" src="<?php echo CFS()->get('footer_info_icon', $front_page_id) ?>" alt="footer maple leaf">
 			<p>Copyright 2019 &copy; Rethink Charity</p>
 		</div>
 	</section>

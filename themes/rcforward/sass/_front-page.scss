@@ -46,7 +46,8 @@
     @include desktop{
         max-width:$max-content-size;
     }
-    margin:0 auto;
+    margin:2rem auto;
+    margin-top:5rem;
     display:grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
@@ -61,6 +62,7 @@
 
     }
     text-align: center;
+    padding-bottom: 4rem;
     .single-custom-plan{
         padding:2rem 0;
         grid-template-columns: 1fr;
@@ -101,7 +103,7 @@
             background:$credible__blue;
             &:hover{
                 box-shadow: 0px 2px 2px darken($credible__blue, 20%);
-                text-shadow:1px 0.5px 1px white;
+                text-shadow:$textshadow__white;
             }
             padding:$button__padding;
             color:white;
@@ -201,24 +203,18 @@
             @include font-size(0.9);
         }
         .how-it-works-button{
-            color:$innovative__purple;
-            border: 2px solid $innovative__purple;
-            &:hover{
-                box-shadow: 0px 2px 2px $innovative__purple;
-            }
+            @include purple-button;
             margin-right:.5rem;
             @include desktop{
                 margin-right:1rem;
             }
         }
         .donate-page-button{
-            background-color:$code__blue;
+            @include green-button;
+            padding:0;
             margin-left:.5rem;
             @include desktop{
                 margin-left:1rem;
-            }
-            &:hover{
-                box-shadow: 0px 2px 2px darken($code__blue,30%);
             }
         }
     }
@@ -282,7 +278,7 @@
     }
 
     .choose-fund-content{
-        background-color:#F8F8FC;
+        background-color:$color__light-purple;
         padding: 1rem;
         padding-top:0;
 
@@ -349,7 +345,7 @@
 
                         @include tablet-large{
                             padding:1rem;
-                            flex-basis:30%;
+                            flex-basis:32%;
                             height:455px;
                             grid-template-columns: 1fr;
                             grid-template-rows:80px 100px auto 60px; 
