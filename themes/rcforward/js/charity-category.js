@@ -1,10 +1,12 @@
 (function ($) {
     $(function () {
         //on click
-        $(".charity-tax-button").on("click", function(event){
+        $(".charity-tax").on("click",  function(event){
             event.preventDefault();
+            $(".charity-tax").removeClass("active");
             const $name = $(this).val();
             getCharities($name);
+            $(this).addClass("active");
         });
 
         //Get Request
@@ -28,7 +30,8 @@
                 })
                 // console.log(name);
                 // console.log($taxId);
-                $(".show-results").append(`<span>Results: </span><a id="charity-tax-button" class="charity-tax" href="#">${name} <span> X</span></a>`);
+                $(".show-results").append(`<span>Results: </span><a id="charity-tax-button" class="charity-tax-result" href="#">${name} <span> X</span></a>`);
+                $(".show-results").addClass("active");
                 getCharity($taxId, name);
                 
                 
@@ -39,39 +42,42 @@
 
 
         }//end of get request
-        function getCharity(taxId){
+        function getCharity(taxId, name){
             $.ajax({
                 method: "get",
                 url: api_vars.rest_url + "wp/v2/charity?_embed",
             }).done(function (data) {
-
+                
                 $.each(data, function (index, value){
                     $.each(value.charity_tax, function(index, id){
-                        console.log(taxId);
-                        if(id == taxId){
+                        // console.log(taxId);
+                        if(name==="see all" || id == taxId){
                             console.log(value);
                             // let $thumbnailLink = value.featured_image_url;
-                            let $thumbnailLink = value._embedded["wp:featuredmedia"][0].media_details.sizes.medium.source_url;
+                            let $thumbnailLink = value._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url;
                             let $logoLink = value.charity_logo;
+                            // console.log($logoLink);
                             let $title = value.title.rendered;
-                            let $description = value.charity_description.substring(75)+" [...]";
+                            let $description = value.charity_description.substring(0, 90)+" [...]";
+                            let $descriptionTab = value.charity_description.substring(0, 75)+" [...]";
                             //TODO change the charity_description to short description
                             //TODO add a Chimp API KEY
                             //TODO add a Donate Button
                             let $pageLink=value.link;
 
-                            $(".show-charities").append(`<div class="sigle-charity"><div class="thumbnail-wrapper">
-                            <img class="thumbnail" src="${$thumbnailLink}" atl="Charity image"/>
-                            <img class ="logo" scr="${$logoLink}" atl="Charity logo"/>
+                            $(".show-charities").append(`<div class="single-charity"><div class="thumbnail-wrapper">
+                            <img class="thumbnail" src="${$thumbnailLink}" atl="Charity image"/><div class="logo-container">
+                            <img class ="logo" src="${$logoLink}" atl="Charity logo"/></div>
                         </div>
                     
                     <div class="content">
                         <h4 class="title">${$title}</h4>
-                        <p class = "description">${$description}</p>
+                        <p class = "description tablet-only-version">${$descriptionTab}</p>
+                        <p class = "description desktop-version">${$description}</p>
                     </div>
                     <div class="buttons">
-                        <a class ="donate-button" href="">Donate</a>
-                        <a class ="learn-more-button" href="${$pageLink}">Learn More</a>
+                        <a class ="donate-button button" href="">Donate</a>
+                        <a class ="learn-more-button button" href="${$pageLink}">Learn More</a>
                     </div></div>`)
                         }   
                     })
@@ -82,7 +88,8 @@
 
         $(".show-results").on("click", '#charity-tax-button', function(event){
             event.preventDefault();
-            console.log("clicked");
+            $(".charity-tax").removeClass("active");
+            $(".show-results").addClass("active");
             $(".show-results").html("");
             $(".show-charities").html("");
         });
