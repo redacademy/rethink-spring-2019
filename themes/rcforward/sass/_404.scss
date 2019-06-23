@@ -38,9 +38,7 @@
     //        max-width: 80vw;
     // width: 100%;
     // height: auto;
-          @include desktop {
-            height: 100vh;
-          }
+       
         }
         .post-navigation {
           width: 100%;
@@ -247,12 +245,6 @@
 
 
 
-//single part
-.impactfully{
-   @include desktop{
-            display: none;
-        }
-    }
 
 //this is for generalizing my code
 
@@ -283,6 +275,15 @@
 }
 
 ///////////////////////////////////
+
+
+//single part
+.impactfully{
+   @include desktop{
+            display: none;
+        }
+    }
+
 .blog{
     .site-content{   
         .blog-header{
@@ -321,7 +322,7 @@ padding-bottom: 18rem;
             .impact-heart{
                     text-align: center;
                 img{
-                    width:300px;
+                    width:334px;
                     object-fit: cover;
                 }
             }
@@ -341,9 +342,7 @@ padding-bottom: 18rem;
                   border: 1px solid #d7d0f2;
         box-shadow: 0 2px 2px #42299a;
                 .entry-header{
-                      @include desktop{
-                                height:30vh;
-                            } 
+                   
                     img{
                         width: 100%;
                         object-fit:cover;
