@@ -136,10 +136,17 @@
       margin: 4rem 2rem 0;
       @include display-flex();
       flex-direction: column;
-      p strong {
-        font-size: 2.6rem;
-        color: $credible__blue;
+      p {
+        strong {
+          font-size: 2.6rem;
+          color: $credible__blue;
+         line-height: 3rem;
+          
+        }
+    
       }
+     
+
       h3 {
         display: none;
         @include desktop {
@@ -147,7 +154,7 @@
           font-size: 2rem;
         }
       }
-      // TO DO First
+      
       @include tablet {
         & .wp-block-columns:first-child {
           position: relative;
@@ -172,6 +179,7 @@
         }
       }
       & .wp-block-columns:first-child {
+       
         @include desktop {
           & .wp-block-column:last-child {
             .wp-block-image {
@@ -185,14 +193,17 @@
           order: unset;
         }
       }
+    
+
       & .wp-block-columns:nth-child(3n),
       & .wp-block-columns:last-child {
         margin: 0 auto;
         & .wp-block-column:first-child {
           & p:first-child {
-            width: 80%;
+            width: 87%;
             strong {
               font-size: 1.5rem;
+              line-height: 1.6rem;
               color: $grounded__green;
             }
           }
@@ -275,7 +286,6 @@
           .fund-image {
             img {
               object-position: center;
-              height: 100vh;
               width: 100%;
               object-fit: cover;
             }
@@ -313,15 +323,12 @@
                 content: ' ';
               }
             }
-            p .counter,
-            p {
-            }
             p {
               &:nth-child(2n) {
                 font-size: 1.6rem;
               }
             }
-            p,
+    
             .chimp-donate-form {
               margin: 0.6rem auto;
             }
@@ -372,7 +379,8 @@
                   margin-top: 2rem;
                   margin-bottom: 3.5rem;
                   .charity-logo {
-                    width: 100%;
+                    width: 80%;
+                    max-height: 25rem;
                   }
         
                   .allocation-text {
@@ -391,10 +399,10 @@
               }
             }
             .entry-content {
-              width: 80%;
+              width: 85%;
               margin: 0 auto 2.3rem;
               p {
-                font-size: 1.5rem;
+                font-size: 1.6rem;
                 line-height: 2.4rem;
                 margin-top: 0;
               }
