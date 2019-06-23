@@ -46,7 +46,7 @@ get_header(); ?>
 
 			<div class="read-more">
 				<a class="read-more-button" href="<?php echo get_the_permalink(); ?>">Read More </a>
-				<span>&#x203A</span>
+				<span class="read-more-arrow"> &#x203A </span>
 			</div>
 		</section>
 	</article><!-- #post-## -->

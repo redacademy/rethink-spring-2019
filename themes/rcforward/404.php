@@ -2,28 +2,40 @@
 /**
  * The template for displaying 404 pages (not found).
  * 
- * Template Name: 404 Page
+ * 
  *
  * 
  *
  * @package RC Forward
  */
 get_header();?>
+<<<<<<< HEAD
 
-    <?php while (have_posts()): the_post();?>
 
-	    <section class="container-404" id="post-<?php the_ID();?>" <?php post_class();?>>
+	    <section class="container-404">
+	<div class="search-girl">
+		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/output-onlinepngtools.png" alt="404 image">
+	</div>
 
 	            <div class="error-text">
-    				<?php the_content();?>
+    				<h2>Hmmm....</h2>
+					<p>We can't seem to find the page you're looking for</p>
 				</div>
 	          		 
-				<div class="search-girl">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/output-onlinepngtools.png" alt="404 image">
-				</div>
 			
 	    </section>
 
-	    <?php endwhile;?>
 
+=======
+    <?php while (have_posts()): the_post();?>
+			    <section class="container-404" id="post-<?php the_ID();?>" <?php post_class();?>>
+						<div class="search-girl">
+							<!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/images/output-onlinepngtools.png" alt="404 image"> -->
+						</div>
+			            <div class="error-text">
+		    				<?php the_content();?>
+						</div>
+			    </section>
+			    <?php endwhile;?>
+>>>>>>> b26b2eaa302270cba968e6c4f85c4c8a43b34d5e
 <?php get_footer();?>
