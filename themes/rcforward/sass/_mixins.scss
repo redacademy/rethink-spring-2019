@@ -60,3 +60,37 @@
     text-align: center;
     margin: 0 auto;
 }
+
+@mixin page-spacing(){
+    margin:0 auto;
+    padding:1rem;
+    @include desktop{
+        padding:$content__padding
+    }
+    text-align: center;
+    max-width: 380px;
+    @include tablet{
+        padding: 2rem 0;
+        max-width:500px;
+    }
+    @include tablet-large{
+        max-width:$max-content-size;
+    }
+}
+
+@mixin purple-button{
+    color:$innovative__purple;
+    border: 2px solid $innovative__purple;
+    &:hover{
+        text-shadow: $textshadow__purple;
+        box-shadow: 0px 2px 2px $innovative__purple;
+    }
+}
+
+@mixin green-button{
+    background-color:$code__blue;
+    &:hover{
+        text-shadow: $textshadow__green;
+        box-shadow: 0px 2px 2px darken($code__blue,30%);
+    }
+}
