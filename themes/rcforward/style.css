@@ -2749,13 +2749,6 @@ ol.flickity-page-dots {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
-  @media (min-width: 1000px) {
-    .blog .site-content header {
-      background: url("../../assets/images/blog listing_header banner.png");
-      text-align: center;
-      background-position: -297px -4px;
-      background-repeat: no-repeat;
-      background-size: cover; } }
   .blog .site-content header h2 {
     text-align: center;
     font-size: 32px;
@@ -2775,20 +2768,9 @@ ol.flickity-page-dots {
       -webkit-box-shadow: 0 2px 2px #42299a;
               box-shadow: 0 2px 2px #42299a;
       border: 10px; }
-      .blog .site-content .post .post-blog header,
-      .blog .site-content .blog .post-blog header {
-        text-align: center; }
-  .blog .site-content .posted-on {
-    font-size: 1.2rem;
-    color: #a7a3d6;
-    font-weight: 700; }
   .blog .site-content h3,
   .blog .site-content .read-more-button {
     color: #14225F; }
-  .blog .site-content .read-more-button {
-    font-size: 1.5rem; }
-  .blog .site-content .read-more- {
-    text-align: right; }
 
 .blog .alm-btn-wrap .alm-load-more-btn {
   height: 60px;
@@ -2802,22 +2784,19 @@ ol.flickity-page-dots {
     display: -ms-flexbox;
     display: flex; }
 
-.blog .blog-header {
-  height: 227px; }
+.blog .ajax-load-more-wrap .alm-ajax li h3 {
+  color: #14225f;
+  line-height: 2em; }
+  .blog .ajax-load-more-wrap .alm-ajax li h3 a {
+    color: #14225F; }
 
-.blog .ajax-load-more-wrap {
-  padding: 4em; }
-  .blog .ajax-load-more-wrap .alm-ajax li h3 {
-    color: #14225f;
-    line-height: 2em; }
-    .blog .ajax-load-more-wrap .alm-ajax li h3 a {
-      color: #14225F; }
-  .blog .ajax-load-more-wrap .alm-ajax li p {
-    line-height: 2em; }
-  .blog .ajax-load-more-wrap .alm-ajax li .entry-meta {
-    font-size: 1.2rem;
-    color: #a7a3d6;
-    font-weight: 700; }
+.blog .ajax-load-more-wrap .alm-ajax li p {
+  line-height: 2em; }
+
+.blog .ajax-load-more-wrap .alm-ajax li .entry-meta {
+  font-size: 1.2rem;
+  color: #a7a3d6;
+  font-weight: 700; }
 
 .single .post-navigation {
   display: -webkit-box;
@@ -2851,28 +2830,165 @@ ol.flickity-page-dots {
   .impactfully {
     display: none; } }
 
-.blog img, .post-template-default img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 100%; }
-
-.blog .ajax-load-more-wrap .alm-ajax li {
-  line-height: 2em;
-  padding: 2em;
-  border: 1px solid #d7d0f2;
-  -webkit-box-shadow: 0 2px 2px #42299a;
-          box-shadow: 0 2px 2px #42299a;
-  border: 10px; }
-  .blog .ajax-load-more-wrap .alm-ajax li img {
-    position: unset;
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    height: 100%; }
-
 .post-template-default .next-post, .post-template-default .previous-post {
   padding: 2em;
   border: 1px solid #d7d0f2;
   -webkit-box-shadow: 0 2px 2px #42299a;
           box-shadow: 0 2px 2px #42299a; }
+
+.blog .site-content .blog-header {
+  height: 24rem; }
+  @media (min-width: 1000px) {
+    .blog .site-content .blog-header {
+      height: 15rem;
+      background-image: url("../../assets/images/flowimpact.png"), url("../../assets/images/Impactfullygiving.png");
+      background-size: 800px, 318px;
+      background-position: top -43px left -453px,top 10px right 30px;
+      background-repeat: no-repeat no-repeat;
+      padding-bottom: 2rem;
+      padding-bottom: 18rem; } }
+  .blog .site-content .blog-header .impact-title h2 {
+    font-size: 2rem;
+    margin: 1rem; }
+    @media (min-width: 1000px) {
+      .blog .site-content .blog-header .impact-title h2 {
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+        margin-top: 7rem; } }
+  .blog .site-content .blog-header .impact-title p {
+    font-size: 1rem;
+    margin-bottom: 32px; }
+    @media (min-width: 1000px) {
+      .blog .site-content .blog-header .impact-title p {
+        margin: 0; } }
+  .blog .site-content .blog-header .impact-heart {
+    text-align: center; }
+    .blog .site-content .blog-header .impact-heart img {
+      width: 300px;
+      -o-object-fit: cover;
+         object-fit: cover; }
+
+.blog .site-content .post {
+  padding: 2rem; }
+  @media (min-width: 600px) {
+    .blog .site-content .post {
+      padding: 3rem; } }
+  @media (min-width: 1000px) {
+    .blog .site-content .post {
+      padding-bottom: 0rem;
+      padding-right: 12rem;
+      padding-left: 12rem; } }
+  .blog .site-content .post .post-blog {
+    border: 1px solid #d7d0f2;
+    -webkit-box-shadow: 0 2px 2px #42299a;
+            box-shadow: 0 2px 2px #42299a; }
+    @media (min-width: 1000px) {
+      .blog .site-content .post .post-blog .entry-header {
+        height: 30vh; } }
+    .blog .site-content .post .post-blog .entry-header img {
+      width: 100%;
+      -o-object-fit: cover;
+         object-fit: cover;
+      height: 100%; }
+    .blog .site-content .post .post-blog .entry-title {
+      padding: 10px;
+      padding-bottom: 3rem; }
+      @media (min-width: 1000px) {
+        .blog .site-content .post .post-blog .entry-title {
+          padding-bottom: 0; } }
+      .blog .site-content .post .post-blog .entry-title span {
+        font-size: 0.85rem;
+        color: #a7a3d6;
+        font-weight: 600; }
+      .blog .site-content .post .post-blog .entry-title h3 {
+        font-size: 1.3rem;
+        margin-top: 6px;
+        padding: 0; }
+    .blog .site-content .post .post-blog .entry-content {
+      display: none; }
+      @media (min-width: 1000px) {
+        .blog .site-content .post .post-blog .entry-content {
+          display: block;
+          padding: 10px; } }
+    .blog .site-content .post .post-blog .read-more {
+      position: relative;
+      text-align: right;
+      padding-right: 1rem;
+      font-size: 1rem;
+      padding-right: 24px;
+      padding-bottom: 15px; }
+      @media (min-width: 1000px) {
+        .blog .site-content .post .post-blog .read-more {
+          padding-bottom: 30px; } }
+      .blog .site-content .post .post-blog .read-more span {
+        font-size: 4rem;
+        color: royalblue;
+        position: absolute;
+        bottom: -6px;
+        right: 17px; }
+        @media (min-width: 1000px) {
+          .blog .site-content .post .post-blog .read-more span {
+            bottom: 7px; } }
+      .blog .site-content .post .post-blog .read-more a {
+        color: royalblue;
+        padding-bottom: 15px;
+        padding-right: 24px;
+        font-size: 1.2rem; }
+
+.blog .site-content .ajax-load-more-wrap {
+  padding-top: 3rem; }
+  @media (min-width: 1000px) {
+    .blog .site-content .ajax-load-more-wrap {
+      padding-bottom: 0rem;
+      padding-right: 12rem;
+      padding-left: 12rem; } }
+  .blog .site-content .ajax-load-more-wrap .alm-listing {
+    padding: 2rem; }
+    @media (min-width: 600px) {
+      .blog .site-content .ajax-load-more-wrap .alm-listing {
+        padding: 3rem; } }
+    @media (min-width: 1000px) {
+      .blog .site-content .ajax-load-more-wrap .alm-listing {
+        padding: 0rem; } }
+    .blog .site-content .ajax-load-more-wrap .alm-listing li {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      border: 1px solid #d7d0f2;
+      -webkit-box-shadow: 0 2px 2px #42299a;
+              box-shadow: 0 2px 2px #42299a;
+      padding: 0; }
+      .blog .site-content .ajax-load-more-wrap .alm-listing li img {
+        width: 100%;
+        -o-object-fit: cover;
+           object-fit: cover;
+        height: 300px;
+        position: static; }
+        @media (min-width: 600px) {
+          .blog .site-content .ajax-load-more-wrap .alm-listing li img {
+            height: 500px; } }
+        @media (min-width: 1000px) {
+          .blog .site-content .ajax-load-more-wrap .alm-listing li img {
+            height: 600px; } }
+      .blog .site-content .ajax-load-more-wrap .alm-listing li h3 {
+        padding: 10px;
+        line-height: 1.5rem; }
+        .blog .site-content .ajax-load-more-wrap .alm-listing li h3 a {
+          font-size: 1.3rem;
+          margin-top: 6px;
+          padding: 0;
+          font-family: "Montserrat", sans-serif; }
+      .blog .site-content .ajax-load-more-wrap .alm-listing li .entry-meta {
+        padding: 10px; }
+      .blog .site-content .ajax-load-more-wrap .alm-listing li p {
+        font-size: .85rem;
+        padding: 10px;
+        line-height: 22px;
+        font-size: .85rem;
+        margin: 0; }
