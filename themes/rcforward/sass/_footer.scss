@@ -11,7 +11,7 @@
   }
   .top-footer {
     @include desktop {
-    width: 1200px;
+      max-width: 90%;
       @include display-flex();
     }
     .footer-site-logo {
@@ -33,7 +33,7 @@
       .menu-footer-menu-container {
         ul {
           list-style: none;
-          padding-left: 3.5rem;
+          padding-left: 6rem;
           @include desktop {
             li {
               margin: 2rem 0;
@@ -131,17 +131,20 @@
     }
   }
   .bottom-footer {
-    width: 1200px;
+    @include desktop {
+      @include display-flex();
+      align-self: flex-start;
+    }
     .footer-copyright {
       order: 1;
+      @include desktop {
+        padding-left: 10.3rem;
+      }
       .footer-maple-leaf {
         width: 5rem;
         margin: 0 auto;
         @include desktop {
         }
-      }
-      @include desktop {
-        padding-left: 3.5rem;
       }
       p {
         text-align: center;
