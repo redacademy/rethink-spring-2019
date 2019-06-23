@@ -2722,25 +2722,269 @@ ol.flickity-page-dots {
 /*--------------------------------------------------------------
 # 404 Page
 --------------------------------------------------------------*/
-.page-template-404 .container-404 {
-  background-image: url(../../assets/images/output-onlinepngtools.png);
-  background-size: contain;
-  background-position: 4px;
-  background-repeat: no-repeat;
-  width: 40%;
+@media (min-width: 600px) {
+  .error404 .mobile {
+    display: none; } }
+
+.error404 .tablet {
+  display: none; }
+  @media (min-width: 600px) {
+    .error404 .tablet {
+      display: block; } }
+  @media (min-width: 1000px) {
+    .error404 .tablet {
+      display: none; } }
+
+.error404 .desktop {
+  display: none; }
+  @media (min-width: 1000px) {
+    .error404 .desktop {
+      display: block; } }
+
+.error404 .content-404 {
+  padding: 1rem;
+  overflow: hidden;
+  padding-top: 3rem;
+  width: 100%;
+  height: 75vh;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
-  .page-template-404 .container-404 .error-text {
-    width: 50%;
-    margin-left: 9rem; }
-    .page-template-404 .container-404 .error-text h2 {
-      text-transform: unset;
-      font-size: 1rem; }
-    .page-template-404 .container-404 .error-text p {
-      font-size: 0.9rem; }
-  .page-template-404 .container-404 .search-girl {
-    width: 50%; }
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+  @media (min-width: 600px) {
+    .error404 .content-404 {
+      padding-top: 5rem; } }
+  .error404 .content-404 .image-404 {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    height: 60vh;
+    position: relative; }
+    @media (min-width: 800px) {
+      .error404 .content-404 .image-404 {
+        -ms-flex-preferred-size: 45%;
+            flex-basis: 45%; } }
+    .error404 .content-404 .image-404 img {
+      width: 100%;
+      position: absolute;
+      left: -20%;
+      top: 15px; }
+  .error404 .content-404 .error-text {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%; }
+    @media (min-width: 800px) {
+      .error404 .content-404 .error-text {
+        -ms-flex-preferred-size: 55%;
+            flex-basis: 55%; } }
+    @media (min-width: 600px) {
+      .error404 .content-404 .error-text {
+        margin-top: 2rem; } }
+    .error404 .content-404 .error-text .hmmm {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      position: relative; }
+    .error404 .content-404 .error-text h2 {
+      font-size: 27.2px;
+      font-size: 1.7rem;
+      text-transform: capitalize; }
+      @media (min-width: 600px) {
+        .error404 .content-404 .error-text h2 {
+          font-size: 32px;
+          font-size: 2rem; } }
+      @media (min-width: 800px) {
+        .error404 .content-404 .error-text h2 {
+          font-size: 40px;
+          font-size: 2.5rem; } }
+      @media (min-width: 1000px) {
+        .error404 .content-404 .error-text h2 {
+          font-size: 56px;
+          font-size: 3.5rem; } }
+    .error404 .content-404 .error-text .title-hummm {
+      overflow: hidden;
+      opacity: 0;
+      -webkit-animation: typing 3s steps(40, end);
+              animation: typing 3s steps(40, end);
+      -webkit-animation-fill-mode: forwards;
+              animation-fill-mode: forwards; }
+    .error404 .content-404 .error-text .title-dots {
+      width: 10px;
+      position: absolute;
+      top: 0;
+      left: 110px;
+      overflow: hidden;
+      opacity: 0;
+      -webkit-animation: typing4 3.5s steps(40, end) infinite;
+              animation: typing4 3.5s steps(40, end) infinite;
+      -webkit-animation-fill-mode: forwards;
+              animation-fill-mode: forwards;
+      -webkit-animation-delay: 1.7s;
+              animation-delay: 1.7s; }
+      @media (min-width: 600px) {
+        .error404 .content-404 .error-text .title-dots {
+          left: 130px; } }
+      @media (min-width: 800px) {
+        .error404 .content-404 .error-text .title-dots {
+          left: 160px; } }
+      @media (min-width: 1000px) {
+        .error404 .content-404 .error-text .title-dots {
+          left: 230px; } }
+    .error404 .content-404 .error-text p {
+      opacity: 0;
+      overflow: hidden;
+      font-size: 16px;
+      font-size: 1rem;
+      line-height: 1rem;
+      margin-top: .5rem;
+      white-space: nowrap; }
+      @media (min-width: 600px) {
+        .error404 .content-404 .error-text p {
+          font-size: 19.2px;
+          font-size: 1.2rem; } }
+      @media (min-width: 800px) {
+        .error404 .content-404 .error-text p {
+          font-size: 20.8px;
+          font-size: 1.3rem;
+          line-height: 1.5rem; } }
+      @media (min-width: 1000px) {
+        .error404 .content-404 .error-text p {
+          font-size: 24px;
+          font-size: 1.5rem; } }
+    .error404 .content-404 .error-text .first-line {
+      -webkit-animation: typing2 3s steps(40, end);
+              animation: typing2 3s steps(40, end);
+      -webkit-animation-delay: 3s;
+              animation-delay: 3s;
+      -webkit-animation-fill-mode: forwards;
+              animation-fill-mode: forwards; }
+    .error404 .content-404 .error-text .second-line {
+      -webkit-animation: typing3 2s steps(40, end);
+              animation: typing3 2s steps(40, end);
+      -webkit-animation-delay: 5s;
+              animation-delay: 5s;
+      -webkit-animation-fill-mode: forwards;
+              animation-fill-mode: forwards; }
+    .error404 .content-404 .error-text .third-line {
+      -webkit-animation: typing5 2s steps(40, end);
+              animation: typing5 2s steps(40, end);
+      -webkit-animation-delay: 6s;
+              animation-delay: 6s;
+      -webkit-animation-fill-mode: forwards;
+              animation-fill-mode: forwards; }
+
+@-webkit-keyframes typing {
+  0% {
+    width: 0; }
+  1% {
+    opacity: 1; }
+  100% {
+    width: 100%;
+    opacity: 1; } }
+
+@keyframes typing {
+  0% {
+    width: 0; }
+  1% {
+    opacity: 1; }
+  100% {
+    width: 100%;
+    opacity: 1; } }
+
+@-webkit-keyframes typing2 {
+  0% {
+    width: 0; }
+  1% {
+    opacity: 1; }
+  100% {
+    opacity: 1;
+    width: 100%; } }
+
+@keyframes typing2 {
+  0% {
+    width: 0; }
+  1% {
+    opacity: 1; }
+  100% {
+    opacity: 1;
+    width: 100%; } }
+
+@-webkit-keyframes typing3 {
+  0% {
+    width: 0; }
+  1% {
+    opacity: 1; }
+  100% {
+    opacity: 1;
+    width: 100%; } }
+
+@keyframes typing3 {
+  0% {
+    width: 0; }
+  1% {
+    opacity: 1; }
+  100% {
+    opacity: 1;
+    width: 100%; } }
+
+@-webkit-keyframes typing4 {
+  0% {
+    width: 0; }
+  1% {
+    opacity: 1; }
+  100% {
+    opacity: 1;
+    width: 100%; } }
+
+@keyframes typing4 {
+  0% {
+    width: 0; }
+  1% {
+    opacity: 1; }
+  100% {
+    opacity: 1;
+    width: 100%; } }
+
+@-webkit-keyframes typing5 {
+  0% {
+    width: 0; }
+  1% {
+    opacity: 1; }
+  100% {
+    opacity: 1;
+    width: 100%; } }
+
+@keyframes typing5 {
+  0% {
+    width: 0; }
+  1% {
+    opacity: 1; }
+  100% {
+    opacity: 1;
+    width: 100%; } }
 
 @media (min-width: 600px) {
   .page-donate .mobile-version {
