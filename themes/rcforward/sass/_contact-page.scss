@@ -5,10 +5,7 @@
 .page-template-page-contact {
   .site-content {
     @include tablet {
-      padding: 2rem;
-    }
-    @include desktop {
-      padding: 2rem;
+          padding: 0 2rem 2rem 2rem;
     }
     .post-25 {
       display: flex;
@@ -26,7 +23,7 @@
           margin: 0;
           @include tablet {
             margin: auto;
-            font-size: 55px;
+            font-size: 2rem;
           }
         }
       }
@@ -37,7 +34,7 @@
         margin: 0;
         padding: 10px;
         text-align: center;
-        font-size: 14px;
+        font-size: 1rem;
         @include tablet {
           margin-bottom: 4em;
           margin-top: 0;
@@ -48,20 +45,21 @@
         }
       }
       .contact-text {
-        p {
-                    margin:0;
-          strong{
-
-          font-weight: 600;  
-
-          font-style: normal;
-          color: $credible__blue;
-          line-height: 16px;
-          @include tablet {
-            text-align: center;
-            font-size: 20px;
-          }
+        @include tablet {
+          text-align: center;
         }
+        p {
+          margin: 0;
+          strong {
+            font-weight: 600;
+            font-style: normal;
+            color: $credible__blue;
+            line-height: 16px;
+            @include tablet {
+              text-align: center;
+              font-size: 20px;
+            }
+          }
         }
       }
       .entry-content {
@@ -81,18 +79,12 @@
           margin: 0;
           font-style: normal;
           @include tablet {
-            padding-left: 2rem;
           }
           p:first-child {
             font-weight: normal;
             color: $black;
             @include tablet {
               text-align: justify;
-            }
-            p:last-child {
-              @include tablet {
-                text-align: justify;
-              }
             }
           }
           figure {
@@ -151,6 +143,10 @@
   }
 }
 .wpcf7-form {
+  padding: 0;
+  @include tablet {
+    padding-left: 3rem;
+  }
   p:last-of-type {
     text-align: center;
     @include tablet {
@@ -163,4 +159,10 @@
   @include tablet {
     flex-direction: row;
   }
+}
+
+.contact-browse{
+  @include tablet{
+  display: none;
+}
 }
