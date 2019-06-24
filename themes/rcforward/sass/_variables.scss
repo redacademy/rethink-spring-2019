@@ -19,9 +19,6 @@ $color__link: royalblue;
 $color__link-visited: purple;
 $color__link-hover: midnightblue;
 
-// background-color
-$color__light-purple:#F8F8FC;
-
 // RC Primary Stylings
 // #48219f purple color for carousel shadow
 $code__blue: #00BEA8;
@@ -61,7 +58,4 @@ $font__line-height-pre: 1.6;
 $button__padding: 0.7rem 1.5rem;
 $content__padding: 2rem;
 
-//text-shadow
-$textshadow__white: 1px 0.5px 1px darken(white, 40%);
-$textshadow__purple:1px 0.5px 1px darken($innovative__purple, 10%);
-$textshadow__green:1px 0.5px 1px darken($code__blue, 10%);
+
