@@ -1,28 +1,249 @@
 /*--------------------------------------------------------------
 # 404 Page
 --------------------------------------------------------------*/
-.page-template-404 {
-  .container-404 {
-    background-image: url(../../assets/images/output-onlinepngtools.png);
-    background-size: contain;
-    background-position: 4px;
-    background-repeat: no-repeat;
-    width: 40%;
-    display: flex;
-    .error-text {
-      width:50%;
-    margin-left: 9rem;
-      h2{
-        text-transform:unset;
-        font-size: 1rem;
+// .page-template-404 {
+//   .container-404 {
+//     background-image: url(../../assets/images/output-onlinepngtools.png);
+//     background-size: contain;
+//     background-position: 4px;
+//     background-repeat: no-repeat;
+//     width: 40%;
+//     display: flex;
+//     .error-text {
+//       width:50%;
+//     margin-left: 9rem;
+//       h2{
+//         text-transform:unset;
+//         font-size: 1rem;
+//       }
+//       p{
+//           font-size: 0.9rem;
+//       }
+//     }
+//     .search-girl {
+//       width: 50%;
+//     }
+//   }
+// }
+
+.error404{
+  .mobile{
+    @include tablet{
+      display:none;
+    }
+  }
+  .tablet{
+    display:none;
+    @include tablet{
+      display:block;
+    }
+    @include desktop{
+      display:none;
+    }
+  }
+  .desktop{
+    display:none;
+    @include desktop{
+      display:block;
+    }
+
+  }
+
+  .content-404{
+    padding:1rem;
+    overflow: hidden;
+    padding-top:3rem;
+    @include tablet{
+      padding-top:5rem;
+    }
+    width:100%;
+    height:400px;
+    @include tablet{
+      height:500px;
+    }
+    @include tablet-large{
+      height:600px;
+    }
+    @include desktop{
+      height:700px;
+    }
+    
+    @include display-flex();
+    align-items: flex-start;
+    .image-404{
+      flex-basis:50%;
+      @include tablet-large{
+
+        flex-basis:45%;
       }
-      p{
-          font-size: 0.9rem;
+      height:60vh;
+      position:relative;
+      img{
+        width:100%;
+        position: absolute;
+        left:-20%;
+        top:15px;
       }
     }
-    .search-girl {
-      width: 50%;
+    .error-text{
+      flex-basis:50%;
+      @include tablet-large{
+
+        flex-basis:55%;
+      }
+      // margin-top:.5rem;
+      @include tablet {
+        margin-top:2rem;
+      }
+      .hmmm{
+        @include display-flex();
+        justify-content: flex-start;
+        // width:300px;
+        position: relative;
+      }
+      h2{
+        @include font-size(1.7);
+        @include tablet{
+          @include font-size(2);
+        }
+        @include tablet-large{
+          @include font-size(2.5);
+        }
+        @include desktop{
+          @include font-size(3.5);
+
+        }
+        text-transform: capitalize;
+      }
+      .title-hummm{
+        // width:150px;
+        overflow: hidden;
+        opacity: 0;
+        animation: typing 3s steps(40, end);
+        animation-fill-mode: forwards;
+          
+        }
+        .title-dots{
+          width:10px;
+          position: absolute;
+          top:0;
+          left:110px;
+          @include tablet{
+            left:130px;
+          }     
+          @include tablet-large{
+            left:160px;
+          }
+          @include desktop{
+            left:230px;
+          }
+
+          overflow: hidden;
+          opacity: 0;
+          animation: typing4 3.5s steps(40, end) infinite;
+          animation-fill-mode: forwards;
+          animation-delay: 1.7s;
+          
+        }
+
+      p{
+        opacity: 0;
+        overflow: hidden;
+        @include font-size(1);
+        line-height: 1rem;
+        margin-top:.5rem;
+        @include tablet{
+          @include font-size(1.2);
+
+        }
+        @include tablet-large{
+          @include font-size(1.3);
+          line-height: 1.5rem;
+        }
+        @include desktop{
+          @include font-size(1.5);
+        }
+        
+        white-space: nowrap;
+      }
+     .first-line{
+        animation: typing2 3s steps(40, end);
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+      }
+      .second-line{
+        animation: typing3 2s steps(40, end);
+        animation-delay: 5s;
+        animation-fill-mode: forwards;
+      }
+      .third-line{
+        animation: typing5 2s steps(40, end);
+        animation-delay: 6s;
+        animation-fill-mode: forwards;
+      }
+    }
+    @keyframes typing {
+      0% {
+        width: 0;
+      }
+      1% {
+        opacity: 1;
+      }
+      100% {
+        width:100%;
+        opacity: 1;
+      }
+    }
+    @keyframes typing2 {
+      0% {
+        width: 0;
+      }
+      1% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+        width:100%;
+      }
+    }
+    @keyframes typing3 {
+      0% {
+        width: 0;
+      }
+      1% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+        width:100%;
+      }
+    }
+    @keyframes typing4 {
+      0% {
+        width: 0;
+      }
+      1% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+        width:100%;
+      }
+    }
+    @keyframes typing5 {
+      0% {
+        width: 0;
+      }
+      1% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+        width:100%;
+      }
     }
   }
 }
+
+
 
