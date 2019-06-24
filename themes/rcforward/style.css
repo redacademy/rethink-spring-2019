@@ -266,9 +266,6 @@ p {
   margin: 1.5rem 0;
   line-height: 1.4rem; }
 
-.chimp-donate-form {
-  background: #00BEA8; }
-
 .related-charities-title {
   text-align: center; }
 
@@ -571,11 +568,19 @@ body {
 /* Chimp Donate Button */
 .chimp-donate-form, .donate-page-button {
   background-color: #00BEA8;
-  font-size: 1.6rem;
+  font-size: 1rem;
   font-weight: 700;
-  padding: 1.6rem 5.3rem;
+  padding: 1.2rem 3rem;
   color: #192726;
   border-radius: 8px; }
+  @media (min-width: 600px) {
+    .chimp-donate-form, .donate-page-button {
+      font-size: 1.2rem;
+      padding: 1.4rem 4rem; } }
+  @media (min-width: 1000px) {
+    .chimp-donate-form, .donate-page-button {
+      font-size: 1.7rem;
+      padding: 1.7rem 4.5rem; } }
 
 /* Transition for single content charity button */
 body .hide-mobile {
@@ -609,17 +614,27 @@ body .hide-desktop {
   .page-template-page-how-it-works .site-content .entry-header .entry-title {
     text-align: center;
     margin: 0;
+    font-size: 1.6rem;
     padding-top: 4rem;
-    font-size: 3rem;
     color: #14225F; }
+    @media (min-width: 600px) {
+      .page-template-page-how-it-works .site-content .entry-header .entry-title {
+        font-size: 1.8rem; } }
+    @media (min-width: 1000px) {
+      .page-template-page-how-it-works .site-content .entry-header .entry-title {
+        font-size: 2rem; } }
   .page-template-page-how-it-works .site-content .entry-header .page-description {
     width: 68%;
-    font-size: 1.4rem;
     text-align: center;
     margin: 1.3rem auto;
+    font-size: 1.1rem;
     line-height: 2.5rem; }
+    @media (min-width: 600px) {
+      .page-template-page-how-it-works .site-content .entry-header .page-description {
+        font-size: 1.4rem; } }
     @media (min-width: 1000px) {
       .page-template-page-how-it-works .site-content .entry-header .page-description {
+        font-size: 1.5rem;
         width: 50%; } }
   .page-template-page-how-it-works .site-content .entry-header .how-it-works-steps {
     display: -webkit-box;
@@ -669,6 +684,7 @@ body .hide-desktop {
               -ms-flex-align: center;
                   align-items: center; } }
       .page-template-page-how-it-works .site-content .entry-header .how-it-works-steps .text-steps .work-step {
+        width: 18rem;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -683,6 +699,12 @@ body .hide-desktop {
             -ms-flex-align: center;
                 align-items: center;
         flex-direction: row; }
+        @media (min-width: 600px) {
+          .page-template-page-how-it-works .site-content .entry-header .how-it-works-steps .text-steps .work-step {
+            width: 27rem; } }
+        @media (min-width: 800px) {
+          .page-template-page-how-it-works .site-content .entry-header .how-it-works-steps .text-steps .work-step {
+            width: 42rem; } }
         @media (min-width: 1000px) {
           .page-template-page-how-it-works .site-content .entry-header .how-it-works-steps .text-steps .work-step {
             display: -webkit-box;
@@ -705,20 +727,26 @@ body .hide-desktop {
           @media (min-width: 1000px) {
             .page-template-page-how-it-works .site-content .entry-header .how-it-works-steps .text-steps .work-step .work-step-icon {
               display: unset; } }
-        @media (min-width: 1000px) {
-          .page-template-page-how-it-works .site-content .entry-header .how-it-works-steps .text-steps .work-step .mobile-step {
-            display: none; } }
+        .page-template-page-how-it-works .site-content .entry-header .how-it-works-steps .text-steps .work-step .mobile-step {
+          padding-bottom: 1.7rem; }
+          @media (min-width: 600px) {
+            .page-template-page-how-it-works .site-content .entry-header .how-it-works-steps .text-steps .work-step .mobile-step {
+              padding-bottom: 0;
+              padding-top: 1rem; } }
+          @media (min-width: 1000px) {
+            .page-template-page-how-it-works .site-content .entry-header .how-it-works-steps .text-steps .work-step .mobile-step {
+              display: none; } }
         .page-template-page-how-it-works .site-content .entry-header .how-it-works-steps .text-steps .work-step .step-text .work-step-title,
         .page-template-page-how-it-works .site-content .entry-header .how-it-works-steps .text-steps .work-step .step-text .work-step-description {
-          margin: 1rem; }
-        .page-template-page-how-it-works .site-content .entry-header .how-it-works-steps .text-steps .work-step .work-step-title,
-        .page-template-page-how-it-works .site-content .entry-header .how-it-works-steps .text-steps .work-step .work-step-description {
-          font-size: 1.3rem; }
+          margin: 1rem;
+          font-size: 1rem;
+          line-height: 1.5rem; }
         .page-template-page-how-it-works .site-content .entry-header .how-it-works-steps .text-steps .work-step .work-step-title {
           font-weight: bolder;
           color: #14225F; }
-      .page-template-page-how-it-works .site-content .entry-header .how-it-works-steps .text-steps .work-step:last-child .mobile-step {
-        padding-bottom: 4rem; }
+          @media (min-width: 600px) {
+            .page-template-page-how-it-works .site-content .entry-header .how-it-works-steps .text-steps .work-step .work-step-title {
+              margin-top: 0; } }
   .page-template-page-how-it-works .site-content .entry-header .entry-donate-page {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -736,8 +764,11 @@ body .hide-desktop {
     -ms-flex-direction: column;
         flex-direction: column; }
     .page-template-page-how-it-works .site-content .entry-header .entry-donate-page .get-started {
-      font-size: 1.4rem;
+      font-size: 1rem;
       font-weight: bolder; }
+      @media (min-width: 600px) {
+        .page-template-page-how-it-works .site-content .entry-header .entry-donate-page .get-started {
+          font-size: 1.2rem; } }
     @media (min-width: 1000px) {
       .page-template-page-how-it-works .site-content .entry-header .entry-donate-page {
         margin: 2rem 0; } }
@@ -760,12 +791,20 @@ body .hide-desktop {
       display: none; }
     .page-template-page-how-it-works .site-content .entry-header .entry-contact-us .contact-us-button {
       border: 2px solid #42299A;
-      font-size: 1.5rem;
+      font-size: 1.1rem;
       font-weight: 700;
-      padding: 1.6rem 4rem;
+      padding: 1.2rem 2.6rem;
       display: inline-block;
       color: #42299A;
       border-radius: 8px; }
+      @media (min-width: 600px) {
+        .page-template-page-how-it-works .site-content .entry-header .entry-contact-us .contact-us-button {
+          font-size: 1.4rem;
+          padding: 1.4rem 3.2rem; } }
+      @media (min-width: 1000px) {
+        .page-template-page-how-it-works .site-content .entry-header .entry-contact-us .contact-us-button {
+          font-size: 1.7rem;
+          padding: 1.7rem 4rem; } }
 
 .page-template-page-how-it-works .site-content .entry-main {
   margin: 4rem 2rem 0;
@@ -785,9 +824,15 @@ body .hide-desktop {
   -ms-flex-direction: column;
       flex-direction: column; }
   .page-template-page-how-it-works .site-content .entry-main p strong {
-    font-size: 2.6rem;
+    font-size: 2rem;
     color: #14225F;
     line-height: 3rem; }
+    @media (min-width: 600px) {
+      .page-template-page-how-it-works .site-content .entry-main p strong {
+        font-size: 2.2rem; } }
+    @media (min-width: 1000px) {
+      .page-template-page-how-it-works .site-content .entry-main p strong {
+        font-size: 2.5rem; } }
   .page-template-page-how-it-works .site-content .entry-main h3 {
     display: none; }
     @media (min-width: 1000px) {
@@ -828,9 +873,13 @@ body .hide-desktop {
     margin-bottom: 0; }
     .page-template-page-how-it-works .site-content .entry-main .wp-block-columns .wp-block-column p:nth-child(2n),
     .page-template-page-how-it-works .site-content .entry-main .wp-block-columns .wp-block-column p:last-child {
-      font-size: 1.2rem;
+      font-size: 1rem;
       width: 90%;
       line-height: 1.97rem; }
+      @media (min-width: 600px) {
+        .page-template-page-how-it-works .site-content .entry-main .wp-block-columns .wp-block-column p:nth-child(2n),
+        .page-template-page-how-it-works .site-content .entry-main .wp-block-columns .wp-block-column p:last-child {
+          font-size: 1.2rem; } }
   .page-template-page-how-it-works .site-content .entry-main .wp-block-columns:last-child .wp-block-column:first-child {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -902,64 +951,53 @@ body .hide-desktop {
         width: 10rem;
         border-radius: 50%;
         border: 25px #fff solid; }
-  .single-fund .hfeed .site-content .type-fund .entry-content .entry-title {
-    font-size: 1.6rem;
-    color: #14225F;
-    width: 90%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 2rem auto; }
-  .single-fund .hfeed .site-content .type-fund .entry-content .amount-funded {
-    background-color: rgba(216, 216, 216, 0.18);
-    font-size: 2.2rem;
-    color: #42299A;
-    margin: 0;
-    padding: .6rem .8rem;
-    font-weight: 700; }
-    .single-fund .hfeed .site-content .type-fund .entry-content .amount-funded p .counter:before {
-      content: ' '; }
-    .single-fund .hfeed .site-content .type-fund .entry-content .amount-funded p:nth-child(2n) {
-      font-size: 1.6rem; }
-    .single-fund .hfeed .site-content .type-fund .entry-content .amount-funded .chimp-donate-form {
-      margin: 0.6rem auto; }
-  .single-fund .hfeed .site-content .type-fund .entry-content .fund-description {
-    margin: 3rem 0; }
-    .single-fund .hfeed .site-content .type-fund .entry-content .fund-description p {
-      width: 80%;
+    @media (min-width: 1000px) {
+      .single-fund .hfeed .site-content .type-fund .fund-header .fund-image img {
+        -o-object-position: 50% 18%;
+           object-position: 50% 18%; } }
+  .single-fund .hfeed .site-content .type-fund .entry-content {
+    width: 85%;
+    margin: 0 auto 2.3rem; }
+    .single-fund .hfeed .site-content .type-fund .entry-content p {
+      font-size: 1.4rem;
       line-height: 2.4rem;
-      font-size: 1.6rem;
-      font-weight: lighter;
-      word-wrap: break-word;
-      margin: 0 auto; }
-  .single-fund .hfeed .site-content .type-fund .entry-content .fund-video p {
-    margin: 0; }
-    .single-fund .hfeed .site-content .type-fund .entry-content .fund-video p iframe {
-      width: 100%; }
-  .single-fund .hfeed .site-content .type-fund .entry-content .main-content {
-    padding: 3rem 0;
-    background-color: #F9F5ED; }
-    .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      width: 100%; }
-      .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation h3 {
-        width: 88%;
-        word-wrap: break-word;
-        color: #14225F;
-        margin: 0 auto;
-        font-size: 1.8rem;
+      margin-top: 0; }
+    .single-fund .hfeed .site-content .type-fund .entry-content .entry-title {
+      font-size: 1.4rem;
+      color: #14225F;
+      width: 90%;
+      margin: 2rem auto;
+      text-align: center;
+      text-transform: capitalize; }
+    .single-fund .hfeed .site-content .type-fund .entry-content .amount-funded {
+      background-color: rgba(216, 216, 216, 0.18);
+      font-size: 2.2rem;
+      color: #42299A;
+      margin: 0;
+      padding: 0.6rem 0.8rem;
+      font-weight: 700; }
+      .single-fund .hfeed .site-content .type-fund .entry-content .amount-funded p:nth-child(2n) {
+        font-size: 1.6rem; }
+      .single-fund .hfeed .site-content .type-fund .entry-content .amount-funded .chimp-donate-form {
+        margin: 0.3rem auto 0.6rem;
+        font-size: 1.3rem; }
+    .single-fund .hfeed .site-content .type-fund .entry-content .fund-description {
+      margin: 3rem 0; }
+      .single-fund .hfeed .site-content .type-fund .entry-content .fund-description p {
+        width: 80%;
         line-height: 2.4rem;
-        font-weight: 600; }
-      .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation .fund-allowcations {
+        font-size: 1.2rem;
+        font-weight: lighter;
+        word-wrap: break-word;
+        margin: 0 auto; }
+    .single-fund .hfeed .site-content .type-fund .entry-content .fund-video p {
+      margin: 0; }
+      .single-fund .hfeed .site-content .type-fund .entry-content .fund-video p iframe {
+        width: 100%; }
+    .single-fund .hfeed .site-content .type-fund .entry-content .main-content {
+      padding: 3rem 0;
+      background-color: #F9F5ED; }
+      .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -970,73 +1008,177 @@ body .hide-desktop {
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
-        margin-top: 4rem; }
-        .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation .fund-allowcations .single-allocation {
-          margin-top: 2rem;
-          margin-bottom: 3.5rem; }
-          .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation .fund-allowcations .single-allocation .charity-logo {
-            width: 80%;
-            max-height: 25rem; }
+        width: 100%; }
+        .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation h3 {
+          width: 88%;
+          word-wrap: break-word;
+          color: #14225F;
+          margin: 0 auto;
+          font-size: 1.3rem;
+          line-height: 2.4rem;
+          font-weight: 600; }
+        .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation .fund-allowcations {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          margin-top: 4rem; }
+          .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation .fund-allowcations .single-allocation {
+            margin-top: 2rem;
+            margin-bottom: 3.5rem; }
+            .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation .fund-allowcations .single-allocation .charity-logo {
+              width: 15rem;
+              max-height: 25rem; }
+            .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation .fund-allowcations .single-allocation .allocation-text .percentage {
+              font-size: 4rem;
+              font-weight: bolder;
+              margin: 3.3rem 0.5rem; }
+            .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation .fund-allowcations .single-allocation .allocation-text .description {
+              font-size: 1.4rem;
+              margin: 0 2rem;
+              line-height: 2.3rem; }
+    @media (min-width: 1000px) {
+      .single-fund .hfeed .site-content .type-fund .entry-content .entry-title {
+        font-size: 2.2rem; }
+      .single-fund .hfeed .site-content .type-fund .entry-content .amount-funded p:first-child {
+        font-size: 3.5rem;
+        margin-top: 1.2rem; }
+      .single-fund .hfeed .site-content .type-fund .entry-content .amount-funded p:nth-child(2n) {
+        font-size: 2.2rem; }
+      .single-fund .hfeed .site-content .type-fund .entry-content .fund-description p {
+        font-size: 1.4rem; }
+      .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation h3 {
+        font-size: 1.6rem;
+        width: 80%; }
+      .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation .fund-allowcations .single-allocation {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0 10rem; }
+        .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation .fund-allowcations .single-allocation .charity-logo {
+          margin-right: 3rem; }
+        .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation .fund-allowcations .single-allocation .allocation-text {
+          text-align: left;
+          margin-left: 3rem; }
           .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation .fund-allowcations .single-allocation .allocation-text .percentage {
             font-size: 5rem;
-            font-weight: bolder;
-            margin: 3.3rem auto; }
+            margin-right: 0;
+            margin-left: 0; }
           .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation .fund-allowcations .single-allocation .allocation-text .description {
-            font-size: 1.6rem;
-            margin: 0 2rem;
-            line-height: 2.3rem; }
-    .single-fund .hfeed .site-content .type-fund .entry-content .main-content .entry-content {
-      width: 85%;
-      margin: 0 auto 2.3rem; }
-      .single-fund .hfeed .site-content .type-fund .entry-content .main-content .entry-content p {
-        font-size: 1.6rem;
-        line-height: 2.4rem;
-        margin-top: 0; }
+            margin: 0;
+            width: 24rem; } }
+
+@media (min-width: 1000px) {
+  .single-fund .hfeed .site-content .post-104 .fund-header .fund-image img {
+    -o-object-position: 50% 48%;
+       object-position: 50% 48%; } }
+
+.single-fund .hfeed .related-charities {
+  max-width: 283px;
+  margin: 0.4rem auto; }
+  .single-fund .hfeed .related-charities .flickity-viewport {
+    height: 320px; }
+    .single-fund .hfeed .related-charities .flickity-viewport .flickity-slider .carousel-cell {
+      height: 320px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+      .single-fund .hfeed .related-charities .flickity-viewport .flickity-slider .carousel-cell .charity-description {
+        font-size: 1.2rem;
+        margin: 0 0.7rem;
+        font-size: 1rem;
+        line-height: 1.6rem; }
+      .single-fund .hfeed .related-charities .flickity-viewport .flickity-slider .carousel-cell .read-more-button {
+        color: #14225F;
+        padding-left: 7rem; }
+      .single-fund .hfeed .related-charities .flickity-viewport .flickity-slider .carousel-cell .charity-logo {
+        position: static;
+        border-radius: 0;
+        padding: 0 1rem;
+        -webkit-transform: translateX(0%);
+                transform: translateX(0%);
+        top: 0;
+        max-width: 92%;
+        max-height: 40%;
+        height: auto;
+        width: auto; }
 
 /* The Team page */
 .page-template-page-team .site-content .entry-header {
   text-align: center;
   color: #14225F;
+  font-size: 1.2rem;
   padding: 2rem 0;
-  font-size: 1.8rem;
   border-bottom: 2px solid #14225F; }
   @media (min-width: 1000px) {
     .page-template-page-team .site-content .entry-header {
       border-bottom: none; } }
 
 .page-template-page-team .site-content .entry-content .single-member {
-  font-size: 1.2rem;
   border-bottom: 2px solid #14225F; }
   .page-template-page-team .site-content .entry-content .single-member .member-photo {
     margin: 2rem 0;
     text-align: center; }
     .page-template-page-team .site-content .entry-content .single-member .member-photo img {
       border-radius: 50%;
-      width: 75%; }
+      width: 18rem; }
   .page-template-page-team .site-content .entry-content .single-member .member-info {
     color: #192726;
     margin: 0 2rem; }
     .page-template-page-team .site-content .entry-content .single-member .member-info h3 {
-      text-align: center;
-      font-size: 1.8rem; }
+      text-align: center; }
     .page-template-page-team .site-content .entry-content .single-member .member-info p {
       line-height: 2.3rem;
-      font-size: 1.3rem; }
+      font-size: 1.1rem; }
   .page-template-page-team .site-content .entry-content .single-member .contact-button {
     text-align: center;
     padding-bottom: 2.5rem;
     padding-top: 4rem; }
     .page-template-page-team .site-content .entry-content .single-member .contact-button a {
       border: 2px solid #42299a;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       font-weight: bolder;
-      padding: 1.6rem 4rem;
+      padding: 1rem 1.7rem;
       display: inline-block;
       color: #fff;
       border-radius: 8px;
       background-color: #14225F; }
 
 @media (min-width: 600px) {
+  .page-template-page-team .site-content .entry-content .single-member .member-photo img {
+    width: 40%; }
   .page-template-page-team .site-content .entry-content .single-member:last-child {
     border-bottom: none; } }
 
@@ -1087,7 +1229,7 @@ body .hide-desktop {
         color: #14225F;
         text-align: left; }
       .page-template-page-team .site-content .entry-content .single-member .member-info p {
-        font-size: 1rem;
+        font-size: 1.18rem;
         line-height: 1.7rem; }
       .page-template-page-team .site-content .entry-content .single-member .contact-button {
         padding: 0 3rem 0;
@@ -1106,7 +1248,7 @@ body .hide-desktop {
   .page-template-page-team .site-content .custom-plan .single-custom-plan:first-child p {
     display: unset;
     margin: 1.5rem 0;
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.5rem; }
   .page-template-page-team .site-content .custom-plan .single-custom-plan:first-child div {
     margin-top: 3.7rem; }
@@ -1125,6 +1267,7 @@ body .hide-desktop {
 
 .page-template-page-faq .entry-content .faqs .question {
   height: 3rem;
+  padding: 2rem 1.4rem;
   border-bottom: 1px solid #14225F;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1171,7 +1314,8 @@ body .hide-desktop {
             align-items: center;
     -ms-flex-direction: column;
         flex-direction: column; }
-    .page-template-page-faq .entry-header .entry-title, .page-template-page-faq .entry-header p {
+    .page-template-page-faq .entry-header .entry-title,
+    .page-template-page-faq .entry-header p {
       display: unset; }
     .page-template-page-faq .entry-header h2:last-child {
       display: none; } }
@@ -1963,10 +2107,15 @@ ol.flickity-page-dots {
         @media (min-width: 1000px) {
           .site-footer .top-footer .footer-info-sm .text-description p:last-child {
             text-align: left; } }
-      .site-footer .top-footer .footer-info-sm .text-description .footer-info-logo {
-        width: 50%;
-        -o-object-fit: fill;
-           object-fit: fill; }
+      .site-footer .top-footer .footer-info-sm .text-description a {
+        text-align: center; }
+        .site-footer .top-footer .footer-info-sm .text-description a .footer-info-logo {
+          width: 14rem;
+          -o-object-fit: fill;
+             object-fit: fill; }
+        @media (min-width: 1000px) {
+          .site-footer .top-footer .footer-info-sm .text-description a {
+            text-align: left; } }
     .site-footer .top-footer .footer-info-sm .font-link .mail {
       background-image: url("../../assets/images/facebook.png");
       background-position: center;
@@ -2722,6 +2871,7 @@ ol.flickity-page-dots {
 /*--------------------------------------------------------------
 # 404 Page
 --------------------------------------------------------------*/
+<<<<<<< HEAD
 .page-template-404 .container-404 {
   max-width: 100%;
   background-image: url(../../assets/images/output-onlinepngtools.png);
@@ -2729,19 +2879,280 @@ ol.flickity-page-dots {
   background-position: 4px;
   background-repeat: no-repeat;
   width: 40%;
+=======
+@media (min-width: 600px) {
+  .error404 .mobile {
+    display: none; } }
+
+.error404 .tablet {
+  display: none; }
+  @media (min-width: 600px) {
+    .error404 .tablet {
+      display: block; } }
+  @media (min-width: 1000px) {
+    .error404 .tablet {
+      display: none; } }
+
+.error404 .desktop {
+  display: none; }
+  @media (min-width: 1000px) {
+    .error404 .desktop {
+      display: block; } }
+
+.error404 .content-404 {
+  padding: 1rem;
+  overflow: hidden;
+  padding-top: 3rem;
+  width: 100%;
+  height: 400px;
+>>>>>>> b9d3bcb80fd2dad361452fc1e68ea8d430540f68
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
-  .page-template-404 .container-404 .error-text {
-    width: 50%;
-    margin-left: 9rem; }
-    .page-template-404 .container-404 .error-text h2 {
-      text-transform: unset;
-      font-size: 1rem; }
-    .page-template-404 .container-404 .error-text p {
-      font-size: 0.9rem; }
-  .page-template-404 .container-404 .search-girl {
-    width: 50%; }
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+  @media (min-width: 600px) {
+    .error404 .content-404 {
+      padding-top: 5rem; } }
+  @media (min-width: 600px) {
+    .error404 .content-404 {
+      height: 500px; } }
+  @media (min-width: 800px) {
+    .error404 .content-404 {
+      height: 600px; } }
+  @media (min-width: 1000px) {
+    .error404 .content-404 {
+      height: 700px; } }
+  .error404 .content-404 .image-404 {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    height: 60vh;
+    position: relative; }
+    @media (min-width: 800px) {
+      .error404 .content-404 .image-404 {
+        -ms-flex-preferred-size: 45%;
+            flex-basis: 45%; } }
+    .error404 .content-404 .image-404 img {
+      width: 100%;
+      position: absolute;
+      left: -20%;
+      top: 15px; }
+  .error404 .content-404 .error-text {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%; }
+    @media (min-width: 800px) {
+      .error404 .content-404 .error-text {
+        -ms-flex-preferred-size: 55%;
+            flex-basis: 55%; } }
+    @media (min-width: 600px) {
+      .error404 .content-404 .error-text {
+        margin-top: 2rem; } }
+    .error404 .content-404 .error-text .hmmm {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      position: relative; }
+    .error404 .content-404 .error-text h2 {
+      font-size: 27.2px;
+      font-size: 1.7rem;
+      text-transform: capitalize; }
+      @media (min-width: 600px) {
+        .error404 .content-404 .error-text h2 {
+          font-size: 32px;
+          font-size: 2rem; } }
+      @media (min-width: 800px) {
+        .error404 .content-404 .error-text h2 {
+          font-size: 40px;
+          font-size: 2.5rem; } }
+      @media (min-width: 1000px) {
+        .error404 .content-404 .error-text h2 {
+          font-size: 56px;
+          font-size: 3.5rem; } }
+    .error404 .content-404 .error-text .title-hummm {
+      overflow: hidden;
+      opacity: 0;
+      -webkit-animation: typing 3s steps(40, end);
+              animation: typing 3s steps(40, end);
+      -webkit-animation-fill-mode: forwards;
+              animation-fill-mode: forwards; }
+    .error404 .content-404 .error-text .title-dots {
+      width: 10px;
+      position: absolute;
+      top: 0;
+      left: 110px;
+      overflow: hidden;
+      opacity: 0;
+      -webkit-animation: typing4 3.5s steps(40, end) infinite;
+              animation: typing4 3.5s steps(40, end) infinite;
+      -webkit-animation-fill-mode: forwards;
+              animation-fill-mode: forwards;
+      -webkit-animation-delay: 1.7s;
+              animation-delay: 1.7s; }
+      @media (min-width: 600px) {
+        .error404 .content-404 .error-text .title-dots {
+          left: 130px; } }
+      @media (min-width: 800px) {
+        .error404 .content-404 .error-text .title-dots {
+          left: 160px; } }
+      @media (min-width: 1000px) {
+        .error404 .content-404 .error-text .title-dots {
+          left: 230px; } }
+    .error404 .content-404 .error-text p {
+      opacity: 0;
+      overflow: hidden;
+      font-size: 16px;
+      font-size: 1rem;
+      line-height: 1rem;
+      margin-top: .5rem;
+      white-space: nowrap; }
+      @media (min-width: 600px) {
+        .error404 .content-404 .error-text p {
+          font-size: 19.2px;
+          font-size: 1.2rem; } }
+      @media (min-width: 800px) {
+        .error404 .content-404 .error-text p {
+          font-size: 20.8px;
+          font-size: 1.3rem;
+          line-height: 1.5rem; } }
+      @media (min-width: 1000px) {
+        .error404 .content-404 .error-text p {
+          font-size: 24px;
+          font-size: 1.5rem; } }
+    .error404 .content-404 .error-text .first-line {
+      -webkit-animation: typing2 3s steps(40, end);
+              animation: typing2 3s steps(40, end);
+      -webkit-animation-delay: 3s;
+              animation-delay: 3s;
+      -webkit-animation-fill-mode: forwards;
+              animation-fill-mode: forwards; }
+    .error404 .content-404 .error-text .second-line {
+      -webkit-animation: typing3 2s steps(40, end);
+              animation: typing3 2s steps(40, end);
+      -webkit-animation-delay: 5s;
+              animation-delay: 5s;
+      -webkit-animation-fill-mode: forwards;
+              animation-fill-mode: forwards; }
+    .error404 .content-404 .error-text .third-line {
+      -webkit-animation: typing5 2s steps(40, end);
+              animation: typing5 2s steps(40, end);
+      -webkit-animation-delay: 6s;
+              animation-delay: 6s;
+      -webkit-animation-fill-mode: forwards;
+              animation-fill-mode: forwards; }
+
+@-webkit-keyframes typing {
+  0% {
+    width: 0; }
+  1% {
+    opacity: 1; }
+  100% {
+    width: 100%;
+    opacity: 1; } }
+
+@keyframes typing {
+  0% {
+    width: 0; }
+  1% {
+    opacity: 1; }
+  100% {
+    width: 100%;
+    opacity: 1; } }
+
+@-webkit-keyframes typing2 {
+  0% {
+    width: 0; }
+  1% {
+    opacity: 1; }
+  100% {
+    opacity: 1;
+    width: 100%; } }
+
+@keyframes typing2 {
+  0% {
+    width: 0; }
+  1% {
+    opacity: 1; }
+  100% {
+    opacity: 1;
+    width: 100%; } }
+
+@-webkit-keyframes typing3 {
+  0% {
+    width: 0; }
+  1% {
+    opacity: 1; }
+  100% {
+    opacity: 1;
+    width: 100%; } }
+
+@keyframes typing3 {
+  0% {
+    width: 0; }
+  1% {
+    opacity: 1; }
+  100% {
+    opacity: 1;
+    width: 100%; } }
+
+@-webkit-keyframes typing4 {
+  0% {
+    width: 0; }
+  1% {
+    opacity: 1; }
+  100% {
+    opacity: 1;
+    width: 100%; } }
+
+@keyframes typing4 {
+  0% {
+    width: 0; }
+  1% {
+    opacity: 1; }
+  100% {
+    opacity: 1;
+    width: 100%; } }
+
+@-webkit-keyframes typing5 {
+  0% {
+    width: 0; }
+  1% {
+    opacity: 1; }
+  100% {
+    opacity: 1;
+    width: 100%; } }
+
+@keyframes typing5 {
+  0% {
+    width: 0; }
+  1% {
+    opacity: 1; }
+  100% {
+    opacity: 1;
+    width: 100%; } }
 
 @media (min-width: 600px) {
   .page-donate .mobile-version {

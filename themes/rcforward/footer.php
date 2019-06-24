@@ -34,7 +34,9 @@
 		<div class="footer-info-sm">
 			<div class="text-description">
 				<p>RC Forward is a project of:</p>
-				<img class="footer-info-logo" src="<?php echo CFS()->get('parent_charity_logo', $front_page_id); ?>" alt="footer info logo">
+				<a href="https://rtcharity.org/">
+					<img class="footer-info-logo" src="<?php echo CFS()->get('parent_charity_logo', $front_page_id); ?>" alt="footer info logo">
+				</a>
 				<p><?php echo CFS()->get('parent_charity_description', $front_page_id); ?></p>
 			</div>
 			<div class="font-link">
