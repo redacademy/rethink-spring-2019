@@ -8,6 +8,5 @@
       wrapAround: true,
       setGallerySize: false
     });
-    
   }); // End of Doc ready
 })(jQuery);
