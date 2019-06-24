@@ -11,8 +11,10 @@
         $(this).find('.sub-menu').slideToggle();
         $(this).toggleClass('menu-active');
       });
-  
-
+   
+      $('.sub-menu li').on('click',function(){
+        $('#site-navigation').slideToggle();
+      })
     } // end if
   }); // end doc ready
 })(jQuery);

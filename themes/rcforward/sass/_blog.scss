@@ -110,7 +110,7 @@
     .ajax-load-more-wrap {
       padding-top: 3rem;
       @include desktop {
-        padding-bottom: 0rem 12rem ;
+           padding: 12rem;
         // padding-right: 12rem;
         // padding-left: 12rem;
       }
@@ -245,25 +245,6 @@
   }
 }
 
-.prev-post-main,
-.next-post-main {
-  display: none;
-}
-
-.impactfully {
-  @include desktop {
-    display: none;
-    // .pre-nav-1, .next {
-    //   display: none;
-    // }
-    .blog {
-      .pre-nav-1,
-      .next-p {
-        display: none;
-      }
-    }
-  }
-}
 //blog post read More Button
 .blog {
   .read-more {
@@ -411,3 +392,21 @@
     padding: 30px;
   }
 }
+//single part 
+.next-post-intro{
+  display: none;
+  @include desktop{
+    display: block;
+  }
+}
+.next-post-quote{
+  display: none;
+}
+.pre-nav-1, .next-1{
+    display: none;
+}
+.pre-post-main, .next-post-main{
+
+}
+
+

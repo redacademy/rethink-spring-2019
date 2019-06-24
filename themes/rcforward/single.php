@@ -47,8 +47,8 @@ get_header(); ?>
 						<div class="previous-post">
 							<p class="pre-nav-1"><?php echo $prev_post->post_title ?></p>
 						<div class="prev-post-image">
-							<?php if (has_post_thumbnail($prev__id)) : ?>
-								<?php the_post_thumbnail($prev__id, 'large'); ?>
+							<?php if (get_the_post_thumbnail($prev__id)) : ?>
+								<?php echo get_the_post_thumbnail($prev__id, 'large'); ?>
 							<?php endif; ?>
 						</div><!-- .prev-post-image -->
 						<div class="prev-post-content">
@@ -79,10 +79,10 @@ get_header(); ?>
 							$post_introduction = CFS()->get('post-introduction', $next_post_id);
 							$post_annoucement = CFS()->get('post-announcement', $next_post_id); ?>
 								<div class="next-post">
-							<p class="next-p"> <?php echo $next_post->post_title ?></p>
+							<p class="next-1"> <?php echo $next_post->post_title ?></p>
 							<div class="next-post-image">
-								<?php if (has_post_thumbnail($next_post_id)) : ?>
-									<?php the_post_thumbnail($next_post_id, 'large'); ?>
+								<?php if (get_the_post_thumbnail($next_post_id)) : ?>
+									<?php echo get_the_post_thumbnail($next_post_id, 'large'); ?>
 								<?php endif; ?>
 							</div><!-- .next-post-image -->
 							<div class="next-post-content">

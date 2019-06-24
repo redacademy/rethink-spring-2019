@@ -194,11 +194,13 @@
           padding: 21px;
           align-items: center;
           .single-content {
+            
             display: flex;
             flex-direction: column;
             align-items: center;
             @include desktop {
               flex-direction: row;
+              max-width: 950px;
             }
             .main-image {
               text-align: center;
@@ -273,25 +275,20 @@
   text-align: center;
 }
 .single-charity .chimp-donate-form {
-  display: flex;  margin: auto;
+  display: flex;  
+  margin: auto;
   justify-content: center;
   width: 12rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  background-color: $code__blue;
-  font-size: 1rem;
-  font-weight: 700;
   padding: 1.2rem 3rem;
-  color: $grounded__green;
-  border-radius: 8px;
   @include tablet {
     font-size: 1.2rem;
- 
+    padding: 1.4rem 4rem;
   }
   @include desktop {
     font-size: 1.7rem;
- 
-
+    padding: 1.7rem 4.5rem;
   }
 }
 

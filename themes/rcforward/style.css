@@ -272,9 +272,15 @@ p {
 .why-donate h3 {
   text-align: center; }
 
+<<<<<<< HEAD
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+=======
 button {
   border: none; }
 
+>>>>>>> 4d7ef6a85a0a178f4d474e9597bb59ef2d30aba7
 .main-navigation {
   font-size: 17.6px;
   font-size: 1.1rem; }
@@ -291,12 +297,7 @@ button {
         z-index: 99;
         padding: 0;
         display: none;
-        top: 60px; } }
-    @media (min-width: 1000px) and (min-width: 800px) {
-      .main-navigation .menu-item-has-children .sub-menu {
-        display: none;
-        position: absolute; } }
-  @media (min-width: 1000px) {
+        top: 60px; }
       .main-navigation .menu-item-has-children:hover .sub-menu {
         position: absolute;
         right: 0;
@@ -304,6 +305,15 @@ button {
         z-index: 99;
         display: block;
         background: #14225f; } }
+
+.sub-menu {
+  padding: 0;
+  right: 0;
+  top: 70px;
+  z-index: 99; }
+  @media (min-width: 800px) {
+    .sub-menu {
+      position: absolute; } }
 
 /* Site-Header 8*/
 .site-header {
@@ -403,34 +413,27 @@ button {
                 display: block;
                 padding: 14px 16px;
                 text-align: center; } }
-          .site-header .header-container .main-navigation .menu-header-menu-container .menu .menu-item .sub-menu {
-            padding: 0;
-            right: 0;
-            top: 70px;
-            z-index: 99; }
-            .site-header .header-container .main-navigation .menu-header-menu-container .menu .menu-item .sub-menu li {
-              background: #F9F5ED;
-              border-bottom: 1px solid #14225F; }
+          .site-header .header-container .main-navigation .menu-header-menu-container .menu .menu-item .sub-menu li {
+            background: #F9F5ED;
+            border-bottom: 1px solid #14225F; }
+            @media (min-width: 800px) {
+              .site-header .header-container .main-navigation .menu-header-menu-container .menu .menu-item .sub-menu li {
+                background: #14225F;
+                border-bottom: 1px solid #fff;
+                padding: 0; } }
+            .site-header .header-container .main-navigation .menu-header-menu-container .menu .menu-item .sub-menu li a {
+              color: #14225F; }
               @media (min-width: 800px) {
-                .site-header .header-container .main-navigation .menu-header-menu-container .menu .menu-item .sub-menu li {
-                  background: #14225F;
-                  border-bottom: 1px solid #fff;
-                  padding: 0; } }
-              .site-header .header-container .main-navigation .menu-header-menu-container .menu .menu-item .sub-menu li a {
-                color: #14225F; }
-                @media (min-width: 800px) {
-                  .site-header .header-container .main-navigation .menu-header-menu-container .menu .menu-item .sub-menu li a {
-                    color: #fff;
-                    padding: 32px; } }
-            .site-header .header-container .main-navigation .menu-header-menu-container .menu .menu-item .sub-menu li:last-child {
-              border-bottom: none; }
+                .site-header .header-container .main-navigation .menu-header-menu-container .menu .menu-item .sub-menu li a {
+                  color: #fff;
+                  padding: 32px; } }
 
-/* arrow transition */
+/* toggle state */
 .menu-item-has-children::after {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   content: '\f078';
-  font-family: Font awesome\5 Free;
+  font-family: Font Awesome\ 5 Free;
   font-weight: 900;
   right: 2em;
   color: white;
@@ -444,7 +447,7 @@ button {
 .menu-active::after {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  top: 8px; }
+  top: 0; }
 
 .menu-toggle:focus {
   outline: none; }
@@ -1536,9 +1539,6 @@ body .hide-desktop {
           transform: rotate(180deg);
   top: 8px; }
 
-.main-navigation .menu .menu-item .sub-menu li:last-child {
-  border-bottom: 0; }
-
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
@@ -1907,7 +1907,8 @@ ol.flickity-page-dots {
             -webkit-box-orient: horizontal;
             -webkit-box-direction: normal;
                 -ms-flex-direction: row;
-                    flex-direction: row; } }
+                    flex-direction: row;
+            max-width: 950px; } }
         .single-charity .site-content article .entry-content .main-content .single-content .main-image {
           text-align: center;
           position: relative; }
@@ -1976,18 +1977,15 @@ ol.flickity-page-dots {
   width: 12rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  background-color: #00BEA8;
-  font-size: 1rem;
-  font-weight: 700;
-  padding: 1.2rem 3rem;
-  color: #192726;
-  border-radius: 8px; }
+  padding: 1.2rem 3rem; }
   @media (min-width: 600px) {
     .single-charity .chimp-donate-form {
-      font-size: 1.2rem; } }
+      font-size: 1.2rem;
+      padding: 1.4rem 4rem; } }
   @media (min-width: 1000px) {
     .single-charity .chimp-donate-form {
-      font-size: 1.7rem; } }
+      font-size: 1.7rem;
+      padding: 1.7rem 4.5rem; } }
 
 .link-charity {
   padding: 2em;
@@ -4125,7 +4123,7 @@ ol.flickity-page-dots {
     padding-top: 3rem; }
     @media (min-width: 1000px) {
       .blog .site-content .ajax-load-more-wrap {
-        padding-bottom: 0rem 12rem; } }
+        padding: 12rem; } }
     .blog .site-content .ajax-load-more-wrap .alm-listing {
       padding: 2rem; }
       @media (min-width: 600px) {
@@ -4256,6 +4254,8 @@ ol.flickity-page-dots {
     display: -ms-flexbox;
     display: flex; }
 
+<<<<<<< HEAD
+=======
 .prev-post-main,
 .next-post-main {
   display: none; }
@@ -4267,6 +4267,7 @@ ol.flickity-page-dots {
     .impactfully .blog .next-p {
       display: none; } }
 
+>>>>>>> 4d7ef6a85a0a178f4d474e9597bb59ef2d30aba7
 .blog .read-more {
   position: relative;
   text-align: right;
@@ -4389,3 +4390,15 @@ ol.flickity-page-dots {
   color: #14225F;
   font-size: 20px;
   padding: 30px; }
+
+.next-post-intro {
+  display: none; }
+  @media (min-width: 1000px) {
+    .next-post-intro {
+      display: block; } }
+
+.next-post-quote {
+  display: none; }
+
+.pre-nav-1, .next-1 {
+  display: none; }
