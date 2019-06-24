@@ -41,21 +41,26 @@
 }
 .sub-menu{
   padding: 0;
-  position: absolute;
+  @include tablet-large{
+    position: absolute;
+  }
   right: 0;
-          top:70px;
-          z-index: 99;
+  top:70px;
+  z-index: 99;
 }
 
 /* Site-Header 8*/
 
 .site-header {
   background: #14225f;
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  z-index: 999 ;
+  @include tablet-large{
+
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index: 999 ;
+  }
   .header-container {
 
     display: flex;
@@ -108,9 +113,10 @@
             border-top: 1px solid $white;
             padding:0;
          text-align: center;
-         width:180px;
-            @include tablet-large
-       {
+         width:100%;
+         @include tablet-large
+         {
+          width:180px;
               border: none;
               @include display-flex(column);
               padding:10px;

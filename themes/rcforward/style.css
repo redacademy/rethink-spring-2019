@@ -292,19 +292,23 @@ p {
 
 .sub-menu {
   padding: 0;
-  position: absolute;
   right: 0;
   top: 70px;
   z-index: 99; }
+  @media (min-width: 800px) {
+    .sub-menu {
+      position: absolute; } }
 
 /* Site-Header 8*/
 .site-header {
-  background: #14225f;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 999; }
+  background: #14225f; }
+  @media (min-width: 800px) {
+    .site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 999; } }
   .site-header .header-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -365,9 +369,10 @@ p {
           border-top: 1px solid #fff;
           padding: 0;
           text-align: center;
-          width: 180px; }
+          width: 100%; }
           @media (min-width: 800px) {
             .site-header .header-container .main-navigation .menu-header-menu-container .menu .menu-item {
+              width: 180px;
               border: none;
               display: -webkit-box;
               display: -ms-flexbox;
@@ -609,6 +614,10 @@ body .hide-desktop {
   @media (min-width: 1000px) {
     body .hide-desktop {
       display: none; } }
+
+@media (min-width: 800px) {
+  .header-offset {
+    height: 82px; } }
 
 /*--------------------------------------------------------------
 # Page Templates

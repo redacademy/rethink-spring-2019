@@ -41,5 +41,6 @@
 					</nav>
 				</div>
 			</header><!-- .site-header -->
+			<div class="header-offset"></div>
 
 		<div id="content" class="site-content">

@@ -97,3 +97,10 @@ body {
     }
   }
 }
+
+.header-offset{
+  @include tablet-large{
+    height:82px;
+
+  }
+}
