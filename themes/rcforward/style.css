@@ -2723,6 +2723,7 @@ ol.flickity-page-dots {
 # 404 Page
 --------------------------------------------------------------*/
 .page-template-404 .container-404 {
+  max-width: 100%;
   background-image: url(../../assets/images/output-onlinepngtools.png);
   background-size: contain;
   background-position: 4px;
@@ -3492,6 +3493,9 @@ ol.flickity-page-dots {
 # Blog Page
 --------------------------------------------------------------*/
 .blog .site-content {
+  background-image: url("../../assets/images/flowing.png");
+  background-position: 10px;
+  background-size: contain;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3709,14 +3713,14 @@ ol.flickity-page-dots {
       padding-bottom: 10px;
       padding: 10px; }
 
-.alm-btn-wrap .alm-load-more-btn {
+.blog .alm-btn-wrap .alm-load-more-btn {
   height: 60px;
   width: 160px;
   border-radius: 6px;
   background-color: #14225F; }
-  .alm-btn-wrap .alm-load-more-btn:hover {
+  .blog .alm-btn-wrap .alm-load-more-btn:hover {
     background-color: #14225F; }
-  .alm-btn-wrap .alm-load-more-btn .ajax-load-more-wrap {
+  .blog .alm-btn-wrap .alm-load-more-btn .ajax-load-more-wrap {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
@@ -3725,7 +3729,8 @@ ol.flickity-page-dots {
 .next-post-main {
   display: none; }
 
-.pre-nav-1, .next {
+.pre-nav-1,
+.next {
   display: none; }
 
 @media (min-width: 1000px) {
