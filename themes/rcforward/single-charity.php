@@ -1,3 +1,4 @@
+
 <?php
 /**
  * The template for displaying all single charity.
@@ -32,8 +33,8 @@ get_header(); ?>
             <?php the_title('<h2 class="entry-title">', '</h2>'); ?>
 
             <div class="amount-funded">
-            <p>$<span class="counter"> <?php echo CFS()->get( 'charity_amount_funded' );?></span></p>
-            <p><?php echo CFS()->get( 'charity_amount_funded_description' );?></p>
+            <p class="counter-p">$<span class="counter"> <?php echo CFS()->get( 'charity_amount_funded' );?></span></p>
+            <p class="charity-amount-title"><?php echo CFS()->get( 'charity_amount_funded_description' );?></p>
 
             <!-- TO DO -->
             <button class="chimp-donate-form">Donate</button>
@@ -122,10 +123,9 @@ get_header(); ?>
                 <?php endif;?>
                 <!-- TO DO -->
           
-
             </div>
-
-                  <button class="chimp-donate-form">Donate</button>
+            <script type="text/javascript" src="https://chimp.net/widget/js/loader.js?<?php echo $charity_chimp_key;?>" id="chimp-button-script" data-hide-button="true" data-script-id="main"> </script>
+                  <button id = "custom-chimp-button" class="chimp-donate-form">Donate</button>
             
             
         </main><!-- .entry-content -->
