@@ -57,7 +57,7 @@
       .impact-heart {
         text-align: center;
         img {
-          width: 334px;
+          width: 298px;;
           object-fit: cover;
         }
       }
@@ -258,9 +258,11 @@
 .next-post-main {
   display: none;
 }
+.single{
 .pre-nav-1,
 .next {
   display: none;
+}
 }
 .impactfully {
   @include desktop {

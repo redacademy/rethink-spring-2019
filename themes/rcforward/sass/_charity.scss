@@ -22,6 +22,13 @@
       order: 2;
       flex-grow: 1;
     }
+    h3{
+      color: $innovative__purple;
+      text-align: center;
+      @include  desktop{
+        text-align: left;
+      }
+    }
   }
   &:nth-child(even) {
     @include desktop {
@@ -36,14 +43,16 @@
 }
 
 /* common parts */
-
 .report-button {
   height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-left: 3px;
   border: 2px solid #48209f;
   border-radius: 6px;
-  padding: 10px;
-  background: $white;
+  padding: 6px;
+    background: $white;
 }
 
 /* charity page */
@@ -62,12 +71,12 @@
           img {
             object-fit: cover;
             width: 100%;
-            height: 40vh;
+            height: 27vh;
             @include tablet {
-              height: 60vh;
+              height:  41vh;
             }
             @include desktop {
-              height: 100vh;
+              height: 62vh;
             }
           }
         }
@@ -101,10 +110,11 @@
         margin-top: 45px;
         display: flex;
         flex-direction: column;
-
         .entry-title {
           text-align: center;
-          font-size: 25px;
+          text-transform: capitalize;
+               margin-bottom: 2rem;
+          font-size: 1.5rem;
           color: $credible__blue;
           @include tablet {
             font-size: 35px;
@@ -113,34 +123,45 @@
         .amount-funded {
           background-color: rgba(216, 216, 216, 0.18);
           text-align: center;
-          p {
-            font-size: 36px;
-            margin: 0 20px 0 0;
+          .counter-p{
+           padding-top:1.2rem;
+           font-size: 1.2rem;
+            margin:0;
             color: $innovative__purple;
-            font-family: $montserrat__font;
             font-weight: bold;
-            line-height: 60px;
-            letter-spacing: normal;
+             line-height: 29px;
+            letter-spacing: 1px;
             font-style: normal;
             @include desktop {
               font-size: 40px;
             }
           }
+          .charity-amount-title{
+               font-size: 1.2rem;
+            margin:0;
+            color: $innovative__purple;
+            font-weight: bold;
+             line-height: 29px;
+            letter-spacing: 1px;
+            font-style: normal;
+            @include desktop {
+              font-size: 40px;
+                  margin: 19px;
+            }
+          }
         }
         .charity-description {
           p {
+            padding: 20px;
             font-style: normal;
             margin-left: auto;
             margin-right: auto;
-            font-family: Montserrat, sans-serif;
-            font-size: 16px;
+            font-size: 0.9rem;;
             font-weight: 300;
-            line-height: 33px;
+            line-height: 1.8rem;
             text-align: center;
-            padding: -6px;
             @include desktop {
               width: 800px;
-
               line-height: 2.4rem;
               font-size: 18px;
             }
@@ -153,12 +174,25 @@
           height: 100%;
           display: flex;
           justify-content: center;
+          padding:10px;
+          @include tablet{
+            padding:21px;
+            @include desktop{
+                  height: 421px;
+            }
+          }
+          iframe{
+            height:236px;
+            @include tablet{
+                  height: 323px;
+            }
+          }
         }
         .main-content {
-          background-color:#f9f5ed;
+          background-color: #F9F5ED;
           display: flex;
           flex-direction: column;
-          padding: 42px;
+          padding: 21px;
           align-items: center;
           .single-content {
             display: flex;
@@ -176,7 +210,7 @@
                   width: 70%;
                 }
                 @include desktop {
-                  width: 80%;
+                  width: 92%;
                 }
               }
             }
@@ -217,14 +251,18 @@
 .single-charity {
   .button-no-image {
     text-align: center;
+    display: flex;
+    justify-content: center;
   }
   h3 {
     text-align: center;
+       color: $innovative__purple;
   }
   .content-wo-image {
+ 
     @include tablet {
       text-align: left;
-      padding-bottom: 2rem;
+      padding-bottom: 1rem;
     }
 
     a {
@@ -236,16 +274,27 @@
 .browse-charities-title {
   text-align: center;
 }
-.chimp-donate-form {
-  margin-top: 3em;
-
-  display: flex;
-
-  margin: auto;
+.single-charity .chimp-donate-form {
+  display: flex;  margin: auto;
   justify-content: center;
-  padding: 16px;
-  width: 7em;
-  margin-top: 3rem;
+  width: 12rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: $code__blue;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 1.2rem 3rem;
+  color: $grounded__green;
+  border-radius: 8px;
+  @include tablet {
+    font-size: 1.2rem;
+ 
+  }
+  @include desktop {
+    font-size: 1.7rem;
+ 
+
+  }
 }
 
 .link-charity {

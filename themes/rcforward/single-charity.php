@@ -32,8 +32,8 @@ get_header(); ?>
             <?php the_title('<h2 class="entry-title">', '</h2>'); ?>
 
             <div class="amount-funded">
-            <p>$<span class="counter"> <?php echo CFS()->get( 'charity_amount_funded' );?></span></p>
-            <p><?php echo CFS()->get( 'charity_amount_funded_description' );?></p>
+            <p class="counter-p">$<span class="counter"> <?php echo CFS()->get( 'charity_amount_funded' );?></span></p>
+            <p class="charity-amount-title"><?php echo CFS()->get( 'charity_amount_funded_description' );?></p>
 
             <!-- TO DO -->
             <button class="chimp-donate-form">Donate</button>
