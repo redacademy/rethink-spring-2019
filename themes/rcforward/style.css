@@ -1162,12 +1162,13 @@ body .hide-desktop {
   .single-fund .hfeed .related-charities {
     max-width: 90%; }
     .single-fund .hfeed .related-charities .carousel-cell {
-      width: 45%;
-      margin: 0 1rem; }
+      width: 48%;
+      margin-left: 2rem;
+      margin-right: 0; }
     .single-fund .hfeed .related-charities .previous {
-      left: -35px; }
+      left: -30px; }
     .single-fund .hfeed .related-charities .next {
-      right: -35px; } }
+      right: -30px; } }
 
 @media (min-width: 800px) {
   .single-fund .hfeed .related-charities .flickity-viewport {
@@ -4277,18 +4278,10 @@ ol.flickity-page-dots {
 .next-post-main {
   display: none; }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-.single .pre-nav-1,
-.single .next {
-=======
 .blog .pre-nav-1,
 .blog .next {
->>>>>>> 6006ad163617070e28c96b8e8ecd1906a563ca5d
   display: none; }
 
->>>>>>> 3055df75c1acad6fc407226a65f4276d5e7998d5
 @media (min-width: 1000px) {
   .impactfully {
     display: none; } }
@@ -4345,10 +4338,6 @@ ol.flickity-page-dots {
     @media (min-width: 1000px) {
       .single .read-more .read-more-arrow {
         bottom: 37px; } }
-
-.single .pre-nav-1,
-.single .next {
-  display: none; }
 
 /* Single-Post */
 .post-template-default {

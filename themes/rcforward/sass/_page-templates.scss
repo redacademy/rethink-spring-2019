@@ -558,17 +558,19 @@
     @include tablet {
       .related-charities {
         max-width: 90%;
-        .carousel-cell {
-          width: 45%;
-          margin: 0 1rem;
-        }
-        .previous {
-left: -35px;
-        }
-        .next {
-
-          right: -35px;
-        }
+          .carousel-cell {
+            width: 48%;
+            margin-left: 2rem;
+            margin-right: 0;
+          }
+          .previous {
+  left: -30px;
+          }
+          .next {
+            right: -30px;
+          }
+        
+        
 
       }
     }
