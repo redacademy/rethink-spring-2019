@@ -4,10 +4,10 @@
 
 .blog {
   .site-content {
-      background-image: url('../../assets/images/flowing.png');
-      background-position: 10px;
-      background-size: contain;
-      
+    background-image: url('../../assets/images/flowing.png');
+    background-position: -500px;
+    background-size: 2500px;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -15,8 +15,7 @@
       height: 24rem;
       @include desktop {
         height: 15rem;
-        background-image: url('../../assets/images/flowimpact.png'),
-          url('../../assets/images/Impactfullygiving.png');
+        background-image: url('../../assets/images/flowimpact.png'), url('../../assets/images/Impactfullygiving.png');
         background-size: 800px, 318px;
         background-position: top -43px left -453px, top 10px right 30px;
         background-repeat: no-repeat no-repeat;
@@ -26,16 +25,17 @@
       .impact-title {
         h2 {
           text-align: center;
-          font-size: 32px;
           text-transform: capitalize;
           color: $credible__blue;
-          font-size: 2rem;
+          font-size: 1.5rem;
           margin: 1rem;
+          @include tablet {
+            font-size: 2rem;
+          }
           @include desktop {
             font-size: 3rem;
-            margin-bottom: 0.5rem;
-            margin-top: 7rem;
-            text-align: center;
+            // margin-bottom: 0.5rem;
+            margin: 7rem 0 0.5rem 0;
             text-transform: capitalize;
             color: $credible__blue;
           }
@@ -45,19 +45,18 @@
           text-align: center;
           font-weight: bold;
           margin-bottom: 2rem;
-          margin-bottom: 32px;
           @include desktop {
             margin: 0;
-            text-align: center;
-            font-weight: bold;
-            margin-bottom: 2rem;
           }
         }
       }
       .impact-heart {
         text-align: center;
+        @include desktop {
+          display: none;
+        }
         img {
-          width: 298px;;
+          width: 298px;
           object-fit: cover;
         }
       }
@@ -80,8 +79,6 @@
             width: 100%;
             object-fit: cover;
             height: 100%;
-            @include desktop {
-            }
           }
         }
         .entry-title {
@@ -95,7 +92,6 @@
             color: #a7a3d6;
             font-weight: 600;
           }
-
           h3 {
             font-size: 1.3rem;
             margin-top: 6px;
@@ -111,15 +107,13 @@
         }
       }
     } //end of article(.post)
-
     .ajax-load-more-wrap {
       padding-top: 3rem;
       @include desktop {
-        padding-bottom: 0rem;
-        padding-right: 12rem;
-        padding-left: 12rem;
+        padding-bottom: 0rem 12rem ;
+        // padding-right: 12rem;
+        // padding-left: 12rem;
       }
-
       .alm-listing {
         padding: 2rem;
         @include tablet {
@@ -135,13 +129,11 @@
           border: 1px solid #d7d0f2;
           box-shadow: 0 2px 2px #42299a;
           padding: 0;
-
           img {
             width: 100%;
             object-fit: cover;
             height: 300px;
             position: static;
-
             @include tablet {
               height: 500px;
             }
@@ -238,19 +230,19 @@
     }
   }
 }
-.blog{
-.alm-btn-wrap .alm-load-more-btn {
-  height: 60px;
-  width: 160px;
-  border-radius: 6px;
-  background-color: $credible__blue;
-  &:hover {
+.blog {
+  .alm-btn-wrap .alm-load-more-btn {
+    height: 60px;
+    width: 160px;
+    border-radius: 6px;
     background-color: $credible__blue;
+    &:hover {
+      background-color: $credible__blue;
+    }
+    .ajax-load-more-wrap {
+      display: flex;
+    }
   }
-  .ajax-load-more-wrap {
-    display: flex;
-  }
-}
 }
 
 .prev-post-main,
@@ -261,9 +253,17 @@
 .impactfully {
   @include desktop {
     display: none;
+    // .pre-nav-1, .next {
+    //   display: none;
+    // }
+    .blog {
+      .pre-nav-1,
+      .next-p {
+        display: none;
+      }
+    }
   }
 }
-
 //blog post read More Button
 .blog {
   .read-more {

@@ -33,8 +33,8 @@ get_header(); ?>
             <?php the_title('<h2 class="entry-title">', '</h2>'); ?>
 
             <div class="amount-funded">
-            <p class="counter-p">$<span class="counter"> <?php echo CFS()->get( 'charity_amount_funded' );?></span></p>
-            <p class="charity-amount-title"><?php echo CFS()->get( 'charity_amount_funded_description' );?></p>
+            <p>$<span class="counter"> <?php echo CFS()->get( 'charity_amount_funded' );?></span></p>
+            <p><?php echo CFS()->get( 'charity_amount_funded_description' );?></p>
 
             <!-- TO DO -->
             <button class="chimp-donate-form">Donate</button>
@@ -125,17 +125,17 @@ get_header(); ?>
           
             </div>
             <script type="text/javascript" src="https://chimp.net/widget/js/loader.js?<?php echo $charity_chimp_key;?>" id="chimp-button-script" data-hide-button="true" data-script-id="main"> </script>
-                  <button id = "custom-chimp-button" class="chimp-donate-form">Donate</button>
-            
+                  <button class="chimp-donate-form">Donate</button>
             
         </main><!-- .entry-content -->
         
         <h3 class="browse-charities-title">Browse Charities</h3>
-        <?php get_template_part( 'template-parts/content', 'charities' ); ?>
-        <?php get_template_part( 'template-parts/content', 'custom-plan' ); ?>
+            <div class="charity-browse">
+                <?php get_template_part( 'template-parts/content', 'charities' ); ?>
+            </div>
+            <?php get_template_part( 'template-parts/content', 'custom-plan' ); ?>
     </article><!-- #post-## -->
     
     <?php endwhile; // End of the loop. ?>
     
-
 <?php get_footer(); ?>

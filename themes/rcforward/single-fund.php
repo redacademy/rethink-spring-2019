@@ -34,7 +34,7 @@ get_header(); ?>
             <p>$<span class="counter"> <?php echo CFS()->get( 'fund_amount_funded' );?></span></p>
             <p><?php echo CFS()->get( 'fund_amount_funded_description' );?></p>
 
-            <!-- TO DO -->
+            
             <button class="chimp-donate-form">Donate</button>
             </div>
 
@@ -77,7 +77,7 @@ get_header(); ?>
             </div>
             
                 
-                <!-- TO DO -->
+            <script type="text/javascript" src="https://chimp.net/widget/js/loader.js?<?php echo $fund_chimp_key;?>" id="chimp-button-script" data-hide-button="true" data-script-id="main"> </script>
                 <button class="chimp-donate-form">Donate</button>
              
             </div><!-- .entry-content -->

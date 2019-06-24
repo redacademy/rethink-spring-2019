@@ -17,6 +17,14 @@ function rc_slug_register_charity() {
             'schema'          => null,
         )
     );
+    register_rest_field( 'charity',
+        'charity_chimp_key',
+        array(
+            'get_callback'    => 'rc_slug_get_charity_field',
+            'update_callback' => null,
+            'schema'          => null,
+        )
+    );
 }
 
 function rc_slug_get_charity_field( $post, $field_name ) {

@@ -28,6 +28,11 @@ get_header(); ?>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->
 
+<div class="contact-browse">
+	<?php get_template_part('template-parts/content', 'charities');?>
+</div>
+
 <?php endwhile; // End of the loop. ?>
+
 
 <?php get_footer(); ?>

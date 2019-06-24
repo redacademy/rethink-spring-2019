@@ -29,6 +29,7 @@ foreach ( $custom_plans as $custom_plan ) :
         <p><?php echo $custom_plan['description'];?></p>
         <div>
         <?php if($chimp_key): ?>
+        <script type="text/javascript" src="https://chimp.net/widget/js/loader.js?<?php echo $chimp_key;?>" id="chimp-button-script" data-hide-button="true" data-script-id="main"> </script>
         <button class="chimp-donate-form">Donate</button>
         <?php else: ?>
         <a href="<?php echo home_url(); ?>/contact">Contact Us</a>
