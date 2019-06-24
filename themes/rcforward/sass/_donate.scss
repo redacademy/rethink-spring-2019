@@ -330,6 +330,8 @@
             span{
                 position:absolute;
                 @include font-size(1);
+                top:50%;
+                transform:translateY(-50%);
                 right:0;
                 margin-right:7px;
                 margin-left:25%;

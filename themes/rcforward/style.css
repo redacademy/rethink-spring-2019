@@ -272,6 +272,9 @@ p {
 .why-donate h3 {
   text-align: center; }
 
+button {
+  border: none; }
+
 .main-navigation {
   font-size: 17.6px;
   font-size: 1.1rem; }
@@ -3778,6 +3781,9 @@ ol.flickity-page-dots {
       position: absolute;
       font-size: 16px;
       font-size: 1rem;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
       right: 0;
       margin-right: 7px;
       margin-left: 25%; }
@@ -4277,18 +4283,10 @@ ol.flickity-page-dots {
 .next-post-main {
   display: none; }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 .single .pre-nav-1,
-.single .next {
-=======
-.blog .pre-nav-1,
-.blog .next {
->>>>>>> 6006ad163617070e28c96b8e8ecd1906a563ca5d
+.single .next-1 {
   display: none; }
 
->>>>>>> 3055df75c1acad6fc407226a65f4276d5e7998d5
 @media (min-width: 1000px) {
   .impactfully {
     display: none; } }
