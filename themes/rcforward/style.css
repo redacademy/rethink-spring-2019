@@ -266,9 +266,6 @@ p {
   margin: 1.5rem 0;
   line-height: 1.4rem; }
 
-.chimp-donate-form {
-  background: #00BEA8; }
-
 .related-charities-title {
   text-align: center; }
 
@@ -571,11 +568,19 @@ body {
 /* Chimp Donate Button */
 .chimp-donate-form, .donate-page-button {
   background-color: #00BEA8;
-  font-size: 1.6rem;
+  font-size: 1rem;
   font-weight: 700;
-  padding: 1.6rem 5.3rem;
+  padding: 1.2rem 3rem;
   color: #192726;
   border-radius: 8px; }
+  @media (min-width: 600px) {
+    .chimp-donate-form, .donate-page-button {
+      font-size: 1.2rem;
+      padding: 1.4rem 4rem; } }
+  @media (min-width: 1000px) {
+    .chimp-donate-form, .donate-page-button {
+      font-size: 1.7rem;
+      padding: 1.7rem 4.5rem; } }
 
 /* Transition for single content charity button */
 body .hide-mobile {
@@ -609,17 +614,27 @@ body .hide-desktop {
   .page-template-page-how-it-works .site-content .entry-header .entry-title {
     text-align: center;
     margin: 0;
+    font-size: 1.6rem;
     padding-top: 4rem;
-    font-size: 3rem;
     color: #14225F; }
+    @media (min-width: 600px) {
+      .page-template-page-how-it-works .site-content .entry-header .entry-title {
+        font-size: 1.8rem; } }
+    @media (min-width: 1000px) {
+      .page-template-page-how-it-works .site-content .entry-header .entry-title {
+        font-size: 2rem; } }
   .page-template-page-how-it-works .site-content .entry-header .page-description {
     width: 68%;
-    font-size: 1.4rem;
     text-align: center;
     margin: 1.3rem auto;
+    font-size: 1.1rem;
     line-height: 2.5rem; }
+    @media (min-width: 600px) {
+      .page-template-page-how-it-works .site-content .entry-header .page-description {
+        font-size: 1.4rem; } }
     @media (min-width: 1000px) {
       .page-template-page-how-it-works .site-content .entry-header .page-description {
+        font-size: 1.5rem;
         width: 50%; } }
   .page-template-page-how-it-works .site-content .entry-header .how-it-works-steps {
     display: -webkit-box;
@@ -669,6 +684,7 @@ body .hide-desktop {
               -ms-flex-align: center;
                   align-items: center; } }
       .page-template-page-how-it-works .site-content .entry-header .how-it-works-steps .text-steps .work-step {
+        width: 18rem;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -683,6 +699,12 @@ body .hide-desktop {
             -ms-flex-align: center;
                 align-items: center;
         flex-direction: row; }
+        @media (min-width: 600px) {
+          .page-template-page-how-it-works .site-content .entry-header .how-it-works-steps .text-steps .work-step {
+            width: 27rem; } }
+        @media (min-width: 800px) {
+          .page-template-page-how-it-works .site-content .entry-header .how-it-works-steps .text-steps .work-step {
+            width: 42rem; } }
         @media (min-width: 1000px) {
           .page-template-page-how-it-works .site-content .entry-header .how-it-works-steps .text-steps .work-step {
             display: -webkit-box;
@@ -705,20 +727,26 @@ body .hide-desktop {
           @media (min-width: 1000px) {
             .page-template-page-how-it-works .site-content .entry-header .how-it-works-steps .text-steps .work-step .work-step-icon {
               display: unset; } }
-        @media (min-width: 1000px) {
-          .page-template-page-how-it-works .site-content .entry-header .how-it-works-steps .text-steps .work-step .mobile-step {
-            display: none; } }
+        .page-template-page-how-it-works .site-content .entry-header .how-it-works-steps .text-steps .work-step .mobile-step {
+          padding-bottom: 1.7rem; }
+          @media (min-width: 600px) {
+            .page-template-page-how-it-works .site-content .entry-header .how-it-works-steps .text-steps .work-step .mobile-step {
+              padding-bottom: 0;
+              padding-top: 1rem; } }
+          @media (min-width: 1000px) {
+            .page-template-page-how-it-works .site-content .entry-header .how-it-works-steps .text-steps .work-step .mobile-step {
+              display: none; } }
         .page-template-page-how-it-works .site-content .entry-header .how-it-works-steps .text-steps .work-step .step-text .work-step-title,
         .page-template-page-how-it-works .site-content .entry-header .how-it-works-steps .text-steps .work-step .step-text .work-step-description {
-          margin: 1rem; }
-        .page-template-page-how-it-works .site-content .entry-header .how-it-works-steps .text-steps .work-step .work-step-title,
-        .page-template-page-how-it-works .site-content .entry-header .how-it-works-steps .text-steps .work-step .work-step-description {
-          font-size: 1.3rem; }
+          margin: 1rem;
+          font-size: 1rem;
+          line-height: 1.5rem; }
         .page-template-page-how-it-works .site-content .entry-header .how-it-works-steps .text-steps .work-step .work-step-title {
           font-weight: bolder;
           color: #14225F; }
-      .page-template-page-how-it-works .site-content .entry-header .how-it-works-steps .text-steps .work-step:last-child .mobile-step {
-        padding-bottom: 4rem; }
+          @media (min-width: 600px) {
+            .page-template-page-how-it-works .site-content .entry-header .how-it-works-steps .text-steps .work-step .work-step-title {
+              margin-top: 0; } }
   .page-template-page-how-it-works .site-content .entry-header .entry-donate-page {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -736,8 +764,11 @@ body .hide-desktop {
     -ms-flex-direction: column;
         flex-direction: column; }
     .page-template-page-how-it-works .site-content .entry-header .entry-donate-page .get-started {
-      font-size: 1.4rem;
+      font-size: 1rem;
       font-weight: bolder; }
+      @media (min-width: 600px) {
+        .page-template-page-how-it-works .site-content .entry-header .entry-donate-page .get-started {
+          font-size: 1.2rem; } }
     @media (min-width: 1000px) {
       .page-template-page-how-it-works .site-content .entry-header .entry-donate-page {
         margin: 2rem 0; } }
@@ -760,12 +791,20 @@ body .hide-desktop {
       display: none; }
     .page-template-page-how-it-works .site-content .entry-header .entry-contact-us .contact-us-button {
       border: 2px solid #42299A;
-      font-size: 1.5rem;
+      font-size: 1.1rem;
       font-weight: 700;
-      padding: 1.6rem 4rem;
+      padding: 1.2rem 2.6rem;
       display: inline-block;
       color: #42299A;
       border-radius: 8px; }
+      @media (min-width: 600px) {
+        .page-template-page-how-it-works .site-content .entry-header .entry-contact-us .contact-us-button {
+          font-size: 1.4rem;
+          padding: 1.4rem 3.2rem; } }
+      @media (min-width: 1000px) {
+        .page-template-page-how-it-works .site-content .entry-header .entry-contact-us .contact-us-button {
+          font-size: 1.7rem;
+          padding: 1.7rem 4rem; } }
 
 .page-template-page-how-it-works .site-content .entry-main {
   margin: 4rem 2rem 0;
@@ -785,9 +824,15 @@ body .hide-desktop {
   -ms-flex-direction: column;
       flex-direction: column; }
   .page-template-page-how-it-works .site-content .entry-main p strong {
-    font-size: 2.6rem;
+    font-size: 2rem;
     color: #14225F;
     line-height: 3rem; }
+    @media (min-width: 600px) {
+      .page-template-page-how-it-works .site-content .entry-main p strong {
+        font-size: 2.2rem; } }
+    @media (min-width: 1000px) {
+      .page-template-page-how-it-works .site-content .entry-main p strong {
+        font-size: 2.5rem; } }
   .page-template-page-how-it-works .site-content .entry-main h3 {
     display: none; }
     @media (min-width: 1000px) {
@@ -828,9 +873,13 @@ body .hide-desktop {
     margin-bottom: 0; }
     .page-template-page-how-it-works .site-content .entry-main .wp-block-columns .wp-block-column p:nth-child(2n),
     .page-template-page-how-it-works .site-content .entry-main .wp-block-columns .wp-block-column p:last-child {
-      font-size: 1.2rem;
+      font-size: 1rem;
       width: 90%;
       line-height: 1.97rem; }
+      @media (min-width: 600px) {
+        .page-template-page-how-it-works .site-content .entry-main .wp-block-columns .wp-block-column p:nth-child(2n),
+        .page-template-page-how-it-works .site-content .entry-main .wp-block-columns .wp-block-column p:last-child {
+          font-size: 1.2rem; } }
   .page-template-page-how-it-works .site-content .entry-main .wp-block-columns:last-child .wp-block-column:first-child {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -1068,7 +1117,9 @@ body .hide-desktop {
           justify-content: space-around; }
       .single-fund .hfeed .related-charities .flickity-viewport .flickity-slider .carousel-cell .charity-description {
         font-size: 1.2rem;
-        margin: 0 0.7rem; }
+        margin: 0 0.7rem;
+        font-size: 1rem;
+        line-height: 1.6rem; }
       .single-fund .hfeed .related-charities .flickity-viewport .flickity-slider .carousel-cell .read-more-button {
         color: #14225F;
         padding-left: 7rem; }
@@ -1079,7 +1130,7 @@ body .hide-desktop {
         -webkit-transform: translateX(0%);
                 transform: translateX(0%);
         top: 0;
-        max-width: 100%;
+        max-width: 92%;
         max-height: 40%;
         height: auto;
         width: auto; }
