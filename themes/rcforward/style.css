@@ -3743,7 +3743,8 @@ ol.flickity-page-dots {
   width: 100%;
   text-align: left; }
   .page-donate .show-results.active {
-    margin: 3.5rem auto 2rem 0.5rem; }
+    margin: 0 auto 2rem 0.5rem;
+    padding-top: 3.5rem; }
   @media (min-width: 600px) {
     .page-donate .show-results {
       margin-left: 1.5rem; } }
@@ -3959,73 +3960,19 @@ ol.flickity-page-dots {
           .page-donate .show-charities .single-charity .content .tablet-only-version {
             display: none; } }
     .page-donate .show-charities .single-charity .buttons {
-      width: 100%;
+      width: 60%;
       font-size: 16px;
       font-size: 1rem;
       font-weight: 700;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
       margin-bottom: 1.5rem; }
       @media (min-width: 600px) {
         .page-donate .show-charities .single-charity .buttons {
-          width: 85%;
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-orient: horizontal;
-          -webkit-box-direction: normal;
-              -ms-flex-direction: row;
-                  flex-direction: row;
-          -webkit-box-pack: center;
-              -ms-flex-pack: center;
-                  justify-content: center;
-          -webkit-box-align: center;
-              -ms-flex-align: center;
-                  align-items: center;
           font-size: 18px;
-          font-size: 1.125rem;
-          -webkit-box-pack: justify;
-              -ms-flex-pack: justify;
-                  justify-content: space-between; } }
+          font-size: 1.125rem; } }
       @media (min-width: 800px) {
         .page-donate .show-charities .single-charity .buttons {
-          width: 75%;
           font-size: 19.2px;
           font-size: 1.2rem; } }
-      .page-donate .show-charities .single-charity .buttons .donate-button {
-        padding: 0.7rem 1.5rem;
-        background-color: #00BEA8;
-        border-radius: 7px;
-        width: 10rem;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        color: white;
-        text-align: center;
-        margin: 0 auto;
-        background-color: #00BEA8;
-        color: #404040; }
-        .page-donate .show-charities .single-charity .buttons .donate-button:hover {
-          text-shadow: 1px 0.5px 1px #008b7b;
-          -webkit-box-shadow: 0px 2px 2px #002521;
-                  box-shadow: 0px 2px 2px #002521; }
       .page-donate .show-charities .single-charity .buttons .learn-more-button {
         padding: 0.7rem 1.5rem;
         background-color: none;
@@ -4051,13 +3998,13 @@ ol.flickity-page-dots {
           -webkit-box-shadow: 0px 2px 2px #42299A;
                   box-shadow: 0px 2px 2px #42299A; }
       .page-donate .show-charities .single-charity .buttons .button {
+        width: 100%;
         height: 3rem;
         margin-bottom: .6rem; }
         @media (min-width: 600px) {
           .page-donate .show-charities .single-charity .buttons .button {
             padding: 0;
-            width: 47%;
-            margin: 0; } }
+            margin: 0 auto; } }
         @media (min-width: 800px) {
           .page-donate .show-charities .single-charity .buttons .button {
             height: 4rem; } }
@@ -4300,29 +4247,16 @@ ol.flickity-page-dots {
 .next-post-main {
   display: none; }
 
-<<<<<<< HEAD
 .single .pre-nav-1,
 .single .next-1 {
   display: none; }
 
 @media (min-width: 1000px) {
   .impactfully {
-    display: none; } }
-=======
-<<<<<<< HEAD
-.single .pre-nav-1,
-.single .next-p {
-=======
-.blog .pre-nav-1,
-.blog .next {
->>>>>>> 80c904ab8dd03bcf025e227f10c045f5293dd110
-  display: none; }
-  .single .pre-nav-1 .blog .pre-nav-1,
-  .single .pre-nav-1 .blog .next-p,
-  .single .next-p .blog .pre-nav-1,
-  .single .next-p .blog .next-p {
     display: none; }
->>>>>>> f2a0464cd8a9dd1a392061490fe94da8b88365c5
+    .impactfully .blog .pre-nav-1,
+    .impactfully .blog .next-p {
+      display: none; } }
 
 .blog .read-more {
   position: relative;

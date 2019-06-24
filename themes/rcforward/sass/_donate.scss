@@ -295,7 +295,8 @@
         justify-content: flex-start;
         width:100%;
         &.active{
-            margin:3.5rem auto 2rem 0.5rem;
+            margin:0 auto 2rem 0.5rem;
+            padding-top:3.5rem;
         }
         @include tablet{
             margin-left:1.5rem;
@@ -448,25 +449,16 @@
                }
            }
            .buttons{
-               width:100%;
+            width:60%;
                @include font-size(1);
                font-weight: 700;
-               @include display-flex(column);
                margin-bottom:1.5rem;
                @include tablet{
-                    width:85%;
-                   @include display-flex();
                    @include font-size(1.125);
-                   justify-content: space-between;
                }
                @include tablet-large{
-                width:75%;
+                
                 @include font-size(1.2);
-               }
-               .donate-button{
-                @include button($code__blue);
-                @include green-button;
-                color:$color__text-main;
                }
                .learn-more-button{
                 @include button(none);
@@ -474,12 +466,12 @@
                 color:$innovative__purple;
                }
                .button{
+                   width:100%;
                 height:3rem;
                 margin-bottom: .6rem;
                 @include tablet{
                     padding:0;
-                    width:47%;
-                    margin:0;
+                    margin:0 auto;
                 }
                 @include tablet-large{
                     height:4rem;
