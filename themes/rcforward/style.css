@@ -989,7 +989,7 @@ body .hide-desktop {
             .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation .fund-allowcations .single-allocation .allocation-text .percentage {
               font-size: 4rem;
               font-weight: bolder;
-              margin: 3.3rem .5rem; }
+              margin: 3.3rem 0.5rem; }
             .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation .fund-allowcations .single-allocation .allocation-text .description {
               font-size: 1.4rem;
               margin: 0 2rem;
@@ -1041,6 +1041,48 @@ body .hide-desktop {
   .single-fund .hfeed .site-content .post-104 .fund-header .fund-image img {
     -o-object-position: 50% 48%;
        object-position: 50% 48%; } }
+
+.single-fund .hfeed .related-charities {
+  max-width: 283px;
+  margin: 0.4rem auto; }
+  .single-fund .hfeed .related-charities .flickity-viewport {
+    height: 320px; }
+    .single-fund .hfeed .related-charities .flickity-viewport .flickity-slider .carousel-cell {
+      height: 320px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+      .single-fund .hfeed .related-charities .flickity-viewport .flickity-slider .carousel-cell .charity-description {
+        font-size: 1.2rem;
+        margin: 0 0.7rem; }
+      .single-fund .hfeed .related-charities .flickity-viewport .flickity-slider .carousel-cell .read-more-button {
+        color: #14225F;
+        padding-left: 7rem; }
+      .single-fund .hfeed .related-charities .flickity-viewport .flickity-slider .carousel-cell .charity-logo {
+        position: static;
+        border-radius: 0;
+        padding: 0 1rem;
+        -webkit-transform: translateX(0%);
+                transform: translateX(0%);
+        top: 0;
+        max-width: 100%;
+        max-height: 40%;
+        height: auto;
+        width: auto; }
 
 /* The Team page */
 .page-template-page-team .site-content .entry-header {
