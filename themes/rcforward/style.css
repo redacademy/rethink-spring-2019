@@ -1114,7 +1114,8 @@ body .hide-desktop {
       -ms-flex-direction: column;
           flex-direction: column;
       -ms-flex-pack: distribute;
-          justify-content: space-around; }
+          justify-content: space-around;
+      max-width: 100%; }
       .single-fund .hfeed .related-charities .flickity-viewport .flickity-slider .carousel-cell .charity-description {
         font-size: 1.2rem;
         margin: 0 0.7rem;
@@ -1134,6 +1135,27 @@ body .hide-desktop {
         max-height: 40%;
         height: auto;
         width: auto; }
+
+@media (min-width: 800px) {
+  .single-fund .hfeed .related-charities {
+    max-width: 42rem; }
+    .single-fund .hfeed .related-charities .flickity-viewport {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      width: 70rem; }
+      .single-fund .hfeed .related-charities .flickity-viewport .carousel-cell {
+        max-width: 100%; } }
 
 /* The Team page */
 .page-template-page-team .site-content .entry-header {
@@ -1262,12 +1284,16 @@ body .hide-desktop {
 .page-template-page-faq .entry-header .entry-title {
   display: none; }
 
+.page-template-page-faq .entry-header h2 {
+  text-align: center; }
+
 .page-template-page-faq .entry-header p {
   display: none; }
 
 .page-template-page-faq .entry-content .faqs .question {
-  height: 3rem;
-  padding: 2rem 1.4rem;
+  height: auto;
+  max-height: 5rem;
+  padding: auto;
   border-bottom: 1px solid #14225F;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1287,15 +1313,24 @@ body .hide-desktop {
           justify-content: space-between; }
   .page-template-page-faq .entry-content .faqs .question p {
     font-size: 1rem;
-    font-weight: bolder; }
+    font-weight: bolder;
+    margin-right: 1rem;
+    margin-left: 1rem; }
   .page-template-page-faq .entry-content .faqs .question .plus-symbol {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    cursor: pointer; }
+    cursor: pointer;
+    margin-right: 1.6rem; }
 
 .page-template-page-faq .entry-content .faqs .answer {
   display: none; }
+  .page-template-page-faq .entry-content .faqs .answer p {
+    color: #192726;
+    font-size: 1rem;
+    margin-left: 1rem;
+    margin-right: .8rem;
+    line-height: 1.5rem; }
 
 @media (min-width: 1000px) {
   .page-template-page-faq .entry-header {
@@ -1314,11 +1349,24 @@ body .hide-desktop {
             align-items: center;
     -ms-flex-direction: column;
         flex-direction: column; }
+    .page-template-page-faq .entry-header .entry-title {
+      text-transform: capitalize; }
+    .page-template-page-faq .entry-header p {
+      margin-top: 0; }
     .page-template-page-faq .entry-header .entry-title,
     .page-template-page-faq .entry-header p {
       display: unset; }
     .page-template-page-faq .entry-header h2:last-child {
-      display: none; } }
+      display: none; }
+  .page-template-page-faq .entry-content .faqs .question {
+    border-bottom: 0; }
+    .page-template-page-faq .entry-content .faqs .question .plus-symbol {
+      display: none; }
+  .page-template-page-faq .entry-content .faqs .answer {
+    display: unset; }
+    .page-template-page-faq .entry-content .faqs .answer p {
+      margin-top: 0;
+      margin-bottom: 2.5rem; } }
 
 /*!
  * Hamburgers
