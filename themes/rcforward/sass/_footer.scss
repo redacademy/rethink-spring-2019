@@ -3,8 +3,12 @@
   @include display-flex();
   flex-direction: column;
   color: $white;
-  font-size: 1.12rem;
+  font-size: .8rem;
   padding: 1.4rem 0;
+  @include tablet {
+    font-size: .9rem;
+  }
+  
   @include desktop {
     @include display-flex();
     flex-direction: column;
@@ -104,14 +108,10 @@
           .footer-info-logo {
             width: 14rem;
             object-fit: fill;
-            @include tablet {
-            }
-           
           }
           @include desktop {
             text-align: left;
-            .footer-info-logo {
-            }
+            
           }
         }
        

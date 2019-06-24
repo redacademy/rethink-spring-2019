@@ -247,9 +247,24 @@
 .next-post-main {
   display: none;
 }
+<<<<<<< HEAD
 .single {
   .pre-nav-1,
   .next-p {
+=======
+
+
+.blog{
+  .pre-nav-1,
+  .next {
+    display: none;
+  }
+}
+  
+
+.impactfully {
+  @include desktop {
+>>>>>>> 80c904ab8dd03bcf025e227f10c045f5293dd110
     display: none;
     // .pre-nav-1, .next {
     //   display: none;

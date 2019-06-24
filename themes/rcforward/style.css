@@ -1125,7 +1125,7 @@ body .hide-desktop {
        object-position: 50% 48%; } }
 
 .single-fund .hfeed .related-charities {
-  max-width: 283px;
+  max-width: 18rem;
   margin: 0.4rem auto; }
   .single-fund .hfeed .related-charities .flickity-viewport {
     height: 320px; }
@@ -1168,27 +1168,39 @@ body .hide-desktop {
         max-height: 40%;
         height: auto;
         width: auto; }
+    .single-fund .hfeed .related-charities .flickity-viewport .flickity-slider .flickity-prev-next-button {
+      display: unset; }
+
+@media (min-width: 600px) {
+  .single-fund .hfeed .related-charities {
+    max-width: 90%; }
+    .single-fund .hfeed .related-charities .carousel-cell {
+      width: 48%;
+      margin-left: 2rem;
+      margin-right: 0; }
+    .single-fund .hfeed .related-charities .previous {
+      left: -30px; }
+    .single-fund .hfeed .related-charities .next {
+      right: -30px; } }
 
 @media (min-width: 800px) {
-  .single-fund .hfeed .related-charities {
-    max-width: 42rem; }
-    .single-fund .hfeed .related-charities .flickity-viewport {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      width: 70rem; }
-      .single-fund .hfeed .related-charities .flickity-viewport .carousel-cell {
-        max-width: 100%; } }
+  .single-fund .hfeed .related-charities .flickity-viewport {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 70rem; }
+    .single-fund .hfeed .related-charities .flickity-viewport .carousel-cell {
+      max-width: 100%; } }
 
 /* The Team page */
 .page-template-page-team .site-content .entry-header {
@@ -2075,8 +2087,11 @@ ol.flickity-page-dots {
   -ms-flex-direction: column;
       flex-direction: column;
   color: #fff;
-  font-size: 1.12rem;
+  font-size: .8rem;
   padding: 1.4rem 0; }
+  @media (min-width: 600px) {
+    .site-footer {
+      font-size: .9rem; } }
   @media (min-width: 1000px) {
     .site-footer {
       display: -webkit-box;
@@ -4279,8 +4294,13 @@ ol.flickity-page-dots {
 .next-post-main {
   display: none; }
 
+<<<<<<< HEAD
 .single .pre-nav-1,
 .single .next-p {
+=======
+.blog .pre-nav-1,
+.blog .next {
+>>>>>>> 80c904ab8dd03bcf025e227f10c045f5293dd110
   display: none; }
   .single .pre-nav-1 .blog .pre-nav-1,
   .single .pre-nav-1 .blog .next-p,
