@@ -1,6 +1,20 @@
 /*--------------------------------------------------------------
 # 404 Page
 --------------------------------------------------------------*/
+<<<<<<< HEAD
+.page-template-404 {
+  .container-404 {
+        max-width: 100%;
+    background-image: url(../../assets/images/output-onlinepngtools.png);
+    background-size: contain;
+    background-position: 4px;
+    background-repeat: no-repeat;
+    width: 40%;
+    display: flex;
+    .error-text {
+      width:50%;
+    margin-left: 9rem;
+=======
 // .page-template-404 {
 //   .container-404 {
 //     background-image: url(../../assets/images/output-onlinepngtools.png);
@@ -101,6 +115,7 @@
         // width:300px;
         position: relative;
       }
+>>>>>>> b9d3bcb80fd2dad361452fc1e68ea8d430540f68
       h2{
         @include font-size(1.7);
         @include tablet{
