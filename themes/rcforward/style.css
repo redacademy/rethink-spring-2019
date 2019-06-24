@@ -1786,6 +1786,7 @@ ol.flickity-page-dots {
           -ms-flex-pack: center;
               justify-content: center; }
     .single-charity .site-content article .entry-content .main-content {
+      background-color: #f9f5ed;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -2930,15 +2931,6 @@ ol.flickity-page-dots {
 /*--------------------------------------------------------------
 # 404 Page
 --------------------------------------------------------------*/
-<<<<<<< HEAD
-.page-template-404 .container-404 {
-  max-width: 100%;
-  background-image: url(../../assets/images/output-onlinepngtools.png);
-  background-size: contain;
-  background-position: 4px;
-  background-repeat: no-repeat;
-  width: 40%;
-=======
 @media (min-width: 600px) {
   .error404 .mobile {
     display: none; } }
@@ -2964,7 +2956,6 @@ ol.flickity-page-dots {
   padding-top: 3rem;
   width: 100%;
   height: 400px;
->>>>>>> b9d3bcb80fd2dad361452fc1e68ea8d430540f68
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4203,13 +4194,10 @@ ol.flickity-page-dots {
 .next-post-main {
   display: none; }
 
-<<<<<<< HEAD
-=======
-.pre-nav-1,
-.next {
+.blog .pre-nav-1,
+.blog .next {
   display: none; }
 
->>>>>>> 3370f0d90b639cd433a4b367715153deec825d24
 @media (min-width: 1000px) {
   .impactfully {
     display: none; } }
