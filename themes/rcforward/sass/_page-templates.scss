@@ -525,6 +525,7 @@
             @include display-flex();
             flex-direction: column;
             justify-content: space-around;
+          max-width: 100%;
             .charity-description {
               font-size: 1.2rem;
               margin: 0 0.7rem;
@@ -548,6 +549,21 @@
             }
           }
         }
+      }
+    }
+    @include tablet-large {
+      .related-charities {
+        max-width: 42rem;
+        
+        .flickity-viewport {
+        @include display-flex();
+
+          width: 70rem;
+          .carousel-cell {
+            max-width: 100%;
+          }
+        }
+        
       }
     }
   }
@@ -688,6 +704,9 @@
     .entry-title {
       display: none;
     }
+    h2 {
+      text-align: center;
+    }
     p {
       display: none;
     }
@@ -695,23 +714,34 @@
   .entry-content {
     .faqs {
       .question {
-        height: 3rem;
-        padding: 2rem 1.4rem;
+        height: auto;
+        max-height: 5rem;
+        padding: auto;
         border-bottom: 1px solid $credible__blue;
         @include display-flex();
         justify-content: space-between;
         p {
           font-size: 1rem;
           font-weight: bolder;
+          margin-right: 1rem;
+          margin-left: 1rem;
         }
         .plus-symbol {
           display: flex;
           cursor: pointer;
-        
+        margin-right: 1.6rem;
         }
       }
       .answer {
         display: none;
+        p {
+          color: $grounded__green;
+          font-size: 1rem;
+          margin-left: 1rem;
+          margin-right: .8rem;
+          line-height: 1.5rem;
+          
+        }
       }
     }
   }
@@ -719,12 +749,39 @@
     .entry-header {
       @include display-flex();
       flex-direction: column;
+      .entry-title {
+        text-transform: capitalize;
+      }
+      p {
+        margin-top: 0;
+      }
       .entry-title,
       p {
         display: unset;
       }
       & h2:last-child {
         display: none;
+      }
+    }
+    .entry-content {
+      .faqs {
+        .question {
+          border-bottom: 0;
+          
+          .plus-symbol {
+            display: none;
+          }
+
+        }
+        .answer {
+          display: unset;
+          p {
+            margin-top: 0;
+            margin-bottom: 2.5rem; 
+          }
+        
+
+        }
       }
     }
   }

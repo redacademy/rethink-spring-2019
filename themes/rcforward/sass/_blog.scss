@@ -2,9 +2,12 @@
 # Blog Page
 --------------------------------------------------------------*/
 
-
 .blog {
   .site-content {
+      background-image: url('../../assets/images/flowing.png');
+      background-position: 10px;
+      background-size: contain;
+      
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -28,7 +31,6 @@
           color: $credible__blue;
           font-size: 2rem;
           margin: 1rem;
-
           @include desktop {
             font-size: 3rem;
             margin-bottom: 0.5rem;
@@ -237,7 +239,7 @@
     }
   }
 }
-
+.blog{
 .alm-btn-wrap .alm-load-more-btn {
   height: 60px;
   width: 160px;
@@ -250,6 +252,7 @@
     display: flex;
   }
 }
+}
 
 .prev-post-main,
 .next-post-main {
@@ -258,6 +261,13 @@
 // .pre-nav-1, .next {
 //   display: none;
 // }
+.blog{
+  .pre-nav-1,
+  .next {
+    display: none;
+  }
+
+}
 .impactfully {
   @include desktop {
     display: none;
