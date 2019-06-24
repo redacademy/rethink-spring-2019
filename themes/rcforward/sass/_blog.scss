@@ -258,10 +258,7 @@
 .next-post-main {
   display: none;
 }
-.pre-nav-1,
-.next {
-  display: none;
-}
+
 .impactfully {
   @include desktop {
     display: none;
@@ -329,6 +326,10 @@
         bottom: 37px;
       }
     }
+  }
+  .pre-nav-1,
+  .next {
+    display: none;
   }
 }
 
