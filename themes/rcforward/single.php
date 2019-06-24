@@ -79,7 +79,7 @@ get_header(); ?>
 							$post_introduction = CFS()->get('post-introduction', $next_post_id);
 							$post_annoucement = CFS()->get('post-announcement', $next_post_id); ?>
 								<div class="next-post">
-							<p class="next"> <?php echo $next_post->post_title ?></p>
+							<p class="next-p"> <?php echo $next_post->post_title ?></p>
 							<div class="next-post-image">
 								<?php if (has_post_thumbnail($next_post_id)) : ?>
 									<?php the_post_thumbnail($next_post_id, 'large'); ?>
@@ -100,11 +100,11 @@ get_header(); ?>
 
 								<?php echo $next_post->post_excerpt; ?>
 								</div><!-- .entry-main -->
-						</div>
+							</div>
 
 								<div class="read-more">
 									<a class="read-more-button" href="<?php echo $next_post->guid ?>">Read More</a>
-										<span class="read-more-arrow"> &#x203A; </span>
+									<span class="read-more-arrow"> &#x203A; </span>
 								</div>
 							</div>
 							<?php endif; ?>
