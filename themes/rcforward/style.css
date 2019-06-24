@@ -4260,10 +4260,6 @@ ol.flickity-page-dots {
 .next-post-main {
   display: none; }
 
-.single .pre-nav-1,
-.single .next-1 {
-  display: none; }
-
 @media (min-width: 1000px) {
   .impactfully {
     display: none; }
