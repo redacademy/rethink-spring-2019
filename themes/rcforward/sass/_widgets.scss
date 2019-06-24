@@ -48,6 +48,7 @@
           padding: 0.7rem 1rem;
           border-radius: 6px 0 0 6px;
           border: none;
+          width: 190px;
         }
         input[type='submit'] {
           background-color: $code__blue;
@@ -55,6 +56,42 @@
           border-radius: 0 6px 6px 0;
           border: none;
         }
+      }
+    }
+  }
+  @include tablet {
+    .widget {
+      .mc4wp-form {
+        .mc4wp-form-fields {
+          input[type='email'] {
+            width: 240px;
+          }
+        }
+        
+      }
+    }
+  }
+  @include tablet-large {
+    .widget {
+      .mc4wp-form {
+        .mc4wp-form-fields {
+          input[type='email'] {
+            width: 280px;
+          }
+        }
+       
+      }
+    }
+  }
+  @include desktop {
+    .widget {
+      .mc4wp-form {
+        .mc4wp-form-fields {
+          input[type='email'] {
+            width: 350px;
+          }
+        }
+       
       }
     }
   }

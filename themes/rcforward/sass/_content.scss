@@ -52,11 +52,17 @@ body {
   background: $credible__blue;
   color: $grounded__green;
   font-family: $montserrat__font;
+  
   @include font-size(0.9);
   @include tablet{
     @include font-size(1);
   };
 }
+
+.site-content {
+  padding-bottom: 3rem;
+}
+
 .site {
   max-width: $max-screen-size;
   margin: 0 auto;
@@ -68,16 +74,16 @@ body {
   background-color: $code__blue;
   font-size: 1rem;
   font-weight: 700;
-  padding: 1.2rem 3rem;
+  padding: 1rem 3rem;
   color: $grounded__green;
   border-radius: 8px;
   @include tablet {
     font-size: 1.2rem;
-    padding: 1.4rem 4rem;
+    padding: 1rem 3rem;
   }
   @include desktop {
     font-size: 1.7rem;
-    padding: 1.7rem 4.5rem;
+    padding: 1.5rem 3.7rem;
   }
 }
 

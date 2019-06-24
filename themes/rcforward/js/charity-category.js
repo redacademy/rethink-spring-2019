@@ -1,3 +1,4 @@
+{/* <a class ="donate-button button" href="">Donate</a> */}
 (function ($) {
     $(function () {
         //on click
@@ -33,6 +34,9 @@
                 $(".show-results").append(`<span>Results: </span><a id="charity-tax-button" class="charity-tax-result" href="#">${name} <span> X</span></a>`);
                 $(".show-results").addClass("active");
                 getCharity($taxId, name);
+                let result = document.getElementsByClassName("show-results");
+                result[0].scrollIntoView({behavior: "smooth", block: "center"});
+
                 
                 
             }).fail(function () {
@@ -47,12 +51,15 @@
                 method: "get",
                 url: api_vars.rest_url + "wp/v2/charity?_embed",
             }).done(function (data) {
-                
+                let idArray = [];
                 $.each(data, function (index, value){
                     $.each(value.charity_tax, function(index, id){
                         // console.log(taxId);
                         if(name==="see all" || id == taxId){
-                            console.log(value);
+                            if($.inArray(value.id, idArray) === -1){
+                                idArray.push(value.id);
+                                // console.log(idArray);
+                            // console.log(value);
                             // let $thumbnailLink = value.featured_image_url;
                             let $thumbnailLink = value._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url;
                             let $logoLink = value.charity_logo;
@@ -76,12 +83,13 @@
                         <p class = "description desktop-version">${$description}</p>
                     </div>
                     <div class="buttons">
-                        <a class ="donate-button button" href="">Donate</a>
                         <a class ="learn-more-button button" href="${$pageLink}">Learn More</a>
                     </div></div>`)
-                        }   
+                        }  
+                    } 
                     })
                 })
+                
             });
 
         }
@@ -92,6 +100,9 @@
             $(".show-results").addClass("active");
             $(".show-results").html("");
             $(".show-charities").html("");
+            let scrollToTop = document.getElementsByClassName("choose-charity-category");
+            scrollToTop[0].scrollIntoView({behavior: "smooth"});
+
         });
     
     });//end of doc ready
