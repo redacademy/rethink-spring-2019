@@ -1198,6 +1198,8 @@ body .hide-desktop {
       width: 100%;
       text-align: right;
       height: 10%; }
+      .single-fund .hfeed .related-charities .carousel-cell .read-more-button:hover {
+        text-shadow: 1px 0.5px 1px #311e72; }
     .single-fund .hfeed .related-charities .carousel-cell .charity-logo-container {
       width: 100%;
       height: 40%;
@@ -1210,7 +1212,7 @@ body .hide-desktop {
               transform: translate(-50%, -50%);
       height: auto;
       width: 90%;
-      max-height: 100%; }
+      max-height: 90%; }
   .single-fund .hfeed .related-charities .flickity-prev-next-button.previous {
     display: none; }
   .single-fund .hfeed .related-charities .flickity-prev-next-button.next {

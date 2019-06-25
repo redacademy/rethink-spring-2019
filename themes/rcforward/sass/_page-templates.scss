@@ -570,6 +570,9 @@
               width:100%;
               text-align: right;
               height:10%;
+              &:hover{
+                text-shadow: $textshadow__purple;
+              }
             }
             .charity-logo-container{
               width:100%;
@@ -590,7 +593,7 @@
               // max-height: 40%;
               height: auto;
               width:90%;
-              max-height:100%;
+              max-height:90%;
             }
           }
         
