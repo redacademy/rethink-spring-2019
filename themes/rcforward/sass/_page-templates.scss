@@ -65,6 +65,9 @@
             @include desktop {
               @include display-flex();
               flex-direction: column;
+              .step-text {
+                width: 90%;
+              }
             }
             .work-step-icon {
               display: none;
@@ -97,8 +100,6 @@
               color: $credible__blue;
               @include tablet {
                 margin-top: 0;
-              }
-              @include desktop {
               }
             }
           }
@@ -148,24 +149,28 @@
           border: 2px solid $innovative__purple;
           font-size: 1.1rem;
           font-weight: 700;
-          padding: 1.2rem 2.6rem;
-
+          padding: 1rem 1.4rem;
           display: inline-block;
           color: $innovative__purple;
           border-radius: 8px;
+          &:hover {
+            background-color: $innovative__purple;
+            color: $white;
+            box-shadow: 0px 3px 3px $black;
+          }
           @include tablet {
-            font-size: 1.4rem;
-            padding: 1.4rem 3.2rem;
+            font-size: 1.2rem;
+            padding: 1.2rem 1.8rem;
           }
           @include desktop {
-            font-size: 1.7rem;
-            padding: 1.7rem 4rem;
+            font-size: 1.3rem;
+            padding: 1.3rem 2.6rem;
           }
         }
       }
     }
     .entry-main {
-      margin: 4rem 2rem 0;
+      margin: 4rem 2.7rem 2rem;
       @include display-flex();
       flex-direction: column;
       p {
@@ -202,6 +207,7 @@
         }
       }
       @include desktop {
+        margin: 4rem 7rem 2rem;
         .wp-block-columns {
           & .wp-block-column:first-child {
             & p:first-child {
@@ -350,8 +356,8 @@
           width: 85%;
           margin: 0 auto 2.3rem;
           p {
-            font-size: 1.4rem;
-            line-height: 2.4rem;
+            font-size: 1rem;
+            line-height: 2rem;
             margin-top: 0;
           }
           .entry-title {
@@ -364,28 +370,28 @@
           }
           .amount-funded {
             background-color: rgba(216, 216, 216, 0.18);
-            font-size: 2.2rem;
             color: $innovative__purple;
             margin: 0;
             padding: 0.6rem 0.8rem;
             font-weight: 700;
             p {
+              font-size: 1.8rem;
+
               &:nth-child(2n) {
-                font-size: 1.6rem;
+                font-size: 1.4rem;
               }
             }
 
             .chimp-donate-form {
               margin: 0.3rem auto 0.6rem;
-              font-size: 1.3rem;
             }
           }
           .fund-description {
             margin: 3rem 0;
             p {
-              width: 80%;
-              line-height: 2.4rem;
-              font-size: 1.2rem;
+              width: 86%;
+              line-height: 2rem;
+              font-size: 1.1rem;
               font-weight: lighter;
               word-wrap: break-word;
               margin: 0 auto;
@@ -412,7 +418,7 @@
                 word-wrap: break-word;
                 color: $credible__blue;
                 margin: 0 auto;
-                font-size: 1.3rem;
+                font-size: 1.1rem;
                 line-height: 2.4rem;
                 font-weight: 600;
               }
@@ -436,11 +442,39 @@
                       margin: 3.3rem 0.5rem;
                     }
                     .description {
-                      font-size: 1.4rem;
+                      font-size: 1rem;
                       margin: 0 2rem;
                       line-height: 2.3rem;
                     }
                   }
+                }
+              }
+            }
+          }
+          @include tablet {
+            .fund-description {
+              p {
+                font-size: 1.3rem;
+              }
+            }
+            .main-content {
+              .fund-allowcation {
+                h3 {
+                  font-size: 1.3rem;
+                }
+                .fund-allowcations {
+                  .single-allocation {
+                    .allocation-text {
+                      .description {
+                        font-size: 1.2rem;
+                      }
+                    }
+                  }
+                }
+              }
+              .entry-content {
+                p {
+                  font-size: 1.2rem;
                 }
               }
             }
@@ -512,100 +546,96 @@
     }
     .related-charities {
       // max-width: 300px;
-      margin:0 auto;
+      margin: 0 auto;
       // margin: 0.4rem auto;
       // width:300px;
-      max-width:320px;
-      @include tablet{
-        max-width: 90%;;
+      max-width: 320px;
+      @include tablet {
+        max-width: 90%;
       }
-      @include desktop{
-        max-width:950px;
+      @include desktop {
+        max-width: 950px;
       }
-      width:90%;
+      width: 90%;
       // width:500px;
-      
+
       .flickity-viewport {
         height: 370px;
 
-        width:100%;
-        padding-top:1rem;
+        width: 100%;
+        padding-top: 1rem;
         // width:300px;
         // margin:0 auto;
       }
-        
-          .carousel-cell {
-            border:none;
-            box-shadow: 0px 0px 3px 2px darken(white, 10%);
-    &:hover{
-        box-shadow: 0px 0px 5px 3px darken(white, 10%);
-    }
-            left:0;
-            text-align: center;
-            height: 350px;
-            // width:95%;
-            @include display-flex();
-            flex-direction: column;
-            // justify-content: space-around;
-            // margin: 0 20%;
-            @include tablet-large{
-              width:30%;
-              // margin:0 -30%;
-            }
-            @include desktop{
-              width:30%;
-              // margin: 0 -30%;
-            }
-            .charity-description {
-              // margin: 0 0.7rem;
-              font-size: 1rem;
-              line-height: 1.3rem;
-              padding:0 0.8rem;
-              flex-grow:1;
 
-            }
-            .read-more-button {
-              color: $credible__blue;
-              padding-right: 0.5rem;
-              width:100%;
-              text-align: right;
-              height:10%;
-              &:hover{
-                text-shadow: $textshadow__purple;
-              }
-            }
-            .charity-logo-container{
-              width:100%;
-              height:40%;
-              position: relative;
-            }
-            .charity-logo {
-              border-radius: 0;
-              top:50%;
-              left:50%;
-
-             
-
-              // padding: 0 1rem;
-              transform: translate(-50%,-50%);
-              // top: 0;
-              // max-width: 92%;
-              // max-height: 40%;
-              width: auto;
-              height: auto;
-              /* height: 90%; */
-              max-height: 90%;
-              max-width: 90%;
-            }
+      .carousel-cell {
+        border: none;
+        box-shadow: 0px 0px 3px 2px darken(white, 10%);
+        &:hover {
+          box-shadow: 0px 0px 5px 3px darken(white, 10%);
+        }
+        left: 0;
+        text-align: center;
+        height: 350px;
+        // width:95%;
+        @include display-flex();
+        flex-direction: column;
+        // justify-content: space-around;
+        // margin: 0 20%;
+        @include tablet-large {
+          width: 30%;
+          // margin:0 -30%;
+        }
+        @include desktop {
+          width: 30%;
+          // margin: 0 -30%;
+        }
+        .charity-description {
+          // margin: 0 0.7rem;
+          font-size: 1rem;
+          line-height: 1.3rem;
+          padding: 0 0.8rem;
+          flex-grow: 1;
+        }
+        .read-more-button {
+          color: $credible__blue;
+          padding-right: 0.5rem;
+          width: 100%;
+          text-align: right;
+          height: 10%;
+          &:hover {
+            text-shadow: $textshadow__purple;
           }
-        
-      
+        }
+        .charity-logo-container {
+          width: 100%;
+          height: 40%;
+          position: relative;
+        }
+        .charity-logo {
+          border-radius: 0;
+          top: 50%;
+          left: 50%;
+
+          // padding: 0 1rem;
+          transform: translate(-50%, -50%);
+          // top: 0;
+          // max-width: 92%;
+          // max-height: 40%;
+          width: auto;
+          height: auto;
+          /* height: 90%; */
+          max-height: 90%;
+          max-width: 90%;
+        }
+      }
+
       .flickity-prev-next-button {
         &.previous {
-          display:none;
+          display: none;
         }
         &.next {
-          display:none;
+          display: none;
         }
       }
     }
@@ -615,22 +645,19 @@
         .flickity-viewport {
           // width: 580px;
         }
-            .carousel-cell {
-              // width: 45%;
-              // margin-left: 38px;
-              // margin-right: 38px;
-
-            }
-            // .previous {
-            //   left: -30px;
-            //   display: unset;
-            // }
-            // .next {
-            //   right: -30px;
-            //   display: unset;
-            // }
-          
-        
+        .carousel-cell {
+          // width: 45%;
+          // margin-left: 38px;
+          // margin-right: 38px;
+        }
+        // .previous {
+        //   left: -30px;
+        //   display: unset;
+        // }
+        // .next {
+        //   right: -30px;
+        //   display: unset;
+        // }
       }
     }
     @include tablet-large {
@@ -639,12 +666,11 @@
         .flickity-viewport {
           // width: 38rem;
         }
-          .carousel-cell {
-            // max-width: 100%;
-            // width: 42%;
-            // margin: 0 45px;
-          }
-        
+        .carousel-cell {
+          // max-width: 100%;
+          // width: 42%;
+          // margin: 0 45px;
+        }
       }
     }
   }
@@ -691,7 +717,7 @@
           padding-top: 4rem;
           a {
             cursor: pointer;
-            border: 2px solid #42299a;
+            border: 2px solid #f5f4fc;
             font-size: 1.2rem;
             font-weight: bolder;
             padding: 1rem 1.7rem;
@@ -699,6 +725,13 @@
             color: $white;
             border-radius: 8px;
             background-color: $credible__blue;
+            &:hover {
+              text-shadow: $credible__blue;
+              background-color: $white;
+              color: $credible__blue;
+              box-shadow: 0px 3px 3px $credible__blue;
+              border: 2px solid $credible__blue;
+            }
           }
         }
       }
@@ -782,104 +815,115 @@
 
 /* FAQ Page */
 .page-template-page-faq {
-.main-section {
-  
-  .entry-header {
-    margin: 0 auto;
-    width: 93%;
+  .site-content {
+    padding-bottom: 0;
 
-    .entry-title {
-      display: none;
-    }
-    h2 {
-      text-align: center;
-    }
-    p {
-      display: none;
-    }
-  }
-  .entry-content {
-    margin: 0 auto;
-    width: 93%;
+    .main-section {
+      .entry-header {
+        margin: 0 auto;
+        width: 93%;
 
-    .faqs {
-      .question {
-        height: auto;
-        max-height: 5rem;
-        padding: auto;
-        border-bottom: 1px solid $credible__blue;
-        @include display-flex();
-        justify-content: space-between;
-        p {
-          font-size: 1rem;
-          font-weight: bolder;
-          margin-right: 1rem;
-          margin-left: 1rem;
+        .entry-title {
+          display: none;
         }
-        .plus-symbol {
-          display: flex;
-          cursor: pointer;
-          margin-right: 1.6rem;
+        h2 {
+          text-align: center;
+        }
+        p {
+          display: none;
         }
       }
-      .answer {
-        display: none;
-        p {
-          color: $grounded__green;
-          font-size: 1rem;
-          margin-left: 1rem;
-          margin-right: 0.8rem;
-          line-height: 1.5rem;
+      .entry-content {
+        margin: 0 auto;
+        width: 93%;
+
+        .faqs {
+          .question {
+            height: auto;
+            max-height: 5rem;
+            padding: auto;
+            border-bottom: 1px solid $credible__blue;
+            @include display-flex();
+            justify-content: space-between;
+            p {
+              font-size: 1rem;
+              font-weight: bolder;
+              margin-right: 1rem;
+              margin-left: 1rem;
+            }
+            .plus-symbol {
+              display: flex;
+              margin-right: 1.6rem;
+            }
+          }
+          .answer {
+            display: none;
+            p {
+              color: $grounded__green;
+              font-size: 1rem;
+              margin-left: 1rem;
+              margin-right: 0.8rem;
+              line-height: 1.5rem;
+            }
+          }
+        }
+        & .faqs:last-child {
+          margin-bottom: 2rem;
         }
       }
     }
   }
-}
   @include desktop {
-.main-section {
-  background-color: #F8F8FC;
+    .site-content {
+      .main-section {
+        background-color: #f8f8fc;
+        margin: 0 auto;
+        .entry-header {
+          background-color: $white;
 
-    .entry-header {
-      background-color: $white;
-      @include display-flex();
-      flex-direction: column;
-      // margin: 0 1.7rem;
-
-
-      .entry-title {
-        text-transform: capitalize;
-      }
-      p {
-        margin-top: 0;
-      }
-      .entry-title,
-      p {
-        display: unset;
-      }
-      & h2:last-child {
-        display: none;
-      }
-    }
-    .entry-content {
-      background-color: $white;
-      // margin: 0 1.7rem;
-      .faqs {
-        .question {
-          border-bottom: 0;
-
-          .plus-symbol {
+          @include display-flex();
+          flex-direction: column;
+          .entry-title {
+            text-transform: capitalize;
+          }
+          p {
+            margin-top: 0;
+          }
+          .entry-title,
+          p {
+            display: unset;
+          }
+          & h2:last-child {
             display: none;
           }
         }
-        .answer {
-          display: unset;
-          p {
-            margin-top: 0;
-            margin-bottom: 2.5rem;
+        .entry-content {
+          background-color: $white;
+          .faqs {
+            width: 88%;
+            margin: 0 auto;
+            padding-bottom: 1.7rem;
+
+            .question {
+              border-bottom: 0;
+              .plus-symbol {
+                display: none;
+              }
+            }
+            .answer {
+              display: unset;
+              p {
+                margin-top: 0;
+                margin-bottom: 0;
+              }
+            }
+          }
+          & .faqs:last-child {
+            margin-bottom: 0;
+            padding-bottom: 3rem;
           }
         }
       }
     }
-  }
   }
 }
