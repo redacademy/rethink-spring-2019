@@ -38,12 +38,16 @@
         ul {
           list-style: none;
           padding-left: 6rem;
+          margin-top: 5rem;
           @include desktop {
             li {
-              margin: 2rem 0;
+              margin: 2rem 0 .7rem;
               width: 9rem;
               a {
                 color: $code__blue;
+                &:hover {
+                  color: $white;
+                }
               }
             }
           }
@@ -63,6 +67,9 @@
         @include display-flex();
         flex-direction: column;
         align-items: flex-start;
+        .hide-mobile {
+          width: 5rem;
+        }
       }
       p {
         display: none;
