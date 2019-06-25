@@ -1251,6 +1251,9 @@ body .hide-desktop {
   .single-fund .hfeed .related-charities .flickity-prev-next-button.next {
     display: none; }
 
+.single-fund .hfeed .custom-plan {
+  margin: 0 auto; }
+
 /* The Team page */
 .page-template-page-team .site-content .entry-header {
   text-align: center;
