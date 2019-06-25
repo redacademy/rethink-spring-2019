@@ -160,6 +160,10 @@
             }
             a{
                 order:3;
+                &:hover{
+                    text-shadow: $textshadow__white;
+                    box-shadow: 0px 3px 5px $innovative__purple;
+                }
                 @include tablet-large{
                     order:4;
                 }

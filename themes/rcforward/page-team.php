@@ -29,7 +29,7 @@ get_header(); ?>
 						<p><?php echo $member['description']; ?></p>
 					</div>
 					<div class="contact-button">
-						<a mailto="<?php echo $member['email_address']; ?>">Contact</a>
+						<a href="mailto:<?php echo $member['email_address']; ?>">Contact</a>
 					</div>
 				</section>
 			</div>

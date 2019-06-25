@@ -2,15 +2,20 @@
   $(function() {
     const $carousel = $('.main-carousel');
     const $fundCarousel = $(".related-charities");
+    $fundCarousel.flickity({
+      cellAlign:'center',
+      wrapAround: false,
+      setGallerySize: false,
+      contain: true
+
+    });
     $carousel.flickity({
       cellAlign: 'left',
-      contain: true,
       wrapAround: true,
-      setGallerySize: false
+      setGallerySize: false,
+      contain: true
     });
-    $fundCarousel.flickity({
-      cellAlign:'left',
-    });
+
 
   }); // End of Doc ready
 })(jQuery);

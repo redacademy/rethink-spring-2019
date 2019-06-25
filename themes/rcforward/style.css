@@ -583,6 +583,10 @@ button {
         padding: 0.7rem 1rem;
         border-radius: 0 6px 6px 0;
         border: none; }
+        .footer-sidebar .widget .mc4wp-form .mc4wp-form-fields input[type='submit']:hover {
+          text-shadow: 1px 0.5px 1px #008b7b;
+          -webkit-box-shadow: 0px 2px 2px #002521;
+                  box-shadow: 0px 2px 2px #002521; }
   @media (min-width: 600px) {
     .footer-sidebar .widget .mc4wp-form .mc4wp-form-fields input[type='email'] {
       width: 240px; } }
@@ -613,21 +617,28 @@ body {
   background: white; }
 
 /* Chimp Donate Button */
-.chimp-donate-form, .donate-page-button {
+.chimp-donate-form,
+.donate-page-button {
   background-color: #00BEA8;
   font-size: 1rem;
   font-weight: 700;
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
   color: #192726;
   border-radius: 8px; }
+  .chimp-donate-form:hover,
+  .donate-page-button:hover {
+    text-shadow: 1px 0.5px 1px #008b7b;
+    -webkit-box-shadow: 0px 2px 2px #002521;
+            box-shadow: 0px 2px 2px #002521; }
   @media (min-width: 600px) {
-    .chimp-donate-form, .donate-page-button {
+    .chimp-donate-form,
+    .donate-page-button {
       font-size: 1.2rem;
-      padding: 1rem 3rem; } }
+      padding: 1rem 2.5rem; } }
   @media (min-width: 1000px) {
-    .chimp-donate-form, .donate-page-button {
-      font-size: 1.7rem;
-      padding: 1.5rem 3.7rem; } }
+    .chimp-donate-form,
+    .donate-page-button {
+      padding: 1.3rem 2.8rem; } }
 
 /* Transition for single content charity button */
 body .hide-mobile {
@@ -772,7 +783,9 @@ body .hide-desktop {
                 -ms-flex-align: center;
                     align-items: center;
             -ms-flex-direction: column;
-                flex-direction: column; } }
+                flex-direction: column; }
+            .page-template-page-how-it-works .site-content .entry-header .how-it-works-steps .text-steps .work-step .step-text {
+              width: 90%; } }
         .page-template-page-how-it-works .site-content .entry-header .how-it-works-steps .text-steps .work-step .work-step-icon {
           display: none; }
           @media (min-width: 1000px) {
@@ -844,21 +857,26 @@ body .hide-desktop {
       border: 2px solid #42299A;
       font-size: 1.1rem;
       font-weight: 700;
-      padding: 1.2rem 2.6rem;
+      padding: 1rem 1.4rem;
       display: inline-block;
       color: #42299A;
       border-radius: 8px; }
+      .page-template-page-how-it-works .site-content .entry-header .entry-contact-us .contact-us-button:hover {
+        background-color: #42299A;
+        color: #fff;
+        -webkit-box-shadow: 0px 3px 3px #000;
+                box-shadow: 0px 3px 3px #000; }
       @media (min-width: 600px) {
         .page-template-page-how-it-works .site-content .entry-header .entry-contact-us .contact-us-button {
-          font-size: 1.4rem;
-          padding: 1.4rem 3.2rem; } }
+          font-size: 1.2rem;
+          padding: 1.2rem 1.8rem; } }
       @media (min-width: 1000px) {
         .page-template-page-how-it-works .site-content .entry-header .entry-contact-us .contact-us-button {
-          font-size: 1.7rem;
-          padding: 1.7rem 4rem; } }
+          font-size: 1.3rem;
+          padding: 1.3rem 2.6rem; } }
 
 .page-template-page-how-it-works .site-content .entry-main {
-  margin: 4rem 2rem 0;
+  margin: 4rem 2.7rem 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -898,9 +916,11 @@ body .hide-desktop {
       .page-template-page-how-it-works .site-content .entry-main .wp-block-columns:first-child .wp-block-column:last-child {
         position: absolute; } }
   @media (min-width: 1000px) {
-    .page-template-page-how-it-works .site-content .entry-main .wp-block-columns .wp-block-column:first-child p:first-child strong {
-      color: #14225F;
-      font-size: 1.5rem; } }
+    .page-template-page-how-it-works .site-content .entry-main {
+      margin: 4rem 7rem 2rem; }
+      .page-template-page-how-it-works .site-content .entry-main .wp-block-columns .wp-block-column:first-child p:first-child strong {
+        color: #14225F;
+        font-size: 1.5rem; } }
   @media (min-width: 1000px) {
     .page-template-page-how-it-works .site-content .entry-main .wp-block-columns:first-child .wp-block-column:last-child .wp-block-image {
       text-align: right; } }
@@ -1010,8 +1030,8 @@ body .hide-desktop {
     width: 85%;
     margin: 0 auto 2.3rem; }
     .single-fund .hfeed .site-content .type-fund .entry-content p {
-      font-size: 1.4rem;
-      line-height: 2.4rem;
+      font-size: 1rem;
+      line-height: 2rem;
       margin-top: 0; }
     .single-fund .hfeed .site-content .type-fund .entry-content .entry-title {
       font-size: 1.4rem;
@@ -1022,22 +1042,22 @@ body .hide-desktop {
       text-transform: capitalize; }
     .single-fund .hfeed .site-content .type-fund .entry-content .amount-funded {
       background-color: rgba(216, 216, 216, 0.18);
-      font-size: 2.2rem;
       color: #42299A;
       margin: 0;
       padding: 0.6rem 0.8rem;
       font-weight: 700; }
-      .single-fund .hfeed .site-content .type-fund .entry-content .amount-funded p:nth-child(2n) {
-        font-size: 1.6rem; }
+      .single-fund .hfeed .site-content .type-fund .entry-content .amount-funded p {
+        font-size: 1.8rem; }
+        .single-fund .hfeed .site-content .type-fund .entry-content .amount-funded p:nth-child(2n) {
+          font-size: 1.4rem; }
       .single-fund .hfeed .site-content .type-fund .entry-content .amount-funded .chimp-donate-form {
-        margin: 0.3rem auto 0.6rem;
-        font-size: 1.3rem; }
+        margin: 0.3rem auto 0.6rem; }
     .single-fund .hfeed .site-content .type-fund .entry-content .fund-description {
       margin: 3rem 0; }
       .single-fund .hfeed .site-content .type-fund .entry-content .fund-description p {
-        width: 80%;
-        line-height: 2.4rem;
-        font-size: 1.2rem;
+        width: 86%;
+        line-height: 2rem;
+        font-size: 1.1rem;
         font-weight: lighter;
         word-wrap: break-word;
         margin: 0 auto; }
@@ -1065,7 +1085,7 @@ body .hide-desktop {
           word-wrap: break-word;
           color: #14225F;
           margin: 0 auto;
-          font-size: 1.3rem;
+          font-size: 1.1rem;
           line-height: 2.4rem;
           font-weight: 600; }
         .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation .fund-allowcations {
@@ -1091,9 +1111,18 @@ body .hide-desktop {
               font-weight: bolder;
               margin: 3.3rem 0.5rem; }
             .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation .fund-allowcations .single-allocation .allocation-text .description {
-              font-size: 1.4rem;
+              font-size: 1rem;
               margin: 0 2rem;
               line-height: 2.3rem; }
+    @media (min-width: 600px) {
+      .single-fund .hfeed .site-content .type-fund .entry-content .fund-description p {
+        font-size: 1.3rem; }
+      .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation h3 {
+        font-size: 1.3rem; }
+      .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation .fund-allowcations .single-allocation .allocation-text .description {
+        font-size: 1.2rem; }
+      .single-fund .hfeed .site-content .type-fund .entry-content .main-content .entry-content p {
+        font-size: 1.2rem; } }
     @media (min-width: 1000px) {
       .single-fund .hfeed .site-content .type-fund .entry-content .entry-title {
         font-size: 2.2rem; }
@@ -1212,9 +1241,11 @@ body .hide-desktop {
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%);
+      width: auto;
       height: auto;
-      width: 90%;
-      max-height: 90%; }
+      /* height: 90%; */
+      max-height: 90%;
+      max-width: 90%; }
   .single-fund .hfeed .related-charities .flickity-prev-next-button.previous {
     display: none; }
   .single-fund .hfeed .related-charities .flickity-prev-next-button.next {
@@ -1252,7 +1283,8 @@ body .hide-desktop {
     padding-bottom: 2.5rem;
     padding-top: 4rem; }
     .page-template-page-team .site-content .entry-content .single-member .contact-button a {
-      border: 2px solid #42299a;
+      cursor: pointer;
+      border: 2px solid #f5f4fc;
       font-size: 1.2rem;
       font-weight: bolder;
       padding: 1rem 1.7rem;
@@ -1260,6 +1292,13 @@ body .hide-desktop {
       color: #fff;
       border-radius: 8px;
       background-color: #14225F; }
+      .page-template-page-team .site-content .entry-content .single-member .contact-button a:hover {
+        text-shadow: #14225F;
+        background-color: #fff;
+        color: #14225F;
+        -webkit-box-shadow: 0px 3px 3px #14225F;
+                box-shadow: 0px 3px 3px #14225F;
+        border: 2px solid #14225F; }
 
 @media (min-width: 600px) {
   .page-template-page-team .site-content .entry-content .single-member .member-photo img {
@@ -1344,92 +1383,110 @@ body .hide-desktop {
   display: none; }
 
 /* FAQ Page */
-.page-template-page-faq .entry-header .entry-title {
-  display: none; }
-
-.page-template-page-faq .entry-header h2 {
-  text-align: center; }
-
-.page-template-page-faq .entry-header p {
-  display: none; }
-
-.page-template-page-faq .entry-content .faqs .question {
-  height: auto;
-  max-height: 5rem;
-  padding: auto;
-  border-bottom: 1px solid #14225F;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-  .page-template-page-faq .entry-content .faqs .question p {
-    font-size: 1rem;
-    font-weight: bolder;
-    margin-right: 1rem;
-    margin-left: 1rem; }
-  .page-template-page-faq .entry-content .faqs .question .plus-symbol {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    cursor: pointer;
-    margin-right: 1.6rem; }
-
-.page-template-page-faq .entry-content .faqs .answer {
-  display: none; }
-  .page-template-page-faq .entry-content .faqs .answer p {
-    color: #192726;
-    font-size: 1rem;
-    margin-left: 1rem;
-    margin-right: 0.8rem;
-    line-height: 1.5rem; }
+.page-template-page-faq .site-content {
+  padding-bottom: 0; }
+  .page-template-page-faq .site-content .main-section .entry-header {
+    margin: 0 auto;
+    width: 93%; }
+    .page-template-page-faq .site-content .main-section .entry-header .entry-title {
+      display: none; }
+    .page-template-page-faq .site-content .main-section .entry-header h2 {
+      text-align: center; }
+    .page-template-page-faq .site-content .main-section .entry-header p {
+      display: none; }
+  .page-template-page-faq .site-content .main-section .entry-content {
+    margin: 0 auto;
+    width: 93%; }
+    .page-template-page-faq .site-content .main-section .entry-content .faqs .question {
+      height: auto;
+      max-height: 5rem;
+      padding: auto;
+      border-bottom: 1px solid #14225F;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .page-template-page-faq .site-content .main-section .entry-content .faqs .question p {
+        font-size: 1rem;
+        font-weight: bolder;
+        margin-right: 1rem;
+        margin-left: 1rem; }
+      .page-template-page-faq .site-content .main-section .entry-content .faqs .question .plus-symbol {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin-right: 1.6rem; }
+    .page-template-page-faq .site-content .main-section .entry-content .faqs .answer {
+      display: none; }
+      .page-template-page-faq .site-content .main-section .entry-content .faqs .answer p {
+        color: #192726;
+        font-size: 1rem;
+        margin-left: 1rem;
+        margin-right: 0.8rem;
+        line-height: 1.5rem; }
+    .page-template-page-faq .site-content .main-section .entry-content .faqs:last-child {
+      margin-bottom: 2rem; }
 
 @media (min-width: 1000px) {
-  .page-template-page-faq .entry-header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-direction: column;
-        flex-direction: column; }
-    .page-template-page-faq .entry-header .entry-title {
-      text-transform: capitalize; }
-    .page-template-page-faq .entry-header p {
-      margin-top: 0; }
-    .page-template-page-faq .entry-header .entry-title,
-    .page-template-page-faq .entry-header p {
-      display: unset; }
-    .page-template-page-faq .entry-header h2:last-child {
-      display: none; }
-  .page-template-page-faq .entry-content .faqs .question {
-    border-bottom: 0; }
-    .page-template-page-faq .entry-content .faqs .question .plus-symbol {
-      display: none; }
-  .page-template-page-faq .entry-content .faqs .answer {
-    display: unset; }
-    .page-template-page-faq .entry-content .faqs .answer p {
-      margin-top: 0;
-      margin-bottom: 2.5rem; } }
+  .page-template-page-faq .site-content .main-section {
+    background-color: #f8f8fc;
+    margin: 0 auto; }
+    .page-template-page-faq .site-content .main-section .entry-header {
+      background-color: #fff;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+      .page-template-page-faq .site-content .main-section .entry-header .entry-title {
+        text-transform: capitalize; }
+      .page-template-page-faq .site-content .main-section .entry-header p {
+        margin-top: 0; }
+      .page-template-page-faq .site-content .main-section .entry-header .entry-title,
+      .page-template-page-faq .site-content .main-section .entry-header p {
+        display: unset; }
+      .page-template-page-faq .site-content .main-section .entry-header h2:last-child {
+        display: none; }
+    .page-template-page-faq .site-content .main-section .entry-content {
+      background-color: #fff; }
+      .page-template-page-faq .site-content .main-section .entry-content .faqs {
+        width: 88%;
+        margin: 0 auto;
+        padding-bottom: 1.7rem; }
+        .page-template-page-faq .site-content .main-section .entry-content .faqs .question {
+          border-bottom: 0; }
+          .page-template-page-faq .site-content .main-section .entry-content .faqs .question .plus-symbol {
+            display: none; }
+        .page-template-page-faq .site-content .main-section .entry-content .faqs .answer {
+          display: unset; }
+          .page-template-page-faq .site-content .main-section .entry-content .faqs .answer p {
+            margin-top: 0;
+            margin-bottom: 0; }
+      .page-template-page-faq .site-content .main-section .entry-content .faqs:last-child {
+        margin-bottom: 0;
+        padding-bottom: 3rem; } }
 
 /*!
  * Hamburgers
@@ -1668,6 +1725,10 @@ ol.flickity-page-dots {
     background: #00BEA8;
     padding: 1.1rem 1.5rem;
     border-radius: 7px; }
+    .browse_charities_button a:hover {
+      text-shadow: 1px 0.5px 1px #008b7b;
+      -webkit-box-shadow: 0px 2px 2px #002521;
+              box-shadow: 0px 2px 2px #002521; }
 
 .browse-charity-subtitle {
   font-weight: 600; }
@@ -2073,13 +2134,16 @@ ol.flickity-page-dots {
     display: none; }
     .site-footer .top-footer .footer-nav .menu-footer-menu-container ul {
       list-style: none;
-      padding-left: 6rem; }
+      padding-left: 6rem;
+      margin-top: 5rem; }
       @media (min-width: 1000px) {
         .site-footer .top-footer .footer-nav .menu-footer-menu-container ul li {
-          margin: 2rem 0;
+          margin: 2rem 0 .7rem;
           width: 9rem; }
           .site-footer .top-footer .footer-nav .menu-footer-menu-container ul li a {
-            color: #00BEA8; } }
+            color: #00BEA8; }
+            .site-footer .top-footer .footer-nav .menu-footer-menu-container ul li a:hover {
+              color: #fff; } }
     @media (min-width: 1000px) {
       .site-footer .top-footer .footer-nav {
         display: unset; } }
@@ -2112,7 +2176,9 @@ ol.flickity-page-dots {
             flex-direction: column;
         -webkit-box-align: start;
             -ms-flex-align: start;
-                align-items: flex-start; } }
+                align-items: flex-start; }
+        .site-footer .top-footer .footer-info .hide-mobile {
+          width: 5rem; } }
     .site-footer .top-footer .footer-info p {
       display: none; }
       @media (min-width: 1000px) {
@@ -2207,7 +2273,7 @@ ol.flickity-page-dots {
           .site-footer .top-footer .footer-info-sm .text-description a {
             text-align: left; } }
     .site-footer .top-footer .footer-info-sm .font-link .mail {
-      background-image: url("../../assets/images/facebook.png");
+      background-image: url("../../assets/images/mail.png");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -2216,7 +2282,7 @@ ol.flickity-page-dots {
       width: 3rem;
       margin: 0 1rem; }
     .site-footer .top-footer .footer-info-sm .font-link .facebook {
-      background-image: url("../../assets/images/mail.png");
+      background-image: url("../../assets/images/facebook.png");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -2758,6 +2824,10 @@ ol.flickity-page-dots {
         font-size: 18px;
         font-size: 1.125rem;
         font-weight: 700; }
+        .home .choose-fund-content .fund .fund-entry a:hover {
+          text-shadow: 1px 0.5px 1px #999999;
+          -webkit-box-shadow: 0px 3px 5px #42299A;
+                  box-shadow: 0px 3px 5px #42299A; }
         @media (min-width: 600px) {
           .home .choose-fund-content .fund .fund-entry a {
             padding: 0.7rem 1.5rem;
@@ -3481,6 +3551,10 @@ ol.flickity-page-dots {
         font-size: 18px;
         font-size: 1.125rem;
         font-weight: 700; }
+        .page-donate .choose-fund .fund .fund-entry a:hover {
+          text-shadow: 1px 0.5px 1px #999999;
+          -webkit-box-shadow: 0px 3px 5px #42299A;
+                  box-shadow: 0px 3px 5px #42299A; }
         @media (min-width: 800px) {
           .page-donate .choose-fund .fund .fund-entry a {
             -webkit-box-ordinal-group: 5;
