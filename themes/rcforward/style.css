@@ -1677,6 +1677,10 @@ ol.flickity-page-dots {
     background: #00BEA8;
     padding: 1.1rem 1.5rem;
     border-radius: 7px; }
+    .browse_charities_button a:hover {
+      text-shadow: 1px 0.5px 1px #008b7b;
+      -webkit-box-shadow: 0px 2px 2px #002521;
+              box-shadow: 0px 2px 2px #002521; }
 
 .browse-charity-subtitle {
   font-weight: 600; }
@@ -2763,6 +2767,10 @@ ol.flickity-page-dots {
         font-size: 18px;
         font-size: 1.125rem;
         font-weight: 700; }
+        .home .choose-fund-content .fund .fund-entry a:hover {
+          text-shadow: 1px 0.5px 1px #999999;
+          -webkit-box-shadow: 0px 3px 5px #42299A;
+                  box-shadow: 0px 3px 5px #42299A; }
         @media (min-width: 600px) {
           .home .choose-fund-content .fund .fund-entry a {
             padding: 0.7rem 1.5rem;
@@ -3487,6 +3495,10 @@ ol.flickity-page-dots {
         font-size: 18px;
         font-size: 1.125rem;
         font-weight: 700; }
+        .page-donate .choose-fund .fund .fund-entry a:hover {
+          text-shadow: 1px 0.5px 1px #999999;
+          -webkit-box-shadow: 0px 3px 5px #42299A;
+                  box-shadow: 0px 3px 5px #42299A; }
         @media (min-width: 800px) {
           .page-donate .choose-fund .fund .fund-entry a {
             -webkit-box-ordinal-group: 5;

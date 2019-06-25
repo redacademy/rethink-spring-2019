@@ -14,7 +14,7 @@
 @mixin tablet {
     @media (min-width: $tablet-width) {
         @content;
-    }
+    } 
 }
 @mixin tablet-large{
     @media (min-width: $tablet-breakpoint){
