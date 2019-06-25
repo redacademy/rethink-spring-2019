@@ -94,10 +94,12 @@ foreach( $related_charities as $post_id ):
     $the_post = get_post( $post_id );
     ?>
     <div class="sigle-related-charity carousel-cell"> 
+    <div class="charity-logo-container">
     <img class="charity-logo" src="<?php echo CFS()->get( 'charity_logo', $the_post->ID ); ?>"/>
+    </div>
     <?php $charity_description = CFS()->get( 'charity_description', $the_post->ID ,array( 'format' => 'raw' )); ?>
     <!-- <?php var_dump($charity_description); ?> -->
-    <p class="charity-description"><?php echo wp_trim_words($charity_description, 20, " [...]"); ?></p>
+    <p class="charity-description"><?php echo wp_trim_words($charity_description, 18, " [...]"); ?></p>
     <a class="read-more-button" href="<?php echo $the_post->guid; ?>">View Charity &#x203A;</a>
 </div>
 
