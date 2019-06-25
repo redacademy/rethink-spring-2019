@@ -11,7 +11,6 @@
     });
     $carousel.flickity({
       cellAlign: 'left',
-      contain: true,
       wrapAround: true,
       setGallerySize: false,
       contain: true
