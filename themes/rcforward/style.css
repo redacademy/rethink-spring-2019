@@ -272,15 +272,12 @@ p {
 .why-donate h3 {
   text-align: center; }
 
-<<<<<<< HEAD
-/*--------------------------------------------------------------
-# Navigation
---------------------------------------------------------------*/
-=======
 button {
   border: none; }
 
->>>>>>> 4d7ef6a85a0a178f4d474e9597bb59ef2d30aba7
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
 .main-navigation {
   font-size: 17.6px;
   font-size: 1.1rem; }
@@ -1203,7 +1200,7 @@ body .hide-desktop {
     .single-fund .hfeed .related-charities .carousel-cell {
       width: 40%;
       margin-left: 38px;
-      margin-right: 38px; }
+      margin-rightf: 38px; }
     .single-fund .hfeed .related-charities .previous {
       left: -30px;
       display: unset; }
@@ -1253,6 +1250,7 @@ body .hide-desktop {
     padding-bottom: 2.5rem;
     padding-top: 4rem; }
     .page-template-page-team .site-content .entry-content .single-member .contact-button a {
+      cursor: pointer;
       border: 2px solid #42299a;
       font-size: 1.2rem;
       font-weight: bolder;
@@ -1345,59 +1343,24 @@ body .hide-desktop {
   display: none; }
 
 /* FAQ Page */
-.page-template-page-faq .entry-header .entry-title {
-  display: none; }
+.page-template-page-faq .main-section .entry-header {
+  margin: 0 auto;
+  width: 93%; }
+  .page-template-page-faq .main-section .entry-header .entry-title {
+    display: none; }
+  .page-template-page-faq .main-section .entry-header h2 {
+    text-align: center; }
+  .page-template-page-faq .main-section .entry-header p {
+    display: none; }
 
-.page-template-page-faq .entry-header h2 {
-  text-align: center; }
-
-.page-template-page-faq .entry-header p {
-  display: none; }
-
-.page-template-page-faq .entry-content .faqs .question {
-  height: auto;
-  max-height: 5rem;
-  padding: auto;
-  border-bottom: 1px solid #14225F;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-  .page-template-page-faq .entry-content .faqs .question p {
-    font-size: 1rem;
-    font-weight: bolder;
-    margin-right: 1rem;
-    margin-left: 1rem; }
-  .page-template-page-faq .entry-content .faqs .question .plus-symbol {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    cursor: pointer;
-    margin-right: 1.6rem; }
-
-.page-template-page-faq .entry-content .faqs .answer {
-  display: none; }
-  .page-template-page-faq .entry-content .faqs .answer p {
-    color: #192726;
-    font-size: 1rem;
-    margin-left: 1rem;
-    margin-right: 0.8rem;
-    line-height: 1.5rem; }
-
-@media (min-width: 1000px) {
-  .page-template-page-faq .entry-header {
+.page-template-page-faq .main-section .entry-content {
+  margin: 0 auto;
+  width: 93%; }
+  .page-template-page-faq .main-section .entry-content .faqs .question {
+    height: auto;
+    max-height: 5rem;
+    padding: auto;
+    border-bottom: 1px solid #14225F;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1411,26 +1374,69 @@ body .hide-desktop {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -ms-flex-direction: column;
-        flex-direction: column; }
-    .page-template-page-faq .entry-header .entry-title {
-      text-transform: capitalize; }
-    .page-template-page-faq .entry-header p {
-      margin-top: 0; }
-    .page-template-page-faq .entry-header .entry-title,
-    .page-template-page-faq .entry-header p {
-      display: unset; }
-    .page-template-page-faq .entry-header h2:last-child {
-      display: none; }
-  .page-template-page-faq .entry-content .faqs .question {
-    border-bottom: 0; }
-    .page-template-page-faq .entry-content .faqs .question .plus-symbol {
-      display: none; }
-  .page-template-page-faq .entry-content .faqs .answer {
-    display: unset; }
-    .page-template-page-faq .entry-content .faqs .answer p {
-      margin-top: 0;
-      margin-bottom: 2.5rem; } }
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .page-template-page-faq .main-section .entry-content .faqs .question p {
+      font-size: 1rem;
+      font-weight: bolder;
+      margin-right: 1rem;
+      margin-left: 1rem; }
+    .page-template-page-faq .main-section .entry-content .faqs .question .plus-symbol {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      cursor: pointer;
+      margin-right: 1.6rem; }
+  .page-template-page-faq .main-section .entry-content .faqs .answer {
+    display: none; }
+    .page-template-page-faq .main-section .entry-content .faqs .answer p {
+      color: #192726;
+      font-size: 1rem;
+      margin-left: 1rem;
+      margin-right: 0.8rem;
+      line-height: 1.5rem; }
+
+@media (min-width: 1000px) {
+  .page-template-page-faq .main-section {
+    background-color: #F8F8FC; }
+    .page-template-page-faq .main-section .entry-header {
+      background-color: #fff;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+      .page-template-page-faq .main-section .entry-header .entry-title {
+        text-transform: capitalize; }
+      .page-template-page-faq .main-section .entry-header p {
+        margin-top: 0; }
+      .page-template-page-faq .main-section .entry-header .entry-title,
+      .page-template-page-faq .main-section .entry-header p {
+        display: unset; }
+      .page-template-page-faq .main-section .entry-header h2:last-child {
+        display: none; }
+    .page-template-page-faq .main-section .entry-content {
+      background-color: #fff; }
+      .page-template-page-faq .main-section .entry-content .faqs .question {
+        border-bottom: 0; }
+        .page-template-page-faq .main-section .entry-content .faqs .question .plus-symbol {
+          display: none; }
+      .page-template-page-faq .main-section .entry-content .faqs .answer {
+        display: unset; }
+        .page-template-page-faq .main-section .entry-content .faqs .answer p {
+          margin-top: 0;
+          margin-bottom: 2.5rem; } }
 
 /*!
  * Hamburgers
@@ -2289,7 +2295,7 @@ ol.flickity-page-dots {
           .site-footer .top-footer .footer-info-sm .text-description a {
             text-align: left; } }
     .site-footer .top-footer .footer-info-sm .font-link .mail {
-      background-image: url("../../assets/images/facebook.png");
+      background-image: url("../../assets/images/mail.png");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -2298,7 +2304,7 @@ ol.flickity-page-dots {
       width: 3rem;
       margin: 0 1rem; }
     .site-footer .top-footer .footer-info-sm .font-link .facebook {
-      background-image: url("../../assets/images/mail.png");
+      background-image: url("../../assets/images/facebook.png");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -4254,20 +4260,6 @@ ol.flickity-page-dots {
     display: -ms-flexbox;
     display: flex; }
 
-<<<<<<< HEAD
-=======
-.prev-post-main,
-.next-post-main {
-  display: none; }
-
-@media (min-width: 1000px) {
-  .impactfully {
-    display: none; }
-    .impactfully .blog .pre-nav-1,
-    .impactfully .blog .next-p {
-      display: none; } }
-
->>>>>>> 4d7ef6a85a0a178f4d474e9597bb59ef2d30aba7
 .blog .read-more {
   position: relative;
   text-align: right;
