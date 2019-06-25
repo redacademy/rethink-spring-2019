@@ -639,6 +639,9 @@
         }
       }
     }
+    .custom-plan {
+      margin: 0 auto;
+    }
     @include tablet {
       .related-charities {
         // max-width: 96%;
