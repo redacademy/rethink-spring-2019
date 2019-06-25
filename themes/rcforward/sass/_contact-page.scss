@@ -123,16 +123,16 @@
                 }
               }
               input[type='submit'] {
-                background: $credible__blue;
+                // background: $credible__blue;
                 color: $white;
                 width: 150px;
                 border-radius: 5px;
                 height: 62px;
+                font-size: 1.4rem;
                 @include tablet {
                   background: $white;
                   color: $credible__blue;
                   border: 2px solid $credible__blue;
-                  color: $credible__blue;
                 }
               }
             }
@@ -144,7 +144,7 @@
 }
 .wpcf7-form {
   padding: 0;
-  @include tablet {
+    @include desktop {
     padding-left: 3rem;
   }
   p:last-of-type {
@@ -156,7 +156,7 @@
 }
 .wp-block-columns {
   flex-direction: column;
-  @include tablet {
+  @include desktop {
     flex-direction: row;
   }
 }
