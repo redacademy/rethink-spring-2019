@@ -591,9 +591,11 @@
               // top: 0;
               // max-width: 92%;
               // max-height: 40%;
+              width: auto;
               height: auto;
-              width:90%;
-              max-height:90%;
+              /* height: 90%; */
+              max-height: 90%;
+              max-width: 90%;
             }
           }
         
