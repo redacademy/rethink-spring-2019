@@ -65,6 +65,9 @@
             @include desktop {
               @include display-flex();
               flex-direction: column;
+              .step-text {
+                width: 90%;
+              }
             }
             .work-step-icon {
               display: none;
@@ -84,6 +87,7 @@
             }
 
             .step-text {
+              
               .work-step-title,
               .work-step-description {
                 margin: 1rem;
@@ -98,8 +102,7 @@
               @include tablet {
                 margin-top: 0;
               }
-              @include desktop {
-              }
+             
             }
           }
         }
@@ -148,18 +151,18 @@
           border: 2px solid $innovative__purple;
           font-size: 1.1rem;
           font-weight: 700;
-          padding: 1.2rem 2.6rem;
+          padding: 1rem 1.4rem;
 
           display: inline-block;
           color: $innovative__purple;
           border-radius: 8px;
           @include tablet {
-            font-size: 1.4rem;
-            padding: 1.4rem 3.2rem;
+            font-size: 1.2rem;
+            padding: 1.2rem 1.8rem;
           }
           @include desktop {
-            font-size: 1.7rem;
-            padding: 1.7rem 4rem;
+            font-size: 1.3rem;
+            padding: 1.3rem 2.6rem;
           }
         }
       }
@@ -350,8 +353,8 @@
           width: 85%;
           margin: 0 auto 2.3rem;
           p {
-            font-size: 1.4rem;
-            line-height: 2.4rem;
+            font-size: .9rem;
+            line-height: 2rem;
             margin-top: 0;
           }
           .entry-title {
@@ -364,28 +367,29 @@
           }
           .amount-funded {
             background-color: rgba(216, 216, 216, 0.18);
-            font-size: 2.2rem;
             color: $innovative__purple;
             margin: 0;
             padding: 0.6rem 0.8rem;
             font-weight: 700;
             p {
+            font-size: 1.8rem;
+
+        
               &:nth-child(2n) {
-                font-size: 1.6rem;
+                font-size: 1.4rem;
               }
             }
 
             .chimp-donate-form {
               margin: 0.3rem auto 0.6rem;
-              font-size: 1.3rem;
             }
           }
           .fund-description {
             margin: 3rem 0;
             p {
-              width: 80%;
-              line-height: 2.4rem;
-              font-size: 1.2rem;
+              width: 86%;
+              line-height: 2rem;
+              font-size: 1rem;
               font-weight: lighter;
               word-wrap: break-word;
               margin: 0 auto;
@@ -436,7 +440,7 @@
                       margin: 3.3rem 0.5rem;
                     }
                     .description {
-                      font-size: 1.4rem;
+                      font-size: .9rem;
                       margin: 0 2rem;
                       line-height: 2.3rem;
                     }
@@ -780,6 +784,9 @@
 
 /* FAQ Page */
 .page-template-page-faq {
+  .site-content {
+    padding-bottom: 0;
+
 .main-section {
   
   .entry-header {
@@ -816,7 +823,6 @@
         }
         .plus-symbol {
           display: flex;
-          cursor: pointer;
           margin-right: 1.6rem;
         }
       }
@@ -831,19 +837,22 @@
         }
       }
     }
+    & .faqs:last-child {
+      margin-bottom: 2rem;
+    }
   }
 }
+}
   @include desktop {
+    .site-content {
 .main-section {
   background-color: #F8F8FC;
-
+margin: 0 auto;
     .entry-header {
       background-color: $white;
+
       @include display-flex();
       flex-direction: column;
-      // margin: 0 1.7rem;
-
-
       .entry-title {
         text-transform: capitalize;
       }
@@ -860,11 +869,13 @@
     }
     .entry-content {
       background-color: $white;
-      // margin: 0 1.7rem;
       .faqs {
+        width: 88%;
+        margin: 0 auto;
+        padding-bottom: 1.7rem;
+
         .question {
           border-bottom: 0;
-
           .plus-symbol {
             display: none;
           }
@@ -873,11 +884,17 @@
           display: unset;
           p {
             margin-top: 0;
-            margin-bottom: 2.5rem;
+            margin-bottom: 0;
           }
         }
       }
+      & .faqs:last-child {
+        margin-bottom: 0;
+        padding-bottom: 3rem;
+
+      }
     }
   }
+}
   }
 }

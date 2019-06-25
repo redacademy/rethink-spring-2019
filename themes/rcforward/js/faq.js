@@ -1,10 +1,10 @@
 (function($) {
   $(function() {
 
-    $('.entry-content').on('click', 'a', function(event) {
+    $('.faqs').on('click', function(event) {
       event.preventDefault();
       $('.answer').hide(200);
-      $(this).parent().siblings('.answer').toggle();
+      $(this).children('.answer').toggle();
 
     });  
 

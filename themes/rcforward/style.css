@@ -611,21 +611,28 @@ body {
   background: white; }
 
 /* Chimp Donate Button */
-.chimp-donate-form, .donate-page-button {
+.chimp-donate-form,
+.donate-page-button {
   background-color: #00BEA8;
   font-size: 1rem;
   font-weight: 700;
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
   color: #192726;
   border-radius: 8px; }
+  .chimp-donate-form:hover,
+  .donate-page-button:hover {
+    text-shadow: 1px 0.5px 1px #008b7b;
+    -webkit-box-shadow: 0px 2px 2px #002521;
+            box-shadow: 0px 2px 2px #002521; }
   @media (min-width: 600px) {
-    .chimp-donate-form, .donate-page-button {
+    .chimp-donate-form,
+    .donate-page-button {
       font-size: 1.2rem;
-      padding: 1rem 3rem; } }
+      padding: 1rem 2.5rem; } }
   @media (min-width: 1000px) {
-    .chimp-donate-form, .donate-page-button {
-      font-size: 1.7rem;
-      padding: 1.5rem 3.7rem; } }
+    .chimp-donate-form,
+    .donate-page-button {
+      padding: 1.3rem 2.8rem; } }
 
 /* Transition for single content charity button */
 body .hide-mobile {
@@ -770,7 +777,9 @@ body .hide-desktop {
                 -ms-flex-align: center;
                     align-items: center;
             -ms-flex-direction: column;
-                flex-direction: column; } }
+                flex-direction: column; }
+            .page-template-page-how-it-works .site-content .entry-header .how-it-works-steps .text-steps .work-step .step-text {
+              width: 90%; } }
         .page-template-page-how-it-works .site-content .entry-header .how-it-works-steps .text-steps .work-step .work-step-icon {
           display: none; }
           @media (min-width: 1000px) {
@@ -842,18 +851,18 @@ body .hide-desktop {
       border: 2px solid #42299A;
       font-size: 1.1rem;
       font-weight: 700;
-      padding: 1.2rem 2.6rem;
+      padding: 1rem 1.4rem;
       display: inline-block;
       color: #42299A;
       border-radius: 8px; }
       @media (min-width: 600px) {
         .page-template-page-how-it-works .site-content .entry-header .entry-contact-us .contact-us-button {
-          font-size: 1.4rem;
-          padding: 1.4rem 3.2rem; } }
+          font-size: 1.2rem;
+          padding: 1.2rem 1.8rem; } }
       @media (min-width: 1000px) {
         .page-template-page-how-it-works .site-content .entry-header .entry-contact-us .contact-us-button {
-          font-size: 1.7rem;
-          padding: 1.7rem 4rem; } }
+          font-size: 1.3rem;
+          padding: 1.3rem 2.6rem; } }
 
 .page-template-page-how-it-works .site-content .entry-main {
   margin: 4rem 2rem 0;
@@ -1008,8 +1017,8 @@ body .hide-desktop {
     width: 85%;
     margin: 0 auto 2.3rem; }
     .single-fund .hfeed .site-content .type-fund .entry-content p {
-      font-size: 1.4rem;
-      line-height: 2.4rem;
+      font-size: .9rem;
+      line-height: 2rem;
       margin-top: 0; }
     .single-fund .hfeed .site-content .type-fund .entry-content .entry-title {
       font-size: 1.4rem;
@@ -1020,22 +1029,22 @@ body .hide-desktop {
       text-transform: capitalize; }
     .single-fund .hfeed .site-content .type-fund .entry-content .amount-funded {
       background-color: rgba(216, 216, 216, 0.18);
-      font-size: 2.2rem;
       color: #42299A;
       margin: 0;
       padding: 0.6rem 0.8rem;
       font-weight: 700; }
-      .single-fund .hfeed .site-content .type-fund .entry-content .amount-funded p:nth-child(2n) {
-        font-size: 1.6rem; }
+      .single-fund .hfeed .site-content .type-fund .entry-content .amount-funded p {
+        font-size: 1.8rem; }
+        .single-fund .hfeed .site-content .type-fund .entry-content .amount-funded p:nth-child(2n) {
+          font-size: 1.4rem; }
       .single-fund .hfeed .site-content .type-fund .entry-content .amount-funded .chimp-donate-form {
-        margin: 0.3rem auto 0.6rem;
-        font-size: 1.3rem; }
+        margin: 0.3rem auto 0.6rem; }
     .single-fund .hfeed .site-content .type-fund .entry-content .fund-description {
       margin: 3rem 0; }
       .single-fund .hfeed .site-content .type-fund .entry-content .fund-description p {
-        width: 80%;
-        line-height: 2.4rem;
-        font-size: 1.2rem;
+        width: 86%;
+        line-height: 2rem;
+        font-size: 1rem;
         font-weight: lighter;
         word-wrap: break-word;
         margin: 0 auto; }
@@ -1089,7 +1098,7 @@ body .hide-desktop {
               font-weight: bolder;
               margin: 3.3rem 0.5rem; }
             .single-fund .hfeed .site-content .type-fund .entry-content .main-content .fund-allowcation .fund-allowcations .single-allocation .allocation-text .description {
-              font-size: 1.4rem;
+              font-size: .9rem;
               margin: 0 2rem;
               line-height: 2.3rem; }
     @media (min-width: 1000px) {
@@ -1343,64 +1352,67 @@ body .hide-desktop {
   display: none; }
 
 /* FAQ Page */
-.page-template-page-faq .main-section .entry-header {
-  margin: 0 auto;
-  width: 93%; }
-  .page-template-page-faq .main-section .entry-header .entry-title {
-    display: none; }
-  .page-template-page-faq .main-section .entry-header h2 {
-    text-align: center; }
-  .page-template-page-faq .main-section .entry-header p {
-    display: none; }
-
-.page-template-page-faq .main-section .entry-content {
-  margin: 0 auto;
-  width: 93%; }
-  .page-template-page-faq .main-section .entry-content .faqs .question {
-    height: auto;
-    max-height: 5rem;
-    padding: auto;
-    border-bottom: 1px solid #14225F;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
-    .page-template-page-faq .main-section .entry-content .faqs .question p {
-      font-size: 1rem;
-      font-weight: bolder;
-      margin-right: 1rem;
-      margin-left: 1rem; }
-    .page-template-page-faq .main-section .entry-content .faqs .question .plus-symbol {
+.page-template-page-faq .site-content {
+  padding-bottom: 0; }
+  .page-template-page-faq .site-content .main-section .entry-header {
+    margin: 0 auto;
+    width: 93%; }
+    .page-template-page-faq .site-content .main-section .entry-header .entry-title {
+      display: none; }
+    .page-template-page-faq .site-content .main-section .entry-header h2 {
+      text-align: center; }
+    .page-template-page-faq .site-content .main-section .entry-header p {
+      display: none; }
+  .page-template-page-faq .site-content .main-section .entry-content {
+    margin: 0 auto;
+    width: 93%; }
+    .page-template-page-faq .site-content .main-section .entry-content .faqs .question {
+      height: auto;
+      max-height: 5rem;
+      padding: auto;
+      border-bottom: 1px solid #14225F;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      cursor: pointer;
-      margin-right: 1.6rem; }
-  .page-template-page-faq .main-section .entry-content .faqs .answer {
-    display: none; }
-    .page-template-page-faq .main-section .entry-content .faqs .answer p {
-      color: #192726;
-      font-size: 1rem;
-      margin-left: 1rem;
-      margin-right: 0.8rem;
-      line-height: 1.5rem; }
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .page-template-page-faq .site-content .main-section .entry-content .faqs .question p {
+        font-size: 1rem;
+        font-weight: bolder;
+        margin-right: 1rem;
+        margin-left: 1rem; }
+      .page-template-page-faq .site-content .main-section .entry-content .faqs .question .plus-symbol {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin-right: 1.6rem; }
+    .page-template-page-faq .site-content .main-section .entry-content .faqs .answer {
+      display: none; }
+      .page-template-page-faq .site-content .main-section .entry-content .faqs .answer p {
+        color: #192726;
+        font-size: 1rem;
+        margin-left: 1rem;
+        margin-right: 0.8rem;
+        line-height: 1.5rem; }
+    .page-template-page-faq .site-content .main-section .entry-content .faqs:last-child {
+      margin-bottom: 2rem; }
 
 @media (min-width: 1000px) {
-  .page-template-page-faq .main-section {
-    background-color: #F8F8FC; }
-    .page-template-page-faq .main-section .entry-header {
+  .page-template-page-faq .site-content .main-section {
+    background-color: #F8F8FC;
+    margin: 0 auto; }
+    .page-template-page-faq .site-content .main-section .entry-header {
       background-color: #fff;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1417,26 +1429,33 @@ body .hide-desktop {
               align-items: center;
       -ms-flex-direction: column;
           flex-direction: column; }
-      .page-template-page-faq .main-section .entry-header .entry-title {
+      .page-template-page-faq .site-content .main-section .entry-header .entry-title {
         text-transform: capitalize; }
-      .page-template-page-faq .main-section .entry-header p {
+      .page-template-page-faq .site-content .main-section .entry-header p {
         margin-top: 0; }
-      .page-template-page-faq .main-section .entry-header .entry-title,
-      .page-template-page-faq .main-section .entry-header p {
+      .page-template-page-faq .site-content .main-section .entry-header .entry-title,
+      .page-template-page-faq .site-content .main-section .entry-header p {
         display: unset; }
-      .page-template-page-faq .main-section .entry-header h2:last-child {
+      .page-template-page-faq .site-content .main-section .entry-header h2:last-child {
         display: none; }
-    .page-template-page-faq .main-section .entry-content {
+    .page-template-page-faq .site-content .main-section .entry-content {
       background-color: #fff; }
-      .page-template-page-faq .main-section .entry-content .faqs .question {
-        border-bottom: 0; }
-        .page-template-page-faq .main-section .entry-content .faqs .question .plus-symbol {
-          display: none; }
-      .page-template-page-faq .main-section .entry-content .faqs .answer {
-        display: unset; }
-        .page-template-page-faq .main-section .entry-content .faqs .answer p {
-          margin-top: 0;
-          margin-bottom: 2.5rem; } }
+      .page-template-page-faq .site-content .main-section .entry-content .faqs {
+        width: 88%;
+        margin: 0 auto;
+        padding-bottom: 1.7rem; }
+        .page-template-page-faq .site-content .main-section .entry-content .faqs .question {
+          border-bottom: 0; }
+          .page-template-page-faq .site-content .main-section .entry-content .faqs .question .plus-symbol {
+            display: none; }
+        .page-template-page-faq .site-content .main-section .entry-content .faqs .answer {
+          display: unset; }
+          .page-template-page-faq .site-content .main-section .entry-content .faqs .answer p {
+            margin-top: 0;
+            margin-bottom: 0; }
+      .page-template-page-faq .site-content .main-section .entry-content .faqs:last-child {
+        margin-bottom: 0;
+        padding-bottom: 3rem; } }
 
 /*!
  * Hamburgers
