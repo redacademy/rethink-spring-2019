@@ -64,6 +64,11 @@
     width: 151px;
     font-size: 1rem;
   }
+  &:hover{
+    background:$innovative__purple;
+    color: $white;
+    text-shadow: #f9f5ed;
+  }
 }
 
 /* single content */

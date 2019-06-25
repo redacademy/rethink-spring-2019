@@ -78,13 +78,13 @@ get_header(); ?>
 							$next_post_id = $next_post->ID;
 							$post_introduction = CFS()->get('post-introduction', $next_post_id);
 							$post_annoucement = CFS()->get('post-announcement', $next_post_id); ?>
-								<div class="next-post">
-							<p class="next-1"> <?php echo $next_post->post_title ?></p>
-							<div class="next-post-image">
+							<div class="next-post">
+								<p class="next-1"> <?php echo $next_post->post_title ?></p>
+								<div class="next-post-image">
 								<?php if (get_the_post_thumbnail($next_post_id)) : ?>
 									<?php echo get_the_post_thumbnail($next_post_id, 'large'); ?>
 								<?php endif; ?>
-							</div><!-- .next-post-image -->
+								</div><!-- .next-post-image -->
 							<div class="next-post-content">
 								<div class="next-post-title">
 									<p class="next-post-meta"><?php echo $next_post->post_date; ?><p>
@@ -100,27 +100,19 @@ get_header(); ?>
 
 								<?php echo $next_post->post_excerpt; ?>
 								</div><!-- .entry-main -->
-							</div>
-
-								<div class="read-more">
+							<div class="read-more">
 									<a class="read-more-button" href="<?php echo $next_post->guid ?>">Read More</a>
 									<span class="read-more-arrow"> &#x203A; </span>
 								</div>
 							</div>
+							</div>
 							<?php endif; ?>
-							
-
-
 					</div>
 				</div>
 		
 						</main><!-- #post-## -->
 
-
-
 <?php endwhile;
 ?>
-
-
 
 <?php get_footer(); ?>
