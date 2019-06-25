@@ -272,15 +272,12 @@ p {
 .why-donate h3 {
   text-align: center; }
 
-<<<<<<< HEAD
-/*--------------------------------------------------------------
-# Navigation
---------------------------------------------------------------*/
-=======
 button {
   border: none; }
 
->>>>>>> 4d7ef6a85a0a178f4d474e9597bb59ef2d30aba7
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
 .main-navigation {
   font-size: 17.6px;
   font-size: 1.1rem; }
@@ -2453,6 +2450,10 @@ ol.flickity-page-dots {
       @media (min-width: 600px) {
         .custom-plan .single-custom-plan p {
           display: block; } }
+      @media (min-width: 800px) {
+        .custom-plan .single-custom-plan p {
+          font-size: 16px;
+          font-size: 1rem; } }
     .custom-plan .single-custom-plan h3 {
       font-size: 18px;
       font-size: 1.125rem; }
@@ -4254,20 +4255,6 @@ ol.flickity-page-dots {
     display: -ms-flexbox;
     display: flex; }
 
-<<<<<<< HEAD
-=======
-.prev-post-main,
-.next-post-main {
-  display: none; }
-
-@media (min-width: 1000px) {
-  .impactfully {
-    display: none; }
-    .impactfully .blog .pre-nav-1,
-    .impactfully .blog .next-p {
-      display: none; } }
-
->>>>>>> 4d7ef6a85a0a178f4d474e9597bb59ef2d30aba7
 .blog .read-more {
   position: relative;
   text-align: right;
