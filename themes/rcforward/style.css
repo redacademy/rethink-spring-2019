@@ -1219,9 +1219,11 @@ body .hide-desktop {
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%);
+      width: auto;
       height: auto;
-      width: 90%;
-      max-height: 90%; }
+      /* height: 90%; */
+      max-height: 90%;
+      max-width: 90%; }
   .single-fund .hfeed .related-charities .flickity-prev-next-button.previous {
     display: none; }
   .single-fund .hfeed .related-charities .flickity-prev-next-button.next {

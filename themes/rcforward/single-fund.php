@@ -86,7 +86,7 @@ get_header(); ?>
             
 
             <h3 class="related-charities-title">Related Charities</h3>
-            <div class="related-charities main-carousel">
+            <div class="related-charities">
             <?php
 $related_charities = CFS()->get( 'fund_related_charities' );
 // var_dump($related_charities);
