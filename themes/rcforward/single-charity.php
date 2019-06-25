@@ -107,7 +107,7 @@ get_header(); ?>
                 </div>
                 <?php else: ?>
                 <div class="no-image">
-                    <h3 class ="content-wo-image" ><?php echo $main_content['title']; ?></h3>
+                    <h3 class ="title-no-image" ><?php echo $main_content['title']; ?></h3>
                     <p class ="content-wo-image"><?php echo $main_content['content']; ?></p>
                     <div class="button-no-image">
                     <?php echo $charity_report_button; ?>

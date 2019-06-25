@@ -690,6 +690,7 @@
           padding-bottom: 2.5rem;
           padding-top: 4rem;
           a {
+            cursor: pointer;
             border: 2px solid #42299a;
             font-size: 1.2rem;
             font-weight: bolder;
@@ -781,7 +782,12 @@
 
 /* FAQ Page */
 .page-template-page-faq {
+.main-section {
+  
   .entry-header {
+    margin: 0 auto;
+    width: 93%;
+
     .entry-title {
       display: none;
     }
@@ -793,6 +799,9 @@
     }
   }
   .entry-content {
+    margin: 0 auto;
+    width: 93%;
+
     .faqs {
       .question {
         height: auto;
@@ -825,10 +834,18 @@
       }
     }
   }
+}
   @include desktop {
+.main-section {
+  background-color: #F8F8FC;
+
     .entry-header {
+      background-color: $white;
       @include display-flex();
       flex-direction: column;
+      // margin: 0 1.7rem;
+
+
       .entry-title {
         text-transform: capitalize;
       }
@@ -844,6 +861,8 @@
       }
     }
     .entry-content {
+      background-color: $white;
+      // margin: 0 1.7rem;
       .faqs {
         .question {
           border-bottom: 0;
@@ -861,5 +880,6 @@
         }
       }
     }
+  }
   }
 }

@@ -12,6 +12,7 @@ get_header(); ?>
 <?php while (have_posts()) : the_post(); ?>
 
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<main class="main-section">
 		<header class="entry-header">
 
 			<?php the_title('<h2 class="entry-title">', '</h2>'); ?>
@@ -34,6 +35,7 @@ get_header(); ?>
 				</div>
 			<?php endforeach; ?>
 		</div><!-- .entry-content -->
+</main>
 	</article><!-- #post-## -->
 <?php endwhile;
 ?>
