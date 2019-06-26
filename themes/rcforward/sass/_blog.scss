@@ -119,13 +119,13 @@ h3.more-article {
 .blog {
   display: flex;
   .site-content {
-    background-image: url('../../assets/images/flowing.png');
-    background-position: -500px;
-    background-size: 2500px;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    // background-image: url('../../assets/images/flowing.png');
+    // background-position: -500px;
+    // background-size: 2500px;
+    // background-repeat: no-repeat;
+    // display: flex;
+    // flex-direction: column;
+    // flex-wrap: wrap;
     .blog-header {
       @include desktop {
         height: 15rem;
