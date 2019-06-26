@@ -66,7 +66,7 @@ get_header(); ?>
 							</div>
 
 							<div class="read-more">
-								<a class="read-more-button" href="<?php echo $prev_post->guid ?>">Read More </a>
+								<a class="read-more-button" href="<?php echo $prev_post->guid ?>">Previous Post</a>
 								<span class="read-more-arrow"> &#x203A; </span>
 							</div>
 						</div>
@@ -101,7 +101,7 @@ get_header(); ?>
 								<?php echo $next_post->post_excerpt; ?>
 								</div><!-- .entry-main -->
 							<div class="read-more">
-									<a class="read-more-button" href="<?php echo $next_post->guid ?>">Read More</a>
+									<a class="read-more-button" href="<?php echo $next_post->guid ?>">Next Post</a>
 									<span class="read-more-arrow"> &#x203A; </span>
 								</div>
 							</div>
