@@ -47,9 +47,13 @@ get_header(); ?>
 						<div class="previous-post">
 							<p class="pre-nav-1"><?php echo $prev_post->post_title ?></p>
 						<div class="prev-post-image">
+
+						<a class="prev-post-link" href="<?php echo $prev_post->guid ?>">
 							<?php if (get_the_post_thumbnail($prev__id)) : ?>
-								<?php echo get_the_post_thumbnail($prev__id, 'large'); ?>
+							<?php echo get_the_post_thumbnail($prev__id, 'large'); ?>
 							<?php endif; ?>
+</a>
+
 						</div><!-- .prev-post-image -->
 						<div class="prev-post-content">
 							<div class="prev-post-title">
@@ -66,7 +70,7 @@ get_header(); ?>
 							</div>
 
 							<div class="read-more">
-								<a class="read-more-button" href="<?php echo $prev_post->guid ?>">Read More </a>
+								<a class="read-more-button" href="<?php echo $prev_post->guid ?>">Previous Post</a>
 								<span class="read-more-arrow"> &#x203A; </span>
 							</div>
 						</div>
@@ -81,8 +85,10 @@ get_header(); ?>
 							<div class="next-post">
 								<p class="next-1"> <?php echo $next_post->post_title ?></p>
 								<div class="next-post-image">
-								<?php if (get_the_post_thumbnail($next_post_id)) : ?>
-									<?php echo get_the_post_thumbnail($next_post_id, 'large'); ?>
+									<a class="next-post-link" href="<?php echo $next_post->guid ?>">
+										<?php if (get_the_post_thumbnail($next_post_id)) : ?>
+										<?php echo get_the_post_thumbnail($next_post_id, 'large'); ?>
+									</a>
 								<?php endif; ?>
 								</div><!-- .next-post-image -->
 							<div class="next-post-content">
@@ -101,7 +107,7 @@ get_header(); ?>
 								<?php echo $next_post->post_excerpt; ?>
 								</div><!-- .entry-main -->
 							<div class="read-more">
-									<a class="read-more-button" href="<?php echo $next_post->guid ?>">Read More</a>
+									<a class="read-more-button" href="<?php echo $next_post->guid ?>">Next Post</a>
 									<span class="read-more-arrow"> &#x203A; </span>
 								</div>
 							</div>

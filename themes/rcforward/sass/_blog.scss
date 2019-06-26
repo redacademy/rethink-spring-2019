@@ -3,64 +3,112 @@
 --------------------------------------------------------------*/
 
 .post-template-default {
-    .post {
-      .entry-header {
-        img {
-          width: 100%;
-          object-fit: cover;
-          height: 100%;
-        }
-        .entry-content {
-          padding: 2rem;
-        }
+  .post {
+    .entry-header {
+      img {
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+      }
+      .entry-content {
+        padding: 2rem;
       }
     }
   }
+}
 
 // .post-navigation
 h3.more-article {
+  font-size: 1.2rem;
+  font-weight: 600;
   text-align: center;
+  margin: 0;
+  @include tablet {
+    font-size: 1.5rem;
+  }
+  @include desktop {
+    font-size: 2rem;
+  }
 }
 .more-post {
-  margin: 66px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 2rem;
+  @include tablet {
+    flex-direction: row;
+  }
   @include desktop {
-    display: flex;
+    margin: 0 122px;
     justify-content: space-around;
   }
   .next-post,
   .previous-post {
+    max-width: 251px;
+    margin: 2rem auto;
     border: 1px solid #d7d0f2;
     box-shadow: 0 2px 2px #42299a;
-    margin-bottom: 3rem;
-    @include desktop {
-      margin: 3rem;
+    &:hover {
+      box-shadow: 0px 2px 2px darken($credible__blue, 20%);
+      text-shadow: $textshadow__white;
     }
-    .next-post-image,
-    .prev-post-image {
+    @include desktop {
+      max-width: 251px;
+    }
+    @include tablet {
+      margin-bottom: 3rem;
+      max-width: 275px;
+    }
+    .next-post-image {
+      max-width: 100%;
       img {
-        object-fit: cover;
-        height: 382px;
         width: 100%;
-        @include desktop{
-   height: 600px;
+        height: 137px;
+        object-fit: cover;
+        @include tablet {
+          height: 175px;
+          @include desktop {
+            height: 148px;
+          }
+        }
+      }
+    }
+    .prev-post-image {
+      max-width: 100%;
+      img {
+        width: 100%;
+        height: 126px;
+        object-fit: cover;
+        @include tablet {
+          height: 175px;
+        }
+        @include desktop {
+          height: 148px;
         }
       }
     }
     .next-post-content,
     .prev-post-content {
-
-   .next-post-main, .prev-post-main{
+      .next-post-main,
+      .prev-post-main {
         display: none;
       }
-          margin: 1rem;
+      margin: 0.5rem;
       .next-post-title,
       .prev-post-title {
         .next-post-meta,
         .prev-post-meta {
           color: #a7a3d6;
-          padding: 10px;
-          @include desktop{
+          margin: 0;
+          @include desktop {
             font-size: 1rem;
+          }
+        }
+        h3 {
+          font-size: 1rem;
+          margin-bottom: 38px;
+          @include desktop {
+            font-size: 1rem;
+            line-height: 1.5rem;
           }
         }
       }
@@ -68,17 +116,16 @@ h3.more-article {
   }
 }
 
-
 .blog {
   display: flex;
   .site-content {
-    background-image: url('../../assets/images/flowing.png');
-    background-position: -500px;
-    background-size: 2500px;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    // background-image: url('../../assets/images/flowing.png');
+    // background-position: -500px;
+    // background-size: 2500px;
+    // background-repeat: no-repeat;
+    // display: flex;
+    // flex-direction: column;
+    // flex-wrap: wrap;
     .blog-header {
       @include desktop {
         height: 15rem;
@@ -129,7 +176,7 @@ h3.more-article {
   }
 }
 
-//blog and post read More Button
+//blog and post read more button
 .blog {
   .read-more {
     position: relative;
@@ -141,23 +188,28 @@ h3.more-article {
       padding-bottom: 30px;
     }
     .read-more-button {
-      color: $color__link;
+      color: $innovative__purple;
       padding-bottom: 15px;
       padding-right: 24px;
-      font-size: 1.2rem;
+      font-size: 0.9rem;
+
+      &:hover {
+        text-shadow: 1px 0.5px 1px #999;
+      }
+      @include desktop {
+        font-size: 1.3rem;
+      }
     }
     .read-more-arrow {
       font-size: 4rem;
-      color: $color__link;
+      color: $innovative__purple;
       position: absolute;
       bottom: -6px;
       right: 17px;
-  
       @include desktop {
         bottom: 7px;
       }
     }
-  
   }
 }
 .single {
@@ -167,32 +219,26 @@ h3.more-article {
     padding-right: 1rem;
     font-size: 1rem;
     padding-right: 24px;
-    padding-bottom: 15px;
-    // @include desktop {
-    //   padding-bottom: 30px;
-    // }
+
     .read-more-button {
-      color: $color__link;
+      color: $innovative__purple;
       padding-bottom: 15px;
       padding-right: 24px;
-      font-size: 1.2rem;
+      font-size: 0.9rem;
     }
     .read-more-arrow {
-      font-size: 4rem;
-      color: $color__link;
+      font-size: 3rem;
+      color: $innovative__purple;
       position: absolute;
-         bottom: 22px;
+      bottom: 6px;
       right: 17px;
-      // @include desktop {
-      //   bottom: 7px;
-      // }
     }
   }
 }
 
 /* Single-Post */
 .post-template-default {
-  line-height: 2rem;
+  line-height: 1.4rem;
   .site-content {
     padding: 0;
     .post {
@@ -200,8 +246,7 @@ h3.more-article {
         width: 100%;
       }
       .entry-content {
-  
-        padding: 2em;
+        padding: 0 1rem 2rem;
         @include desktop {
           display: flex;
           flex-direction: column;
@@ -210,12 +255,18 @@ h3.more-article {
         .entry-title {
           line-height: 1.2em;
           .entry-meta {
-            font-size: 1.2rem;
+            margin-top: 0.5rem;
+            font-size: 0.8rem;
             color: #a7a3d6;
             font-weight: bold;
           }
           h2 {
             color: $credible__blue;
+            font-size: 1rem;
+            text-transform: capitalize;
+            @include tablet {
+              font-size: 2rem;
+            }
           }
         }
         .entry-main {
@@ -244,12 +295,35 @@ h3.more-article {
           }
         }
         .entry-footer {
+          font-size: 0.8rem;
+          @include desktop {
+            font-size: 1rem;
+          }
           a {
             color: $credible__blue;
           }
         }
         p {
+          font-size: 0.8rem;
           line-height: 1.8rem;
+          @include tablet {
+            font-size: 1rem;
+          }
+          @include desktop {
+            font-size: 1.2rem;
+          }
+        }
+        ul {
+          li {
+            font-size: 0.8rem;
+            @include tablet {
+              font-size: 1rem;
+            }
+            @include desktop {
+              font-size: 1.2rem;
+              line-height: 1.6rem;
+            }
+          }
         }
       }
     }
@@ -276,14 +350,14 @@ h3.more-article {
 }
 //single part
 .post-blog {
-  margin: 2rem;
+  margin: 1.5rem;
   border: 1px solid #d7d0f2;
   box-shadow: 0 2px 2px #42299a;
   @include tablet {
     margin: 4rem;
   }
   @include desktop {
-    margin: 12rem;
+    margin: 0 8rem 5rem;
   }
   .entry-header {
     img {
@@ -292,24 +366,42 @@ h3.more-article {
       height: 100%;
     }
   }
-  .post-content{
-    margin: 1rem;
+  .post-content {
+    margin: 0.4rem;
+    @include desktop {
+      margin: 1rem;
+    }
   }
   .entry-title {
-    
     .posted-on {
-      font-size:  1.3rem;
+      font-size: 0.6rem;
       color: #a7a3d6;
       font-weight: 600;
+      @include tablet {
+        font-size: 0.9rem;
+      }
     }
     h3 {
-      font-size: 1.5rem;
-      margin-top: 6px;
+      font-size: 1rem;
+      margin: 5px 0 53px 0;
       padding: 0;
+      @include tablet {
+        font-size: 1.5rem;
+      }
+      @include desktop {
+        font-size: 1.5rem;
+      }
     }
   }
-  .entry-content{
-              font-size: 1.2rem;
+  .entry-content {
+    display: none;
+    @include tablet {
+      display: block;
+      font-size: 1rem;
+      @include desktop {
+        margin: 5px 0 94px;
+      }
+    }
   }
 }
 
@@ -319,8 +411,6 @@ h3.more-article {
   display: none;
 }
 
-
-
 //AJAX load more
 .blog {
   .alm-btn-wrap .alm-load-more-btn {
@@ -329,11 +419,21 @@ h3.more-article {
     border-radius: 6px;
     background-color: $credible__blue;
     &:hover {
-      background-color: $credible__blue;
+      text-shadow: 1px 0.5px 1px #999;
+      box-shadow: 5px 3px 5px #42299a;
     }
     .ajax-load-more-wrap {
       display: flex;
     }
   }
 }
-
+//post
+.post-navigation {
+  @include tablet {
+    width: 705px;
+    margin: 0 auto;
+  }
+  @include desktop {
+    width: 60rem;
+  }
+}
