@@ -141,10 +141,10 @@
 
                   @include tablet-large {
                     color: $white;
-                    padding: 32px;
+                    padding: 16px;
                   }
-                } // a
-              } // li
+                }
+              } 
                li:last-child{
                   border-bottom: none;
                 }
