@@ -87,9 +87,9 @@
       }
     }
     .main-navigation {
-      // display: none;
+      display: none;
       width: 100%;
-      @include desktop {
+      @include tablet-large {
         display: block;
       }
       .menu-header-menu-container {
