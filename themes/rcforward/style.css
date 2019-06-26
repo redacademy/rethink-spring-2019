@@ -1255,6 +1255,10 @@ body .hide-desktop {
   margin: 0 auto;
   margin-top: 10rem; }
 
+.single-fund .footer-sidebar {
+  max-width: 1440px;
+  margin: 0 auto; }
+
 /* The Team page */
 .page-template-page-team .site-content .entry-header {
   text-align: center;
