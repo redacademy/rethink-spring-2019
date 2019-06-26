@@ -5,7 +5,7 @@
 .page-template-page-contact {
   .site-content {
     @include tablet {
-          padding: 0 2rem 2rem 2rem;
+      padding: 0 2rem 2rem 2rem;
     }
     .post-25 {
       display: flex;
@@ -123,16 +123,28 @@
                 }
               }
               input[type='submit'] {
-                // background: $credible__blue;
+                background: $credible__blue;
+                border: 2px solid $credible__blue;
                 color: $white;
-                width: 150px;
                 border-radius: 5px;
-                height: 62px;
+                font-size: 1.4rem;
+                width: 156px;
+                height: 54px;
                 font-size: 1.4rem;
                 @include tablet {
-                  background: $white;
                   color: $credible__blue;
                   border: 2px solid $credible__blue;
+                  background: $white;
+                    &:hover {
+                  background: $innovative__purple;
+                  color: $white;
+                  text-shadow: #f9f5ed;
+                }
+                }
+                &:hover {
+                  background: $innovative__purple;
+                  color: $white;
+                  text-shadow: #f9f5ed;
                 }
               }
             }
@@ -144,7 +156,7 @@
 }
 .wpcf7-form {
   padding: 0;
-    @include desktop {
+  @include desktop {
     padding-left: 3rem;
   }
   p:last-of-type {
@@ -155,14 +167,44 @@
   }
 }
 .wp-block-columns {
+    
   flex-direction: column;
   @include desktop {
+
+    margin: 0 auto;
     flex-direction: row;
+    padding: 40px;
   }
 }
 
-.contact-browse{
-  @include tablet{
-  display: none;
+.contact-browse {
+  @include tablet {
+    display: none;
+  }
 }
+//remove focus outline/border/override
+.wpcf7-submit{
+  &:focus{
+    outline: none;
+  }
+}
+.wpcf7-validation-errors{
+      border: 0;
+        font-size:1rem;
+  &:focus{
+  border: 0;
+  outline: 0;
+  }
+}
+div.wpcf7-mail-sent-ok {
+  border: none;
+  font-weight: 600;
+  color: $credible__blue;
+  
+}
+div.wpcf7-validation-errors,
+div.wpcf7-acceptance-missing {
+  border: none;
+  font-weight: 600;
+    color: $credible__blue;
 }
