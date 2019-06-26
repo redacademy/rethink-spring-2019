@@ -358,7 +358,6 @@ button {
       .site-header .header-container .site-logo .hamburger {
         width: 30%; }
     .site-header .header-container .main-navigation {
-      display: none;
       width: 100%; }
       @media (min-width: 1000px) {
         .site-header .header-container .main-navigation {
