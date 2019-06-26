@@ -4330,84 +4330,83 @@ h3.more-article {
     right: 17px; }
 
 /* Single-Post */
-.post-template-default {
-  line-height: 1.4rem; }
-  .post-template-default .site-content {
-    padding: 0; }
-    .post-template-default .site-content .post .entry-header {
-      width: 100%; }
-    .post-template-default .site-content .post .entry-content {
-      padding: 0 1rem 2rem; }
-      @media (min-width: 1000px) {
-        .post-template-default .site-content .post .entry-content {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: normal;
-              -ms-flex-direction: column;
-                  flex-direction: column;
-          padding-left: 8em; } }
-      .post-template-default .site-content .post .entry-content .entry-title {
-        line-height: 1.2em; }
-        .post-template-default .site-content .post .entry-content .entry-title .entry-meta {
-          margin-top: 0.5rem;
-          font-size: 0.8rem;
-          color: #a7a3d6;
-          font-weight: bold; }
-        .post-template-default .site-content .post .entry-content .entry-title h2 {
-          color: #14225F;
-          font-size: 1rem;
-          text-transform: capitalize; }
-          @media (min-width: 600px) {
-            .post-template-default .site-content .post .entry-content .entry-title h2 {
-              font-size: 2rem; } }
-      @media (min-width: 1000px) {
-        .post-template-default .site-content .post .entry-content .entry-main {
-          padding: 2rem;
-          width: 60%; } }
-      .post-template-default .site-content .post .entry-content .entry-main .post-quote {
+.post-template-default .site-content {
+  line-height: 1.4rem;
+  padding: 0; }
+  .post-template-default .site-content .post .entry-header {
+    width: 100%; }
+  .post-template-default .site-content .post .entry-content {
+    padding: 0 1rem 2rem; }
+    @media (min-width: 1000px) {
+      .post-template-default .site-content .post .entry-content {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        padding-left: 8em; } }
+    .post-template-default .site-content .post .entry-content .entry-title {
+      line-height: 1.2em; }
+      .post-template-default .site-content .post .entry-content .entry-title .entry-meta {
+        margin-top: 0.5rem;
+        font-size: 0.8rem;
+        color: #a7a3d6;
+        font-weight: bold; }
+      .post-template-default .site-content .post .entry-content .entry-title h2 {
         color: #14225F;
-        padding: 2px;
-        line-height: 2em;
-        font-size: 1.2rem;
-        font-weight: bold;
-        font-style: italic; }
+        font-size: 1rem;
+        text-transform: capitalize; }
         @media (min-width: 600px) {
-          .post-template-default .site-content .post .entry-content .entry-main .post-quote {
+          .post-template-default .site-content .post .entry-content .entry-title h2 {
             font-size: 2rem; } }
+    @media (min-width: 1000px) {
+      .post-template-default .site-content .post .entry-content .entry-main {
+        padding: 2rem;
+        width: 60%; } }
+    .post-template-default .site-content .post .entry-content .entry-main .post-quote {
+      color: #14225F;
+      padding: 2px;
+      line-height: 2em;
+      font-size: 1.2rem;
+      font-weight: bold;
+      font-style: italic; }
+      @media (min-width: 600px) {
+        .post-template-default .site-content .post .entry-content .entry-main .post-quote {
+          font-size: 2rem; } }
   @media (min-width: 600px) and (min-width: 1000px) {
     .post-template-default .site-content .post .entry-content .entry-main .post-quote {
       line-height: 2em;
       font-size: 2rem; } }
-      .post-template-default .site-content .post .entry-content .entry-main h3 {
-        font-size: 1.2rem;
-        font-weight: 700; }
-      .post-template-default .site-content .post .entry-content .entry-footer {
-        font-size: 0.8rem; }
-        @media (min-width: 1000px) {
-          .post-template-default .site-content .post .entry-content .entry-footer {
-            font-size: 1rem; } }
-        .post-template-default .site-content .post .entry-content .entry-footer a {
-          color: #14225F; }
-      .post-template-default .site-content .post .entry-content p {
-        font-size: 0.8rem;
-        line-height: 1.8rem; }
-        @media (min-width: 600px) {
-          .post-template-default .site-content .post .entry-content p {
-            font-size: 1rem; } }
-        @media (min-width: 1000px) {
-          .post-template-default .site-content .post .entry-content p {
-            font-size: 1.2rem; } }
-      .post-template-default .site-content .post .entry-content ul li {
-        font-size: 0.8rem; }
-        @media (min-width: 600px) {
-          .post-template-default .site-content .post .entry-content ul li {
-            font-size: 1rem; } }
-        @media (min-width: 1000px) {
-          .post-template-default .site-content .post .entry-content ul li {
-            font-size: 1.2rem;
-            line-height: 1.6rem; } }
+    .post-template-default .site-content .post .entry-content .entry-main h3 {
+      font-size: 1.2rem;
+      font-weight: 700; }
+    .post-template-default .site-content .post .entry-content .entry-footer {
+      font-size: 0.8rem; }
+      @media (min-width: 1000px) {
+        .post-template-default .site-content .post .entry-content .entry-footer {
+          font-size: 1rem; } }
+      .post-template-default .site-content .post .entry-content .entry-footer a {
+        color: #14225F; }
+    .post-template-default .site-content .post .entry-content p {
+      font-size: 0.8rem;
+      line-height: 1.8rem; }
+      @media (min-width: 600px) {
+        .post-template-default .site-content .post .entry-content p {
+          font-size: 1rem; } }
+      @media (min-width: 1000px) {
+        .post-template-default .site-content .post .entry-content p {
+          font-size: 1.2rem; } }
+    .post-template-default .site-content .post .entry-content ul li {
+      font-size: 0.8rem; }
+      @media (min-width: 600px) {
+        .post-template-default .site-content .post .entry-content ul li {
+          font-size: 1rem; } }
+      @media (min-width: 1000px) {
+        .post-template-default .site-content .post .entry-content ul li {
+          font-size: 1.2rem;
+          line-height: 1.6rem; } }
 
 /* pseudo quote */
 .post-quote::before {
