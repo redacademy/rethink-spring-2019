@@ -200,11 +200,19 @@ div.wpcf7-mail-sent-ok {
   border: none;
   font-weight: 600;
   color: $credible__blue;
+    text-align: center;
+     @include desktop{
+      text-emphasis:left;
+    }
   
 }
 div.wpcf7-validation-errors,
 div.wpcf7-acceptance-missing {
+  text-align: center;
   border: none;
   font-weight: 600;
     color: $credible__blue;
+    @include desktop{
+      text-emphasis:left;
+    }
 }
