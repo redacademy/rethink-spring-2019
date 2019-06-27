@@ -7,8 +7,6 @@
   box-sizing: border-box;
 }
 
-/* Front page */
-
 /* How it works Page */
 .page-template-page-how-it-works {
   .site-content {
@@ -545,10 +543,7 @@
       }
     }
     .related-charities {
-      // max-width: 300px;
       margin: 0 auto;
-      // margin: 0.4rem auto;
-      // width:300px;
       max-width: 320px;
       @include tablet {
         max-width: 90%;
@@ -557,15 +552,11 @@
         max-width: 950px;
       }
       width: 90%;
-      // width:500px;
 
       .flickity-viewport {
         height: 370px;
-
         width: 100%;
         padding-top: 1rem;
-        // width:300px;
-        // margin:0 auto;
       }
 
       .carousel-cell {
@@ -577,21 +568,15 @@
         left: 0;
         text-align: center;
         height: 350px;
-        // width:95%;
         @include display-flex();
         flex-direction: column;
-        // justify-content: space-around;
-        // margin: 0 20%;
         @include tablet-large {
           width: 30%;
-          // margin:0 -30%;
         }
         @include desktop {
           width: 30%;
-          // margin: 0 -30%;
         }
         .charity-description {
-          // margin: 0 0.7rem;
           font-size: 1rem;
           line-height: 1.3rem;
           padding: 0 0.8rem;
@@ -619,9 +604,6 @@
 
           // padding: 0 1rem;
           transform: translate(-50%, -50%);
-          // top: 0;
-          // max-width: 92%;
-          // max-height: 40%;
           width: auto;
           height: auto;
           /* height: 90%; */
@@ -643,40 +625,7 @@
       margin: 0 auto;
       margin-top: 10rem;
     }
-    @include tablet {
-      .related-charities {
-        // max-width: 96%;
-        .flickity-viewport {
-          // width: 580px;
-        }
-        .carousel-cell {
-          // width: 45%;
-          // margin-left: 38px;
-          // margin-right: 38px;
-        }
-        // .previous {
-        //   left: -30px;
-        //   display: unset;
-        // }
-        // .next {
-        //   right: -30px;
-        //   display: unset;
-        // }
-      }
-    }
-    @include tablet-large {
-      .related-charities {
-        // max-width: 96%;
-        .flickity-viewport {
-          // width: 38rem;
-        }
-        .carousel-cell {
-          // max-width: 100%;
-          // width: 42%;
-          // margin: 0 45px;
-        }
-      }
-    }
+    
   }
   .footer-sidebar {
     max-width: 1440px;

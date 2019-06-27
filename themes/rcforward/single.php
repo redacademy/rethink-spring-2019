@@ -51,8 +51,7 @@ get_header(); ?>
 						<a class="prev-post-link" href="<?php echo $prev_post->guid ?>">
 							<?php if (get_the_post_thumbnail($prev__id)) : ?>
 							<?php echo get_the_post_thumbnail($prev__id, 'large'); ?>
-							<?php endif; ?>
-</a>
+							<?php endif; ?></a>
 
 						</div><!-- .prev-post-image -->
 						<div class="prev-post-content">
@@ -118,7 +117,6 @@ get_header(); ?>
 		
 						</main><!-- #post-## -->
 
-<?php endwhile;
-?>
+<?php endwhile;?>
 
 <?php get_footer(); ?>

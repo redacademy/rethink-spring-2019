@@ -1,6 +1,7 @@
 
 // Structure
 $base__space-unit: 1.5rem;
+
 // Colors 
 $color__background-body: #fff;
 $color__text-main: #404040;
@@ -13,14 +14,16 @@ $color__border-abbr: #666;
 $color__link: royalblue;
 $color__link-visited: purple;
 $color__link-hover: midnightblue;
+
 // background-color
 $color__light-purple:#F8F8FC;
+
 // RC Primary Stylings
-// #48219f purple color for carousel shadow
 $code__blue: #00BEA8;
 $innovative__purple: #42299A;
 $credible__blue: #14225F;
 $grounded__green: #192726;
+
 // RC Secondary Stylings
 $sustainable__green: #8CB33E;
 $forest__green: #578744;
@@ -28,8 +31,10 @@ $cream__background: #F9F5ED;
 $blue__background: rgba(216,216,216,0.18);
 $black: #000;
 $white: #fff;
+
 // RC Fonts
 $montserrat__font: 'Montserrat', sans-serif;
+
 // RC Mixins
 $tablet-width: 600px;
 $tablet-breakpoint: 800px;
@@ -37,6 +42,7 @@ $desktop-width: 1000px;
 $max-screen-size: 1440px;
 $max-content-size: 950px;
 $max-content-size-mobile:350px;
+
 // Typography
 $font__main: sans-serif;
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;

@@ -20,9 +20,6 @@
         padding: 0;
         display: none;
         top: 60px;
-        //  @include tablet-large{
-        //    display: none;
-        //  }
       }
       &:hover {
         .sub-menu {
@@ -81,9 +78,6 @@
       }
       .hamburger {
         width: 30%;
-        @include tablet-large {
-          // display: none;
-        }
       }
     }
     .main-navigation {

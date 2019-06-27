@@ -1,4 +1,4 @@
-{/* <a class ="donate-button button" href="">Donate</a> */}
+
 (function ($) {
     $(function () {
         //on click
@@ -20,17 +20,10 @@
                 url: api_vars.rest_url + "wp/v2/charity_tax",
             }).done(function (data) {
                 $.each(data, function (index, value){
-                    // console.log(value.name);
                     if(name == value.name){
-                        // console.log(name);
-                        // console.log(value.name);
-
                         $taxId =  value.id;
-                        // console.log($taxId);
                     }   
                 })
-                // console.log(name);
-                // console.log($taxId);
                 $(".show-results").append(`<span>Results: </span><a id="charity-tax-button" class="charity-tax-result" href="#">${name} <span> X</span></a>`);
                 $(".show-results").addClass("active");
                 getCharity($taxId, name);
@@ -54,22 +47,14 @@
                 let idArray = [];
                 $.each(data, function (index, value){
                     $.each(value.charity_tax, function(index, id){
-                        // console.log(taxId);
                         if(name==="see all" || id == taxId){
                             if($.inArray(value.id, idArray) === -1){
                                 idArray.push(value.id);
-                                // console.log(idArray);
-                            // console.log(value);
-                            // let $thumbnailLink = value.featured_image_url;
                             let $thumbnailLink = value._embedded["wp:featuredmedia"][0].media_details.sizes.full.source_url;
                             let $logoLink = value.charity_logo;
-                            // console.log($logoLink);
                             let $title = value.title.rendered;
                             let $description = value.charity_description.substring(0, 90)+" [...]";
                             let $descriptionTab = value.charity_description.substring(0, 75)+" [...]";
-                            //TODO change the charity_description to short description
-                            //TODO add a Chimp API KEY
-                            //TODO add a Donate Button
                             let $pageLink=value.link;
 
                             $(".show-charities").append(`<div class="single-charity"><div class="thumbnail-wrapper">

@@ -19,8 +19,6 @@
           $('#site-navigation').slideToggle();
         })
 
-        // $('#toggle-nav').click();
-
       } // end if
 
      

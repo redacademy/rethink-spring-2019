@@ -15,8 +15,6 @@ get_header(); ?>
 		<?php the_title('<h2 class="entry-title">', '</h2>'); ?>
 		<p class="page-description"><?php echo CFS()->get('how_it_works_page_description') ?></p>
 		<div class="how-it-works-steps">
-			<!-- <div class="icon-steps">
-			</div> -->
 			<div class="text-steps">
 				<?php
 				$work_steps = CFS()->get('how_it_works');
